@@ -13,21 +13,21 @@ enum Role {
 }
 
 model User {
-  id              String   @id @default(uuid())
-  nom             String
-  prenom          String
-  email           String   @unique
-  telephone       String?
-  motDePasseHash  String
-  actif           Boolean  @default(true)
-  dateCreation    DateTime @default(now())
-  role            Role     @default(VISITOR)
+  id             String   @id @default(uuid())
+  nom            String
+  prenom         String
+  email          String   @unique
+  telephone      String?
+  motDePasseHash String
+  actif          Boolean  @default(true)
+  dateCreation   DateTime @default(now())
+  role           Role     @default(VISITOR)
 
   // Relations
   studentProfile  StudentProfile?
   adminProfile    AdminProfile?
   sessions        Session[]
-  section         Section?           @relation(fields: [sectionId], references: [id])
+  section         Section?         @relation(fields: [sectionId], references: [id])
   sectionId       String?
   notes           NoteEtudiant[]
   favoris         Favori[]
@@ -102,12 +102,12 @@ model Universite {
 }
 
 model Specialite {
-  id                     String                   @id @default(uuid())
+  id                     String                 @id @default(uuid())
   nom                    String
   domaine                String
   scoreMinimum           Float
   universiteId           String
-  universite             Universite               @relation(fields: [universiteId], references: [id], onDelete: Cascade)
+  universite             Universite             @relation(fields: [universiteId], references: [id], onDelete: Cascade)
   statistiquesAdmissions StatistiqueAdmission[]
   metiers                MetierSpecialite[]
   favoris                Favori[]
@@ -186,14 +186,22 @@ model Recommandation {
 }
 
 model ParametresRecommandation {
-  id             String @id @default(uuid())
-  poidsScore     Float
-  poidsInterets  Float
-  poidsMatieres  Float
+  id            String @id @default(uuid())
+  poidsScore    Float
+  poidsInterets Float
+  poidsMatieres Float
 }
 
 model JournalAudit {
   id         String   @id @default(uuid())
   action     String
   dateAction DateTime @default(now())
+}
+
+model SystemLog {
+  id        String   @id @default(uuid())
+  level     String   // 'info', 'warn', 'error'
+  message   String
+  meta      Json?
+  timestamp DateTime @default(now())
 }
