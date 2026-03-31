@@ -49,3 +49,19 @@ npm run test:integration:current
 ```bash
 npm run test:db:down
 ```
+
+## Postman quick import
+
+Import these files in Postman:
+- `postman/Bideyati_Sprint1.postman_collection.json`
+- `postman/Bideyati_Local.postman_environment.json`
+
+Then select the `Bideyati Local` environment and run requests in order:
+1. Health
+2. Home (Public)
+3. Register
+4. Login
+5. Profile (Protected)
+6. Questionnaire (Protected)
+7. Logout
+8. Profile After Logout (Should 401)
