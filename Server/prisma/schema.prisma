@@ -93,12 +93,32 @@ model NoteEtudiant {
 }
 
 model Universite {
-  id          String       @id @default(uuid())
-  nom         String
-  ville       String
-  region      String
-  description String?
-  specialites Specialite[]
+  id             String          @id
+  nom            String
+  ville          String
+  region         String
+  description    String?
+  // Sprint 2 — enrichment fields (all optional, additive)
+  code           Int?            @unique
+  nomAr          String?
+  siteweb        String?
+  adresse        String?
+  specialites    Specialite[]
+  etablissements Etablissement[]
+}
+
+model Etablissement {
+  id           String     @id
+  code         Int        @unique
+  nom          String
+  nomAr        String?
+  website      String?
+  gouvernorat  String?
+  type         String?
+  lat          Float?
+  lon          Float?
+  universiteId String
+  universite   Universite @relation(fields: [universiteId], references: [id], onDelete: Cascade)
 }
 
 model Specialite {

@@ -3,6 +3,7 @@ import authRoutes from "./authRoutes";
 import homeRoutes from "./homeRoutes";
 import profileRoutes from "./profileRoutes";
 import questionnaireRoutes from "./questionnaireRoutes";
+import universiteRoutes from "./universiteRoutes";
 
 const router = Router();
 
@@ -14,5 +15,6 @@ router.use("/auth", authRoutes);
 router.use(homeRoutes);
 router.use(profileRoutes);
 router.use(questionnaireRoutes);
+router.use(universiteRoutes);
 
 export default router;

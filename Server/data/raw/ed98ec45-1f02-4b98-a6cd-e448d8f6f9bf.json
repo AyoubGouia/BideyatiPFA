@@ -1,0 +1,17 @@
+{
+  "fields": [{"id":"_id","type":"int"},{"id":"diplome_code","type":"numeric"},{"id":"label_fr","type":"text"},{"id":"label_ar","type":"text"}],
+  "records": [
+    [1,1,"Licence fondamentale","الإجازة الأساسية"],
+    [2,2,"Licence appliquée ","الإجازة التطبيقية(أمد)"],
+    [3,3,"Diplôme National en Licence ","الشهادة الوطنية للإجازة"],
+    [4,4,"Bacalorious","باكالوريوس"],
+    [5,5,"Diplôme national d'ingénieur ","الشهادة الوطنية لمهندس"],
+    [6,6,"Diplôme national d'architecture","الشهادة الوطنية في الهندسة المعمارية"],
+    [7,7,"Doctorat en médecine ","الشهادة الوطنية لدكتور في الطب"],
+    [8,8,"Médecine dentaire","الشهادة الوطنية لدكتور في طب الأسنان"],
+    [9,9,"Doctorat en pharmacie","الشهادة الوطنية لدكتور في الصيدلة"],
+    [10,10,"Mastère de recherche ","ماجستير بحث- نظام أمد"],
+    [11,11,"Mastère professionnel","ماجستير مهني - نظام أمد"],
+    [12,12,"Agrégation","تبريز"],
+    [13,13,"Doctorat","دكتوراه"]
+]}
