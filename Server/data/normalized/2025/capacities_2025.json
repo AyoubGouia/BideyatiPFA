@@ -1,0 +1,765 @@
+[
+  {
+    "annee": 2025,
+    "codeOrientation": "99101",
+    "establishment_name": "مرحلة تحضيرية للدراسات الهندسية :  فيزياء كيمياء علوم الهندسة",
+    "specialty_name": "(1  )",
+    "capacite": 80
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99102",
+    "establishment_name": "الإجازة في الآداب الحديثة بجامعة السوربون",
+    "specialty_name": "فرنسا",
+    "capacite": 40
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99217",
+    "establishment_name": "الإجازة في علم الاجتماع بجامعة السوربون",
+    "specialty_name": "(2 )",
+    "capacite": 1
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99218",
+    "establishment_name": "دورة المتفوقين",
+    "specialty_name": "يتم الترشح لدورة المتفوقين حصريا عبر موقع التوجيهه الجهامعي  www.orientation.tn حسب الشروط",
+    "capacite": 1
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99214",
+    "establishment_name": "مرحلة تحضيرية للدراسات الهندسية :  فيزياء كيمياء علوم الهندسة",
+    "specialty_name": "(1  )",
+    "capacite": 6
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99215",
+    "establishment_name": "ألمانيا",
+    "specialty_name": "الرياضيات",
+    "capacite": 2
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99311",
+    "establishment_name": "العلوم",
+    "specialty_name": "التجريبية",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99311",
+    "establishment_name": "الاقتصاد",
+    "specialty_name": "والتصرف",
+    "capacite": 1
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99311",
+    "establishment_name": "العلوم",
+    "specialty_name": "التقنية",
+    "capacite": 1
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99311",
+    "establishment_name": "علوم",
+    "specialty_name": "الإعلامية",
+    "capacite": 2
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "99310",
+    "establishment_name": "هههب فقس",
+    "specialty_name": "10% من عدد البقاع المفتوحة لفائدة المترشحين المحرزين على شهادة أجنبية",
+    "capacite": 1
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "30101",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 41
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "22102",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 43
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "54102",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 44
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "80102",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 45
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11103",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 46
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "30103",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 47
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "54103",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 48
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "82103",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 49
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "34104",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 50
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11105",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 51
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "50105",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 52
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "34106",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "صيغة احتساب",
+    "capacite": 53
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10190",
+    "establishment_name": "109,373",
+    "specialty_name": "السن",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11190",
+    "establishment_name": "87,322",
+    "specialty_name": "رياضيات",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10191",
+    "establishment_name": "113,995",
+    "specialty_name": "السن",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11191",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا",
+    "specialty_name": "75,501",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10192",
+    "establishment_name": "150,683",
+    "specialty_name": "السن",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11192",
+    "establishment_name": "123,828",
+    "specialty_name": "رياضيات",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10193",
+    "establishment_name": "91,428",
+    "specialty_name": "السن",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10194",
+    "establishment_name": "89,446",
+    "specialty_name": "السن",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10195",
+    "establishment_name": "93,415",
+    "specialty_name": "السن",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "82200",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 74
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "60201",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 75
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "30202",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 76
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "70202",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 77
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "36207",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 79
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "60207",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 80
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "86207",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 81
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "34208",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 82
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "60208",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 83
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11209",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 84
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "40209",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 85
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "70209",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 86
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "50622",
+    "establishment_name": "المدرسة العليا للسمعي البصري والسينما بقمرت",
+    "specialty_name": "يمكن للطلبة الراغبين في الالتحاق بالمدرسة العليا للسمعي البصري  والسينما بقمرت الترشح لإجراء  مناظرة",
+    "capacite": 88
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "60450",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 91
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10301",
+    "establishment_name": "وناقلا",
+    "specialty_name": "رياضيات",
+    "capacite": 3
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "50301",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب مجموع",
+    "specialty_name": "النقاط",
+    "capacite": 96
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "30312",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 99
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "42312",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 100
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11318",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 101
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "20318",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 102
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "34318",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 103
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "43318",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 104
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "21391",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 106
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "40391",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 107
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "70391",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 108
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "21394",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 109
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "40394",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 110
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "73394",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 111
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "21396",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 112
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "54396",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 113
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "86396",
+    "establishment_name": "العلوم الصحيحة",
+    "specialty_name": "والتكنولوجيا",
+    "capacite": 114
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10168",
+    "establishment_name": "والتهيئة الترابية",
+    "specialty_name": "علوم تجريبية",
+    "capacite": 3
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "13311",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 116
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "37311",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 117
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "50311",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 118
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11501",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 119
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "20502",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 120
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "35505",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 122
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "34507",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 123
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "60509",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 124
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10510",
+    "establishment_name": "ربكلا لاغشلأا ايجولويج",
+    "specialty_name": "علوم تجريبية",
+    "capacite": 3
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "50513",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 126
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "21523",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 127
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "40523",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 128
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "71523",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 129
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "12524",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 130
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "50524",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 131
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "82524",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 132
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "50550",
+    "establishment_name": "المعهد العالي للعلوم التطبيقية والتكنولوجيا",
+    "specialty_name": "بالمهدية (جامعة  المنستير  (",
+    "capacite": 3
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "21566",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 133
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "36566",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 134
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "60566",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 135
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "80566",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 136
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "22568",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 137
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "86568",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 138
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "31570",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 139
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "51570",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 140
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "60570",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 141
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "74570",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 142
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "56571",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 144
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "80571",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 145
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "40573",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 147
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "40577",
+    "establishment_name": "او ناقتإ",
+    "specialty_name": "علوم تجريبية",
+    "capacite": 3
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "30580",
+    "establishment_name": "رحبلا لقنلا",
+    "specialty_name": "علوم تجريبية",
+    "capacite": 3
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "20603",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 150
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "12629",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 151
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "36629",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 152
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "61629",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 153
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "40673",
+    "establishment_name": "الهندسة  المعمارية",
+    "specialty_name": "والمراحل التحضيرية",
+    "capacite": 155
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10516",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 157
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "41518",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 158
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "22522",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 159
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "70522",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 160
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11525",
+    "establishment_name": "165,585",
+    "specialty_name": "سنتان +3  سنوات",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "11526",
+    "establishment_name": "177,948",
+    "specialty_name": "سنتان +3  سنوات",
+    "capacite": 4
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "10832",
+    "establishment_name": "الإجازة / الشعبة  المؤسسة وال جامعة  التخصصات  الرمز  نوع البكالوريا  صيغة احتساب",
+    "specialty_name": "مجموع النقاط",
+    "capacite": 161
+  },
+  {
+    "annee": 2025,
+    "codeOrientation": "50832",
+    "establishment_name": "ضبطت مدة الدراسة للحصول على الشهادة الوطنية لمهندس بخمس سنوات موزعة على مرحلتين:",
+    "specialty_name": "▪ مرحلة  تحضيرية  تدوم  سنتين:  يتم  القبول  بالمرحلة  التحضيرية  للدراسات  الهندسية",
+    "capacite": 1
+  }
+]

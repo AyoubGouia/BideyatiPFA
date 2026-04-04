@@ -4,6 +4,7 @@ import homeRoutes from "./homeRoutes";
 import profileRoutes from "./profileRoutes";
 import questionnaireRoutes from "./questionnaireRoutes";
 import universiteRoutes from "./universiteRoutes";
+import etablissementRoutes from "./etablissementRoutes";
 
 const router = Router();
 
@@ -16,5 +17,6 @@ router.use(homeRoutes);
 router.use(profileRoutes);
 router.use(questionnaireRoutes);
 router.use(universiteRoutes);
+router.use(etablissementRoutes);
 
 export default router;

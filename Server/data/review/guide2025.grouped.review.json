@@ -1,0 +1,23 @@
+[
+  {
+    "sourcePageRange": "40",
+    "sourceLines": [
+      "الآداب واللغات والمراحل التحضيرية الأدبية",
+      "صيغة   مجموع",
+      "احتساب   نقاط اخر",
+      "الإجازة /   الشعبة    المؤسسة وال  جامعة    التخصصات    الرمز    نوع البكالوريا",
+      "مجموع   موجه",
+      "النقاط    2024",
+      "97,875",
+      "FG+ A"
+    ],
+    "codeOrientationCandidate": null,
+    "formuleBruteCandidate": "FG+ A",
+    "sectionBacCandidate": "الآداب واللغات والمراحل التحضيرية الأدبية",
+    "scoreReferenceCandidate": "97,875",
+    "institutionTextCandidate": "صيغة   مجموع",
+    "specialiteTextCandidate": "احتساب   نقاط اخر",
+    "confidence": "MEDIUM",
+    "reviewReason": "missing: code; extra TEXT line (possible multi-line): الإجازة /   الشعبة    المؤسسة وال  جامعة; extra TEXT line (possible multi-line): مجموع   موجه; extra TEXT line (possible multi-line): النقاط    2024"
+  }
+]

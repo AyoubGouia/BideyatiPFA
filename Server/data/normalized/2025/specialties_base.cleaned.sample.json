@@ -1,0 +1,132 @@
+[
+  {
+    "codeOrientation": "10101",
+    "nom": "الإجازة في العربية",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "12101",
+    "nom": "المعهد العالي للعلوم الإنسانية بتونس (جامعة",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "13101",
+    "nom": "المعهد العالي للغات بتونس (جامعة قرطاج (",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "22101",
+    "nom": "المعهد العالي للغات بنابل (جامعة قرطاج (",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "30101",
+    "nom": "كلية الآداب والعلوم الإنسانية بسوسة (جامعة",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "40101",
+    "nom": "كلية الآداب والعلوم الإنسانية بصفاقس",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "50101",
+    "nom": "المعهد العالي للغات بقابس (جامعة قابس )",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "54101",
+    "nom": "المعهد العالي للعلوم الإنسانية بمدنين (جامعة",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "60101",
+    "nom": "المعهد العالي للدراسات التطبيقية في",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "70101",
+    "nom": "كلية الآداب والعلوم الإنسانية بالقيروان",
+    "formuleBrute": "FG+ A"
+  },
+  {
+    "codeOrientation": "10102",
+    "nom": "الإجازة في الإنقليزية",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "12102",
+    "nom": "المعهد العالي للعلوم الإنسانية بتونس (جامعة -",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "13102",
+    "nom": "المعهد العالي للغات بتونس ( جامعة قرطاج )",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "22102",
+    "nom": "المعهد العالي للغات بنابل ( جامعة قرطاج )",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "30102",
+    "nom": "كلية الآداب والعلوم الإنسانية بسوسة (جامعة",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "34102",
+    "nom": "المعهد العالي للغات بالمكنين (جامعة",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "40102",
+    "nom": "كلية الآداب والعلوم الإنسانية بصفاقس -",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "50102",
+    "nom": "المعهد العالي للغات بقابس (جامعة قابس )",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "54102",
+    "nom": "المعهد العالي للعلوم الإنسانية بمدنين (جامعة",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "60102",
+    "nom": "المعهد العالي للدراسات التطبيقية في",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "70102",
+    "nom": "كلية الآداب والعلوم الإنسانية بالقيروان",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "73102",
+    "nom": "المعهد العالي للدراسات التطبيقية في إنقليزية الأعمال آداب",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "80102",
+    "nom": "المعهد العالي للعلوم الإنسانية بجندوبة",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "82102",
+    "nom": "المعهد العالي للدراسات التطبيقية في",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "84102",
+    "nom": "المعهد العالي للغات التطبيقية و الاعلامية",
+    "formuleBrute": "FG+ Ang"
+  },
+  {
+    "codeOrientation": "10103",
+    "nom": "الإجازة في الفرنسية",
+    "formuleBrute": "FG+F"
+  }
+]

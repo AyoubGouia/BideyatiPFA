@@ -59,10 +59,12 @@ model Session {
 }
 
 model Section {
-  id       String           @id @default(uuid())
-  nom      String
-  matieres SectionMatiere[]
-  users    User[]
+  id                     String                 @id @default(uuid())
+  nom                    String                 @unique
+  matieres               SectionMatiere[]
+  users                  User[]
+  statistiquesAdmissions StatistiqueAdmission[]
+  capacitesAdmissions    CapaciteAdmission[]
 }
 
 model Matiere {
@@ -108,8 +110,8 @@ model Universite {
 }
 
 model Etablissement {
-  id           String     @id
-  code         Int        @unique
+  id           String       @id
+  code         Int          @unique
   nom          String
   nomAr        String?
   website      String?
@@ -118,29 +120,53 @@ model Etablissement {
   lat          Float?
   lon          Float?
   universiteId String
-  universite   Universite @relation(fields: [universiteId], references: [id], onDelete: Cascade)
+  universite   Universite   @relation(fields: [universiteId], references: [id], onDelete: Cascade)
+  specialites  Specialite[]
 }
 
 model Specialite {
   id                     String                 @id @default(uuid())
+  codeOrientation        String                 @unique
   nom                    String
-  domaine                String
-  scoreMinimum           Float
-  universiteId           String
-  universite             Universite             @relation(fields: [universiteId], references: [id], onDelete: Cascade)
+  formuleBrute           String?
+  domaine                String?
+  scoreMinimum           Float?
+  universiteId           String?
+  universite             Universite?            @relation(fields: [universiteId], references: [id], onDelete: SetNull)
+  etablissementId        String?
+  etablissement          Etablissement?         @relation(fields: [etablissementId], references: [id], onDelete: SetNull)
   statistiquesAdmissions StatistiqueAdmission[]
+  capacitesAdmissions    CapaciteAdmission[]
   metiers                MetierSpecialite[]
   favoris                Favori[]
   recommandations        Recommandation[]
 }
 
 model StatistiqueAdmission {
+  id                String     @id @default(uuid())
+  annee             Int
+  section           Section?   @relation(fields: [sectionId], references: [id], onDelete: SetNull)
+  sectionId         String?
+  scoreDernierAdmis Float
+  scoreMinimum      Float?
+  tauxAdmission     Float?
+  specialiteId      String
+  specialite        Specialite @relation(fields: [specialiteId], references: [id], onDelete: Cascade)
+
+  @@unique([annee, sectionId, specialiteId])
+}
+
+model CapaciteAdmission {
   id            String     @id @default(uuid())
   annee         Int
-  scoreMinimum  Float
-  tauxAdmission Float
+  tour          String
+  section       Section?   @relation(fields: [sectionId], references: [id], onDelete: SetNull)
+  sectionId     String?
+  capacite      Int
   specialiteId  String
   specialite    Specialite @relation(fields: [specialiteId], references: [id], onDelete: Cascade)
+
+  @@unique([annee, tour, sectionId, specialiteId])
 }
 
 model Metier {

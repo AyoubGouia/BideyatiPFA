@@ -1,0 +1,156 @@
+window.calculateAndSaveScore = function(suffix, session, btnElement) {
+    const isControl = (session === 'c');
+    const $btn = $(btnElement);
+    
+    // 1. تحديد الـ IDs (النمط الموحد الجديد _p)
+    const getTargetId = (subject, type) => {
+        if (!isControl) {
+            // المواد التي تظل بدون _p لأنها مشتركة ومخفية في بعض الشعب
+            let pOnly = []; 
+            if (subject === "ara" && suffix !== "L") pOnly.push("ara");
+            if (subject === "phi" && suffix !== "L" && suffix !== "S") pOnly.push("phi");
+
+            return pOnly.includes(subject) ? subject + "_" + suffix : subject + "_p_" + suffix;
+        }
+        return subject + "_" + type + "_c_" + suffix;
+    };
+
+    const subjectsConfig = {
+        'M': ["mat", "phy", "svt", "fra", "ang", "ara", "phi", "inf", "opt", "edph", "moy_bac"],
+        'X': ["mat", "phy", "svt", "fra", "ang", "ara", "phi", "inf", "opt", "edph", "moy_bac"],
+        'T': ["mat", "phy", "tec", "fra", "ang", "ara", "phi", "inf", "opt", "edph", "moy_bac"],
+        'I': ["mat", "alg", "sti", "phy", "fra", "ang", "ara", "phi", "opt", "edph", "moy_bac"],
+        'E': ["eco", "ges", "hisgeo", "mat", "fra", "ang", "ara", "phi", "inf", "opt", "edph", "moy_bac"],
+        'L': ["ara", "phi", "hisgeo", "fra", "ang", "inf", "opt", "edph", "pis", "moy_bac"],
+        'S': ["bio", "spspt", "edph", "phy", "fra", "ang", "ara", "phi", "mat", "opt", "moy_bac"]
+    };
+
+    const baseFields = subjectsConfig[suffix];
+let errorMessage = "";
+    for (let f of baseFields) {
+        let pElem = document.getElementById(getTargetId(f, 'p'));
+        if (pElem) {
+            let pValStr = pElem.value.trim();
+            if (pValStr === "" || pValStr === ".") { errorMessage = "يجب إدخال كل أعداد الدورة الرئيسية!"; break; }
+            if (pValStr !== "معفى") {
+                let pVal = parseFloat(pValStr);
+                if (isNaN(pVal) || pVal < 0 || pVal > 20) { errorMessage = "الأعداد يجب أن تكون بين 0 و 20 فقط!"; break; }
+            }
+        }
+        // المراقبة: استثناء المواد التي لا تعاد (أضفت الفلسفة لبعض الشعب)
+        if (isControl && !["inf", "opt", "edph", "pis", "phi"].includes(f)) {
+            let cElem = document.getElementById(getTargetId(f, 'c'));
+            if (cElem) {
+				let cValStr = cElem.value.trim();
+				if (cValStr === "" || cValStr === ".") { errorMessage = "يجب إدخال كل أعداد دورة المراقبة!"; break; }
+				if (cValStr !== "معفى") {
+					let cVal = parseFloat(cValStr);
+					if (isNaN(cVal) || cVal < 0 || cVal > 20) { errorMessage = "الأعداد يجب أن تكون بين 0 و 20 فقط!"; break; }
+				}
+			}
+        }
+    }
+
+    if (errorMessage !== "") {
+        Swal.fire({ icon: 'warning', title: 'تنبيه', text: errorMessage, confirmButtonText: 'حسناً' });
+        return;
+    }
+
+    // 3. محرك الحساب
+    const getVal = (id) => {
+        let el = document.getElementById(id);
+        if (!el || el.value === "معفى" || el.value === "") return 0;
+        let val = parseFloat(el.value);
+        return isNaN(val) ? 0 : val;
+    };
+
+    const v = {};
+    let dataToSend = { action: "save_bac_notes", session: session, suffix: suffix };
+
+    baseFields.forEach(f => {
+        let pVal = getVal(getTargetId(f, 'p'));
+        let finalVal = 0;
+        let cVal = 0;
+
+        // المواد التي لا تعاد في المراقبة
+        if (!isControl || ["inf", "opt", "edph", "pis", "phi"].includes(f)) {
+            finalVal = pVal;
+        } else {
+            cVal = getVal(getTargetId(f, 'c'));
+            finalVal = (pVal * 2 + cVal) / 3;
+        }
+        
+        v[f] = finalVal;
+        let sqlKey = (f === "moy_bac") ? "moybac" : f;
+        
+        dataToSend[sqlKey + "_p"] = pVal;
+        if (isControl) {
+            dataToSend[sqlKey + "_c"] = cVal;
+            let spanId = f + "_c_" + suffix;
+            let targetSpan = document.getElementById(spanId);
+            if (targetSpan) targetSpan.innerText = finalVal.toFixed(2);
+        }
+        dataToSend[sqlKey] = finalVal;
+    });
+
+    // حساب السكور (FG) - قاعدة الـ 100 نقطة
+    let score = 0;
+    const common = v.fra + v.ang + (4 * v.moy_bac);
+    switch (suffix) {
+        case 'M': score = (2 * v.mat) + (1.5 * v.phy) + (0.5 * v.svt) + common; break;
+        case 'X': score = v.mat + (1.5 * v.phy) + (1.5 * v.svt) + common; break;
+        case 'T': score = (1.5 * v.mat) + v.phy + (1.5 * v.tec) + common; break;
+        case 'I': score = (1.5 * v.mat) + (1.5 * v.alg) + (0.5 * v.sti) + (0.5 * v.phy) + common; break;
+        case 'E': score = (1.5 * v.eco) + (1.5 * v.ges) + (0.5 * v.hisgeo) + (0.5 * v.mat) + common; break;
+        case 'L': score = (1.5 * v.ara) + (1.5 * v.phi) + v.hisgeo + common; break;
+        case 'S': score = (1.5 * v.bio) + v.spspt + (0.5 * v.edph) + (0.5 * v.phi) + (0.5 * v.phy) + common; break;
+    }
+    let finalFG = score.toFixed(4);
+    dataToSend['fg'] = finalFG;
+
+    // 🌀 تأثير التحميل
+    const originalBtnHtml = $btn.html();
+    $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm"></span> جارِ الحفظ...');
+
+    $.ajax({
+    type: 'POST',
+    url: "/update_notes.php",
+    data: dataToSend,
+    dataType: 'json',
+    success: function(res) {
+        $btn.prop('disabled', false).html(originalBtnHtml);
+        
+        if (res.status === "success") {
+            // عرض النتيجة مباشرة في نافذة واحدة احترافية
+            Swal.fire({
+                title: 'تم الحساب والحفظ بنجاح!',
+                html: `
+                    <div class="mt-2">
+                        <h5 class="text-muted small">صيغتك الإجمالية (FG)</h5>
+                        <h1 class="display-2 fw-bold text-success my-3">${finalFG}</h1>
+                        <div class="p-3 bg-light rounded border text-start" dir="rtl">
+                            <p class="mb-0 small text-dark fw-bold">
+                                <i class="fas fa-info-circle text-primary me-1"></i>
+                                لا تنس أن تضيف إليها صيغة المواد الخصوصية لكل شهادة جامعية للحصول على مجموع النقاط أو السكور النهائي.
+                            </p>
+                        </div>
+                    </div>
+                `,
+                icon: 'success',
+                confirmButtonText: 'حسناً، مفهوم',
+                confirmButtonColor: '#198754'
+            });
+
+            // إذا أردت تشغيل أي دالة أخرى، تضعها هنا مباشرة بعد إطلاق Swal
+            if (typeof shareon === 'function') shareon();
+
+        } else {
+            Swal.fire('خطأ', res.message, 'error');
+        }
+    },
+    error: function(xhr) {
+        $btn.prop('disabled', false).html(originalBtnHtml);
+        Swal.fire('خطأ', 'فشل الاتصال بالخادم، يرجى المحاولة لاحقاً', 'error');
+    }
+});
+};

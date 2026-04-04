@@ -1,0 +1,722 @@
+[
+  {
+    "codeOrientation": "12102",
+    "establishment_name": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "specialty_name": "الإجازة  في العربية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "34102",
+    "establishment_name": "المعهد العالي للغات بالمكنين)جامعة",
+    "specialty_name": "الإجازة  في الإنقليزية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "54102",
+    "establishment_name": "المعهد العالي للعلوم الإنسانية بمدنين)جامعة قابس(",
+    "specialty_name": "الإجازة  في الإنقليزية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "80102",
+    "establishment_name": "المعهد العالي للعلوم الإنسانية بجندوبة)جامعة جندوبة(",
+    "specialty_name": "الإجازة  في الإنقليزية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 6
+  },
+  {
+    "codeOrientation": "11103",
+    "establishment_name": "كلية الآداب  والفنون والإنسانيات بمنوبة)جامعة منوبة(",
+    "specialty_name": "الإجازة  في الإنقليزية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 6
+  },
+  {
+    "codeOrientation": "30103",
+    "establishment_name": "كلية الآداب  والعلوم الإنسانية بسوسة)جامعة سوسة(",
+    "specialty_name": "الإجازة  في الفرنسية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 6
+  },
+  {
+    "codeOrientation": "40103",
+    "establishment_name": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "specialty_name": "الإجازة  في الفرنسية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 6
+  },
+  {
+    "codeOrientation": "63103",
+    "establishment_name": "المعهد العالي للدراسات التطبيقية في الإنسانيات  بتوزر)جامعة قفصة(",
+    "specialty_name": "الإجازة  في الفرنسية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "11104",
+    "establishment_name": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "specialty_name": "الإجازة  في الفرنسية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "40104",
+    "establishment_name": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "specialty_name": "الإجازة  في الإسبانية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "22105",
+    "establishment_name": "المعهد العالي للغات بنابل)جامعة",
+    "specialty_name": "الإجازة  في الإيطالية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "50106",
+    "establishment_name": "المعهد العالي للغات بقابس)جامعة",
+    "specialty_name": "الإجازة  في الألمانية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "70147",
+    "establishment_name": "كلية الآداب  والعلوم الإنسانية بالقيروان)جامعة القيروان(",
+    "specialty_name": "الإجازة  في الترجمة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "10120",
+    "establishment_name": "كلية العلوم الإنسانية  والإجتماعية بتونس)جامعة تونس(",
+    "specialty_name": "الإجازة  في الأنتروبولوجيا",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "60120",
+    "establishment_name": "المعهد العالي للدراسات التطبيقية في الانسانيات  بقفصة)جامعة قفصة(",
+    "specialty_name": "الإجازة  في عـلــم الاجتماع",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "11122",
+    "establishment_name": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "specialty_name": "الإجازة   في علم النـفـــس",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 6
+  },
+  {
+    "codeOrientation": "80123",
+    "establishment_name": "المعهد العالي للعلوم الإنسانية بجندوبة)جامعة جندوبة(",
+    "specialty_name": "الإجازة  في التاريخ",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "10138",
+    "establishment_name": "المعهد العالي للحضارة الإسلامية بتونس) جامعة الزيتونة(",
+    "specialty_name": "الإجازة  في الجغرافيا",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "80159",
+    "establishment_name": "المعهد العالي للعلوم الإنسانية بجندوبة)جامعة جندوبة(",
+    "specialty_name": "الإجازة  في العلوم الشرعية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "10162",
+    "establishment_name": "المعهد العالى لمهن التراث بتونس)جامعة تونس(",
+    "specialty_name": "الإجازة  في حفظ الممتلكات الثقافية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "50477",
+    "establishment_name": "المعهد العالي للغات بقابس)جامعة",
+    "specialty_name": "الإجازة  في التربية المختصة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "63477",
+    "establishment_name": "المعهد العالي للدراسات التطبيقية في الإنسانيات  بتوزر)جامعة قفصة(",
+    "specialty_name": "الإجازة  في التربية والتعليم",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "10548",
+    "establishment_name": "المعهد الوطني للشغل والدراسات الإجتماعية  بتونس)جامعة  قرطاج(",
+    "specialty_name": "الإجازة  في التربية والتعليم",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "10612",
+    "establishment_name": "معهد الصحافة وعلوم الإخبار)جامعة",
+    "specialty_name": "الإجازة  في الاتصال",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "40450",
+    "establishment_name": "المعهد العالي للرياضة و التربية البدنية بصفاقس)جامعة صفاقس(",
+    "specialty_name": "الإجازة  في التنشيط السياحي",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "10452",
+    "establishment_name": "المعهد العالي للدراسات السياحية والفندقية بسيدي الظريف)جامعة",
+    "specialty_name": "الإجازة  في علوم وتقنيات الأنشطة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "10453",
+    "establishment_name": "المعهد العالي للدراسات السياحية والفندقية بسيدي الظريف)جامعة",
+    "specialty_name": "الإجازة  في الفندقة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "10200",
+    "establishment_name": "المعهدالعالي للفن  المسرحي بتونس)جامعة تونس(",
+    "specialty_name": "الإجازة  في المحافظة على الممتلكات",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "30201",
+    "establishment_name": "المعهد العالي للموسيقى بسوسة)جامعة سوسة(",
+    "specialty_name": "الإجازة  في المسرح  و فنون العرض",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "60201",
+    "establishment_name": "المعهد العالي للفنون و الحرف بقفصة)جامعة قفصة(",
+    "specialty_name": "الإجازة  في الموسيقى و العلوم",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 6
+  },
+  {
+    "codeOrientation": "40202",
+    "establishment_name": "المعهد العالى للفنون و الحرف بصفاقس)جامعة صفاقس(",
+    "specialty_name": "الإجازة  في الفنون التشكيلية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "70202",
+    "establishment_name": "المعهد العالي للفنون والحرف بالقيروان)جامعة القيروان(",
+    "specialty_name": "الإجازة  في الفنون التشكيلية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "22207",
+    "establishment_name": "المعهد العالى للفنون الجميلة بنابل)جامعة  قرطاج(",
+    "specialty_name": "الإجازة  في الفنون التشكيلية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "50207",
+    "establishment_name": "المعهد العالي للفنون و الحرف بقابس)جامعة قابس(",
+    "specialty_name": "الإجازة  في تصميم الفضاء",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "70207",
+    "establishment_name": "المعهد العالي للفنون والحرف بالقيروان)جامعة القيروان(",
+    "specialty_name": "الإجازة  في تصميم الفضاء",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "10208",
+    "establishment_name": "المعهد العالى للفنون الجميلة بتونس)جامعة تونس(",
+    "specialty_name": "الإجازة  في تصميم الفضاء",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "86209",
+    "establishment_name": "المعهد العالي للفنون و الحرف بسليانة)جامعة جندوبة(",
+    "specialty_name": "الإجازة  في هندسة الصوت",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "40622",
+    "establishment_name": "المعهد العالى للفنون و الحرف بصفاقس)جامعة صفاقس(",
+    "specialty_name": "الإجازة  في السينما والسمعي البصري",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "40301",
+    "establishment_name": "كلية الحقوق بصفاقس)جامعة",
+    "specialty_name": "الإجازة  في القانون",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "70301",
+    "establishment_name": "المعهد العالي للدراسات القانونية والسياسية  بالقيروان)جامعة",
+    "specialty_name": "الإجازة  في القانون",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "11318",
+    "establishment_name": "والتجارية بتونس)جامعة تونس( المدرسة العليا للتجارة بمنوبة)جامعة",
+    "specialty_name": "الإجازة  في علوم  التصرف",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "20318",
+    "establishment_name": "المعهد العالي للتصرف ببنزرت)جامعة  قرطاج(",
+    "specialty_name": "الإجازة  في علوم  التصرف",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "33318",
+    "establishment_name": "كلية العلوم الإقتصادية   والتصرف بسوسة)جامعة سوسة(",
+    "specialty_name": "الإجازة  في علوم  التصرف",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "43318",
+    "establishment_name": "معهد الدراسات العليا التجارية بصفاقس)جامعة صفاقس(",
+    "specialty_name": "الإجازة  في علوم  التصرف",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "10347",
+    "establishment_name": "المعهد الوطني للشغل والدراسات الإجتماعية  بتونس)جامعة  قرطاج(",
+    "specialty_name": "الإجازة  في علوم  التصرف",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "22391",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية بنابل)الإدارة  العامة للدراسات",
+    "specialty_name": "الإجازة  في إدارة الأعمال",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "55391",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في إدارة الأعمال",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "82391",
+    "establishment_name": "المعهد العالى للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في إدارة الأعمال",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "11311",
+    "establishment_name": "والتجارية بتونس)جامعة تونس( بمنوبة)جامعة منوبة(",
+    "specialty_name": "الإجازة  في إعلامية  التـصـرف",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "22311",
+    "establishment_name": "كلية العلوم الإقتصادية  والتصرف بنابل)جامعة  قرطاج(",
+    "specialty_name": "الإجازة  في إعلامية  التـصـرف",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "42311",
+    "establishment_name": "المعهد العالي لادارة  الاعمال بصفاقس)جامعة صفاقس(",
+    "specialty_name": "الإجازة  في إعلامية  التـصـرف",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "80311",
+    "establishment_name": "كلية العلوم القانونية والإقتصادية والتصرف بجندوبة)جامعة جندوبة(",
+    "specialty_name": "الإجازة  في إعلامية  التـصـرف",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "40501",
+    "establishment_name": "كلية العلوم بقابس)جامعة قابس(",
+    "specialty_name": "الإجازة  في الكيمياء",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "10503",
+    "establishment_name": "كلية العلوم بتونس)جامعة تونس",
+    "specialty_name": "الإجازة  في الفيزياء و الكيمياء",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "30504",
+    "establishment_name": "كلية العلوم بالمنستير)جامعة",
+    "specialty_name": "الإجازة  في الفيزياء",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "34507",
+    "establishment_name": "كلية العلوم بصفاقس)جامعة",
+    "specialty_name": "الإجازة  في الرياضيات",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "60510",
+    "establishment_name": "كلية العلوم بقفصة)جامعة قفصة(",
+    "specialty_name": "الإجازة  في علوم الأرض",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "31523",
+    "establishment_name": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بسوسة)جامعة سوسة(",
+    "specialty_name": "الإجازة  في علوم الإعلامية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "50523",
+    "establishment_name": "كلية العلوم بقابس)جامعة قابس(",
+    "specialty_name": "الإجازة  في علوم الإعلامية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "73523",
+    "establishment_name": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بالقصرين)جامعة",
+    "specialty_name": "الإجازة  في علوم الإعلامية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "20524",
+    "establishment_name": "كلية العلوم ببنزرت)جامعة  قرطاج(",
+    "specialty_name": "الإجازة  في هندسة نظم الإعلامية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "51524",
+    "establishment_name": "المعهد العالي للإعلامية   و الملتيميديا بقابس)جامعة قابس(",
+    "specialty_name": "الإجازة  في هندسة نظم الإعلامية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "34550",
+    "establishment_name": "كلية العلوم بالمنستير)جامعة",
+    "specialty_name": "الإجازة  في هندسة نظم الإعلامية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "54566",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في تكنولوجيات الإعلامية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "63566",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في تكنولوجيات الإعلامية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "82566",
+    "establishment_name": "المعهد العالى للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في تكنولوجيات الإعلامية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "30568",
+    "establishment_name": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بسوسة)جامعة سوسة(",
+    "specialty_name": "الإجازة  في الهندسـة المدنية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "34570",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في الهندسـة الميكانـيـكـيـة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 6
+  },
+  {
+    "codeOrientation": "52570",
+    "establishment_name": "المعهد العالي للمنظومات الصناعية بقابس)جامعة قابس(",
+    "specialty_name": "الإجازة  في الهندسـة الميكانـيـكـيـة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 6
+  },
+  {
+    "codeOrientation": "60570",
+    "establishment_name": "كلية العلوم بقفصة)جامعة قفصة(",
+    "specialty_name": "الإجازة  في الهندسـة الميكانـيـكـيـة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "74570",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في الهندسـة الميكانـيـكـيـة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "22571",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية بنابل)الإدارة  العامة للدراسات",
+    "specialty_name": "الإجازة  في الهندسـة الميكانـيـكـيـة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "56571",
+    "establishment_name": "المعهد العالى للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في الهندسـة الكهـربـائـيــة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "84571",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في الهندسـة الكهـربـائـيــة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "21573",
+    "establishment_name": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بماطر)جامعة  قرطاج(",
+    "specialty_name": "الإجازة  في تكنولوجيات المعلومات",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "50573",
+    "establishment_name": "المعهد العالي للإعلامية   و الملتيميديا بقابس)جامعة قابس(",
+    "specialty_name": "الإجازة  في تكنولوجيات المعلومات",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 6
+  },
+  {
+    "codeOrientation": "50576",
+    "establishment_name": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقابس)جامعة قابس(",
+    "specialty_name": "الإجازة  في هندسة النسيج",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  },
+  {
+    "codeOrientation": "40597",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية بصفاقس)الإدارة  العامة للدراسات",
+    "specialty_name": "الإجازة  في هندسة الأساليب",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "57604",
+    "establishment_name": "المعهد العالي للدراسات التكنولوجية",
+    "specialty_name": "الإجازة  في الهندسة  الطاقية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "31629",
+    "establishment_name": "بحمام سوسة)جامعة سوسة(",
+    "specialty_name": "الإجازة  في الإلكترونيك  والكهروتقنية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "51629",
+    "establishment_name": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقابس)جامعة قابس(",
+    "specialty_name": "الإجازة  في الإلكترونيك  والكهروتقنية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "30672",
+    "establishment_name": "المعهد العالي للنقل واللوجستية بسوسة)جامعة سوسة(",
+    "specialty_name": "الإجازة  في الإلكترونيك  والكهروتقنية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "11422",
+    "establishment_name": "كلية العلوم بتونس)جامعة تونس",
+    "specialty_name": "الإجازة  في التعمير و التهيئة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "30700",
+    "establishment_name": "كلية الطب بسوسة)جامعة سوسة(",
+    "specialty_name": "الإجازة  في البيوتكنولوجيا الطبية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 4
+  },
+  {
+    "codeOrientation": "10740",
+    "establishment_name": "بصفاقس)جامعة صفاقس( الصحة بقفصة)جامعة قفصة(",
+    "specialty_name": "الإجازة  في مبحث وتدريم القدم",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 5
+  },
+  {
+    "codeOrientation": "34744",
+    "establishment_name": "بتونس)جامعة تونس المنار( بتونس)جامعة تونس المنار(",
+    "specialty_name": "الإجازة  في البيولوجيا الطبية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "40750",
+    "establishment_name": "المعهد العالي للتكنولوجيات الطبية بتونس)جامعة تونس المنار(",
+    "specialty_name": "الإجازة  في المبصريات و النظارات",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "51797",
+    "establishment_name": "المعهد العالي لعلوم التمريض بقابس)جامعة قابس(",
+    "specialty_name": "الإجازة  في علوم التمريض",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 3
+  },
+  {
+    "codeOrientation": "34799",
+    "establishment_name": "بصفاقس)جامعة صفاقس(",
+    "specialty_name": "الإجازة  في علوم الـتــولـيـــد - قابلة",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 2
+  },
+  {
+    "codeOrientation": "21844",
+    "establishment_name": "المعهد العالي للعلوم الفلاحية  بشط مريم)جامعة سوسة(",
+    "specialty_name": "الإجازة  في علوم وتقنيات الأغذية",
+    "issue": "score_section_mismatch",
+    "expected": 7,
+    "found": 1
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "codeOrientation": "10377",
+    "establishment_name": "البكالوريوس في إدارة الأعمال  المعهد العالي للأعمال بتونس (جامعة",
+    "specialty_name": "موجه",
+    "issue": "section_score_count_mismatch",
+    "sections_found": 5,
+    "scores_found": 0,
+    "sections": [
+      "رياضيات",
+      "علوم تجريبية",
+      "إقتصاد وتصرف",
+      "العلوم التقنية",
+      "علوم الإعلامية"
+    ]
+  },
+  {
+    "codeOrientation": "11518",
+    "establishment_name": "المعهد العالي للهندسة الرقمية بتونس  (جامعة تونس)",
+    "specialty_name": "189,802",
+    "issue": "section_score_count_mismatch",
+    "sections_found": 4,
+    "scores_found": 0,
+    "sections": [
+      "رياضيات",
+      "علوم تجريبية",
+      "العلوم التقنية",
+      "علوم الإعلامية"
+    ]
+  }
+]

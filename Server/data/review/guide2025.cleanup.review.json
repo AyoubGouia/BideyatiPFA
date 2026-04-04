@@ -1,0 +1,461 @@
+[
+  {
+    "type": "specialty",
+    "codeOrientation": "12101",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للعلوم الإنسانية بتونس (جامعة اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للعلوم الإنسانية بتونس (جامعة"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "13101",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للغات بتونس (جامعة قرطاج ( اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للغات بتونس (جامعة قرطاج ("
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "22101",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للغات بنابل (جامعة قرطاج ( اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للغات بنابل (جامعة قرطاج ("
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "30101",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "كلية الآداب والعلوم الإنسانية بسوسة (جامعة اللغة والآداب والحضارة آداب",
+      "cleaned": "كلية الآداب والعلوم الإنسانية بسوسة (جامعة"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "40101",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "كلية الآداب والعلوم الإنسانية بصفاقس اللغة والآداب والحضارة آداب",
+      "cleaned": "كلية الآداب والعلوم الإنسانية بصفاقس"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "50101",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للغات بقابس (جامعة قابس ) اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للغات بقابس (جامعة قابس )"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "54101",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للعلوم الإنسانية بمدنين (جامعة اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للعلوم الإنسانية بمدنين (جامعة"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "70101",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "كلية الآداب والعلوم الإنسانية بالقيروان اللغة والآداب والحضارة آداب",
+      "cleaned": "كلية الآداب والعلوم الإنسانية بالقيروان"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "12102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للعلوم الإنسانية بتونس (جامعة - اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للعلوم الإنسانية بتونس (جامعة -"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "13102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للغات بتونس ( جامعة قرطاج ) اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للغات بتونس ( جامعة قرطاج )"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "22102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للغات بنابل ( جامعة قرطاج ) اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للغات بنابل ( جامعة قرطاج )"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "30102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "كلية الآداب والعلوم الإنسانية بسوسة (جامعة اللغة والآداب والحضارة آداب",
+      "cleaned": "كلية الآداب والعلوم الإنسانية بسوسة (جامعة"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "34102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للغات بالمكنين (جامعة اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للغات بالمكنين (جامعة"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "40102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "كلية الآداب والعلوم الإنسانية بصفاقس - اللغة والآداب والحضارة آداب",
+      "cleaned": "كلية الآداب والعلوم الإنسانية بصفاقس -"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "50102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للغات بقابس (جامعة قابس ) اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للغات بقابس (جامعة قابس )"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "54102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للعلوم الإنسانية بمدنين (جامعة اللغة والآداب والحضارة آداب",
+      "cleaned": "المعهد العالي للعلوم الإنسانية بمدنين (جامعة"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "70102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "كلية الآداب والعلوم الإنسانية بالقيروان اللغة والآداب والحضارة آداب",
+      "cleaned": "كلية الآداب والعلوم الإنسانية بالقيروان"
+    }
+  },
+  {
+    "type": "specialty",
+    "codeOrientation": "73102",
+    "issue": "Contains university/category markers after cleaning",
+    "data": {
+      "original": "المعهد العالي للدراسات التطبيقية في إنقليزية الأعمال آداب",
+      "cleaned": "المعهد العالي للدراسات التطبيقية في إنقليزية الأعمال آداب"
+    }
+  },
+  {
+    "type": "score",
+    "codeOrientation": "12102",
+    "issue": "Polluted section name cleaned from: - الأنقليزية والعلاقات الدولية    رياضيات to: رياضيات",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "12102",
+      "sectionBac": "- الأنقليزية والعلاقات الدولية    رياضيات",
+      "scoreDernierAdmis": 148.409
+    }
+  },
+  {
+    "type": "score",
+    "codeOrientation": "40102",
+    "issue": "Polluted section name cleaned from: - إنقليزية الأعمال    رياضيات to: رياضيات",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "40102",
+      "sectionBac": "- إنقليزية الأعمال    رياضيات",
+      "scoreDernierAdmis": 138.062
+    }
+  },
+  {
+    "type": "score",
+    "codeOrientation": "40102",
+    "issue": "Polluted section name cleaned from: - ترجمة    علوم تجريبية to: علوم تجريبية",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "40102",
+      "sectionBac": "- ترجمة    علوم تجريبية",
+      "scoreDernierAdmis": 70.275
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10101",
+    "issue": "Duplicate (10101, رياضيات, 2024) with conflicting scores: 130.941, 124.842",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10101",
+      "sectionBac": "رياضيات",
+      "scoreDernierAdmis": 130.941
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10101",
+    "issue": "Duplicate (10101, رياضيات, 2024) with conflicting scores: 130.941, 124.842",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10101",
+      "sectionBac": "رياضيات",
+      "scoreDernierAdmis": 124.842
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10101",
+    "issue": "Duplicate (10101, علوم تجريبية, 2024) with conflicting scores: 73.875, 80.197",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10101",
+      "sectionBac": "علوم تجريبية",
+      "scoreDernierAdmis": 73.875
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10101",
+    "issue": "Duplicate (10101, علوم تجريبية, 2024) with conflicting scores: 73.875, 80.197",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10101",
+      "sectionBac": "علوم تجريبية",
+      "scoreDernierAdmis": 80.197
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10101",
+    "issue": "Duplicate (10101, إقتصاد وتصرف, 2024) with conflicting scores: 98.189, 107.011",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10101",
+      "sectionBac": "إقتصاد وتصرف",
+      "scoreDernierAdmis": 98.189
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10101",
+    "issue": "Duplicate (10101, إقتصاد وتصرف, 2024) with conflicting scores: 98.189, 107.011",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10101",
+      "sectionBac": "إقتصاد وتصرف",
+      "scoreDernierAdmis": 107.011
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10101",
+    "issue": "Duplicate (10101, علوم الإعلامية, 2024) with conflicting scores: 95.241, 98.497",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10101",
+      "sectionBac": "علوم الإعلامية",
+      "scoreDernierAdmis": 95.241
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10101",
+    "issue": "Duplicate (10101, علوم الإعلامية, 2024) with conflicting scores: 95.241, 98.497",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10101",
+      "sectionBac": "علوم الإعلامية",
+      "scoreDernierAdmis": 98.497
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, رياضيات, 2024) with conflicting scores: 151.817, 132.98",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "رياضيات",
+      "scoreDernierAdmis": 151.817
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, رياضيات, 2024) with conflicting scores: 151.817, 132.98",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "رياضيات",
+      "scoreDernierAdmis": 132.98
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, علوم تجريبية, 2024) with conflicting scores: 107.594, 94.349",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "علوم تجريبية",
+      "scoreDernierAdmis": 107.594
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, علوم تجريبية, 2024) with conflicting scores: 107.594, 94.349",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "علوم تجريبية",
+      "scoreDernierAdmis": 94.349
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, إقتصاد وتصرف, 2024) with conflicting scores: 122.966, 131.947",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "إقتصاد وتصرف",
+      "scoreDernierAdmis": 122.966
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, إقتصاد وتصرف, 2024) with conflicting scores: 122.966, 131.947",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "إقتصاد وتصرف",
+      "scoreDernierAdmis": 131.947
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, علوم الإعلامية, 2024) with conflicting scores: 143.525, 168.926",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "علوم الإعلامية",
+      "scoreDernierAdmis": 143.525
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, علوم الإعلامية, 2024) with conflicting scores: 143.525, 168.926",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "علوم الإعلامية",
+      "scoreDernierAdmis": 168.926
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, رياضة, 2024) with conflicting scores: 113.238, 130.895",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "رياضة",
+      "scoreDernierAdmis": 113.238
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10102",
+    "issue": "Duplicate (10102, رياضة, 2024) with conflicting scores: 113.238, 130.895",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10102",
+      "sectionBac": "رياضة",
+      "scoreDernierAdmis": 130.895
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10103",
+    "issue": "Duplicate (10103, رياضيات, 2024) with conflicting scores: 115.104, 118.627",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10103",
+      "sectionBac": "رياضيات",
+      "scoreDernierAdmis": 115.104
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10103",
+    "issue": "Duplicate (10103, رياضيات, 2024) with conflicting scores: 115.104, 118.627",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10103",
+      "sectionBac": "رياضيات",
+      "scoreDernierAdmis": 118.627
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10103",
+    "issue": "Duplicate (10103, علوم تجريبية, 2024) with conflicting scores: 79.237, 81.497",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10103",
+      "sectionBac": "علوم تجريبية",
+      "scoreDernierAdmis": 79.237
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10103",
+    "issue": "Duplicate (10103, علوم تجريبية, 2024) with conflicting scores: 79.237, 81.497",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10103",
+      "sectionBac": "علوم تجريبية",
+      "scoreDernierAdmis": 81.497
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10103",
+    "issue": "Duplicate (10103, إقتصاد وتصرف, 2024) with conflicting scores: 102.952, 101.06",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10103",
+      "sectionBac": "إقتصاد وتصرف",
+      "scoreDernierAdmis": 102.952
+    }
+  },
+  {
+    "type": "duplicate",
+    "codeOrientation": "10103",
+    "issue": "Duplicate (10103, إقتصاد وتصرف, 2024) with conflicting scores: 102.952, 101.06",
+    "data": {
+      "annee": 2024,
+      "codeOrientation": "10103",
+      "sectionBac": "إقتصاد وتصرف",
+      "scoreDernierAdmis": 101.06
+    }
+  }
+]
