@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import type { Page } from '../../App'
+import { useRegistration } from '../../context/RegistrationContext'
 import s from './StepLayout.module.css'
 import BrandHeader from './BrandHeader'
 import bgForm from '../../assets/bg-form.png'
@@ -10,6 +11,7 @@ interface FormState {
   nom: string
   prenom: string
   dob: string
+  numeroBAC: string
   email: string
   pwd: string
   confirm: string
@@ -36,7 +38,17 @@ function EyeIcon({ open }: { open: boolean }) {
 }
 
 export default function RegisterPage({ nav }: Props) {
-  const [form, setForm] = useState<FormState>({ nom: '', prenom: '', dob: '', email: '', pwd: '', confirm: '' })
+  const { data, updateData } = useRegistration();
+  
+  const [form, setForm] = useState<FormState>({ 
+    nom: data.nom || '', 
+    prenom: data.prenom || '', 
+    dob: data.dob || '', 
+    numeroBAC: data.numeroBAC || '',
+    email: data.email || '', 
+    pwd: data.pwd || '', 
+    confirm: data.confirm || '' 
+  })
   const [showPwd,  setShowPwd]  = useState(false)
   const [showConf, setShowConf] = useState(false)
   const [errors,   setErrors]   = useState<Record<string, string>>({})
@@ -55,6 +67,7 @@ export default function RegisterPage({ nav }: Props) {
     if (!form.nom.trim())    e.nom    = 'Le nom est obligatoire.'
     if (!form.prenom.trim()) e.prenom = 'Le prénom est obligatoire.'
     if (!form.dob)           e.dob    = 'La date de naissance est obligatoire.'
+    if (!form.numeroBAC.trim()) e.numeroBAC = 'Le numéro du Bac est obligatoire.'
     if (!form.email.trim())  e.email  = 'L\'email est obligatoire.'
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = 'L\'email n\'est pas valide.'
     if (!form.pwd)           e.pwd    = 'Le mot de passe est obligatoire.'
@@ -104,6 +117,15 @@ export default function RegisterPage({ nav }: Props) {
             </div>
 
             <div className={s.fieldWrap}>
+              <label className={s.label} htmlFor="r-bac">Numéro d'inscription au Bac *</label>
+              <input id="r-bac" type="text"
+                className={`${s.input} ${errors.numeroBAC ? s.inputError : ''}`}
+                placeholder="Votre numéro d'inscription" value={form.numeroBAC}
+                onChange={e => setField('numeroBAC', e.target.value)} />
+              {errors.numeroBAC && <span className={s.errMsg}>{errors.numeroBAC}</span>}
+            </div>
+
+            <div className={s.fieldWrap}>
               <label className={s.label} htmlFor="r-email">Email *</label>
               <input id="r-email" type="email"
                 className={`${s.input} ${errors.email ? s.inputError : ''}`}
@@ -146,7 +168,12 @@ export default function RegisterPage({ nav }: Props) {
 
         <div className={s.navRow}>
           <button className={s.btnPrev} onClick={() => nav('home')}>Retour</button>
-          <button className={s.btnNext} onClick={() => { if (validate()) nav('bac') }}>Suivant</button>
+          <button className={s.btnNext} onClick={() => { 
+            if (validate()) {
+              updateData(form);
+              nav('bac');
+            }
+          }}>Suivant</button>
         </div>
       </div>
       <p className={s.footer}>© 2026 Bideyety  | Tous droits réservés.</p>

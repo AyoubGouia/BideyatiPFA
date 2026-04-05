@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { Page } from '../App'
+import { useAuth } from '../context/AuthContext'
 import s      from './FormPage.module.css'
 import bgForm from '../assets/bg-form.png'
 
@@ -10,9 +11,38 @@ export default function FormPage({ nav }: Props) {
   const [pwd,     setPwd]     = useState('')
   const [showPwd, setShowPwd] = useState(false)
   const [active,  setActive]  = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState('')
+  const { login } = useAuth()
 
   const handleFocus = () => setActive(true)
   const handleBlur  = () => { if (!email && !pwd) setActive(false) }
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email || !pwd) {
+      setError('Veuillez remplir tous les champs');
+      return;
+    }
+    
+    setIsLoading(true);
+    setError('');
+    
+    try {
+      await login({ email, motDePasse: pwd });
+      nav('home');
+    } catch (err: any) {
+      if (err.response?.data?.error) {
+        setError(err.response.data.error);
+      } else if (err.response?.data?.details) {
+        setError('Erreur de validation des champs');
+      } else {
+        setError('Email ou mot de passe incorrect');
+      }
+    } finally {
+      setIsLoading(false);
+    }
+  }
 
   return (
     <div className={s.page}>
@@ -37,7 +67,10 @@ export default function FormPage({ nav }: Props) {
             Connectez-vous pour explorer toutes les possibilités d'orientation.
           </p>
 
-          <div className={s.field}>
+          {error && <div style={{ color: '#d96a10', marginBottom: '1rem', fontSize: '0.9rem', textAlign: 'center', backgroundColor: '#fef1e8', padding: '0.5rem', borderRadius: '4px' }}>{error}</div>}
+
+          <form onSubmit={handleLogin}>
+            <div className={s.field}>
             <input
               className={`${s.input} ${email ? s.inputFilled : ''}`}
               type="email" placeholder="Email"
@@ -81,9 +114,17 @@ export default function FormPage({ nav }: Props) {
           </div>
 
           <div className={s.actions}>
-            <button className={s.btnConnect} type="button" onClick={() => nav('home')}>SE CONNECTER</button>
+            <button 
+              className={s.btnConnect} 
+              type="submit" 
+              disabled={isLoading}
+              style={{ opacity: isLoading ? 0.7 : 1, cursor: isLoading ? 'not-allowed' : 'pointer' }}
+            >
+              {isLoading ? 'CONNEXION...' : 'SE CONNECTER'}
+            </button>
             <button className={s.btnRegister} type="button" onClick={() => nav('register')}>S'INSCRIRE</button>
           </div>
+          </form>
 
         </div>
       </div>

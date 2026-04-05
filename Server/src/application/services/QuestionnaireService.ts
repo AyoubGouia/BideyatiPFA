@@ -13,7 +13,7 @@ export class QuestionnaireService {
   async submit(input: {
     userId: string;
     reponses: { question: string; reponse: string }[];
-    notes: { valeur: number; annee: number; matiereId: string }[];
+    notes: { valeur: number; annee: number; matiereNom: string }[];
   }) {
     const existing = await this.questionnaireRepository.findQuestionnaireByUserId(input.userId);
     if (existing) {
@@ -34,10 +34,28 @@ export class QuestionnaireService {
     const moyenneBac = studentProfile.moyenneBac;
     const scorePondere = this.calculerScorePondere(moyenneBac);
 
+    // Resolve Matieres from names
+    const resolvedNotes = [];
+    for (const note of input.notes) {
+      let matiere = await prisma.matiere.findFirst({
+        where: { nom: note.matiereNom }
+      });
+      if (!matiere) {
+        matiere = await prisma.matiere.create({
+          data: { nom: note.matiereNom }
+        });
+      }
+      resolvedNotes.push({
+        valeur: note.valeur,
+        annee: note.annee,
+        matiereId: matiere.id
+      });
+    }
+
     await this.questionnaireRepository.saveQuestionnaireAndNotes({
       userId: input.userId,
       reponses: input.reponses,
-      notes: input.notes,
+      notes: resolvedNotes,
       moyenneBac,
       scorePondere,
     });

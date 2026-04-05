@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import type { Page } from '../../App'
+import { useRegistration } from '../../context/RegistrationContext'
+import { useAuth } from '../../context/AuthContext'
+import { authApi } from '../../api/authApi'
 import s from './StepLayout.module.css'
 import BrandHeader from './BrandHeader'
 import bgForm from '../../assets/bg-form.png'
@@ -33,11 +36,18 @@ const QUESTIONS: Question[] = [
 const SECTION_ORDER = ["Centres d'intérêt",'Matières préférées','Compétences','Personnalité','Futur professionnel','Motivations','Questions originales']
 
 export default function QcmPage({ nav }: Props) {
+  const { data, clearData } = useRegistration();
+  const { registerFlow } = useAuth();
+
   const [answers, setAnswers] = useState<Record<string, Set<string>>>(
-    () => Object.fromEntries(QUESTIONS.map(q => [q.id, new Set<string>()]))
+    () => {
+      if (data.answers) return data.answers;
+      return Object.fromEntries(QUESTIONS.map(q => [q.id, new Set<string>()]))
+    }
   )
   const [unanswered, setUnanswered] = useState<Set<string>>(new Set())
   const [globalError, setGlobalError] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
 
   const toggle = (qId: string, label: string, multi: boolean) => {
     setAnswers(prev => {
@@ -60,6 +70,51 @@ export default function QcmPage({ nav }: Props) {
     }
     return true
   }
+
+  const handleTerminer = async () => {
+    if (!validate()) return;
+    setIsLoading(true);
+    setGlobalError('');
+
+    try {
+      // 1. Submit Registration
+      await registerFlow({
+        nom: data.nom,
+        prenom: data.prenom,
+        email: data.email,
+        telephone: '00000000', // Hardcoded fallback for missing UI field
+        motDePasse: data.pwd,
+        numeroBAC: data.numeroBAC,
+        moyenneBac: parseFloat(data.moyenneBac || '0')
+      });
+
+      // 2. Format Questionnaire Responses
+      const formattedReponses = QUESTIONS.map(q => {
+        const reps = Array.from(answers[q.id] || new Set());
+        return reps.map(r => ({ question: q.sub, reponse: r }));
+      }).flat();
+
+      // 3. Format Notes
+      const notesObj = data.notes || {};
+      const formattedNotes = Object.entries(notesObj).map(([matiereNom, valeur]) => ({
+        valeur: parseFloat(valeur),
+        annee: new Date().getFullYear(),
+        matiereNom
+      }));
+
+      // 4. Submit Questionnaire & Notes
+      await authApi.submitQuestionnaire({
+        reponses: formattedReponses,
+        notes: formattedNotes
+      });
+
+      clearData();
+      nav('home');
+    } catch (err: any) {
+      setGlobalError(err.response?.data?.error || 'Une erreur est survenue lors de l\'enregistrement.');
+      setIsLoading(false);
+    }
+  };
 
   const grouped: Record<string, Question[]> = {}
   QUESTIONS.forEach(q => { (grouped[q.section] = grouped[q.section] ?? []).push(q) })
@@ -114,8 +169,10 @@ export default function QcmPage({ nav }: Props) {
         })}
 
         <div className={s.navRow}>
-          <button className={s.btnPrev} onClick={() => nav('bac')}>Retour</button>
-          <button className={s.btnNext} onClick={() => { if (validate()) nav('home') }}>Terminer</button>
+          <button className={s.btnPrev} onClick={() => nav('bac')} disabled={isLoading}>Retour</button>
+          <button className={s.btnNext} onClick={handleTerminer} disabled={isLoading}>
+            {isLoading ? 'Chargement...' : 'Terminer'}
+          </button>
         </div>
       </div>
       <p className={s.footer}>© 2026 Bideyety  | Tous droits réservés.</p>

@@ -22,7 +22,7 @@ export const submitQuestionnaireSchema = z.object({
   notes: z
     .array(
       z.object({
-        matiereId: z.string().min(1, "matiereId is required"),
+        matiereNom: z.string().min(1, "matiereNom is required"),
         annee: z.preprocess(toInt, z.number().int().min(1900).max(2100)),
         valeur: z.preprocess(toFloat, z.number().finite().nonnegative()),
       })

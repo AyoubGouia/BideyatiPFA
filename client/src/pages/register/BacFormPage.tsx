@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import type { Page } from '../../App'
+import { useRegistration } from '../../context/RegistrationContext'
 import s from './StepLayout.module.css'
 import BrandHeader from './BrandHeader'
 import bgForm from '../../assets/bg-form.png'
@@ -21,10 +22,12 @@ const SUBJECTS: Record<Section, string[]> = {
 const SECTIONS: Section[] = ['Math', 'Science', 'Info', 'Technique', 'Lettre', 'Économie', 'Sport']
 
 export default function BacFormPage({ nav }: Props) {
-  const [section,  setSection]  = useState<Section>('Math')
-  const [session,  setSession]  = useState('Principale')
-  const [moyenne,  setMoyenne]  = useState('')
-  const [notes,    setNotes]    = useState<Record<string, string>>({})
+  const { data, updateData } = useRegistration();
+
+  const [section,  setSection]  = useState<Section>((data.section as Section | undefined) || 'Math')
+  const [session,  setSession]  = useState(data.session || 'Principale')
+  const [moyenne,  setMoyenne]  = useState(data.moyenneBac || '')
+  const [notes,    setNotes]    = useState<Record<string, string>>(data.notes || {})
   const [errors,   setErrors]   = useState<Record<string, string>>({})
 
   const subjects = SUBJECTS[section]
@@ -120,7 +123,12 @@ export default function BacFormPage({ nav }: Props) {
 
         <div className={s.navRow}>
           <button className={s.btnPrev} onClick={() => nav('register')}>Retour</button>
-          <button className={s.btnNext} onClick={() => { if (validate()) nav('qcm') }}>Suivant</button>
+          <button className={s.btnNext} onClick={() => { 
+            if (validate()) {
+              updateData({ section, session, moyenneBac: moyenne, notes });
+              nav('qcm');
+            }
+          }}>Suivant</button>
         </div>
       </div>
       <p className={s.footer}>© 2026 Bideyety  | Tous droits réservés.</p>
