@@ -11,7 +11,23 @@ export class UserRepository implements IUserRepository {
     return prisma.user.findUnique({ where: { email } });
   }
 
+  async findByNumeroBac(numeroBac: string): Promise<StudentProfile | null> {
+    return prisma.studentProfile.findUnique({ where: { numeroBac } });
+  }
+
+  private sectionMapping: Record<string, string> = {
+    Math: "رياضيات",
+    Science: "علوم تجريبية",
+    Info: "علوم الإعلامية",
+    Technique: "العلوم التقنية",
+    Lettre: "آداب",
+    "Économie": "إقتصاد وتصرف",
+    Sport: "رياضة",
+  };
+
   async createStudent(data: CreateStudentParams): Promise<{ user: User; profile: StudentProfile }> {
+    const sectionNom = this.sectionMapping[data.section] || data.section;
+
     const created = await prisma.user.create({
       data: {
         nom: data.nom,
@@ -21,6 +37,12 @@ export class UserRepository implements IUserRepository {
         motDePasseHash: data.motDePasseHash,
         actif: true,
         role: Role.STUDENT,
+        section: {
+          connectOrCreate: {
+            where: { nom: sectionNom },
+            create: { nom: sectionNom }
+          }
+        },
         studentProfile: {
           create: {
             numeroBac: data.numeroBac,

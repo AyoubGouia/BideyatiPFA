@@ -78,15 +78,18 @@ export default function QcmPage({ nav }: Props) {
 
     try {
       // 1. Submit Registration
+      console.log('[QcmPage] Step 1: Registering user...');
       await registerFlow({
         nom: data.nom,
         prenom: data.prenom,
         email: data.email,
-        telephone: '00000000', // Hardcoded fallback for missing UI field
+        telephone: '00000000',
         motDePasse: data.pwd,
         numeroBAC: data.numeroBAC,
-        moyenneBac: parseFloat(data.moyenneBac || '0')
+        moyenneBac: parseFloat(data.moyenneBac || '0'),
+        section: data.section || 'Math'
       });
+      console.log('[QcmPage] Step 1: Registration successful');
 
       // 2. Format Questionnaire Responses
       const formattedReponses = QUESTIONS.map(q => {
@@ -103,14 +106,17 @@ export default function QcmPage({ nav }: Props) {
       }));
 
       // 4. Submit Questionnaire & Notes
+      console.log('[QcmPage] Step 4: Submitting questionnaire...', { reponses: formattedReponses.length, notes: formattedNotes.length });
       await authApi.submitQuestionnaire({
         reponses: formattedReponses,
         notes: formattedNotes
       });
+      console.log('[QcmPage] Step 4: Questionnaire submitted');
 
       clearData();
       nav('home');
     } catch (err: any) {
+      console.error('[QcmPage] Error during registration flow:', err);
       setGlobalError(err.response?.data?.error || 'Une erreur est survenue lors de l\'enregistrement.');
       setIsLoading(false);
     }

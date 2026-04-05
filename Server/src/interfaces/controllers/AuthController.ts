@@ -45,6 +45,7 @@ export class AuthController {
         res.status(error.statusCode).json({ error: error.message, details: error.details });
         return;
       }
+      console.error("Registration error:", error);
       res.status(500).json({ error: "Registration failed" });
     }
   };

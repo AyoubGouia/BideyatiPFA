@@ -18,10 +18,16 @@ export class AuthService {
     motDePasse: string;
     numeroBAC: string;
     moyenneBac: number;
+    section: string;
   }): Promise<{ token: string }> {
-    const existing = await this.userRepository.findByEmail(input.email);
-    if (existing) {
+    const existingEmail = await this.userRepository.findByEmail(input.email);
+    if (existingEmail) {
       throw new HttpError(409, "Email already registered");
+    }
+
+    const existingBac = await this.userRepository.findByNumeroBac(input.numeroBAC);
+    if (existingBac) {
+      throw new HttpError(409, "Numéro BAC already registered");
     }
 
     const motDePasseHash = await bcrypt.hash(input.motDePasse, 10);
@@ -34,6 +40,7 @@ export class AuthService {
       motDePasseHash,
       numeroBac: input.numeroBAC,
       moyenneBac: input.moyenneBac,
+      section: input.section,
     });
 
     const payload: TokenPayload = {

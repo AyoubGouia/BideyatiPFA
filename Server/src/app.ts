@@ -1,8 +1,11 @@
 import express, { Application } from "express";
 import cors from "cors";
+import morgan from "morgan";
 import routes from "./interfaces/routes";
 
 const app: Application = express();
+
+app.use(morgan("dev")); // <-- Request logging package
 
 app.use(
   cors({

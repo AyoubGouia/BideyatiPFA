@@ -8,10 +8,12 @@ export interface CreateStudentParams {
   motDePasseHash: string;
   numeroBac: string;
   moyenneBac: number;
+  section: string;
 }
 
 export interface IUserRepository {
   findByEmail(email: string): Promise<User | null>;
   findById(id: string): Promise<User | null>;
+  findByNumeroBac(numeroBac: string): Promise<StudentProfile | null>;
   createStudent(data: CreateStudentParams): Promise<{ user: User; profile: StudentProfile }>;
 }

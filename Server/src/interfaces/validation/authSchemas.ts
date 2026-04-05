@@ -13,6 +13,7 @@ export const registerSchema = z.object({
   motDePasse: z.string().min(6, "motDePasse must be at least 6 characters"),
   numeroBAC: z.string().min(1, "numeroBAC is required"),
   moyenneBac: z.preprocess(toFloat, z.number().finite().nonnegative()),
+  section: z.string().min(1, "section is required"),
 });
 
 export const loginSchema = z.object({

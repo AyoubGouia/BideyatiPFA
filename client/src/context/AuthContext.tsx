@@ -33,8 +33,11 @@ export const AuthProvider: React.FC<{children: React.ReactNode}> = ({ children }
   };
 
   const registerFlow = async (data: any) => {
+    console.log('[AuthContext] registerFlow: Step 1 - Calling authApi.register');
     await authApi.register(data);
+    console.log('[AuthContext] registerFlow: Step 2 - Calling authApi.getProfile');
     const profile = await authApi.getProfile();
+    console.log('[AuthContext] registerFlow: Step 3 - Setting user profile', profile);
     setUser(profile);
     localStorage.setItem('bide_user', JSON.stringify(profile));
   };
