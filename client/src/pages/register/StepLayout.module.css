@@ -1,0 +1,396 @@
+/* ═══════════════════════════════════════════════════════════
+   Shared layout for all 3 registration steps
+   Matches the design: warm gradient bg, centred card, footer
+   ═══════════════════════════════════════════════════════════ */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(160deg, #e8f2f8 0%, #f5f0e5 100%);
+  font-family: var(--font);
+  padding: 0 0 0;
+}
+
+.scroll {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px 16px;
+  gap: 14px;
+  overflow-y: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Step indicator pill */
+.stepPill {
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  padding: 8px 28px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #4a5568;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  letter-spacing: 0.02em;
+  align-self: center;
+}
+
+/* Brand header card */
+.brandCard {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  padding: 20px 28px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 6px;
+}
+
+.brandName {
+  font-size: 24px;
+  font-weight: 900;
+  color: #F47920;
+  letter-spacing: 0.07em;
+}
+
+.brandIcon {
+  transform: rotate(-15deg) translateY(-2px);
+  display: flex;
+}
+
+.brandSub {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.3;
+}
+
+/* Section cards */
+.sectionCard {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  padding: 18px 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.07);
+}
+
+.sectionTitle {
+  font-size: 15.5px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 3px;
+}
+
+.sectionSub {
+  font-size: 12.5px;
+  color: #7a8a96;
+  margin-bottom: 14px;
+}
+
+/* Option grid: 2 columns */
+.optionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Option button */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f7f9fa;
+  border: 1.5px solid #e2eaee;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s, box-shadow 0.18s;
+  font-family: var(--font);
+  text-align: left;
+  line-height: 1.3;
+}
+
+.option:hover {
+  border-color: #F47920;
+  background: #fff8f3;
+}
+
+.optionSelected {
+  border-color: #F47920 !important;
+  background: #fff3ea !important;
+  box-shadow: 0 0 0 2px rgba(244,121,32,0.18);
+}
+
+.optionIcon {
+  font-size: 20px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* Checkbox square */
+.checkbox {
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid #c0cdd5;
+  border-radius: 3px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.checkboxChecked {
+  background: #F47920;
+  border-color: #F47920;
+}
+
+.checkmark {
+  width: 8px;
+  height: 8px;
+  fill: white;
+}
+
+/* Navigation buttons row */
+.navRow {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 400px;
+  padding: 4px 0 8px;
+}
+
+.btnPrev {
+  flex: 1;
+  border-radius: 50px;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background: #F47920;
+  color: #fff;
+  font-family: var(--font);
+  box-shadow: 0 4px 16px rgba(244,121,32,0.35);
+  transition: background 0.18s, transform 0.13s;
+}
+
+.btnNext {
+  flex: 1;
+  border-radius: 50px;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background: #F47920;
+  color: #fff;
+  font-family: var(--font);
+  box-shadow: 0 4px 16px rgba(244,121,32,0.35);
+  transition: background 0.18s, transform 0.13s;
+}
+
+.btnPrev:hover, .btnNext:hover {
+  background: #d96a10;
+  transform: translateY(-1px);
+}
+
+.btnPrev:active, .btnNext:active { transform: none; }
+
+/* Footer */
+.footer {
+  font-size: 11.5px;
+  color: rgba(50,70,90,0.50);
+  text-align: center;
+  padding: 10px 20px 16px;
+}
+
+/* ── Input fields (used in step 1 & 2) ── */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 2px;
+}
+
+.input {
+  width: 100%;
+  border: 1.5px solid #e2eaee;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #2c3e50;
+  background: #fff;
+  font-family: var(--font);
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+
+.input::placeholder { color: #c4cfd7; }
+.input:focus {
+  border-color: #F47920;
+  box-shadow: 0 0 0 3px rgba(244,121,32,0.13);
+}
+
+.select {
+  width: 100%;
+  border: 1.5px solid #e2eaee;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #2c3e50;
+  background: #fff;
+  font-family: var(--font);
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  transition: border-color 0.18s;
+}
+.select:focus { border-color: #F47920; }
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.fieldWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (max-width: 420px) {
+  .optionGrid { grid-template-columns: 1fr 1fr; }
+  .row2 { grid-template-columns: 1fr; }
+  .brandName { font-size: 21px; }
+  .btnPrev, .btnNext { font-size: 14px; padding: 13px 0; }
+}
+
+/* ─── Validation & error styles ──────────────────────────────── */
+
+/* bg image helper */
+.bgAbsolute {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+/* Input with error border */
+.inputError {
+  border-color: #e53e3e !important;
+  background: #fff5f5 !important;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.12) !important;
+}
+
+/* Error message below a field */
+.errMsg {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11.5px;
+  color: #e53e3e;
+  font-weight: 500;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.errMsg::before {
+  content: '⚠';
+  font-size: 11px;
+}
+
+/* Global error banner (QCM) */
+.globalError {
+  width: 100%;
+  max-width: 400px;
+  background: #fff5f5;
+  border: 1.5px solid #fc8181;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #c53030;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 10px rgba(229, 62, 62, 0.12);
+}
+
+/* Section sub-label turns red when unanswered */
+.sectionSubError {
+  color: #e53e3e !important;
+}
+
+/* Small "Réponse requise" badge */
+.reqBadge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #e53e3e;
+}
+
+/* Option card gets a faint red tint when unanswered */
+.optionUnanswered {
+  border-color: #fc8181 !important;
+  background: #fff8f8 !important;
+}
+
+/* Password field wrapper */
+.pwdWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pwdWrap .input {
+  padding-right: 44px;
+}
+
+/* Eye button inside password field */
+.eyeBtn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+.eyeBtn:hover { background: rgba(0,0,0,0.05); }

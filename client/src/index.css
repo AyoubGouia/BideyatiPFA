@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --orange:      #F47920;
+  --orange-dk:   #d96a10;
+  --orange-glow: rgba(244, 121, 32, 0.40);
+  --bg-fallback: #b9d3e3;
+  --text-dark:   #12122a;
+  --text-sub:    #8a96a2;
+  --card-bg:     #ffffff;
+  --r-card:      18px;
+  --r-pill:      50px;
+  --font:        'Poppins', sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+button { cursor: pointer; font-family: var(--font); border: none; outline: none; }
+img    { display: block; max-width: 100%; }

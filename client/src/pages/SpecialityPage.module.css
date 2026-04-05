@@ -1,0 +1,570 @@
+/* ═══════════════════════════════════════════════════════════════
+   SPECIALITY PAGE  —  Navigation par spécialité universitaire
+   Design moderne avec exploration par domaines d'études
+   ═══════════════════════════════════════════════════════════════ */
+
+.page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #f8fafc 0%, #e2e8f0 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header ── */
+.header {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.backBtn:hover {
+  border-color: #F47920;
+  color: #F47920;
+  background: rgba(244, 121, 32, 0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/* ── Main Content ── */
+.main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  width: 100%;
+}
+
+/* ── Hero Section ── */
+.hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Search Section ── */
+.searchSection {
+  margin-bottom: 48px;
+}
+
+.searchBox {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 50px;
+  padding: 16px 24px;
+  transition: all 0.2s;
+}
+.searchBox:focus-within {
+  border-color: #F47920;
+  box-shadow: 0 0 0 3px rgba(244, 121, 32, 0.1);
+}
+
+.searchBox svg {
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.searchBox input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #334155;
+  background: none;
+}
+.searchBox input::placeholder {
+  color: #94a3b8;
+}
+
+/* ── Specialities Grid ── */
+.specialitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.specialityCard {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f1f5f9;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.specialityCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border-color: #F47920;
+}
+
+.specialityHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.specialityIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #F47920, #ff9558);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(244, 121, 32, 0.25);
+  flex-shrink: 0;
+}
+
+.specialityInfo {
+  flex: 1;
+}
+
+.specialityName {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.specialityCategory {
+  display: inline-block;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.facultyCount {
+  background: #F47920;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.specialityDescription {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.specialityFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exploreBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #F47920;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.exploreBtn:hover {
+  background: #d96a10;
+  transform: translateX(2px);
+}
+
+/* ── Speciality Hero (détail) ── */
+.specialityHero {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 48px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.specialityHero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.specialityInfo {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.specialityIconLarge {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  margin: 0 auto 24px auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.specialityTitle {
+  font-size: clamp(28px, 4vw, 36px);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.specialitySubtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.specialityStats {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+}
+
+.stat {
+  text-align: center;
+}
+
+.statNumber {
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* ── Faculties Section ── */
+.facultiesSection {
+  margin-bottom: 48px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 32px;
+}
+
+.facultiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.facultyCard {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f1f5f9;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.facultyCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border-color: #8b5cf6;
+}
+
+.facultyHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.facultyIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.25);
+  flex-shrink: 0;
+}
+
+.facultyInfo {
+  flex: 1;
+}
+
+.facultyName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.facultySub {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.facultyMeta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.facultyRegion {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.facultyCategory {
+  background: #8b5cf6;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.facultySpecialities {
+  margin-bottom: 16px;
+}
+
+.specialitiesLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.specialitiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.specialityTag {
+  background: #f8fafc;
+  color: #475569;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+}
+
+.moreSpecialities {
+  background: #8b5cf6;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.facultyDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.viewDetailsBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: #f8fafc;
+  color: #8b5cf6;
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.viewDetailsBtn:hover {
+  background: #8b5cf6;
+  color: white;
+}
+
+/* ── No Faculties State ── */
+.noFaculties {
+  text-align: center;
+  padding: 60px 20px;
+  color: #64748b;
+}
+
+.noFaculties svg {
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.noFaculties h3 {
+  font-size: 20px;
+  color: #475569;
+  margin-bottom: 8px;
+}
+
+.noFaculties p {
+  font-size: 14px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  padding: 24px;
+  background: white;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .headerContent {
+    padding: 12px 16px;
+  }
+  
+  .main {
+    padding: 24px 16px;
+  }
+  
+  .specialitiesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .specialityHero {
+    padding: 32px 24px;
+  }
+  
+  .specialityStats {
+    gap: 24px;
+  }
+  
+  .facultiesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .searchBox {
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .specialityHero {
+    padding: 24px 20px;
+  }
+  
+  .specialityCard {
+    padding: 20px;
+  }
+  
+  .facultyCard {
+    padding: 16px;
+  }
+  
+  .specialityStats {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .specialityHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  
+  .facultyHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
