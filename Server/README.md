@@ -53,7 +53,9 @@ npm run test:db:down
 ## Postman quick import
 
 Import these files in Postman:
-- `postman/Bideyati_Sprint1.postman_collection.json`
+- `postman/Bideyati_Sprint1.postman_collection.json` (full set including health)
+- `postman/Bideyati_Sprint1_New_Endpoints.postman_collection.json` (Sprint 1 + universités/établissements)
+- `postman/Bideyati_Universites_Etablissements.postman_collection.json` (only `UniversiteController` + `EtablissementController` routes)
 - `postman/Bideyati_Local.postman_environment.json`
 
 Then select the `Bideyati Local` environment and run requests in order:

@@ -1,0 +1,120 @@
+{
+  "info": {
+    "_postman_id": "c7d8e9f0-1111-2222-3333-444455556666",
+    "name": "Bideyati — Universités & Établissements",
+    "description": "Public API from `UniversiteController` and `EtablissementController`. Query params: universités — q, city, region; établissements — q, gouvernorat, universiteId. Set `universiteId` / `etablissementId` in environment (seed example: univ-alger).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "List — GET /api/universites",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const json = pm.response.json();",
+              "if (Array.isArray(json) && json.length > 0 && json[0].id) {",
+              "  pm.environment.set('universiteId', json[0].id);",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/universites",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "universites"]
+        }
+      }
+    },
+    {
+      "name": "Search — GET /api/universites/search",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/universites/search?q=alger&city=&region=",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "universites", "search"],
+          "query": [
+            { "key": "q", "value": "alger", "description": "Texte libre (nom, etc.)" },
+            { "key": "city", "value": "" },
+            { "key": "region", "value": "" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "By id — GET /api/universites/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/universites/{{universiteId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "universites", "{{universiteId}}"]
+        }
+      }
+    },
+    {
+      "name": "List — GET /api/etablissements",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const json = pm.response.json();",
+              "if (Array.isArray(json) && json.length > 0 && json[0].id) {",
+              "  pm.environment.set('etablissementId', json[0].id);",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/etablissements",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "etablissements"]
+        }
+      }
+    },
+    {
+      "name": "Search — GET /api/etablissements/search",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/etablissements/search?q=&gouvernorat=&universiteId={{universiteId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "etablissements", "search"],
+          "query": [
+            { "key": "q", "value": "" },
+            { "key": "gouvernorat", "value": "" },
+            { "key": "universiteId", "value": "{{universiteId}}" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "By id — GET /api/etablissements/:id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/etablissements/{{etablissementId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "etablissements", "{{etablissementId}}"]
+        }
+      }
+    }
+  ]
+}

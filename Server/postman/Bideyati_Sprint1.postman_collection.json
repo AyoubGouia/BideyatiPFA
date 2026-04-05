@@ -40,6 +40,121 @@
       }
     },
     {
+      "name": "Universités & Établissements (public)",
+      "item": [
+        {
+          "name": "List universités",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (Array.isArray(json) && json.length > 0 && json[0].id) {",
+                  "  pm.environment.set('universiteId', json[0].id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/universites",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "universites"]
+            }
+          }
+        },
+        {
+          "name": "Search universités",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/universites/search?q=alger&city=&region=",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "universites", "search"],
+              "query": [
+                { "key": "q", "value": "alger" },
+                { "key": "city", "value": "" },
+                { "key": "region", "value": "" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Université by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/universites/{{universiteId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "universites", "{{universiteId}}"]
+            }
+          }
+        },
+        {
+          "name": "List établissements",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (Array.isArray(json) && json.length > 0 && json[0].id) {",
+                  "  pm.environment.set('etablissementId', json[0].id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/etablissements",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "etablissements"]
+            }
+          }
+        },
+        {
+          "name": "Search établissements",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/etablissements/search?q=&gouvernorat=&universiteId={{universiteId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "etablissements", "search"],
+              "query": [
+                { "key": "q", "value": "" },
+                { "key": "gouvernorat", "value": "" },
+                { "key": "universiteId", "value": "{{universiteId}}" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Établissement by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/etablissements/{{etablissementId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "etablissements", "{{etablissementId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
       "name": "Register",
       "event": [
         {

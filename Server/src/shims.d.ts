@@ -7,8 +7,12 @@ declare module "bcrypt" {
 }
 
 declare module "jsonwebtoken" {
+  export interface SignOptions {
+    expiresIn?: string | number;
+  }
+
   const jwt: {
-    sign(payload: unknown, secretOrPrivateKey: unknown, options?: unknown): string;
+    sign(payload: unknown, secretOrPrivateKey: unknown, options?: SignOptions): string;
     verify(token: string, secretOrPublicKey: unknown): unknown;
   };
   export default jwt;
