@@ -5,6 +5,10 @@ import profileRoutes from "./profileRoutes";
 import questionnaireRoutes from "./questionnaireRoutes";
 import universiteRoutes from "./universiteRoutes";
 import etablissementRoutes from "./etablissementRoutes";
+import specialiteRoutes from "./specialiteRoutes";
+import statistiqueAdmissionRoutes from "./statistiqueAdmissionRoutes";
+import capaciteAdmissionRoutes from "./capaciteAdmissionRoutes";
+import sectionRoutes from "./sectionRoutes";
 
 const router = Router();
 
@@ -18,5 +22,9 @@ router.use(profileRoutes);
 router.use(questionnaireRoutes);
 router.use(universiteRoutes);
 router.use(etablissementRoutes);
+router.use(specialiteRoutes);
+router.use(statistiqueAdmissionRoutes);
+router.use(capaciteAdmissionRoutes);
+router.use(sectionRoutes);
 
 export default router;

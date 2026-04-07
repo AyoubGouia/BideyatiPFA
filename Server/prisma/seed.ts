@@ -30,8 +30,11 @@ function normalizeLabel(label: string): string {
   if (!label) return "";
   return label
     .trim()
-    .replace(/\s+/g, " "); // collapse repeated spaces
-    
+    .toLowerCase()
+    .replace(/\s+/g, " ")                    // collapse repeated spaces
+    .replace(/[()]/g, "")                    // remove parentheses
+    .replace(/[,؛:/](?!\s)/g, "")             // remove punctuation (except spaced)
+    .trim();
 }
 
 function deduplicateBy<T>(items: T[], keyFn: (item: T) => string): T[] {
@@ -42,6 +45,35 @@ function deduplicateBy<T>(items: T[], keyFn: (item: T) => string): T[] {
     seen.add(key);
     return true;
   });
+}
+
+// Helper: Try to find establishment by partial name matching
+function findEstablishmentByPartialMatch(
+  targetName: string,
+  normMap: Map<string, string>
+): string | null {
+  const targetNorm = normalizeLabel(targetName);
+  
+  // Exact match first
+  if (normMap.has(targetNorm)) {
+    return normMap.get(targetNorm) || null;
+  }
+
+  // Partial match: find an entry that contains all significant words from target
+  const targetWords = targetNorm.split(/\s+/).filter(w => w.length > 2);
+  if (targetWords.length === 0) return null;
+
+  for (const [normKey, id] of normMap.entries()) {
+    const keyWords = normKey.split(/\s+/);
+    // Check if most target words appear in this establishment name
+    const matchCount = targetWords.filter(w => keyWords.some(kw => kw.includes(w) || w.includes(kw))).length;
+    if (matchCount >= Math.ceil(targetWords.length * 0.6)) {
+      // At least 60% of target words match
+      return id;
+    }
+  }
+
+  return null;
 }
 
 // ============================================================================
@@ -208,6 +240,13 @@ async function main() {
     path.join(DATA_DIR, "normalized/2025/scores_2025.by_section.json"),
   ];
 
+  // Pre-load capacity file for reuse
+  const capacityFile = path.join(
+    DATA_DIR,
+    "normalized/2025/capacities_2025.by_section.json"
+  );
+  const capacityDataAll = readJsonFile<any>(capacityFile);
+
   for (const scoreFile of scoreFiles) {
     const scores = readJsonFile<any>(scoreFile);
     for (const score of scores) {
@@ -219,6 +258,18 @@ async function main() {
       }
     }
   }
+
+  // Also populate from capacity file to fill gaps for codes only in capacities
+  for (const cap of capacityDataAll) {
+    if (
+      cap.codeOrientation &&
+      cap.establishment_name &&
+      !codeToEstablishment.has(cap.codeOrientation)
+    ) {
+      codeToEstablishment.set(cap.codeOrientation, cap.establishment_name);
+    }
+  }
+
   console.log(
     `  ✓ Mapped ${codeToEstablishment.size} codeOrientation entries\n`
   );
@@ -258,13 +309,8 @@ async function main() {
     }
   }
 
-  // Extract from capacity file
-  const capacityFile = path.join(
-    DATA_DIR,
-    "normalized/2025/capacities_2025.by_section.json"
-  );
-  const capacityData = readJsonFile<any>(capacityFile);
-  for (const cap of capacityData) {
+  // Extract from capacity file (reuse already-loaded data)
+  for (const cap of capacityDataAll) {
     if (cap.codeOrientation && !uniqueCodesMap.has(cap.codeOrientation)) {
       uniqueCodesMap.set(cap.codeOrientation, {
         code: cap.codeOrientation,
@@ -310,17 +356,39 @@ async function main() {
       let etablissementId: string | null = null;
       const establishmentName = codeToEstablishment.get(code);
       if (establishmentName) {
+        // Try exact match first
         const normalizedName = normalizeLabel(establishmentName);
         etablissementId = etablissementNormMap.get(normalizedName) || null;
+        
+        // Fallback: try partial matching if exact fails
+        if (!etablissementId) {
+          etablissementId = findEstablishmentByPartialMatch(establishmentName, etablissementNormMap);
+        }
+        
+        // Log if still unresolved
+        if (!etablissementId) {
+          console.warn(
+            `  ⚠️  Unresolved establishment for code ${code}: "${establishmentName}"`
+          );
+          stats.specialite.unresolved = (stats.specialite.unresolved || 0) + 1;
+        }
+      } else {
+        console.warn(`  ⚠️  No establishment mapping for code ${code}`);
+        stats.specialite.unresolved = (stats.specialite.unresolved || 0) + 1;
+      }
+
+      // Prepare update data - only include etablissementId if non-null to avoid overwriting valid links
+      const updateData: any = {
+        nom: nom,
+        formuleBrute: formuleBrute,
+      };
+      if (etablissementId !== null) {
+        updateData.etablissementId = etablissementId;
       }
 
       await prisma.specialite.upsert({
         where: { codeOrientation: code },
-        update: {
-          nom: nom,
-          formuleBrute: formuleBrute,
-          etablissementId: etablissementId,
-        },
+        update: updateData,
         create: {
           codeOrientation: code,
           nom: nom,
@@ -426,11 +494,8 @@ async function main() {
   // 7. SEED CAPACITE ADMISSION
   // ========================================
   console.log("📈 Seeding CapaciteAdmission...");
-  const capacities = readJsonFile<any>(
-    path.join(DATA_DIR, "normalized/2025/capacities_2025.by_section.json")
-  );
   const dedupedCapacities = deduplicateBy(
-    capacities,
+    capacityDataAll,
     (c) => `${c.annee}-${c.tour}-${c.codeOrientation}-${c.sectionBac}`
   );
   const seenCapacities = new Set<string>();

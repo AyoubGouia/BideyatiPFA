@@ -1,0 +1,28 @@
+# env files
+.env
+.env.*
+!.env.example
+
+# node
+node_modules/
+
+# logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# build outputs
+dist/
+build/
+.next/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# misc
+*.local
