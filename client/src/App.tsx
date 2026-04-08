@@ -47,6 +47,14 @@ export default function App() {
     }
   }, [user, page, isLoadingAuth])
 
+  useEffect(() => {
+    if (isLoadingAuth) return
+    const publicEntryPages: Page[] = ['home', 'form', 'register', 'bac', 'qcm']
+    if (user && publicEntryPages.includes(page)) {
+      setPage('visitor')
+    }
+  }, [isLoadingAuth, user, page])
+
   const nav = (p: Page, rId?: string, fId?: string) => {
     setPage(p)
     const targetPage = user && p === 'home' ? 'visitor' : p
