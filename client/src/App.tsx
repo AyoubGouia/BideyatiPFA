@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import HomePage       from './pages/HomePage'
 import VisitorPage    from './pages/VisitorPage'
 import RegionPage     from './pages/RegionPage'
@@ -25,6 +25,7 @@ export type NavigationProps = {
 }
 
 export default function App() {
+  const { user, isLoadingAuth } = useAuth()
   const [page, setPage] = useState<Page>('home')
   const [regionId, setRegionId] = useState<string>()
   const [facultyId, setFacultyId] = useState<string>()
@@ -48,6 +49,8 @@ export default function App() {
 
   const nav = (p: Page, rId?: string, fId?: string) => {
     setPage(p)
+    const targetPage = user && p === 'home' ? 'visitor' : p
+    setPage(targetPage)
     if (rId) {
       setRegionId(rId)
     }
@@ -56,6 +59,8 @@ export default function App() {
     }
     window.scrollTo(0, 0)
   }
+
+  if (isLoadingAuth) return null
 
   return (
     <>
