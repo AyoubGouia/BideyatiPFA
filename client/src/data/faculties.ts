@@ -1,3 +1,5 @@
+import type { Etablissement } from '../api/etablissementApi'
+
 export interface Faculty {
   id: string
   name: string
@@ -42,6 +44,27 @@ export type FacultyIcon =
   | 'microscope'
   | 'pen'
   | 'palette'
+
+export function mapEtablissementToFaculty(e: Etablissement): Faculty {
+  return {
+    id: e.id,
+    name: e.nom,
+    sub: e.type || "Établissement Universitaire",
+    cat: e.type || "Général",
+    icon: (e.type?.toLowerCase().includes('ingénieur') || e.type?.toLowerCase().includes('technologie')) ? 'chip' 
+        : e.type?.toLowerCase().includes('médecine') ? 'caduceus'
+        : e.type?.toLowerCase().includes('commerce') ? 'book'
+        : 'chip',
+    description: `Établissement situé à ${e.gouvernorat}. Plus de détails à venir.`,
+    programs: [],
+    admission: "Sur dossier / Concours",
+    duration: "3 - 5 ans",
+    location: `${e.gouvernorat}, Tunisie`,
+    region: e.gouvernorat || "Tunisie",
+    specialities: [],
+    website: e.website
+  }
+}
 
 /** Données complètes des facultés avec informations détaillées */
 export const FACULTIES: Faculty[] = [

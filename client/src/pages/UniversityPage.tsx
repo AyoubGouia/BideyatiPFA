@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import type { Page } from '../App'
 import { useAuth } from '../context/AuthContext'
 import s from './UniversityPage.module.css'
 import FacultyCard from '../components/FacultyCard'
 import BideyetiLogo from '../components/BideyetiLogo'
-import { FACULTIES, FILTER_TABS, type FilterTab } from '../data/faculties'
+import { mapEtablissementToFaculty, FILTER_TABS, type FilterTab, type Faculty } from '../data/faculties'
+import { etablissementApi } from '../api/etablissementApi'
 
 interface Props { 
   nav: (p: Page, regionId?: string, facultyId?: string) => void 
@@ -14,12 +15,33 @@ export default function UniversityPage({ nav }: Props) {
   const { user, logout } = useAuth()
   const [search, setSearch]             = useState('')
   const [activeFilter, setActiveFilter] = useState<FilterTab | null>(null)
+  const [allFaculties, setAllFaculties] = useState<Faculty[]>([])
+  const [visibleCount, setVisibleCount] = useState(9)
+  const [isLoading, setIsLoading]       = useState(true)
 
-  const filtered = FACULTIES.filter(f => {
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const data = await etablissementApi.getAll();
+        setAllFaculties(data.map(mapEtablissementToFaculty));
+      } catch (err) {
+        console.error("Failed to load etablissements:", err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    loadData();
+  }, [])
+
+  const filtered = allFaculties.filter(f => {
     const matchSearch = f.name.toLowerCase().includes(search.toLowerCase())
     const matchFilter = activeFilter ? f.cat === activeFilter : true
     return matchSearch && matchFilter
   })
+
+  const displayed = filtered.slice(0, visibleCount)
+
+  const handleLoadMore = () => setVisibleCount(prev => prev + 9)
 
   const toggleFilter = (tab: FilterTab) =>
     setActiveFilter(prev => prev === tab ? null : tab)
@@ -107,30 +129,47 @@ export default function UniversityPage({ nav }: Props) {
 
           <div className={s.filterRow}>
             {FILTER_TABS.map(tab => (
-              <button
-                key={tab}
-                className={`${s.fBtn} ${activeFilter === tab ? s.fBtnOn : ''}`}
-                onClick={() => toggleFilter(tab)}
-              >
-                {tab}
-              </button>
+              <div key={tab} className={s.soonContainer}>
+                <span className={s.soonBadge}>Bientôt</span>
+                <button
+                  className={`${s.fBtn} ${activeFilter === tab ? s.fBtnOn : ''}`}
+                  onClick={() => toggleFilter(tab)}
+                  disabled // Disabled as requested for now
+                  style={{ opacity: 0.7, cursor: 'not-allowed' }}
+                >
+                  {tab}
+                </button>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Faculty grid */}
         <div className={s.grid}>
-          {filtered.map((fac, i) => (
-            <FacultyCard
-              key={`${fac.name}-${i}`}
-              faculty={fac}
-              onDetails={() => nav('faculty-detail', undefined, fac.id)}
-            />
-          ))}
-          {filtered.length === 0 && (
+          {isLoading ? (
+            <p className={s.empty}>Chargement des universités...</p>
+          ) : (
+            displayed.map((fac, i) => (
+              <FacultyCard
+                key={`${fac.name}-${i}`}
+                faculty={fac}
+                onDetails={() => nav('faculty-detail', undefined, fac.id)}
+              />
+            ))
+          )}
+          {!isLoading && displayed.length === 0 && (
             <p className={s.empty}>Aucune université trouvée.</p>
           )}
         </div>
+
+        {/* Load More Button */}
+        {!isLoading && visibleCount < filtered.length && (
+          <div className={s.loadMoreRow}>
+            <button className={s.btnLoadMore} onClick={handleLoadMore}>
+              Charger plus d'universités
+            </button>
+          </div>
+        )}
 
         <footer className={s.footer}>
           © 2026 Bideyety | Tous droits réservés.
