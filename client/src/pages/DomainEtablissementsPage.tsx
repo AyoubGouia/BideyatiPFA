@@ -3,97 +3,82 @@ import type { Page } from '../App'
 import { useAuth } from '../context/AuthContext'
 import s from './UniversityPage.module.css'
 import BideyetiLogo from '../components/BideyetiLogo'
-import { FILTER_TABS, type Faculty } from '../data/faculties'
-import { ETABLISSEMENT_DOMAIN_CONFIG } from '../data/etablissementDomains'
+import { FILTER_TABS, type FilterTab, type Faculty } from '../data/faculties'
 import { etablissementApi } from '../api/etablissementApi'
 import { specialiteApi } from '../api/specialiteApi'
-import { mergeEtablissementsWithSpecialites } from '../utils/etablissementList'
-import DomainEtablissementSection from '../components/DomainEtablissementSection'
-
-interface DomainSectionState {
-  label: string
-  queries: string[]
-  faculties: Faculty[]
-  loading: boolean
-  error: boolean
-}
+import { facultyMatchesSearch, mergeEtablissementsWithSpecialites } from '../utils/etablissementList'
+import FacultyCard from '../components/FacultyCard'
 
 interface Props {
   nav: (p: Page, regionId?: string, facultyId?: string) => void
-  openDomainExplore: (label: string, queries: string[]) => void
+  domainLabel: string
+  searchQueries: string[]
 }
 
-export default function UniversityPage({ nav, openDomainExplore }: Props) {
+export default function DomainEtablissementsPage({
+  nav,
+  domainLabel,
+  searchQueries,
+}: Props) {
   const { user, logout } = useAuth()
   const [search, setSearch] = useState('')
-  const [domainSections, setDomainSections] = useState<DomainSectionState[]>(() =>
-    ETABLISSEMENT_DOMAIN_CONFIG.map(cfg => ({
-      label: cfg.label,
-      queries: cfg.searchQueries,
-      faculties: [],
-      loading: true,
-      error: false,
-    }))
-  )
+  const [activeFilter, setActiveFilter] = useState<FilterTab | null>(null)
+  const [faculties, setFaculties] = useState<Faculty[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [loadError, setLoadError] = useState(false)
 
   useEffect(() => {
     let cancelled = false
     ;(async () => {
-      let specs: Awaited<ReturnType<typeof specialiteApi.getAll>> = []
+      setIsLoading(true)
+      setLoadError(false)
       try {
-        specs = await specialiteApi.getAll()
+        const [etabs, specs] = await Promise.all([
+          etablissementApi.searchByQueriesMerged(searchQueries),
+          specialiteApi.getAll().catch(() => []),
+        ])
+        if (cancelled) return
+        setFaculties(mergeEtablissementsWithSpecialites(etabs, specs))
       } catch {
-        specs = []
+        if (!cancelled) {
+          setLoadError(true)
+          setFaculties([])
+        }
+      } finally {
+        if (!cancelled) setIsLoading(false)
       }
-      if (cancelled) return
-
-      const loaded = await Promise.all(
-        ETABLISSEMENT_DOMAIN_CONFIG.map(async cfg => {
-          try {
-            const etabs = await etablissementApi.searchByQueriesMerged(
-              cfg.searchQueries
-            )
-            const faculties = mergeEtablissementsWithSpecialites(etabs, specs)
-            return {
-              label: cfg.label,
-              queries: cfg.searchQueries,
-              faculties,
-              loading: false,
-              error: false,
-            }
-          } catch {
-            return {
-              label: cfg.label,
-              queries: cfg.searchQueries,
-              faculties: [],
-              loading: false,
-              error: true,
-            }
-          }
-        })
-      )
-      if (!cancelled) setDomainSections(loaded)
     })()
     return () => {
       cancelled = true
     }
-  }, [])
+  }, [searchQueries])
+
+  const filtered = faculties.filter(f => {
+    const matchFilter = activeFilter ? f.cat === activeFilter : true
+    const matchSearch = facultyMatchesSearch(f, search)
+    return matchFilter && matchSearch
+  })
+
+  const toggleFilter = (tab: FilterTab) =>
+    setActiveFilter(prev => (prev === tab ? null : tab))
 
   const handleLogout = async () => {
     await logout()
     nav('home')
   }
 
+  const backToBrowse = () => nav(user ? 'university' : 'visitor')
+
   return (
     <div className={s.page}>
       <header className={s.header}>
         <div
           className={s.logoWrap}
-          onClick={() => nav('home')}
+          onClick={backToBrowse}
           role="button"
           tabIndex={0}
-          onKeyDown={e => e.key === 'Enter' && nav('home')}
-          aria-label="Retour à l'accueil"
+          onKeyDown={e => e.key === 'Enter' && backToBrowse()}
+          aria-label="Retour à l'exploration"
         >
           <BideyetiLogo />
         </div>
@@ -124,7 +109,11 @@ export default function UniversityPage({ nav, openDomainExplore }: Props) {
       </header>
 
       <main className={s.main}>
-        <h1 className={s.title}>Explorer les Universités</h1>
+        <button type="button" className={s.backLink} onClick={backToBrowse}>
+          ← Retour à la liste par domaine
+        </button>
+
+        <h1 className={s.title}>{domainLabel}</h1>
 
         <div className={s.navigationOptions}>
           <button type="button" className={s.regionBtn} onClick={() => nav('region')}>
@@ -184,10 +173,10 @@ export default function UniversityPage({ nav, openDomainExplore }: Props) {
             </svg>
             <input
               type="text"
-              placeholder="Rechercher une université..."
+              placeholder="Rechercher un établissement ou une spécialité…"
               value={search}
               onChange={e => setSearch(e.target.value)}
-              aria-label="Rechercher une université"
+              aria-label="Rechercher"
             />
           </div>
 
@@ -197,7 +186,8 @@ export default function UniversityPage({ nav, openDomainExplore }: Props) {
                 <span className={s.soonBadge}>Bientôt</span>
                 <button
                   type="button"
-                  className={s.fBtn}
+                  className={`${s.fBtn} ${activeFilter === tab ? s.fBtnOn : ''}`}
+                  onClick={() => toggleFilter(tab)}
                   disabled
                   style={{ opacity: 0.7, cursor: 'not-allowed' }}
                 >
@@ -208,23 +198,27 @@ export default function UniversityPage({ nav, openDomainExplore }: Props) {
           </div>
         </div>
 
-        <p className={s.domainIntro}>
-          Parcourir par domaine — chaque bloc correspond à une recherche par mots-clés sur le
-          nom de l&apos;établissement.
-        </p>
-
-        {domainSections.map(sec => (
-          <DomainEtablissementSection
-            key={sec.label}
-            title={sec.label}
-            faculties={sec.faculties}
-            loading={sec.loading}
-            error={sec.error}
-            globalSearch={search}
-            onVoirPlus={() => openDomainExplore(sec.label, sec.queries)}
-            onFacultyDetails={id => nav('faculty-detail', undefined, id)}
-          />
-        ))}
+        {isLoading && <p className={s.empty}>Chargement…</p>}
+        {loadError && !isLoading && (
+          <p className={s.empty}>Impossible de charger les établissements.</p>
+        )}
+        {!isLoading && !loadError && faculties.length === 0 && (
+          <p className={s.empty}>Aucun établissement pour ce domaine.</p>
+        )}
+        {!isLoading && !loadError && faculties.length > 0 && filtered.length === 0 && (
+          <p className={s.empty}>Aucun établissement ne correspond à votre recherche.</p>
+        )}
+        {!isLoading && !loadError && filtered.length > 0 && (
+          <div className={s.grid}>
+            {filtered.map(fac => (
+              <FacultyCard
+                key={fac.id}
+                faculty={fac}
+                onDetails={() => nav('faculty-detail', undefined, fac.id)}
+              />
+            ))}
+          </div>
+        )}
 
         <footer className={s.footer}>© 2026 Bideyety | Tous droits réservés.</footer>
       </main>

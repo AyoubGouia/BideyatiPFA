@@ -107,6 +107,12 @@
   font-weight: 500;
 }
 
+.programsEmpty {
+  font-size: 9px;
+  color: #94a3b8;
+  font-style: italic;
+}
+
 .btn {
   background: var(--orange);
   color: #fff;

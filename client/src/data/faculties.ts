@@ -58,7 +58,7 @@ export function mapEtablissementToFaculty(e: Etablissement): Faculty {
     description: `Établissement situé à ${e.gouvernorat}. Plus de détails à venir.`,
     programs: [],
     admission: "Sur dossier / Concours",
-    duration: "3 - 5 ans",
+    duration: "3 à 5 ans",
     location: `${e.gouvernorat}, Tunisie`,
     region: e.gouvernorat || "Tunisie",
     specialities: [],

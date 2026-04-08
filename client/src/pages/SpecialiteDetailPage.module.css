@@ -1,0 +1,229 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #f8fafc 0%, #e2e8f0 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.headerInner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 50px;
+  padding: 8px 16px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.backBtn:hover {
+  border-color: #f47920;
+  color: #f47920;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  flex: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+  width: 100%;
+}
+
+.hero {
+  background: #fff;
+  border-radius: 20px;
+  padding: 28px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.code {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.badge {
+  display: inline-block;
+  background: #f47920;
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.desc {
+  margin: 16px 0 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cardTitle {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.cardHint {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+.yearRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.yearPill {
+  min-width: 72px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 2px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 15px;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.yearPill:hover {
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.yearPillActive {
+  border-color: #f47920;
+  background: linear-gradient(135deg, #f47920, #ff9558);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(244, 121, 32, 0.35);
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin-top: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table th {
+  font-weight: 700;
+  color: #475569;
+  background: #f8fafc;
+}
+
+.table td {
+  color: #334155;
+}
+
+.empty {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.loading,
+.error {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #f47920;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error h2 {
+  margin: 0 0 8px;
+  color: #1e293b;
+}
+
+.error p {
+  margin: 0 0 20px;
+  color: #64748b;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #94a3b8;
+}

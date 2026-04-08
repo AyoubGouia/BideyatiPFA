@@ -26,11 +26,17 @@ export default function FacultyCard({ faculty, onDetails }: Props) {
       <div className={s.programs}>
         <span className={s.programsLabel}>Programmes:</span>
         <div className={s.programsList}>
-          {faculty.programs.slice(0, 3).map((program, index) => (
-            <span key={index} className={s.programTag}>{program}</span>
-          ))}
-          {faculty.programs.length > 3 && (
-            <span className={s.morePrograms}>+{faculty.programs.length - 3}</span>
+          {faculty.programs.length === 0 ? (
+            <span className={s.programsEmpty}>Pas de spécialité rattachée</span>
+          ) : (
+            <>
+              {faculty.programs.slice(0, 3).map((program, index) => (
+                <span key={`${program}-${index}`} className={s.programTag}>{program}</span>
+              ))}
+              {faculty.programs.length > 3 && (
+                <span className={s.morePrograms}>+{faculty.programs.length - 3}</span>
+              )}
+            </>
           )}
         </div>
       </div>
