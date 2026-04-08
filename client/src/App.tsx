@@ -12,13 +12,8 @@ import ContactPage    from './pages/ContactPage'
 import FaqPage        from './pages/FaqPage'
 import LegalPage      from './pages/LegalPage'
 import FacultyDetailPage from './pages/FacultyDetailPage'
-<<<<<<< HEAD
 import UniversityPage from './pages/UniversityPage'
 import { useAuth } from './context/AuthContext'
-import { useEffect } from 'react'
-=======
-import { useAuth } from './context/AuthContext'
->>>>>>> origin/main
 
 export type Page = 'home' | 'visitor' | 'university' | 'region' | 'speciality' | 'form' | 'register' | 'bac' | 'qcm' | 'about' | 'contact' | 'faq' | 'legal' | 'faculty-detail'
 
@@ -33,7 +28,6 @@ export default function App() {
   const [page, setPage] = useState<Page>('home')
   const [regionId, setRegionId] = useState<string>()
   const [facultyId, setFacultyId] = useState<string>()
-  const { user, isLoadingAuth } = useAuth()
 
   useEffect(() => {
     if (isLoadingAuth) return
@@ -76,10 +70,6 @@ export default function App() {
   }, [isLoadingAuth, user, page])
 
   const nav = (p: Page, rId?: string, fId?: string) => {
-<<<<<<< HEAD
-    setPage(p)
-=======
->>>>>>> origin/main
     const targetPage = user && p === 'home' ? 'visitor' : p
     setPage(targetPage)
     if (rId) {
