@@ -18,8 +18,8 @@ router.get("/health", (req, res) => {
 
 router.use("/auth", authRoutes);
 router.use(homeRoutes);
-router.use(profileRoutes);
-router.use(questionnaireRoutes);
+router.use("/profile", profileRoutes);
+router.use("/questionnaire", questionnaireRoutes);
 router.use(universiteRoutes);
 router.use(etablissementRoutes);
 router.use(specialiteRoutes);

@@ -24,7 +24,7 @@ const SECTIONS: Section[] = ['Math', 'Science', 'Info', 'Technique', 'Lettre', '
 export default function BacFormPage({ nav }: Props) {
   const { data, updateData } = useRegistration();
 
-  const [section,  setSection]  = useState<Section>((data.section as Section | undefined) || 'Math')
+  const [section,  setSection]  = useState<Section>((data.section as Section) || 'Math')
   const [session,  setSession]  = useState(data.session || 'Principale')
   const [moyenne,  setMoyenne]  = useState(data.moyenneBac || '')
   const [notes,    setNotes]    = useState<Record<string, string>>(data.notes || {})

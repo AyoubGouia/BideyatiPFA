@@ -79,16 +79,19 @@ export default function QcmPage({ nav }: Props) {
     try {
       // 1. Submit Registration
       console.log('[QcmPage] Step 1: Registering user...');
-      await registerFlow({
+      const registrationPayload = {
         nom: data.nom,
         prenom: data.prenom,
         email: data.email,
-        telephone: '00000000',
+        telephone: '00000000', // Default phone for sprint 1
         motDePasse: data.pwd,
         numeroBAC: data.numeroBAC,
         moyenneBac: parseFloat(data.moyenneBac || '0'),
         section: data.section || 'Math'
-      });
+      };
+      
+      console.log('[QcmPage] Step 1: Registering user with payload:', registrationPayload);
+      await registerFlow(registrationPayload);
       console.log('[QcmPage] Step 1: Registration successful');
 
       // 2. Format Questionnaire Responses

@@ -5,7 +5,7 @@ import { requireAuth } from "../middlewares/authenticateJWT";
 const router = Router();
 const controller = new ProfileController();
 
-router.get("/profile", requireAuth, controller.getProfile);
+router.get("/", requireAuth, controller.getProfile);
 
 export default router;
 

@@ -7,14 +7,17 @@ export class ProfileController {
 
   getProfile = async (req: Request, res: Response) => {
     try {
+      console.log('[ProfileController] Getting profile for user:', req.auth?.userId);
       const userId = req.auth?.userId;
       if (!userId) {
+        console.warn('[ProfileController] No userId found in request (Unauthorized)');
         res.status(401).json({ error: "Unauthorized" });
         return;
       }
       const profile = await this.profileService.getProfile(userId);
       res.status(200).json(profile);
     } catch (error) {
+      console.error('[ProfileController] Failed to get profile:', error);
       if (error instanceof HttpError) {
         res.status(error.statusCode).json({ error: error.message, details: error.details });
         return;

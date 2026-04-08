@@ -26,7 +26,12 @@ interface RegistrationContextType {
 const RegistrationContext = createContext<RegistrationContextType | undefined>(undefined);
 
 export const RegistrationProvider: React.FC<{children: React.ReactNode}> = ({ children }) => {
-  const [data, setData] = useState<RegistrationData>({});
+  const [data, setData] = useState<RegistrationData>({
+    section: 'Math', // Default to a valid section
+    session: 'Principale',
+    notes: {},
+    answers: {},
+  });
 
   const updateData = (newData: Partial<RegistrationData>) => {
     setData(prev => ({ ...prev, ...newData }));

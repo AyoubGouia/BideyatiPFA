@@ -5,7 +5,7 @@ import { requireAuth } from "../middlewares/authenticateJWT";
 const router = Router();
 const controller = new QuestionnaireController();
 
-router.post("/questionnaire", requireAuth, controller.submitQuestionnaire);
+router.post("/", requireAuth, controller.submitQuestionnaire);
 
 export default router;
 
