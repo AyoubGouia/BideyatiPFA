@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import HomePage       from './pages/HomePage'
 import VisitorPage    from './pages/VisitorPage'
 import RegionPage     from './pages/RegionPage'
@@ -12,6 +12,7 @@ import ContactPage    from './pages/ContactPage'
 import FaqPage        from './pages/FaqPage'
 import LegalPage      from './pages/LegalPage'
 import FacultyDetailPage from './pages/FacultyDetailPage'
+import { useAuth } from './context/AuthContext'
 
 export type Page = 'home' | 'visitor' | 'region' | 'speciality' | 'form' | 'register' | 'bac' | 'qcm' | 'about' | 'contact' | 'faq' | 'legal' | 'faculty-detail'
 
@@ -22,12 +23,22 @@ export type NavigationProps = {
 }
 
 export default function App() {
+  const { user, isLoadingAuth } = useAuth()
   const [page, setPage] = useState<Page>('home')
   const [regionId, setRegionId] = useState<string>()
   const [facultyId, setFacultyId] = useState<string>()
 
+  useEffect(() => {
+    if (isLoadingAuth) return
+    const publicEntryPages: Page[] = ['home', 'form', 'register', 'bac', 'qcm']
+    if (user && publicEntryPages.includes(page)) {
+      setPage('visitor')
+    }
+  }, [isLoadingAuth, user, page])
+
   const nav = (p: Page, rId?: string, fId?: string) => {
-    setPage(p)
+    const targetPage = user && p === 'home' ? 'visitor' : p
+    setPage(targetPage)
     if (rId) {
       setRegionId(rId)
     }
@@ -36,6 +47,8 @@ export default function App() {
     }
     window.scrollTo(0, 0)
   }
+
+  if (isLoadingAuth) return null
 
   return (
     <>
