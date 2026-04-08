@@ -117,7 +117,7 @@ export default function QcmPage({ nav }: Props) {
       console.log('[QcmPage] Step 4: Questionnaire submitted');
 
       clearData();
-      nav('home');
+      nav('university');
     } catch (err: any) {
       console.error('[QcmPage] Error during registration flow:', err);
       setGlobalError(err.response?.data?.error || 'Une erreur est survenue lors de l\'enregistrement.');

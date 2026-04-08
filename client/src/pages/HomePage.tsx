@@ -34,9 +34,15 @@ export default function HomePage({ nav }: Props) {
         <p className={s.tagline}>
           Bideyety&nbsp;- fais le bon choix,<br />pas au hasard.
         </p>
-        <button className={s.cta} onClick={() => nav('visitor')}>
-          Commencer en tant que visiteur
-        </button>
+        {user ? (
+          <button className={s.cta} onClick={() => nav('university')}>
+            Explorer les universités
+          </button>
+        ) : (
+          <button className={s.cta} onClick={() => nav('visitor')}>
+            Commencer en tant que visiteur
+          </button>
+        )}
       </div>
     </main>
   )

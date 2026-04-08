@@ -30,7 +30,7 @@ export default function FormPage({ nav }: Props) {
     
     try {
       await login({ email, motDePasse: pwd });
-      nav('home');
+      nav('university');
     } catch (err: any) {
       if (err.response?.data?.error) {
         setError(err.response.data.error);
