@@ -25,10 +25,8 @@ export default function DomainEtablissementSection({
   onVoirPlus,
   onFacultyDetails,
 }: Props) {
-  const filtered = faculties.filter(f => facultyMatchesSearch(f, globalSearch))
-
-  const slug =
-    title.replace(/\W+/g, '-').replace(/^-+|-+$/g, '') || 'domain'
+  const filtered = faculties.filter((faculty) => facultyMatchesSearch(faculty, globalSearch))
+  const slug = title.replace(/\W+/g, '-').replace(/^-+|-+$/g, '') || 'domain'
 
   return (
     <section className={s.section} aria-labelledby={`domain-${slug}`}>
@@ -37,18 +35,14 @@ export default function DomainEtablissementSection({
           {title}
         </h2>
 
-        {loading && <p className={s.muted}>Chargement…</p>}
-        {error && (
-          <p className={s.err}>
-            Impossible de charger les établissements pour ce domaine.
-          </p>
-        )}
+        {loading && <p className={s.muted}>Chargement...</p>}
+        {error && <p className={s.err}>Impossible de charger les etablissements pour ce domaine.</p>}
 
         {!loading && !error && faculties.length === 0 && (
           <>
             <p className={s.muted}>
-              Aucun établissement ne correspond aux mots-clés de ce domaine dans le nom de
-              l&apos;établissement. Vous pouvez ouvrir la vue complète du domaine ci-dessous.
+              Aucun etablissement reel n'a ete trouve pour ce domaine. Vous pouvez
+              ouvrir la vue complete ci-dessous.
             </p>
             <div className={`${s.grid} ${s.gridVoirPlusOnly}`}>
               <DomainVoirPlusCard onClick={onVoirPlus} />
@@ -59,16 +53,14 @@ export default function DomainEtablissementSection({
         {!loading && !error && faculties.length > 0 && (
           <>
             {filtered.length === 0 && globalSearch.trim() !== '' && (
-              <p className={s.hint}>
-                Aucun résultat dans ce domaine pour votre recherche.
-              </p>
+              <p className={s.hint}>Aucun resultat dans ce domaine pour votre recherche.</p>
             )}
             <div className={s.grid}>
-              {filtered.slice(0, PREVIEW).map(fac => (
+              {filtered.slice(0, PREVIEW).map((faculty) => (
                 <FacultyCard
-                  key={fac.id}
-                  faculty={fac}
-                  onDetails={() => onFacultyDetails(fac.id)}
+                  key={faculty.id}
+                  faculty={faculty}
+                  onDetails={() => onFacultyDetails(faculty.id)}
                 />
               ))}
               <DomainVoirPlusCard onClick={onVoirPlus} />

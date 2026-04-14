@@ -16,7 +16,6 @@ export default function FacultyCard({ faculty, onDetails }: Props) {
           <p className={s.sub}>{faculty.sub}</p>
           <div className={s.meta}>
             <span className={s.location}>{faculty.location}</span>
-            <span className={s.duration}>{faculty.duration}</span>
           </div>
         </div>
         <div className={s.ico}>
@@ -24,14 +23,16 @@ export default function FacultyCard({ faculty, onDetails }: Props) {
         </div>
       </div>
       <div className={s.programs}>
-        <span className={s.programsLabel}>Programmes:</span>
+        <span className={s.programsLabel}>Specialites :</span>
         <div className={s.programsList}>
           {faculty.programs.length === 0 ? (
-            <span className={s.programsEmpty}>Pas de spécialité rattachée</span>
+            <span className={s.programsEmpty}>Aucune specialite disponible</span>
           ) : (
             <>
               {faculty.programs.slice(0, 3).map((program, index) => (
-                <span key={`${program}-${index}`} className={s.programTag}>{program}</span>
+                <span key={`${program}-${index}`} className={s.programTag}>
+                  {program}
+                </span>
               ))}
               {faculty.programs.length > 3 && (
                 <span className={s.morePrograms}>+{faculty.programs.length - 3}</span>
@@ -41,7 +42,7 @@ export default function FacultyCard({ faculty, onDetails }: Props) {
         </div>
       </div>
       <button className={s.btn} onClick={onDetails}>
-        Voir les Détails
+        Voir les details
       </button>
     </div>
   )

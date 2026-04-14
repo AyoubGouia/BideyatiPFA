@@ -1,0 +1,2891 @@
+[
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "100501",
+    "establishment_name": "Faculté de Médecine de Sfax",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 5
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "100501",
+    "establishment_name": "Faculté de Médecine de Sfax",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "100501",
+    "establishment_name": "Faculté de Médecine de Sfax",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 44
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "100502",
+    "establishment_name": "Faculté de Médecine de Sfax",
+    "specialty_name": "Licence en Biotechnologie Medicale",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "100502",
+    "establishment_name": "Faculté de Médecine de Sfax",
+    "specialty_name": "Licence en Biotechnologie Medicale",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "100502",
+    "establishment_name": "Faculté de Médecine de Sfax",
+    "specialty_name": "Licence en Biotechnologie Medicale",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 12
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "100502",
+    "establishment_name": "Faculté de Médecine de Sfax",
+    "specialty_name": "Licence en Biotechnologie Medicale",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 45
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101101",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Electronique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101101",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Electronique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101101",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Electronique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101101",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Electronique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101102",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101102",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101102",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101102",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101103",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Reseaux et Systemes",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101103",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Reseaux et Systemes",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101103",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Reseaux et Systemes",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101103",
+    "establishment_name": "Ecole Nationale d'Electronique et des Télécommunications de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Reseaux et Systemes",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101701",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101701",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101701",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101701",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101702",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Civil",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101702",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Civil",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101702",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Civil",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101702",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Civil",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101703",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Informatique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101703",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Informatique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101703",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Informatique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "101703",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sfax",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Informatique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "10201",
+    "establishment_name": "Institut Supérieur de la Civilisation Islamique de Tunis",
+    "specialty_name": "Licence en Civilisation Islamique",
+    "sectionBac": "آداب",
+    "capacite": 95
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "10201",
+    "establishment_name": "Institut Supérieur de la Civilisation Islamique de Tunis",
+    "specialty_name": "Licence en Civilisation Islamique",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 64
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "10201",
+    "establishment_name": "Institut Supérieur de la Civilisation Islamique de Tunis",
+    "specialty_name": "Licence en Civilisation Islamique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 37
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "10202",
+    "establishment_name": "Institut Supérieur de la Civilisation Islamique de Tunis",
+    "specialty_name": "Licence en Pensee Islamique et Dialogue des Civilisations",
+    "sectionBac": "آداب",
+    "capacite": 95
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "10202",
+    "establishment_name": "Institut Supérieur de la Civilisation Islamique de Tunis",
+    "specialty_name": "Licence en Pensee Islamique et Dialogue des Civilisations",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 64
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "10202",
+    "establishment_name": "Institut Supérieur de la Civilisation Islamique de Tunis",
+    "specialty_name": "Licence en Pensee Islamique et Dialogue des Civilisations",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 37
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111001",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Technologies de l'Information et de la Communication",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 23
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111001",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Technologies de l'Information et de la Communication",
+    "sectionBac": "رياضيات",
+    "capacite": 12
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111001",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Technologies de l'Information et de la Communication",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 76
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111001",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Technologies de l'Information et de la Communication",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 17
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111002",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Multimedia",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 32
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111002",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Multimedia",
+    "sectionBac": "رياضيات",
+    "capacite": 67
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111002",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Multimedia",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 52
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111003",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Genie des Systemes d'Information",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 17
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111003",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Genie des Systemes d'Information",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 31
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111003",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Genie des Systemes d'Information",
+    "sectionBac": "رياضيات",
+    "capacite": 36
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111003",
+    "establishment_name": "Institut Supérieur d'Informatique et de Multimédia de Gabès",
+    "specialty_name": "Licence en Genie des Systemes d'Information",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 44
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111501",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Chimique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111501",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Chimique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111501",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Chimique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111501",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Chimique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111502",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111502",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111502",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111502",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111503",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111503",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111503",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "111503",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Gabès",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "120401",
+    "establishment_name": "Institut Supérieur du Sport et de l'Education Physique de Gafsa",
+    "specialty_name": "Licence en Education Physique",
+    "sectionBac": "آداب",
+    "capacite": 31
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "120401",
+    "establishment_name": "Institut Supérieur du Sport et de l'Education Physique de Gafsa",
+    "specialty_name": "Licence en Education Physique",
+    "sectionBac": "رياضة",
+    "capacite": 107
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "120401",
+    "establishment_name": "Institut Supérieur du Sport et de l'Education Physique de Gafsa",
+    "specialty_name": "Licence en Education Physique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 40
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "120402",
+    "establishment_name": "Institut Supérieur du Sport et de l'Education Physique de Gafsa",
+    "specialty_name": "Licence en Entrainement Sportif",
+    "sectionBac": "آداب",
+    "capacite": 30
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "120402",
+    "establishment_name": "Institut Supérieur du Sport et de l'Education Physique de Gafsa",
+    "specialty_name": "Licence en Entrainement Sportif",
+    "sectionBac": "رياضة",
+    "capacite": 108
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "120402",
+    "establishment_name": "Institut Supérieur du Sport et de l'Education Physique de Gafsa",
+    "specialty_name": "Licence en Entrainement Sportif",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 41
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "120403",
+    "establishment_name": "Institut Supérieur du Sport et de l'Education Physique de Gafsa",
+    "specialty_name": "Licence en Management du Sport",
+    "sectionBac": "آداب",
+    "capacite": 30
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "120403",
+    "establishment_name": "Institut Supérieur du Sport et de l'Education Physique de Gafsa",
+    "specialty_name": "Licence en Management du Sport",
+    "sectionBac": "رياضة",
+    "capacite": 107
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "120403",
+    "establishment_name": "Institut Supérieur du Sport et de l'Education Physique de Gafsa",
+    "specialty_name": "Licence en Management du Sport",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 41
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132401",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Reseaux et Telecommunications",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132401",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Reseaux et Telecommunications",
+    "sectionBac": "رياضيات",
+    "capacite": 33
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132401",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Reseaux et Telecommunications",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 41
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132401",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Reseaux et Telecommunications",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132402",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Services et Applications Web",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132402",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Services et Applications Web",
+    "sectionBac": "رياضيات",
+    "capacite": 33
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132402",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Services et Applications Web",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 41
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132402",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Services et Applications Web",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132403",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Systemes Embarques",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132403",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Systemes Embarques",
+    "sectionBac": "رياضيات",
+    "capacite": 33
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132403",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Systemes Embarques",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 41
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "132403",
+    "establishment_name": "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+    "specialty_name": "Licence en Systemes Embarques",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150101",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Informatique de Gestion a Distance",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 17
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150101",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Informatique de Gestion a Distance",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 31
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150101",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Informatique de Gestion a Distance",
+    "sectionBac": "رياضيات",
+    "capacite": 36
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150101",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Informatique de Gestion a Distance",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 44
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150102",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Reseaux et Services Numeriques a Distance",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150102",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Reseaux et Services Numeriques a Distance",
+    "sectionBac": "رياضيات",
+    "capacite": 33
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150102",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Reseaux et Services Numeriques a Distance",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 41
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150102",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Reseaux et Services Numeriques a Distance",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150103",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Multimedia Educatif a Distance",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150103",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Multimedia Educatif a Distance",
+    "sectionBac": "رياضيات",
+    "capacite": 33
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150103",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Multimedia Educatif a Distance",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 40
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "150103",
+    "establishment_name": "Université Virtuelle de Tunis",
+    "specialty_name": "Licence en Multimedia Educatif a Distance",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "20401",
+    "establishment_name": "Institut Supérieur des Beaux-Arts de Tunis",
+    "specialty_name": "Licence en Arts Plastiques",
+    "sectionBac": "آداب",
+    "capacite": 53
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "20401",
+    "establishment_name": "Institut Supérieur des Beaux-Arts de Tunis",
+    "specialty_name": "Licence en Arts Plastiques",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "20401",
+    "establishment_name": "Institut Supérieur des Beaux-Arts de Tunis",
+    "specialty_name": "Licence en Arts Plastiques",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 49
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "20402",
+    "establishment_name": "Institut Supérieur des Beaux-Arts de Tunis",
+    "specialty_name": "Licence en Design Graphique",
+    "sectionBac": "آداب",
+    "capacite": 53
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "20402",
+    "establishment_name": "Institut Supérieur des Beaux-Arts de Tunis",
+    "specialty_name": "Licence en Design Graphique",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "20402",
+    "establishment_name": "Institut Supérieur des Beaux-Arts de Tunis",
+    "specialty_name": "Licence en Design Graphique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 49
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "20403",
+    "establishment_name": "Institut Supérieur des Beaux-Arts de Tunis",
+    "specialty_name": "Licence en Communication Visuelle",
+    "sectionBac": "آداب",
+    "capacite": 53
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "20403",
+    "establishment_name": "Institut Supérieur des Beaux-Arts de Tunis",
+    "specialty_name": "Licence en Communication Visuelle",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "20403",
+    "establishment_name": "Institut Supérieur des Beaux-Arts de Tunis",
+    "specialty_name": "Licence en Communication Visuelle",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 49
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21201",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Industriel",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21201",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Industriel",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21201",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Industriel",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21201",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Industriel",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21202",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecatronique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21202",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecatronique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21202",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecatronique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21202",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecatronique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21203",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21203",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21203",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21203",
+    "establishment_name": "Ecole Nationale Supérieure d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21501",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Administration des Affaires",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 38
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21501",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Administration des Affaires",
+    "sectionBac": "رياضيات",
+    "capacite": 25
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21501",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Administration des Affaires",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21501",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Administration des Affaires",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21502",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Finance",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 37
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21502",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Finance",
+    "sectionBac": "رياضيات",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21502",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Finance",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21502",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Finance",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21503",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Marketing",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 37
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21503",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Marketing",
+    "sectionBac": "رياضيات",
+    "capacite": 25
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21503",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Marketing",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "21503",
+    "establishment_name": "Tunis Business School",
+    "specialty_name": "Licence en Marketing",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30101",
+    "establishment_name": "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+    "specialty_name": "Licence en Mathematiques",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 18
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30101",
+    "establishment_name": "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+    "specialty_name": "Licence en Mathematiques",
+    "sectionBac": "رياضيات",
+    "capacite": 60
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30101",
+    "establishment_name": "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+    "specialty_name": "Licence en Mathematiques",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 59
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30102",
+    "establishment_name": "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+    "specialty_name": "Licence en Physique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 18
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30102",
+    "establishment_name": "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+    "specialty_name": "Licence en Physique",
+    "sectionBac": "رياضيات",
+    "capacite": 60
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30102",
+    "establishment_name": "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+    "specialty_name": "Licence en Physique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 59
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30103",
+    "establishment_name": "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+    "specialty_name": "Licence en Sciences de la Vie",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 18
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30103",
+    "establishment_name": "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+    "specialty_name": "Licence en Sciences de la Vie",
+    "sectionBac": "رياضيات",
+    "capacite": 60
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30103",
+    "establishment_name": "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+    "specialty_name": "Licence en Sciences de la Vie",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 59
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30401",
+    "establishment_name": "Faculté de Médecine de Tunis",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 5
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30401",
+    "establishment_name": "Faculté de Médecine de Tunis",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30401",
+    "establishment_name": "Faculté de Médecine de Tunis",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 44
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30402",
+    "establishment_name": "Faculté de Médecine de Tunis",
+    "specialty_name": "Licence en Sante Publique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30402",
+    "establishment_name": "Faculté de Médecine de Tunis",
+    "specialty_name": "Licence en Sante Publique",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30402",
+    "establishment_name": "Faculté de Médecine de Tunis",
+    "specialty_name": "Licence en Sante Publique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 12
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30402",
+    "establishment_name": "Faculté de Médecine de Tunis",
+    "specialty_name": "Licence en Sante Publique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 45
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30801",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30801",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "رياضيات",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30801",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 34
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30801",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30802",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Data Science",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 13
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30802",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Data Science",
+    "sectionBac": "رياضيات",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30802",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Data Science",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 31
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30802",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Data Science",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 18
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30803",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Intelligence Artificielle",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 13
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30803",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Intelligence Artificielle",
+    "sectionBac": "رياضيات",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30803",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Intelligence Artificielle",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 31
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "30803",
+    "establishment_name": "Institut Supérieur d'Informatique",
+    "specialty_name": "Licence en Intelligence Artificielle",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 18
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31101",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Civil",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31101",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Civil",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31101",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Civil",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31101",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Civil",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31102",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31102",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31102",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31102",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electrique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31103",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Informatique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31103",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Informatique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31103",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Informatique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "31103",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Informatique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40701",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Reseaux Informatiques et Telecommunications",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40701",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Reseaux Informatiques et Telecommunications",
+    "sectionBac": "رياضيات",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40701",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Reseaux Informatiques et Telecommunications",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 34
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40701",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Reseaux Informatiques et Telecommunications",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40702",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Informatique Industrielle et Automatique",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 27
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40702",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Informatique Industrielle et Automatique",
+    "sectionBac": "رياضيات",
+    "capacite": 57
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40702",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Informatique Industrielle et Automatique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 44
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40703",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Instrumentation et Maintenance Biomedicale",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40703",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Instrumentation et Maintenance Biomedicale",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40703",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Instrumentation et Maintenance Biomedicale",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 12
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40703",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Instrumentation et Maintenance Biomedicale",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 45
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40704",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Genie Biologique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40704",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Genie Biologique",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40704",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Genie Biologique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 12
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "40704",
+    "establishment_name": "Institut National des Sciences Appliquées et de Technologie de Tunis",
+    "specialty_name": "Licence en Genie Biologique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 45
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42301",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42301",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42301",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42301",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42302",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Reseaux",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42302",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Reseaux",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42302",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Reseaux",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42302",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Reseaux",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42303",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Systemes de Communication",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42303",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Systemes de Communication",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42303",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Systemes de Communication",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42303",
+    "establishment_name": "Ecole Supérieure des Communications de Tunis",
+    "specialty_name": "Diplome National d'Ingenieur en Systemes de Communication",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42701",
+    "establishment_name": "Ecole Supérieure de l'Audiovisuel et du Cinéma de Gammarth",
+    "specialty_name": "Licence en Audiovisuel",
+    "sectionBac": "آداب",
+    "capacite": 53
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42701",
+    "establishment_name": "Ecole Supérieure de l'Audiovisuel et du Cinéma de Gammarth",
+    "specialty_name": "Licence en Audiovisuel",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42701",
+    "establishment_name": "Ecole Supérieure de l'Audiovisuel et du Cinéma de Gammarth",
+    "specialty_name": "Licence en Audiovisuel",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 49
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42702",
+    "establishment_name": "Ecole Supérieure de l'Audiovisuel et du Cinéma de Gammarth",
+    "specialty_name": "Licence en Realisation Cinematographique",
+    "sectionBac": "آداب",
+    "capacite": 53
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42702",
+    "establishment_name": "Ecole Supérieure de l'Audiovisuel et du Cinéma de Gammarth",
+    "specialty_name": "Licence en Realisation Cinematographique",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42702",
+    "establishment_name": "Ecole Supérieure de l'Audiovisuel et du Cinéma de Gammarth",
+    "specialty_name": "Licence en Realisation Cinematographique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 49
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42703",
+    "establishment_name": "Ecole Supérieure de l'Audiovisuel et du Cinéma de Gammarth",
+    "specialty_name": "Licence en Montage et Postproduction",
+    "sectionBac": "آداب",
+    "capacite": 53
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42703",
+    "establishment_name": "Ecole Supérieure de l'Audiovisuel et du Cinéma de Gammarth",
+    "specialty_name": "Licence en Montage et Postproduction",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "42703",
+    "establishment_name": "Ecole Supérieure de l'Audiovisuel et du Cinéma de Gammarth",
+    "specialty_name": "Licence en Montage et Postproduction",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 49
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43001",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Informatique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43001",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Informatique",
+    "sectionBac": "رياضيات",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43001",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Informatique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43001",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Informatique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 16
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43002",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Mathematiques Appliquees et Modelisation",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43002",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Mathematiques Appliquees et Modelisation",
+    "sectionBac": "رياضيات",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43002",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Mathematiques Appliquees et Modelisation",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43002",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Mathematiques Appliquees et Modelisation",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 16
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43003",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43003",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "رياضيات",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43003",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "43003",
+    "establishment_name": "Ecole Polytechnique de Tunisie",
+    "specialty_name": "Diplome National d'Ingenieur en Telecommunications",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 16
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50201",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Journalisme",
+    "sectionBac": "آداب",
+    "capacite": 49
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50201",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Journalisme",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50201",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Journalisme",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 45
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50201",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Journalisme",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50202",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Communication des Medias",
+    "sectionBac": "آداب",
+    "capacite": 49
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50202",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Communication des Medias",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50202",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Communication des Medias",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 45
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50202",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Communication des Medias",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50203",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Presse Numerique",
+    "sectionBac": "آداب",
+    "capacite": 48
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50203",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Presse Numerique",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50203",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Presse Numerique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 45
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "50203",
+    "establishment_name": "Institut de Presse et des Sciences de l'Information",
+    "specialty_name": "Licence en Presse Numerique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51001",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 13
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51001",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "رياضيات",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51001",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 31
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51001",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 18
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51002",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Securite des Systemes d'Information",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 8
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51002",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Securite des Systemes d'Information",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51002",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Securite des Systemes d'Information",
+    "sectionBac": "رياضيات",
+    "capacite": 30
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51002",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Securite des Systemes d'Information",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 35
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51003",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Ingenierie des Donnees",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 12
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51003",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Ingenierie des Donnees",
+    "sectionBac": "رياضيات",
+    "capacite": 46
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "51003",
+    "establishment_name": "Ecole Nationale des Sciences de l'Informatique",
+    "specialty_name": "Licence en Ingenierie des Donnees",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 30
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60101",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Droit",
+    "sectionBac": "آداب",
+    "capacite": 88
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60101",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Droit",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 79
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60101",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Droit",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 36
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60102",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Sciences Economiques",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 60
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60102",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Sciences Economiques",
+    "sectionBac": "رياضيات",
+    "capacite": 40
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60102",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Sciences Economiques",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 31
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60102",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Sciences Economiques",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 20
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60103",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Sciences de Gestion",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 60
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60103",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Sciences de Gestion",
+    "sectionBac": "رياضيات",
+    "capacite": 41
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60103",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Sciences de Gestion",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 31
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "60103",
+    "establishment_name": "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+    "specialty_name": "Licence en Sciences de Gestion",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 20
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "70301",
+    "establishment_name": "Faculté de Médecine de Sousse",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 5
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "70301",
+    "establishment_name": "Faculté de Médecine de Sousse",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "70301",
+    "establishment_name": "Faculté de Médecine de Sousse",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 44
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "70302",
+    "establishment_name": "Faculté de Médecine de Sousse",
+    "specialty_name": "Licence en Sciences Biomedicales",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "70302",
+    "establishment_name": "Faculté de Médecine de Sousse",
+    "specialty_name": "Licence en Sciences Biomedicales",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "70302",
+    "establishment_name": "Faculté de Médecine de Sousse",
+    "specialty_name": "Licence en Sciences Biomedicales",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 12
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "70302",
+    "establishment_name": "Faculté de Médecine de Sousse",
+    "specialty_name": "Licence en Sciences Biomedicales",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 46
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71101",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71101",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "رياضيات",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71101",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 34
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71101",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71102",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Genie des Systemes Informatiques",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71102",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Genie des Systemes Informatiques",
+    "sectionBac": "رياضيات",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71102",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Genie des Systemes Informatiques",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 34
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71102",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Genie des Systemes Informatiques",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71103",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Telecommunications",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71103",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Telecommunications",
+    "sectionBac": "رياضيات",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71103",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Telecommunications",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 34
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71103",
+    "establishment_name": "Institut Supérieur d'Informatique et des Technologies de Communication de Hammam Sousse",
+    "specialty_name": "Licence en Telecommunications",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71401",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecatronique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71401",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecatronique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71401",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecatronique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71401",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecatronique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71402",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Energetique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71402",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Energetique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71402",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Energetique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71402",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Energetique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71403",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Industriel",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71403",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Industriel",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71403",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Industriel",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71403",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Sousse",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Industriel",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71501",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Internet des Objets",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71501",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Internet des Objets",
+    "sectionBac": "رياضيات",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71501",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Internet des Objets",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 34
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71501",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Internet des Objets",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71502",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Systemes Embarques",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71502",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Systemes Embarques",
+    "sectionBac": "رياضيات",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71502",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Systemes Embarques",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 34
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71502",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Systemes Embarques",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71503",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Telecommunications",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71503",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Telecommunications",
+    "sectionBac": "رياضيات",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71503",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Telecommunications",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 34
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "71503",
+    "establishment_name": "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+    "specialty_name": "Licence en Telecommunications",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "80301",
+    "establishment_name": "Faculté de Médecine de Monastir",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 5
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "80301",
+    "establishment_name": "Faculté de Médecine de Monastir",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "80301",
+    "establishment_name": "Faculté de Médecine de Monastir",
+    "specialty_name": "Doctorat en Medecine",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 44
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "80302",
+    "establishment_name": "Faculté de Médecine de Monastir",
+    "specialty_name": "Licence en Technologies de la Sante",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 10
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "80302",
+    "establishment_name": "Faculté de Médecine de Monastir",
+    "specialty_name": "Licence en Technologies de la Sante",
+    "sectionBac": "رياضيات",
+    "capacite": 21
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "80302",
+    "establishment_name": "Faculté de Médecine de Monastir",
+    "specialty_name": "Licence en Technologies de la Sante",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 12
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "80302",
+    "establishment_name": "Faculté de Médecine de Monastir",
+    "specialty_name": "Licence en Technologies de la Sante",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 45
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81501",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81501",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "رياضيات",
+    "capacite": 29
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81501",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81501",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Mecanique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 23
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81502",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electromecanique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81502",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electromecanique",
+    "sectionBac": "رياضيات",
+    "capacite": 30
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81502",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electromecanique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81502",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Electromecanique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81503",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Textile",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81503",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Textile",
+    "sectionBac": "رياضيات",
+    "capacite": 30
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81503",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Textile",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 15
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "81503",
+    "establishment_name": "Ecole Nationale d'Ingénieurs de Monastir",
+    "specialty_name": "Diplome National d'Ingenieur en Genie Textile",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90501",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Mathematiques Appliquees",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 18
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90501",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Mathematiques Appliquees",
+    "sectionBac": "رياضيات",
+    "capacite": 59
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90501",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Mathematiques Appliquees",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 58
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90502",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 24
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90502",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "رياضيات",
+    "capacite": 28
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90502",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 34
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90502",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Sciences de l'Informatique",
+    "sectionBac": "علوم تجريبية",
+    "capacite": 22
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90503",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Genie des Systemes d'Information",
+    "sectionBac": "إقتصاد وتصرف",
+    "capacite": 14
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90503",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Genie des Systemes d'Information",
+    "sectionBac": "العلوم التقنية",
+    "capacite": 26
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90503",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Genie des Systemes d'Information",
+    "sectionBac": "رياضيات",
+    "capacite": 31
+  },
+  {
+    "annee": 2025,
+    "tour": "principale",
+    "codeOrientation": "90503",
+    "establishment_name": "Institut Supérieur des Mathématiques Appliquées et de l'Informatique de Kairouan",
+    "specialty_name": "Licence en Genie des Systemes d'Information",
+    "sectionBac": "علوم الإعلامية",
+    "capacite": 37
+  }
+]

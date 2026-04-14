@@ -1,6 +1,30 @@
 import { prisma } from "../../infrastructure/config/prisma";
 
 export class SpecialiteService {
+  private buildSearchWhere(
+    q?: string,
+    universiteId?: string,
+    etablissementId?: string,
+    codeOrientation?: string
+  ) {
+    const filters: Record<string, unknown>[] = [
+      q ? { nom: { contains: q, mode: "insensitive" } } : {},
+      codeOrientation ? { codeOrientation } : {},
+    ];
+
+    if (etablissementId) {
+      filters.push({ etablissementId });
+    } else if (universiteId) {
+      // Keep university-scoped searches limited to specialties not already
+      // attached to a specific établissement. This avoids leaking specialties
+      // from sibling faculties when the caller wants faculty-safe data.
+      filters.push({ universiteId });
+      filters.push({ etablissementId: null });
+    }
+
+    return { AND: filters };
+  }
+
   async getAll(skip?: number, take?: number) {
     return prisma.specialite.findMany({
       select: {
@@ -40,14 +64,12 @@ export class SpecialiteService {
     take?: number
   ) {
     return prisma.specialite.findMany({
-      where: {
-        AND: [
-          q ? { nom: { contains: q, mode: "insensitive" } } : {},
-          universiteId ? { universiteId } : {},
-          etablissementId ? { etablissementId } : {},
-          codeOrientation ? { codeOrientation } : {},
-        ],
-      },
+      where: this.buildSearchWhere(
+        q,
+        universiteId,
+        etablissementId,
+        codeOrientation
+      ),
       select: {
         id: true,
         codeOrientation: true,
@@ -182,14 +204,12 @@ export class SpecialiteService {
     codeOrientation?: string
   ) {
     return prisma.specialite.count({
-      where: {
-        AND: [
-          q ? { nom: { contains: q, mode: "insensitive" } } : {},
-          universiteId ? { universiteId } : {},
-          etablissementId ? { etablissementId } : {},
-          codeOrientation ? { codeOrientation } : {},
-        ],
-      },
+      where: this.buildSearchWhere(
+        q,
+        universiteId,
+        etablissementId,
+        codeOrientation
+      ),
     });
   }
 }

@@ -1,0 +1,3980 @@
+[
+  {
+    "codeOrientation": "10168",
+    "nomSpecialite": "الاجازة في علوم الجيوماتيك والتطبيقات",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الجيوماتيك المطبقة على علوم",
+      "الجيوماتيك المطبقة على التعمير",
+      "والتهيئة الترابية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 110.613,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 95.7597,
+        "علوم الإعلامية": 111.905,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      115
+    ],
+    "scorePages": [
+      9
+    ]
+  },
+  {
+    "codeOrientation": "10360",
+    "nomSpecialite": "الإجازة في التصرف في تكنولوجيات المعلومات والاتصال",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية في المواصلات بتونس",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التصرف في تكنولوجيات المعلومات",
+      "واالتصاالت"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 127.195,
+        "علوم تجريبية": 142.7,
+        "إقتصاد وتصرف": 149.2,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": 149.49,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      118
+    ],
+    "scorePages": [
+      43
+    ]
+  },
+  {
+    "codeOrientation": "10452",
+    "nomSpecialite": "الاجازة في السياحة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات السياحية والفندقية بسيدي الظريف",
+    "universiteLabelRaw": "جامعة قرطاج",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "اإلدارة والتصرف السياحي",
+      "دليل سياحي"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": 111.315,
+        "رياضيات": null,
+        "علوم تجريبية": 124.025,
+        "إقتصاد وتصرف": 96.4269,
+        "العلوم التقنية": 109.7051,
+        "علوم الإعلامية": 100.76,
+        "رياضة": 137.665
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      91
+    ],
+    "scorePages": [
+      21
+    ]
+  },
+  {
+    "codeOrientation": "10453",
+    "nomSpecialite": "الإجازة في الفندقة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات السياحية والفندقية بسيدي الظريف",
+    "universiteLabelRaw": "جامعة قرطاج",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "اإلدارة والتصرف في اإليواء",
+      "اإلدارة والتصرف في اإلطعام",
+      "علوم وتقنيات الأنشطة البدنية",
+      "التربية البدنية كشرط",
+      "للتأكد من الأهلية الصحية",
+      "وعلوم الرياضة وذلك في",
+      "نهائية الا بعد استظهار",
+      "الرياضة الراجع بالنظر لوزارة",
+      "البدنية . مع العلم ان معاليم",
+      "المترشح لوكيل المقابيض المركز",
+      "الطبي تهم المتخلفين عن",
+      "الطبي في الموعد الأول",
+      "الجامعية 2025-2026 في",
+      "ذلك .",
+      "الوطني والمراكز الجهوية",
+      "اللامركزية وتقريب الخدمة",
+      "ولايات : تونس",
+      "بالكاف-ولايات : الكاف",
+      "بنابل-ولايتي : نابل",
+      "بسوسة-ولاية : سوسة",
+      "بالمنستير-ولايتي :",
+      "بالقيروان-ولايات :",
+      "والقصرين",
+      "بصفاقس-ولاي تي :",
+      "بقابس-ولايات : قابس",
+      "التوجيه الجامعي",
+      "يتعين على المعنيين الاطلاع",
+      "إجراءات الفحص الطبي التالية :",
+      "الوطني أو بإحدى المراكز",
+      "على الساعة الثامنة",
+      "للطب وعلوم الرياضة،",
+      "هوية المترشح وتاريخ",
+      "لتعميرها من طرف",
+      "التحاليل البيولوجية لإجراء",
+      "وقيس ضغط الدم وبعد",
+      "وتسليم الوثائق الخاصة به",
+      "الاستظهار يوم اجراء الفحص بـ :",
+      "نسخة منه .",
+      "الفحص الطبي مباشرة لدى",
+      "العلوم"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": 112.34,
+        "رياضيات": null,
+        "علوم تجريبية": 150.295,
+        "إقتصاد وتصرف": 93.78,
+        "العلوم التقنية": 118.815,
+        "علوم الإعلامية": 102.795,
+        "رياضة": 133.905
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      91,
+      92,
+      93,
+      94,
+      95
+    ],
+    "scorePages": [
+      21
+    ]
+  },
+  {
+    "codeOrientation": "10501",
+    "nomSpecialite": "الإجازة في الكيمياء",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "كيمياء المواد",
+      "بحث",
+      "الكيمياء الدقيقة",
+      "التحاليل الفيزيائية-كيميائية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 95.0072,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 92.2265,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      118
+    ],
+    "scorePages": [
+      9
+    ]
+  },
+  {
+    "codeOrientation": "10502",
+    "nomSpecialite": "الإجازة في الفيزياء و الكيمياء",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "فيزياء وكيمياء"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 93.1523,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      119
+    ],
+    "scorePages": [
+      9
+    ]
+  },
+  {
+    "codeOrientation": "10503",
+    "nomSpecialite": "الإجازة في الفيزياء",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الفيزياء",
+      "الفيزياء الرقمية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 82.1934,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 106.449,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      120
+    ],
+    "scorePages": [
+      9
+    ]
+  },
+  {
+    "codeOrientation": "10504",
+    "nomSpecialite": "الإجازة في الفيزياء و الطاقة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الفيزياء والطاقة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 119.4495,
+        "علوم تجريبية": 96.4786,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 105.9407,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      120,
+      121
+    ],
+    "scorePages": [
+      9
+    ]
+  },
+  {
+    "codeOrientation": "10505",
+    "nomSpecialite": "الاجازة في الرياضيات التطبيقية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "علم البيانات"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 114.178,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 118.7058,
+        "علوم الإعلامية": 151.1161,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      121
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "10507",
+    "nomSpecialite": "الإجازة في الرياضيات",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الرياضيات واإلعالمية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 111.157,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 150.4581,
+        "علوم الإعلامية": 165.7751,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      122
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "10510",
+    "nomSpecialite": "الإجازة في علوم الأرض",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "علوم وتقنيات الجيولوجيا",
+      "جيولوجيا األشغال الكبرى",
+      "الموارد الجيولوجية والمحيط",
+      "الموارد الجيولوجية الطاقية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 91.635,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      124
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "10512",
+    "nomSpecialite": "اإلجازة في علوم األحياء والمحيط",
+    "typeSpecialite": "اإلجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار (",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التصرف وتثمين الموارد البيولوجية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      124,
+      125
+    ]
+  },
+  {
+    "codeOrientation": "10513",
+    "nomSpecialite": "الإجازة في علوم الحياة و الأرض",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "علوم الحياة واألرض"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 113.8694,
+        "علوم تجريبية": 112.0095,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      125
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "10514",
+    "nomSpecialite": "الإجازة في الكيمياء-علم الأحياء",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الكيمياء-علم األحياء"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 105.8301,
+        "علوم تجريبية": 93.0052,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 86.3499,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      126
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "10518",
+    "nomSpecialite": "مرحلة تحضيرية مندمجة",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "تونس رياضيات-فيزياء-إعالمـيـة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 177.81,
+        "علوم تجريبية": 173.925,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 178.6167,
+        "علوم الإعلامية": 183.775,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      157
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "10520",
+    "nomSpecialite": "مرحلة تحضيرية مندمجة :رياضيات-فيزياء و إعلامـيـة",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "المعهد الوطني للعلوم التطبيقية والتكنولوجيا بتونس",
+    "universiteLabelRaw": "جامعة قرطاج",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التطبيقية رياضيات-فيزياء-إعالمـيـة",
+      "قرطاج)"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 188.3767,
+        "علوم تجريبية": 178.37,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 185.4783,
+        "علوم الإعلامية": 192.1783,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      158
+    ],
+    "scorePages": [
+      16
+    ]
+  },
+  {
+    "codeOrientation": "10521",
+    "nomSpecialite": "مرحلة تحضيرية مندمجة :كـيـمـيـاء-بـيـولوجيا تطبيقية",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "المعهد الوطني للعلوم التطبيقية والتكنولوجيا بتونس",
+    "universiteLabelRaw": "جامعة قرطاج",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التطبيقية كـيـمـيـاء-بـيـولوجيا تطبيقية",
+      "قرطاج)"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 166.6117,
+        "علوم تجريبية": 159.1633,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      158
+    ],
+    "scorePages": [
+      16
+    ]
+  },
+  {
+    "codeOrientation": "10524",
+    "nomSpecialite": "الإجازة في هندسة نظم الإعلامية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "النظم المحمولة وأنترنات األشياء"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 155.1393,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 168.5143,
+        "علوم الإعلامية": 165.2508,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      129
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "10572",
+    "nomSpecialite": "الإجازة في علوم وتكنولوجيات المعلومات والاتصالات",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية في المواصلات بتونس",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الشبكات وأنظمة اإلتصاالت",
+      "سالمة الشبكات"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 148.7479,
+        "علوم تجريبية": 153.6627,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 160.8673,
+        "علوم الإعلامية": 171.6636,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      145
+    ],
+    "scorePages": [
+      43
+    ]
+  },
+  {
+    "codeOrientation": "10573",
+    "nomSpecialite": "الإجازة في تكنولوجيات المعلومات والاتصالات",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "معالجة اإلشارة والملتيميديا"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 116.935,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 139.0144,
+        "علوم الإعلامية": 142.6738,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      145,
+      146
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "10629",
+    "nomSpecialite": "الإجازة في الإلكترونيك والكهروتقنية والآلية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "اإللكترونيك والكهروتقنية واآللية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 118.0531,
+        "علوم تجريبية": 117.058,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 130.0799,
+        "علوم الإعلامية": 148.9922,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      150
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "10832",
+    "nomSpecialite": "مرحلة تحضيرية :بيولوجيا-جيولوجيا",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "تونس بيولوجيا-جيولوجيا",
+      "الهندسة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 111.1188,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      160,
+      161
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "11422",
+    "nomSpecialite": "المرحلة التحضيرية العلمية :فيزياء-كيمياء",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "تونس فيزياء كيمياء"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 114.6,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      156
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "11509",
+    "nomSpecialite": "الإجازة في علوم الأحياء",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "البيولوجيا الجزيئية والخلوية",
+      "بيولوجيا المجموعات واألنظمة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 119.4778,
+        "علوم تجريبية": 109.4252,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      123
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "11518",
+    "nomSpecialite": "مرحلة تحضيرية مندمجة",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "المعهد العالي للهندسة الرقمية بتونس",
+    "universiteLabelRaw": "جامعة تونس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الرقمية",
+      "باالنقليزية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 184.24,
+        "علوم تجريبية": 175.9433,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 181.25,
+        "علوم الإعلامية": 190.9433,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      157
+    ],
+    "scorePages": [
+      5
+    ]
+  },
+  {
+    "codeOrientation": "11523",
+    "nomSpecialite": "الإجازة في علوم الإعلامية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للاعلامية",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "هندسة البرمجيات ونظم المعلومات",
+      "اإلعالمية والوسائط المتعددة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 182.4029,
+        "علوم تجريبية": 179.5139,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 178.775,
+        "علوم الإعلامية": 192.5519,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      126
+    ],
+    "scorePages": [
+      14
+    ]
+  },
+  {
+    "codeOrientation": "11524",
+    "nomSpecialite": "الإجازة في هندسة نظم الإعلامية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للاعلامية",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "(هندسة الشبكات والنظم"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 170.505,
+        "علوم تجريبية": 169.2794,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 181.3329,
+        "علوم الإعلامية": 181.2527,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      129
+    ],
+    "scorePages": [
+      14
+    ]
+  },
+  {
+    "codeOrientation": "11525",
+    "nomSpecialite": "مرحلة تحضيرية مندمجة :رياضيات-فيزياء-كيمياء",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "المدرسة الوطنية للمهندسين بمنوبة",
+    "universiteLabelRaw": "جامعة منوبة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "بمنوبة هندسة إيكولوجية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 155.0325,
+        "علوم تجريبية": 139.125,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 169.5275,
+        "علوم الإعلامية": 175.5625,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      160
+    ],
+    "scorePages": [
+      9
+    ]
+  },
+  {
+    "codeOrientation": "11526",
+    "nomSpecialite": "مرحلة تحضيرية مندمجة :رياضيات-فيزياء و إعلامـيـة",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "المدرسة الوطنية للمهندسين بمنوبة",
+    "universiteLabelRaw": "جامعة منوبة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "بمنوبة الجيوماتيك"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 167.3825,
+        "علوم تجريبية": 156.615,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 167.55,
+        "علوم الإعلامية": 178.82,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      160
+    ],
+    "scorePages": [
+      9
+    ]
+  },
+  {
+    "codeOrientation": "11629",
+    "nomSpecialite": "الإجازة في الإلكترونيك والكهروتقنية والآلية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للاعلامية",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "(النظم المحمولة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 142.1281,
+        "علوم تجريبية": 126.8004,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 138.121,
+        "علوم الإعلامية": 182.8149,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      150
+    ],
+    "scorePages": [
+      14
+    ]
+  },
+  {
+    "codeOrientation": "12512",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "المعهد العالي لعلوم وتكنولوجيات البيئة ببرج السدرية",
+    "universiteLabelRaw": "جامعة قرطاج (",
+    "etablissementId": "416",
+    "etablissementCode": 416,
+    "etablissementNomAr": "المعهد العالي لعلوم وتكنولوجيات البيئة ببرج السدرية",
+    "etablissementNomFr": "Institut Supérieur des Sciences et Technologies de l'Environnement de Borj Cédria",
+    "universiteId": "4",
+    "specialisations": [
+      "حماية وتكنولوجيات المحيط"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      125
+    ]
+  },
+  {
+    "codeOrientation": "12523",
+    "nomSpecialite": "الإجازة في علوم الإعلامية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "كلية العلوم بتونس",
+    "universiteLabelRaw": "جامعة تونس المنار",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "هندسة البرمجيات ونظم المعلومات"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 140.4375,
+        "علوم تجريبية": 163.8331,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 178.6419,
+        "علوم الإعلامية": 183.5211,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      126
+    ],
+    "scorePages": [
+      10
+    ]
+  },
+  {
+    "codeOrientation": "20512",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم ببنزرت",
+    "universiteLabelRaw": "جامعة قرطاج (",
+    "etablissementId": "401",
+    "etablissementCode": 401,
+    "etablissementNomAr": "كلية العلــوم ببنزرت",
+    "etablissementNomFr": "Faculté des Sciences de Bizerte",
+    "universiteId": "4",
+    "specialisations": [
+      "المراقبة البيولوجية للنظم اإليكولوجية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      125
+    ]
+  },
+  {
+    "codeOrientation": "21391",
+    "nomSpecialite": "الإجازة في إدارة الأعمال",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية ببنزرت",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "النقل والخدمات اللوجستية",
+      "إدارة األعمال"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 126.1316,
+        "علوم تجريبية": 129.175,
+        "إقتصاد وتصرف": 111.1784,
+        "العلوم التقنية": 142.0265,
+        "علوم الإعلامية": 128.675,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      105,
+      106
+    ],
+    "scorePages": [
+      54
+    ]
+  },
+  {
+    "codeOrientation": "21394",
+    "nomSpecialite": "الاجازة في المحاسبة و المالية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية ببنزرت",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "تقنيات المحاسبة والمالية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 101.59,
+        "علوم تجريبية": 120.573,
+        "إقتصاد وتصرف": 114.5489,
+        "العلوم التقنية": 120.5248,
+        "علوم الإعلامية": 120.835,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      108,
+      109
+    ],
+    "scorePages": [
+      54
+    ]
+  },
+  {
+    "codeOrientation": "21396",
+    "nomSpecialite": "الاجازة في التجارة والتوزيع",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية ببنزرت",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التسويق الرقمي"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 131.5993,
+        "إقتصاد وتصرف": 109.6001,
+        "العلوم التقنية": 112.9653,
+        "علوم الإعلامية": 127.89,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      111,
+      112
+    ],
+    "scorePages": [
+      54
+    ]
+  },
+  {
+    "codeOrientation": "21566",
+    "nomSpecialite": "الإجازة في تكنولوجيات الإعلامية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية ببنزرت",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الشبكات والخدمات اإلعالمية",
+      "تطوير أنظمة المعلومات",
+      "األنظمة المحمولة والجوالة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 105.035,
+        "علوم تجريبية": 123.485,
+        "إقتصاد وتصرف": 116.785,
+        "العلوم التقنية": 139.515,
+        "علوم الإعلامية": 141.84,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      132,
+      133
+    ],
+    "scorePages": [
+      54
+    ]
+  },
+  {
+    "codeOrientation": "21570",
+    "nomSpecialite": "الإجازة في الهندسـة الميكانـيـكـيـة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية ببنزرت",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التصميم والتصنيع الميكانيكي",
+      "الصيانة الصناعية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 142.9734,
+        "علوم تجريبية": 114.6132,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 113.9783,
+        "علوم الإعلامية": 129.13,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      138
+    ],
+    "scorePages": [
+      54
+    ]
+  },
+  {
+    "codeOrientation": "21571",
+    "nomSpecialite": "الإجازة في الهندسـة الكهـربـائـيــة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية ببنزرت",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الكهرباء الصناعية",
+      "اآللية واإلعالمية الصناعية",
+      "اإللكترونيك الصناعي"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 115.935,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 112.79,
+        "علوم الإعلامية": 123.46,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      143
+    ],
+    "scorePages": [
+      55
+    ]
+  },
+  {
+    "codeOrientation": "21597",
+    "nomSpecialite": "الإجازة في هندسة الأساليب",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية ببنزرت",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "األساليب الغذائية",
+      "األساليب الكيميائية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 91.6069,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 108.395,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      148,
+      149
+    ],
+    "scorePages": [
+      55
+    ]
+  },
+  {
+    "codeOrientation": "21846",
+    "nomSpecialite": "كيفية الالتحاق",
+    "typeSpecialite": "كيفية",
+    "etablissementLabelRaw": "بالمدرسة الوطنية للطب الأولى من المرحلة الأولى للمناظرة ب الاختبارات الكتابيّة : الطلبة الذين تابعوا بانتظام شعبة \" البيولوجيا وجيولوجيا \" بمعادلتها خلال السنة التي حدود تسعين بالمائة (90 %) للمناظرة بالملفّات : الأوائل الذين أتمّوا بنجاح وبدون والأرض أو الاجازة في ال علوم الأوائل الذين أتمّوا بنجاح شعبة \" بيولوجيا-جيولوجيا .\" حدود عشرة بالمائة (10 %) التكوين في التعليم الأساسي الخاص بالضباط : التكوين ال أ ساسي للضباط الدراسات الهندسية الدراسات في نظام \" إمد \" مؤسسات التعليم العالي العسكري 1 الأكاديمية في 3 في الاختصاصات سياقة الطائرات – أنظمة الطيران تكوين الضباط المهندسين الهندسي) ويختم بالحصول على للمتحصلين على شهادة العلوم التقنية) والراغبين في والتي تتضمن اختبار نفساني و فرع الأكاديمية العسكرية بفندق الاختصاصات التالية : – محاسبة ومالية-علوم عسكرية . التكوين خمس سنوات (ثلاث الوطنية للماجستير .\" ويمكن الشعب والراغبين في متابعة تتضمن اختبار نفساني و فحص الأساسي الخاص بضباط الصف الخاص بضباط الصف مدرسة الصحة التمريض-التخدير والانعاش-التصوير الطبيعي التكوين ثلاث سنوات) إجازة (، للمتحصلين على شهادة البكالوريا والرياضيات والراغبين في متابعة هذا ا يقع الاعلان عن العسكري عبر المؤسسات الخاصة للتعليم التعليم العالي والبحث العلمي من قبل الوزارة هي المؤهلة للاطلاع على قائمة من قبل تحذر الوزارة من كل الاشهارات شهادات أجنبية أو تشير إلى للالتحاق بالمؤسسات الخاصة يتعين التقيد بنوعية البكالوريا الشهادة الإجازة في المبصريات والنظارات الطبية الإجازة في التصوير الطبي والمداواة بالأشعة الإجازة في التغذية البشرية الإجازة في بدائل الأسنان الإجازة في علوم التوليد/قابلة الإجازة في أدواتية قاعة العمليات الجراحية الإجازة في علوم التمريض الإجازة في العلاج الطبيعي الإجازة في التبنيج والإنعاش الإجازة في تقويم النطق والكلام آداب/تونس الافتراضية عروض التكوين المهني في منظومة التكوين المهني مسالك كسب الكفايات والمهارات التي حظوظ الاندماج في الحياة . كسب القدرة على الانتصاب التدرج في سلم الشهادات . نظام ينظم 2008 والذي يشرف من ينجز وتأخذ أن مهني التسجيل الترشح للتسجيل بمؤسسات البكالوريا . يتضمن التكوين بمؤسسات فيفري . هناك امكانية الانتفاع بخدمات للاطلاع على 5 التسجيل وسحب التسجيل التسجيل الجامعي عمليات التسجيل الجامعي بطاق ات الدفع الالكتروني البريدية العلمي بالتعاون مع وزارة الهوية الرقمية التي تمكن www.inscription.tn وإدراج طلب الهوية الرقمية عبر ال www.mobile-id.tn . يتعين على الطلبة الأجانب للتعاون الدولي للحصول عن بعد . سحب التسجيل الجامعي 01 سحب التسجيل لأسباب يمكن لأي طالب بمؤسسة جامعية أن تسجيله لأسباب شخصية طريق مطلب يوجه إلى المؤسسة التي ينتمي إليها مدة لا تتجاوز شهرا من التسجيل . مناظرات إعادة التوجيه التكنولوجية مارس 2025 تمكن الطالب من تعديل هذه المناظرات من قبل إلى أكثر من شعبة وفي حال الإعلان عن فتح هذه المناظرات العامة للدراسات التكنولوجية عن هذه المناظرات عن طريق والبحث العلمي www.mes.tn الخدمات الجامعية والجنوب . وتتمثل هذه الخدمات السكن الجامعي والقروض الجامعية لمزيد النفسية للطلبة وزارة التعليم العهالي والبحث اليومية الدراسية أو العائلية والإرشاد بالوسط الجامعي والأحياء والمبيتات ومراكز هذه المكاتب خدمات مجانية إحاطة نفسية فردية تشمل الإصغاء والمساعدة النفسية الطلبة القدرة على الصعوبات والعمل على السبل الكفيلة بحلها . الإحاطة النفسية للطلبة الأخصائيون النفسانيون أهمّ المشاغل النفسية إيجاد الحلول لتجاوزها ، وتصدر ودواوين الخدمات الجامعية . يمكن الاتصال بالأخصائيين الجامعية وحسب مواعيد كامل الالكتروني المبيّن بمواقع تعاونية الحوادث المدرسية www.masu.tn 6 الأسئلة هل أن التوجيه يعتبر نظام التوجيه مجموع نقاط المترشح . طاقة استيعاب الشعبة ترتيب المترشحين كيف يمكن ان يمكن للمترشح ان طاقة الاستيعاب . ترتيبه حسب ماهي اهم عدم احترام الآجال عدم تعمير أكثر ما وضع اختيارات عدم الاخذ بعين تعمير الاختيارات . هل يمكنني تغيير يمكن للمترشح تغيير كيف أرتب يمكنك تعمير الشعب تكون حظوظك اوفر في ونهائي للحصول تقييم حظوظك دورات التوجيه للسنة هل يمكنني ان بإمكان المترشح ان الاختيارات من الشعب ما هي اهم الاسباب تتقلص حظوظ المترشح اصراره على شعبة ما الاكتفاء بتعمير اقل من لذا يستحسن تنويع ماهي حظوظي في شعبة ذات اختبارات؟ إذا ما أخفق المترشح في على تعيين من بين يرتبط تغير مجموع النقاط وطاقة الاستيعاب",
+    "universiteLabelRaw": null,
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "البيطري",
+      "للدراسات البيطريّة عن",
+      "دراسات السنة الأولى بمعهد",
+      "خلال السنة التي فتحت فيها",
+      "السنة الأولى من الدراسات",
+      "فتحت فيها المناظرة .",
+      "من عدد البقاع المفتوحة .",
+      "إمهال السنة الثانية في",
+      "الطبيعية والتطبيقات \"",
+      "السنة الثانية وبدون رسوب",
+      "العالي العسكري",
+      "بمؤسسات التعليم العالي",
+      "فرع الدراسات الهندسية",
+      "التكوين في فرع",
+      "العسكرية بفندق",
+      "الاختصاصات التالية :",
+      "تقنيات الأسلحة – هندسة إعلامية –",
+      "2",
+      "في الاختصاصات",
+      "قيادة السفن",
+      "بحرية (لفائدة",
+      "التجارية) – طاقة",
+      "مدرسة الطيران ببرج",
+      "التالية :",
+      "هندسة ميكانيكية – تيليميكانيك –",
+      "الاتصالات",
+      "\" الشهادة الوطنية",
+      "البكالوريا لسنة 2025 دورة",
+      "متابعة هذا ا لتكوين أن",
+      "فحص طبي واختبار في",
+      "الدراسات في نظام \" إمد",
+      "الجديد",
+      "في",
+      "للمتحصلين على شهادة",
+      "هذا التكوين أن يشاركوا في",
+      "طبي واختبار في الرياضة .",
+      "لفائدة الصحة العسكرية :",
+      "للحصول على الشهادة الوطنية",
+      "العسكرية",
+      "الطبي والمداواة بالأشعة",
+      "ويختم بالحصول على \"",
+      "لسنة 2025 (دورة رئيسية)",
+      "لتكوين أن يشاركوا في",
+      "مناظرة الانتداب لمتابعة",
+      "وسائل الإعلام وعبر موقع",
+      "www.defense.tn",
+      "العالي",
+      "كافة الطلبة والأولياء، أن",
+      "حصريا لإسناد شهادات",
+      "المؤسسات الخاصة للتعليم",
+      "الوزارة للسنة الجامعية",
+      "والاعلانات المغالطة",
+      "وجود مؤسسات أجنبية",
+      "للتعليم العالي التي تؤمن",
+      "المطلوبة والالتزام بالشروط",
+      "نوعية البكالوريا",
+      "المطلوبة",
+      "رياضيات/علوم",
+      "تجريبية",
+      "رياضيات/علوم مادة علوم",
+      "تجريبية/آداب/رياضة",
+      "رياضيات/علوم شعبة",
+      "رياضيات/علوم مادة التربية",
+      "مستوى تقني سام",
+      "للنجاح والحصول على",
+      "يتطلبها سوق الشغل .",
+      "النشيطة بفضل تكوين في",
+      "للحساب الخاص .",
+      "التكوين المهني",
+      "التكوين المهني إطار",
+      "المؤرخ في 11 فيفري",
+      "ينظم سيره وتدخلاته وفق",
+      "على التكوين المهني",
+      "تدريب ومستشارين في الاعلام",
+      "بين المهندسين والفنيين",
+      "مهامهم وأثنائها إلى تربصات",
+      "التكوين بالاعتماد أساسا",
+      "يتطلب أن تصبح المؤسسة",
+      "للشبان اكتساب المهارة في",
+      "التكوين المهني برامج",
+      "عملية إعداد هذه البرامج",
+      "اعتمادها في إطار الاختصاص",
+      "التكوين المهني مرتبط",
+      "المؤسسة هي شريك",
+      "مراحله بدءا بالمشاركة في",
+      "جديدة أو توسيع أو إعادة",
+      "وضع الاختصاصات و",
+      "التكوينية عبر التكوين بالتداول",
+      "بمؤسسات التكوين المهني",
+      "التكوين المهني العمومية",
+      "المبيت داخل مؤسسات",
+      "عروض التكوين المهني",
+      "انقر هنا",
+      "معلومات",
+      "الجامعي",
+      "حصريا عبر موقع الواب",
+      "التي يمكن اقتناءها من",
+      "تكنولوجيات الاتصال على ذّمة",
+      "الطالب من الولوج الآمن",
+      "بياناته الشخصية آلههيا باعتماد",
+      "تطبيق على الجوال",
+      "والمتحصلين على",
+      "على رمزا خاصا بالتعاون",
+      "شخصية",
+      "مرسم",
+      "يسحب",
+      "عن",
+      "إدارة",
+      "خلال",
+      "تاريخ",
+      "المنظمة من الجامعات",
+      "مساره الجامعي في صورة",
+      "الجامعات والإدارة العامة",
+      "نجاحه في المناظرة فإنه",
+      "وطريقة المشاركة فيها",
+      "خلال شهر جانفي وتجرى",
+      "الصحف ومواقع واب",
+      "للطلبة خدمات جامعية",
+      "التنشيط الثقافي",
+      "والرياضي",
+      "التفاصيل أنقر على رابط دليل",
+      "الجامعية",
+      "العلمي للطلبة الذين",
+      "أو الشخصية إمكانية",
+      "في الجامعات ومؤسسات",
+      "الصحة الجامعية .",
+      "في إطار السرية المطلقة",
+      "والإرشاد",
+      "لإكساب",
+      "مواجهة",
+      "إيجاد",
+      "https://uso.uvt.tn/consult/",
+      "وهي سداسية",
+      "وتهتم بال تطرّق",
+      "بالوسط الجامعي",
+      "بمواقع واب",
+      "النفسانيين بعناوين الهياكل",
+      "أيام الأسبوع عبر",
+      "التوجيه الجامعي و الجامعات",
+      "والجامعية",
+      "www.masu.tn/",
+      "الهاتف : 71240872",
+      "الفاكس : 28 17",
+      "والجامعية جملة من الخدمات .",
+      "التوجيه",
+      "الجامعي امتحان أم مناظرة؟",
+      "الجامعي مناظرة لأنه يعتمد",
+      "المطلوبة .",
+      "ضمن طالبي هذه الشعبة",
+      "اقيم حظوظي في الحصول",
+      "يقيم حظوظه للحصول على",
+      "الصيغة الاجمالية .",
+      "الاخطاء التي يجب تفاديها عند",
+      "عند تعمير بطاقة",
+      "يمكن من الاختيارات .",
+      "عشوائية غير مدروسة في",
+      "الاعتبار معطيات طاقة",
+      "اختياراتي بعد تأكيد",
+      "اختياراته اثناء الدورة خلال",
+      "اختياراتي؟",
+      "التي تميل اليها أكثر في",
+      "الحصول عليها في",
+      "على شعبة ما؟",
+      "للحصول على شعبة ما لأنه معيار",
+      "الجارية .",
+      "اطلب أكثر من شعبة ذات",
+      "يطلب أكثر من شعبة تتطلب",
+      "التي تتطلب اختبارات .",
+      "التي يؤجل بسببها الطالب",
+      "في الحصول على توجيه",
+      "دون مراعاة مجموع النقاط",
+      "الخاصة بالدورة الرئيسية .",
+      "06 اختيارات .",
+      "الاختيارات وتعمير أكبر عدد",
+      "الحصول على توجيه في",
+      "الاختبارات بالنسبة للشعب",
+      "اختباراته الموالية التي تستوفي",
+      "من سنة الى اخرى",
+      "المفتوحة في كل شعبة ."
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195
+    ]
+  },
+  {
+    "codeOrientation": "31312",
+    "nomSpecialite": "الاجازة في العلوم الاقتصادية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "معهد الدراسات التجارية العليا بسوسة",
+    "universiteLabelRaw": "جامعة سوسة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "نقد-مالية-بنك-تأمين"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 104.9706,
+        "علوم تجريبية": 124.305,
+        "إقتصاد وتصرف": 133.155,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      99
+    ],
+    "scorePages": [
+      27
+    ]
+  },
+  {
+    "codeOrientation": "31318",
+    "nomSpecialite": "الإجازة في علوم التصرف",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "معهد الدراسات التجارية العليا بسوسة",
+    "universiteLabelRaw": "جامعة سوسة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "إدارة األعمال",
+      "التسويق",
+      "المالية",
+      "المحاسبة",
+      "التصرف اللوجستي واإلنتاج"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 132.57,
+        "علوم تجريبية": 160.83,
+        "إقتصاد وتصرف": 152.66,
+        "العلوم التقنية": 181.9375,
+        "علوم الإعلامية": 134.17,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      102
+    ],
+    "scorePages": [
+      27
+    ]
+  },
+  {
+    "codeOrientation": "34208",
+    "nomSpecialite": "الاجازة في تصميم المنتوج",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للموضة بالمنستير",
+    "universiteLabelRaw": "جامعة المنستير",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "جامعة-التصميم على االقمشة",
+      "التصميم وتنفيذ المالبس",
+      "تصميم مكمالت الموضة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": 116.1271,
+        "رياضيات": 99.9968,
+        "علوم تجريبية": 119.325,
+        "إقتصاد وتصرف": 83.9775,
+        "العلوم التقنية": 79.9933,
+        "علوم الإعلامية": null,
+        "رياضة": 147.1
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      81,
+      82
+    ],
+    "scorePages": [
+      59
+    ]
+  },
+  {
+    "codeOrientation": "34318",
+    "nomSpecialite": "الإجازة في علوم التصرف",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للموضة بالمنستير",
+    "universiteLabelRaw": "جامعة المنستير",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التسويق"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 118.55,
+        "إقتصاد وتصرف": 101.44,
+        "العلوم التقنية": 106.245,
+        "علوم الإعلامية": 107.321,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      102,
+      103
+    ],
+    "scorePages": [
+      59
+    ]
+  },
+  {
+    "codeOrientation": "34394",
+    "nomSpecialite": "الاجازة في المحاسبة و المالية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية قصر هلال",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "تقنيات المحاسبة والمالية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 127.0679,
+        "إقتصاد وتصرف": 107.68,
+        "العلوم التقنية": 106.115,
+        "علوم الإعلامية": 111.775,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      109
+    ],
+    "scorePages": [
+      47
+    ]
+  },
+  {
+    "codeOrientation": "34396",
+    "nomSpecialite": "الاجازة في التجارة والتوزيع",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية قصر هلال",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "تقنيات البيع",
+      "التسويق الرقمي"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 108.8635,
+        "علوم تجريبية": 119.735,
+        "إقتصاد وتصرف": 102.52,
+        "العلوم التقنية": 81.8923,
+        "علوم الإعلامية": 115.545,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      112
+    ],
+    "scorePages": [
+      47
+    ]
+  },
+  {
+    "codeOrientation": "34570",
+    "nomSpecialite": "الإجازة في الهندسـة الميكانـيـكـيـة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية قصر هلال",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "هالل-التصميم والتصنيع الميكانيكي",
+      "الصيانة الصناعية",
+      "الطاقية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 109.605,
+        "علوم تجريبية": 105.345,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 106.195,
+        "علوم الإعلامية": 113.585,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      139
+    ],
+    "scorePages": [
+      47
+    ]
+  },
+  {
+    "codeOrientation": "34574",
+    "nomSpecialite": "الإجازة في هندسة النسيج",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية قصر هلال",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "هالل-صناعات النسيج",
+      "صناعات المالبس",
+      "صناعات التجويد"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": 81.0819,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": 105.97,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      147,
+      148
+    ],
+    "scorePages": [
+      47
+    ]
+  },
+  {
+    "codeOrientation": "34597",
+    "nomSpecialite": "الإجازة في هندسة الأساليب",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية قصر هلال",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "هالل األساليب الكيميائية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 108.6692,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      149
+    ],
+    "scorePages": [
+      47
+    ]
+  },
+  {
+    "codeOrientation": "34702",
+    "nomSpecialite": "طـــب الأسـنـــان",
+    "typeSpecialite": "طـــب",
+    "etablissementLabelRaw": "كلية طب الأسنان بالمنستير",
+    "universiteLabelRaw": "جامعة المنستير",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "طــب األسـنــان"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": 162.35,
+        "رياضيات": 184.73,
+        "علوم تجريبية": 180.94,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": 192.275
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      166,
+      167
+    ],
+    "scorePages": [
+      56
+    ]
+  },
+  {
+    "codeOrientation": "35574",
+    "nomSpecialite": "الإجازة في هندسة النسيج",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للموضة بالمنستير",
+    "universiteLabelRaw": "جامعة المنستير",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "صناعات المالبس"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": 85.3099,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": 105.6334,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      148
+    ],
+    "scorePages": [
+      59
+    ]
+  },
+  {
+    "codeOrientation": "36207",
+    "nomSpecialite": "الإجازة في تصميم الفضاء",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للفنون و الحرف بالمهدية",
+    "universiteLabelRaw": "جامعة المنستير",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "هندسة داخلية",
+      "سينوغرافيا"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": 117.68,
+        "رياضيات": 93.4868,
+        "علوم تجريبية": 116.84,
+        "إقتصاد وتصرف": 95.1435,
+        "العلوم التقنية": 100.185,
+        "علوم الإعلامية": 98.265,
+        "رياضة": 162.5758
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      78,
+      79
+    ],
+    "scorePages": [
+      60
+    ]
+  },
+  {
+    "codeOrientation": "36208",
+    "nomSpecialite": "الاجازة في تصميم المنتوج",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للفنون و الحرف بالمهدية",
+    "universiteLabelRaw": "جامعة المنستير",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "المصوغ",
+      "ابتكار صناعي"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": 105.6786,
+        "رياضيات": null,
+        "علوم تجريبية": 86.3134,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": 113.98
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      82
+    ],
+    "scorePages": [
+      60
+    ]
+  },
+  {
+    "codeOrientation": "36209",
+    "nomSpecialite": "الاجازة في تصميم الصورة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للفنون و الحرف بالمهدية",
+    "universiteLabelRaw": "جامعة المنستير",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "اشهار خطي"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": 114.355,
+        "رياضيات": null,
+        "علوم تجريبية": 99.81,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": 126.755
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      84
+    ],
+    "scorePages": [
+      60
+    ]
+  },
+  {
+    "codeOrientation": "40512",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم بصفاقس",
+    "universiteLabelRaw": "جامعة صفاقس (",
+    "etablissementId": "1001",
+    "etablissementCode": 1001,
+    "etablissementNomAr": "كلية العلوم بصفاقس",
+    "etablissementNomFr": "Faculté des Sciences de Sfax",
+    "universiteId": "10",
+    "specialisations": [
+      "البيولوجيا البحرية",
+      "علم البيئة والمحيط البري"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      125
+    ]
+  },
+  {
+    "codeOrientation": "50503",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم بقابس",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": "1101",
+    "etablissementCode": 1101,
+    "etablissementNomAr": "كلية العلوم بقابس",
+    "etablissementNomFr": "Faculté des Sciences de Gabès",
+    "universiteId": "11",
+    "specialisations": [
+      "الفيزياء"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      120
+    ]
+  },
+  {
+    "codeOrientation": "50522",
+    "nomSpecialite": "مرحلة تحضيرية علمية",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "المعهد التحضيري للدراسات الهندسية بقابس",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "للدراسات رياضيات فيزياء/فيزياء كيمياء",
+      "قابس)"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 99.7466,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": 96.82,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      159
+    ],
+    "scorePages": [
+      43
+    ]
+  },
+  {
+    "codeOrientation": "50532",
+    "nomSpecialite": "مرحلة تحضيرية-تكنولوجيا",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "المعهد التحضيري للدراسات الهندسية بقابس",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "للدراسات تكنولوجيا",
+      "قابس)"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 119.0033,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      160
+    ],
+    "scorePages": [
+      43
+    ]
+  },
+  {
+    "codeOrientation": "50832",
+    "nomSpecialite": "مرحلة تحضيرية :بيولوجيا-جيولوجيا",
+    "typeSpecialite": "مرحلة تحضيرية",
+    "etablissementLabelRaw": "المعهد التحضيري للدراسات الهندسية بقابس",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "للدراسات بيولوجيا-جيولوجيا",
+      "قابس)",
+      "الشهادة الوطنية لمهندس",
+      "يتم القبول بالمرحلة",
+      "البكالوريا طبقا لنظام التوجيه",
+      "ر . ف)",
+      ". ك)",
+      "وجيولوجيا (ب . ج)",
+      "تكوين المهندسين المؤهلة",
+      "تكوين المهندسين .",
+      "حدود طاقة استيعابها، عن",
+      "الشهادة الوطنية لل إجازة",
+      "والدكتوراه .",
+      "السنة الأولى من الماجستير",
+      "قائمة مؤسسات التكوين",
+      "ع/ر",
+      "1 المدرسة التونسية",
+      "2 المدرسة العليا للإحصاء",
+      "3 المدرسة العليا",
+      "4 المدرسة العليا للفلاحة",
+      "5 المدرسة العليا للفلاحة",
+      "6 المدرسة العليا للفلاحة",
+      "7 المدرسة العليا",
+      "8 المدرسة العليا",
+      "9 المدرسة الوطنية",
+      "10 المدرسة الوطنية العليا",
+      "11 المدرسة الوطنية لعلوم",
+      "12 المدرسة الوطنية",
+      "السدرية",
+      "13 المدرسة الوطنية",
+      "14 المدرسة الوطنية",
+      "15 المدرسة الوطنية",
+      "16 المدرسة الوطنية",
+      "17 المدرسة الوطنية",
+      "18 المدرسة الوطنية",
+      "19 المدرسة الوطنية",
+      "20 المدرسة الوطنية",
+      "21 المعهد العالي للعلوم",
+      "22 المعهد الوطني للعلوم",
+      "23 كلية العلوم بتونس",
+      "التطبيقية والتكنولوجيا",
+      "على الشهادة الوطنية",
+      "المؤسسات ذات المراحل",
+      "مرحلة تكوين هندسي مدتها",
+      "التحضيرية المندمجة",
+      "الغرض مرحلتين من",
+      "مندمجة تدوم سنتين : يتم",
+      "للمتحصلين على شهادة",
+      "تكوين المهندسين عن طريق",
+      "بالسنـة الثانيـة مـن المرحلة",
+      "80 % من الناجحين في",
+      "بالسنـة الثالثـة إجازة في",
+      "والدكتوراه والذين لم",
+      "المفتوحة .",
+      "ذات المراحل التحضيرية",
+      "المؤسسة",
+      "بمنوبة",
+      "والرياضيات بالمنستير",
+      "والملتيميديا بقابس",
+      "والملتيميديا بصفاقس",
+      "بتونس",
+      "بالكاف",
+      "والتكنولوجيا",
+      "والتكنولوجيا بسوسة",
+      "+ زحل تكوين هندس)",
+      "تكوين المهندسين عن",
+      "الثالثـة من الا جازة في",
+      "والدكتوراه والذين لم يرسبوا خلال",
+      "السيد وزير التعليم العالي",
+      "تؤمن (إجازة + مرحلة",
+      "لفنون الملتيميديا بمنوبة",
+      "للإعلامية",
+      "للإعلامية والرياضيات",
+      "للإعلامية والملتيميديا",
+      "للإعلامية وتقنيات الاتصال",
+      "للعلوم التطبيقية",
+      "علوم",
+      "وطب"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 105.8108,
+        "علوم تجريبية": 90.7356,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      161,
+      162,
+      163,
+      164,
+      165,
+      166
+    ],
+    "scorePages": [
+      43
+    ]
+  },
+  {
+    "codeOrientation": "54512",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "المعهد العالي للبيولوجيا التطبيقية بمدنين",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": "1109",
+    "etablissementCode": 1109,
+    "etablissementNomAr": "المعهد العالي للبيولوجيا التطبيقية بمدنين",
+    "etablissementNomFr": "Institut Supérieur de Biologie Appliquée de Medenine",
+    "universiteId": "11",
+    "specialisations": [
+      "حماية وتكنولوجيات المحيط"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      125
+    ]
+  },
+  {
+    "codeOrientation": "55391",
+    "nomSpecialite": "الإجازة في إدارة الأعمال",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بمدنين",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "إدارة األعمال"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 113.5947,
+        "علوم تجريبية": 113.5805,
+        "إقتصاد وتصرف": 90.33,
+        "العلوم التقنية": 97.3363,
+        "علوم الإعلامية": 89.6898,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      107
+    ],
+    "scorePages": [
+      53
+    ]
+  },
+  {
+    "codeOrientation": "55394",
+    "nomSpecialite": "الاجازة في المحاسبة و المالية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بمدنين",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "تقنيات المحاسبة والمالية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 105.0096,
+        "علوم تجريبية": 96.573,
+        "إقتصاد وتصرف": 93.19,
+        "العلوم التقنية": 91.7117,
+        "علوم الإعلامية": 93.45,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      110
+    ],
+    "scorePages": [
+      54
+    ]
+  },
+  {
+    "codeOrientation": "55566",
+    "nomSpecialite": "الإجازة في تكنولوجيات الإعلامية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بمدنين",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الشبكات والخدمات اإلعالمية",
+      "تطوير أنظمة المعلومات",
+      "األنظمة المحمولة والجوالة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 122.5043,
+        "علوم تجريبية": 93.9749,
+        "إقتصاد وتصرف": 93.8019,
+        "العلوم التقنية": 108.785,
+        "علوم الإعلامية": 105.365,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      134
+    ],
+    "scorePages": [
+      54
+    ]
+  },
+  {
+    "codeOrientation": "55568",
+    "nomSpecialite": "الإجازة في الهندسـة المدنية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بمدنين",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "البناء",
+      "األشغال العمومية",
+      "قيس األراضي والجغرفة الرقمية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 117.3362,
+        "علوم تجريبية": 101.4328,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 77.1645,
+        "علوم الإعلامية": 107.9451,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      137
+    ],
+    "scorePages": [
+      54
+    ]
+  },
+  {
+    "codeOrientation": "55570",
+    "nomSpecialite": "الإجازة في الهندسـة الميكانـيـكـيـة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بمدنين",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الصيانة الصناعية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 94.0637,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 83.5031,
+        "علوم الإعلامية": 77.8131,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      140
+    ],
+    "scorePages": [
+      54
+    ]
+  },
+  {
+    "codeOrientation": "56570",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بقبلي (اإلدارة العامة للدّراسات التّكنولوجيّة)",
+    "universiteLabelRaw": null,
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الصيانة الصناعية",
+      "التصميم والتصنيع الميكانيكي"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "missing speciality name",
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      140
+    ]
+  },
+  {
+    "codeOrientation": "56571",
+    "nomSpecialite": "143",
+    "typeSpecialite": "143",
+    "etablissementLabelRaw": "المعهد العالى للدراسات التكنولوجية بقبلي (اإلدارة العامة للدّراسات التّكنولوجيّة)",
+    "universiteLabelRaw": null,
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الكهرباء الصناعية",
+      "اآللية واإلعالمية الصناعية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      143,
+      144
+    ]
+  },
+  {
+    "codeOrientation": "57570",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بتطاوين (اإلدارة العامة للدّراسات التّكنولوجيّة)",
+    "universiteLabelRaw": null,
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الصيانة الصناعية",
+      "الطاقية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "missing speciality name",
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      140
+    ]
+  },
+  {
+    "codeOrientation": "60168",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": "1201",
+    "etablissementCode": 1201,
+    "etablissementNomAr": "كلية العلوم بقفصة",
+    "etablissementNomFr": "Faculté des Sciences de Gafsa",
+    "universiteId": "12",
+    "specialisations": [
+      "الجيوماتيك المطبقة على علوم"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      115
+    ]
+  },
+  {
+    "codeOrientation": "60477",
+    "nomSpecialite": "الإجازة في التربية والتعليم",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للعلوم الاجتماعية والتربية بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التربية والتعليم"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": 127.675,
+        "رياضيات": 119.72,
+        "علوم تجريبية": 149.35,
+        "إقتصاد وتصرف": 153.575,
+        "العلوم التقنية": 145.315,
+        "علوم الإعلامية": 148.57,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      69
+    ],
+    "scorePages": [
+      66
+    ]
+  },
+  {
+    "codeOrientation": "60501",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": "1201",
+    "etablissementCode": 1201,
+    "etablissementNomAr": "كلية العلوم بقفصة",
+    "etablissementNomFr": "Faculté des Sciences de Gafsa",
+    "universiteId": "12",
+    "specialisations": [
+      "بحث"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      119
+    ]
+  },
+  {
+    "codeOrientation": "60503",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": "1201",
+    "etablissementCode": 1201,
+    "etablissementNomAr": "كلية العلوم بقفصة",
+    "etablissementNomFr": "Faculté des Sciences de Gafsa",
+    "universiteId": "12",
+    "specialisations": [
+      "الفيزياء"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      120
+    ]
+  },
+  {
+    "codeOrientation": "60505",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": "1201",
+    "etablissementCode": 1201,
+    "etablissementNomAr": "كلية العلوم بقفصة",
+    "etablissementNomFr": "Faculté des Sciences de Gafsa",
+    "universiteId": "12",
+    "specialisations": [
+      "الرياضيات المالية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      122
+    ]
+  },
+  {
+    "codeOrientation": "60510",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم بقفصة",
+    "universiteLabelRaw": "جامعة قفصة (",
+    "etablissementId": "1201",
+    "etablissementCode": 1201,
+    "etablissementNomAr": "كلية العلوم بقفصة",
+    "etablissementNomFr": "Faculté des Sciences de Gafsa",
+    "universiteId": "12",
+    "specialisations": [
+      "علوم وتقنيات الجيولوجي ا"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      124
+    ]
+  },
+  {
+    "codeOrientation": "60513",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم بقفصة",
+    "universiteLabelRaw": "جامعة قفصة (",
+    "etablissementId": "1201",
+    "etablissementCode": 1201,
+    "etablissementNomAr": "كلية العلوم بقفصة",
+    "etablissementNomFr": "Faculté des Sciences de Gafsa",
+    "universiteId": "12",
+    "specialisations": [
+      "علوم الحياة واألرض"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      126
+    ]
+  },
+  {
+    "codeOrientation": "60524",
+    "nomSpecialite": "الإجازة في هندسة نظم الإعلامية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "النظم المحمولة وأنترنات األشياء",
+      "هندسة الشبكات والنظم"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 101.363,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 115.495,
+        "علوم الإعلامية": 95.53,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      131
+    ],
+    "scorePages": [
+      65
+    ]
+  },
+  {
+    "codeOrientation": "60573",
+    "nomSpecialite": "الإجازة في تكنولوجيات المعلومات والاتصالات",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "اإلتصاالت"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 102.8098,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      147
+    ],
+    "scorePages": [
+      65
+    ]
+  },
+  {
+    "codeOrientation": "60740",
+    "nomSpecialite": "الإجازة في الـتـبـنـيـج والإنعاش",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المدرسة العليا لعلوم و تقنيات الصحة بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التبنيج واإلنعاش"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 141.9088,
+        "علوم تجريبية": 147.5209,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      167
+    ],
+    "scorePages": [
+      66
+    ]
+  },
+  {
+    "codeOrientation": "60741",
+    "nomSpecialite": "الإجازة في التصوير الطبي والمداواة بالأشعة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المدرسة العليا لعلوم و تقنيات الصحة بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "التصوير الطبي والمداواة باألشعة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 115.93,
+        "علوم تجريبية": 143.5673,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      167
+    ],
+    "scorePages": [
+      66
+    ]
+  },
+  {
+    "codeOrientation": "60743",
+    "nomSpecialite": "الإجازة في البيولوجيا الطبية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المدرسة العليا لعلوم و تقنيات الصحة بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "البيولوجيا الطبية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": 135.6653,
+        "علوم تجريبية": 137.3131,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      168
+    ],
+    "scorePages": [
+      66
+    ]
+  },
+  {
+    "codeOrientation": "60760",
+    "nomSpecialite": "الإجازة في الرعاية الصحية الإستعجالية والانعاش",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المدرسة العليا لعلوم و تقنيات الصحة بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الرعاية الصحية واالستعجالية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": 141.7001,
+        "رياضيات": 133.105,
+        "علوم تجريبية": 142.7541,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": 177.8501
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      170
+    ],
+    "scorePages": [
+      66
+    ]
+  },
+  {
+    "codeOrientation": "61570",
+    "nomSpecialite": "الإجازة في الهندسـة الميكانـيـكـيـة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "صيانة السيارات",
+      "صيانة االليات الثقيلة"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 94.4,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 75.2037,
+        "علوم الإعلامية": 93.8584,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      141
+    ],
+    "scorePages": [
+      65
+    ]
+  },
+  {
+    "codeOrientation": "61629",
+    "nomSpecialite": "الإجازة في الإلكترونيك والكهروتقنية والآلية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقفصة",
+    "universiteLabelRaw": "جامعة قفصة",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "األنظمة الكهربائية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 85.1032,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      152,
+      153
+    ],
+    "scorePages": [
+      65
+    ]
+  },
+  {
+    "codeOrientation": "63566",
+    "nomSpecialite": "الإجازة في تكنولوجيات الإعلامية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بتوزر",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الشبكات والخدمات اإلعالمية",
+      "الملتيميديا وتطوير الواب",
+      "تطوير أنظمة المعلومات"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": 91.6983,
+        "العلوم التقنية": 95.7509,
+        "علوم الإعلامية": 92.6048,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      135
+    ],
+    "scorePages": [
+      53
+    ]
+  },
+  {
+    "codeOrientation": "63568",
+    "nomSpecialite": "الإجازة في الهندسـة المدنية",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بتوزر",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "البناء",
+      "األشغال العمومية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": 117.8117,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      137
+    ],
+    "scorePages": [
+      53
+    ]
+  },
+  {
+    "codeOrientation": "63570",
+    "nomSpecialite": "الإجازة في الهندسـة الميكانـيـكـيـة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بتوزر",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الصيانة الصناعية",
+      "الميكاترونيك",
+      "الطاقية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 87.33,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      141
+    ],
+    "scorePages": [
+      53
+    ]
+  },
+  {
+    "codeOrientation": "63571",
+    "nomSpecialite": "الإجازة في الهندسـة الكهـربـائـيــة",
+    "typeSpecialite": "الإجازة",
+    "etablissementLabelRaw": "المعهد العالي للدراسات التكنولوجية بتوزر",
+    "universiteLabelRaw": "جامعة قابس",
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "الكهرباء الصناعية",
+      "اآللية واإلعالمية الصناعية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": 85.8232,
+        "علوم الإعلامية": 95.1566,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      144
+    ],
+    "scorePages": [
+      53
+    ]
+  },
+  {
+    "codeOrientation": "70532",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "المعهد التحضيري الهندسية بالقيروان (",
+    "universiteLabelRaw": null,
+    "etablissementId": "912",
+    "etablissementCode": 912,
+    "etablissementNomAr": "المعهد التحضيري للدراسات الهندسية بالقيروان",
+    "etablissementNomFr": "Institut Préparatoire aux Etudes d'Ingénieurs de Kairouan",
+    "universiteId": "9",
+    "specialisations": [
+      "للدراسات تكنولوجيا",
+      "القيروان)"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "medium",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      160
+    ]
+  },
+  {
+    "codeOrientation": "73202",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "المعهد العالي للفنون والحرف بالقصرين",
+    "universiteLabelRaw": "جامعة القيروان",
+    "etablissementId": "903",
+    "etablissementCode": 903,
+    "etablissementNomAr": "المعهد العالي للفنون والحرف بالقصرين",
+    "etablissementNomFr": "Institut Supérieur des Arts et Métiers de Kasserine",
+    "universiteId": "9",
+    "specialisations": [
+      "خزف"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      77
+    ]
+  },
+  {
+    "codeOrientation": "75502",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم والتقنيات بسيدي بوزيد",
+    "universiteLabelRaw": "جامعة القيروان",
+    "etablissementId": "911",
+    "etablissementCode": 911,
+    "etablissementNomAr": "كلية العلوم والتقنيات بسيدي بوزيد",
+    "etablissementNomFr": "Faculté des Sciences et Techniques de Sidi Bouzid",
+    "universiteId": "9",
+    "specialisations": [
+      "فيزياء وكيمياء"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      120
+    ]
+  },
+  {
+    "codeOrientation": "75512",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "كلية العلوم والتقنيات بسيدي بوزيد",
+    "universiteLabelRaw": "جامعة القيروان",
+    "etablissementId": "911",
+    "etablissementCode": 911,
+    "etablissementNomAr": "كلية العلوم والتقنيات بسيدي بوزيد",
+    "etablissementNomFr": "Faculté des Sciences et Techniques de Sidi Bouzid",
+    "universiteId": "9",
+    "specialisations": [
+      "علوم االحياء والمحيط"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      125
+    ]
+  },
+  {
+    "codeOrientation": "84509",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "المعهد العالي للبيوتكنولوجيا بباجة",
+    "universiteLabelRaw": "جامعة جندوبة (",
+    "etablissementId": "608",
+    "etablissementCode": 608,
+    "etablissementNomAr": "المعهد العالي للبيوتكنولوجيا بباجة",
+    "etablissementNomFr": "Institut Supérieur de Biotechnologie de Béja",
+    "universiteId": "6",
+    "specialisations": [
+      "البيولوجيا الجزيئية والخلوية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      124
+    ]
+  },
+  {
+    "codeOrientation": "84512",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "المعهد العالي للبيوتكنولوجيا بباجة",
+    "universiteLabelRaw": "جامعة جندوبة",
+    "etablissementId": "608",
+    "etablissementCode": 608,
+    "etablissementNomAr": "المعهد العالي للبيوتكنولوجيا بباجة",
+    "etablissementNomFr": "Institut Supérieur de Biotechnologie de Béja",
+    "universiteId": "6",
+    "specialisations": [
+      "التصرف وتثمين الموارد البيولوجية"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      125
+    ]
+  },
+  {
+    "codeOrientation": "84841",
+    "nomSpecialite": "اإلجازة في التكنولوجيات",
+    "typeSpecialite": "اإلجازة",
+    "etablissementLabelRaw": "المعهد العالي للبيوتكنولوجيا بباجة (جندوبة) الغذائية كلية العلوم والتقنيات بسيدي بوزيد القيروان إجبارية المدرسة العليا للفالحة بمقرن (",
+    "universiteLabelRaw": null,
+    "etablissementId": null,
+    "etablissementCode": null,
+    "etablissementNomAr": null,
+    "etablissementNomFr": null,
+    "universiteId": null,
+    "specialisations": [
+      "جامعة-مراقبة جودة األغذية",
+      "الصناعات واألساليب الغذائية",
+      "جامعة الصناعات الغذائية وتأثيراتها",
+      "المحيط",
+      "قرطاج) بعث والتصرف في المؤسسات"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "low",
+    "reviewNotes": [
+      "establishment match failed: ambiguous or no match"
+    ],
+    "guidePages": [
+      175
+    ]
+  },
+  {
+    "codeOrientation": "86202",
+    "nomSpecialite": null,
+    "typeSpecialite": null,
+    "etablissementLabelRaw": "المعهد العالي للفنون والحرف بسليانة",
+    "universiteLabelRaw": "جامعة جندوبة",
+    "etablissementId": "604",
+    "etablissementCode": 604,
+    "etablissementNomAr": "المعهد العالي للفنون والحرف بسليانة",
+    "etablissementNomFr": "Institut Supérieur des Arts et Métiers de Siliana",
+    "universiteId": "6",
+    "specialisations": [
+      "خزف",
+      "التصوير الفوتوغرافي"
+    ],
+    "scores": {
+      "2025": {
+        "آداب": null,
+        "رياضيات": null,
+        "علوم تجريبية": null,
+        "إقتصاد وتصرف": null,
+        "العلوم التقنية": null,
+        "علوم الإعلامية": null,
+        "رياضة": null
+      }
+    },
+    "capacities": {},
+    "needsReview": true,
+    "matchConfidence": "high",
+    "reviewNotes": [
+      "missing speciality name"
+    ],
+    "guidePages": [
+      77
+    ]
+  }
+]

@@ -18,7 +18,7 @@ const prisma = new PrismaClient({
 
 function readJsonFile<T>(filePath: string): T[] {
   try {
-    const content = fs.readFileSync(filePath, "utf-8");
+    const content = fs.readFileSync(filePath, "utf-8").replace(/^\uFEFF/, "");
     return JSON.parse(content);
   } catch (error) {
     console.error(`❌ Error reading ${filePath}:`, error);
@@ -31,9 +31,9 @@ function normalizeLabel(label: string): string {
   return label
     .trim()
     .toLowerCase()
-    .replace(/\s+/g, " ")                    // collapse repeated spaces
-    .replace(/[()]/g, "")                    // remove parentheses
-    .replace(/[,؛:/](?!\s)/g, "")             // remove punctuation (except spaced)
+    .replace(/\s+/g, " ")
+    .replace(/[()]/g, "")
+    .replace(/[,؛:/](?!\s)/g, "")
     .trim();
 }
 
@@ -45,35 +45,6 @@ function deduplicateBy<T>(items: T[], keyFn: (item: T) => string): T[] {
     seen.add(key);
     return true;
   });
-}
-
-// Helper: Try to find establishment by partial name matching
-function findEstablishmentByPartialMatch(
-  targetName: string,
-  normMap: Map<string, string>
-): string | null {
-  const targetNorm = normalizeLabel(targetName);
-  
-  // Exact match first
-  if (normMap.has(targetNorm)) {
-    return normMap.get(targetNorm) || null;
-  }
-
-  // Partial match: find an entry that contains all significant words from target
-  const targetWords = targetNorm.split(/\s+/).filter(w => w.length > 2);
-  if (targetWords.length === 0) return null;
-
-  for (const [normKey, id] of normMap.entries()) {
-    const keyWords = normKey.split(/\s+/);
-    // Check if most target words appear in this establishment name
-    const matchCount = targetWords.filter(w => keyWords.some(kw => kw.includes(w) || w.includes(kw))).length;
-    if (matchCount >= Math.ceil(targetWords.length * 0.6)) {
-      // At least 60% of target words match
-      return id;
-    }
-  }
-
-  return null;
 }
 
 // ============================================================================
@@ -100,19 +71,33 @@ const stats = {
 // ============================================================================
 
 async function main() {
-  console.log("\n🌱 Starting Bideyati seed script...\n");
+  console.log("\n🌱 Starting Bideyati demo seed...\n");
 
-  // Adjust these paths if your data directory structure is different
-  const DATA_DIR = path.join(__dirname, "../data");
+  const DATA_DIR = path.join(__dirname, "../data/demo");
+  const universitiesPath = path.join(DATA_DIR, "universites.demo.json");
+  const etablissementsPath = path.join(DATA_DIR, "etablissements.demo.json");
+  const specialitesPath = path.join(DATA_DIR, "specialites.demo.json");
+  const scoresPath = path.join(DATA_DIR, "scores.demo.json");
+  const capacitiesPath = path.join(DATA_DIR, "capacites.demo.json");
+
+  const universities = readJsonFile<any>(universitiesPath);
+  const etablissements = readJsonFile<any>(etablissementsPath);
+  const specialites = readJsonFile<any>(specialitesPath);
+  const scores = readJsonFile<any>(scoresPath);
+  const capacities = readJsonFile<any>(capacitiesPath);
+
+  console.log("Using demo files only:");
+  console.log(`  ${universitiesPath}`);
+  console.log(`  ${etablissementsPath}`);
+  console.log(`  ${specialitesPath}`);
+  console.log(`  ${scoresPath}`);
+  console.log(`  ${capacitiesPath}\n`);
 
   // ========================================
   // 1. SEED UNIVERSITE
   // ========================================
+  console.time("universities");
   console.log("📚 Seeding Universite...");
-  const universities = readJsonFile<any>(
-    path.join(DATA_DIR, "normalized/universites.json")
-  );
-
   for (const uni of universities) {
     try {
       await prisma.universite.upsert({
@@ -145,16 +130,14 @@ async function main() {
       stats.universite.skipped++;
     }
   }
-  console.log(`  ✓ Processed ${universities.length} universities\n`);
+  console.timeEnd("universities");
+  console.log(`Universities done: ${universities.length}\n`);
 
   // ========================================
   // 2. SEED ETABLISSEMENT
   // ========================================
+  console.time("establishments");
   console.log("🏢 Seeding Etablissement...");
-  const etablissements = readJsonFile<any>(
-    path.join(DATA_DIR, "normalized/etablissements.json")
-  );
-
   for (const etab of etablissements) {
     try {
       await prisma.etablissement.upsert({
@@ -189,12 +172,14 @@ async function main() {
       stats.etablissement.skipped++;
     }
   }
-  console.log(`  ✓ Processed ${etablissements.length} établissements\n`);
+  console.timeEnd("establishments");
+  console.log(`Establishments done: ${etablissements.length}\n`);
 
   // ========================================
-  // 3. SEED SECTION (7 Bac Sections)
+  // 3. SEED SECTION
   // ========================================
-  console.log("📖 Seeding Section (bac sections)...");
+  console.time("sections");
+  console.log("📖 Seeding Section...");
   const sectionNames = [
     "آداب",
     "رياضيات",
@@ -204,7 +189,7 @@ async function main() {
     "العلوم التقنية",
     "رياضة",
   ];
-  const sectionMap = new Map<string, string>(); // normalized name -> id
+  const sectionMap = new Map<string, string>();
 
   for (const sectionName of sectionNames) {
     try {
@@ -223,279 +208,125 @@ async function main() {
       stats.section.skipped++;
     }
   }
-  console.log(`  ✓ Processed ${sectionNames.length} sections\n`);
+  console.timeEnd("sections");
+  console.log(`Sections done: ${sectionNames.length}\n`);
 
   // ========================================
-  // 4. BUILD CODE-TO-ESTABLISHMENT MAPPING
+  // 4. SEED SPECIALITE
   // ========================================
-  console.log("🔗 Building codeOrientation -> Etablissement mapping...");
-  const codeToEstablishment = new Map<string, string>(); // code -> establishment name
-
-  const scoreFiles = [
-    path.join(DATA_DIR, "normalized/2023/scores_2023_reference.by_section.json"),
-    path.join(
-      DATA_DIR,
-      "normalized/2024/scores_2024_reference.by_section.json"
-    ),
-    path.join(DATA_DIR, "normalized/2025/scores_2025.by_section.json"),
-  ];
-
-  // Pre-load capacity file for reuse
-  const capacityFile = path.join(
-    DATA_DIR,
-    "normalized/2025/capacities_2025.by_section.json"
-  );
-  const capacityDataAll = readJsonFile<any>(capacityFile);
-
-  for (const scoreFile of scoreFiles) {
-    const scores = readJsonFile<any>(scoreFile);
-    for (const score of scores) {
-      if (
-        score.codeOrientation &&
-        !codeToEstablishment.has(score.codeOrientation)
-      ) {
-        codeToEstablishment.set(score.codeOrientation, score.establishment_name);
-      }
-    }
-  }
-
-  // Also populate from capacity file to fill gaps for codes only in capacities
-  for (const cap of capacityDataAll) {
-    if (
-      cap.codeOrientation &&
-      cap.establishment_name &&
-      !codeToEstablishment.has(cap.codeOrientation)
-    ) {
-      codeToEstablishment.set(cap.codeOrientation, cap.establishment_name);
-    }
-  }
-
-  console.log(
-    `  ✓ Mapped ${codeToEstablishment.size} codeOrientation entries\n`
-  );
-
-  // ========================================
-  // 4B. PRELOAD ETABLISSEMENTS FOR MAPPING
-  // ========================================
-  const allEtablissements = await prisma.etablissement.findMany({
-    select: { id: true, nom: true, nomAr: true },
-  });
-  const etablissementNormMap = new Map<string, string>(); // normalized name -> id
-  for (const etab of allEtablissements) {
-    if (etab.nom) {
-      etablissementNormMap.set(normalizeLabel(etab.nom), etab.id);
-    }
-    if (etab.nomAr) {
-      etablissementNormMap.set(normalizeLabel(etab.nomAr), etab.id);
-    }
-  }
-
-  // ========================================
-  // 4C. BUILD UNIQUE CODEORIENTATION SET FROM EXTRACTED DATA
-  // ========================================
-  console.log("📊 Extracting unique codeOrientation from all score/capacity files...");
-  const uniqueCodesMap = new Map<string, any>(); // codeOrientation -> { code, specialty_name, formuleBrute? }
-
-  // Extract from all score files
-  for (const scoreFile of scoreFiles) {
-    const scores = readJsonFile<any>(scoreFile);
-    for (const score of scores) {
-      if (score.codeOrientation && !uniqueCodesMap.has(score.codeOrientation)) {
-        uniqueCodesMap.set(score.codeOrientation, {
-          code: score.codeOrientation,
-          specialty_name: score.specialty_name || "",
-        });
-      }
-    }
-  }
-
-  // Extract from capacity file (reuse already-loaded data)
-  for (const cap of capacityDataAll) {
-    if (cap.codeOrientation && !uniqueCodesMap.has(cap.codeOrientation)) {
-      uniqueCodesMap.set(cap.codeOrientation, {
-        code: cap.codeOrientation,
-        specialty_name: cap.specialty_name || "",
-      });
-    }
-  }
-  console.log(`  ✓ Found ${uniqueCodesMap.size} unique codeOrientation values\n`);
-
-  // ========================================
-  // 5. SEED SPECIALITE FROM EXTRACTED DATA (WITH ENRICHMENT)
-  // ========================================
-  console.log("🎓 Seeding Specialite from extracted data...");
-
-  // Load enrichment data from sample file
-  const enrichmentData = readJsonFile<any>(
-    path.join(DATA_DIR, "normalized/2025/specialties_base.sample.json")
-  );
-  const enrichmentMap = new Map<string, any>(); // codeOrientation -> { nom, formuleBrute }
-  for (const spec of enrichmentData) {
-    if (spec.codeOrientation) {
-      enrichmentMap.set(spec.codeOrientation, {
-        nom: spec.nom,
-        formuleBrute: spec.formuleBrute || null,
-      });
-    }
-  }
-
-  // Seed each unique code as a Specialite
-  for (const [code, codeData] of uniqueCodesMap.entries()) {
+  console.time("specialties");
+  console.log("🎓 Seeding Specialite...");
+  for (const spec of specialites) {
     try {
-      // Determine specialty name: prefer enrichment, fallback to extracted data
-      let nom = codeData.specialty_name || "";
-      let formuleBrute: string | null = null;
-
-      const enriched = enrichmentMap.get(code);
-      if (enriched) {
-        nom = enriched.nom || nom; // prefer enriched name if available
-        formuleBrute = enriched.formuleBrute;
-      }
-
-      // Try to resolve etablissement from mapping
-      let etablissementId: string | null = null;
-      const establishmentName = codeToEstablishment.get(code);
-      if (establishmentName) {
-        // Try exact match first
-        const normalizedName = normalizeLabel(establishmentName);
-        etablissementId = etablissementNormMap.get(normalizedName) || null;
-        
-        // Fallback: try partial matching if exact fails
-        if (!etablissementId) {
-          etablissementId = findEstablishmentByPartialMatch(establishmentName, etablissementNormMap);
-        }
-        
-        // Log if still unresolved
-        if (!etablissementId) {
-          console.warn(
-            `  ⚠️  Unresolved establishment for code ${code}: "${establishmentName}"`
-          );
-          stats.specialite.unresolved = (stats.specialite.unresolved || 0) + 1;
-        }
-      } else {
-        console.warn(`  ⚠️  No establishment mapping for code ${code}`);
-        stats.specialite.unresolved = (stats.specialite.unresolved || 0) + 1;
-      }
-
-      // Prepare update data - only include etablissementId if non-null to avoid overwriting valid links
-      const updateData: any = {
-        nom: nom,
-        formuleBrute: formuleBrute,
-      };
-      if (etablissementId !== null) {
-        updateData.etablissementId = etablissementId;
-      }
-
       await prisma.specialite.upsert({
-        where: { codeOrientation: code },
-        update: updateData,
+        where: { codeOrientation: spec.codeOrientation },
+        update: {
+          nom: spec.nomSpecialite,
+          etablissementId: spec.etablissementId || null,
+          universiteId: spec.universiteId || null,
+        },
         create: {
-          codeOrientation: code,
-          nom: nom,
-          formuleBrute: formuleBrute,
-          etablissementId: etablissementId,
-          // universiteId and domaine, scoreMinimum left null as per data
+          codeOrientation: spec.codeOrientation,
+          nom: spec.nomSpecialite,
+          etablissementId: spec.etablissementId || null,
+          universiteId: spec.universiteId || null,
         },
       });
       stats.specialite.processed++;
     } catch (error) {
-      console.error(`  ❌ Failed for code ${code}:`, (error as any).message);
+      console.error(
+        `  ❌ Failed for code ${spec.codeOrientation}:`,
+        (error as any).message
+      );
       stats.specialite.skipped++;
     }
   }
-  console.log(`  ✓ Processed ${uniqueCodesMap.size} specialties\n`);
+  console.timeEnd("specialties");
+  console.log(`Specialties done: ${specialites.length}\n`);
 
-  // ========================================
-  // 5B. PRELOAD SPECIALTIES INTO MAP
-  // ========================================
   const allSpecialites = await prisma.specialite.findMany({
     select: { id: true, codeOrientation: true },
   });
-  const specialiteMap = new Map<string, string>(); // codeOrientation -> specialiteId
+  const specialiteMap = new Map<string, string>();
   for (const spec of allSpecialites) {
     specialiteMap.set(spec.codeOrientation, spec.id);
   }
 
   // ========================================
-  // 6. SEED STATISTIQUE ADMISSION
+  // 5. SEED STATISTIQUE ADMISSION
   // ========================================
+  console.time("scores");
   console.log("📊 Seeding StatistiqueAdmission...");
+  const dedupedScores = deduplicateBy(
+    scores,
+    (s) => `${s.annee}-${s.codeOrientation}-${s.sectionBac}`
+  );
   const seenStatistics = new Set<string>();
 
-  for (const scoreFile of scoreFiles) {
-    const scores = readJsonFile<any>(scoreFile);
-    const dedupedScores = deduplicateBy(
-      scores,
-      (s) => `${s.annee}-${s.codeOrientation}-${s.sectionBac}`
-    );
-
-    for (const row of dedupedScores) {
-      try {
-        if (!row.codeOrientation || !row.sectionBac) {
-          stats.statistiqueAdmission.unresolved++;
-          continue;
-        }
-
-        // Resolve specialite by codeOrientation
-        const specialiteId = specialiteMap.get(row.codeOrientation);
-        if (!specialiteId) {
-          stats.statistiqueAdmission.unresolved++;
-          continue;
-        }
-
-        // Resolve section by normalized section name
-        const sectionId = sectionMap.get(normalizeLabel(row.sectionBac));
-        if (!sectionId) {
-          stats.statistiqueAdmission.unresolved++;
-          continue;
-        }
-
-        // Check for duplicate
-        const dupKey = `${row.annee}-${sectionId}-${specialiteId}`;
-        if (seenStatistics.has(dupKey)) {
-          stats.statistiqueAdmission.skipped++;
-          continue;
-        }
-
-        await prisma.statistiqueAdmission.upsert({
-          where: {
-            annee_sectionId_specialiteId: {
-              annee: row.annee,
-              sectionId: sectionId,
-              specialiteId: specialiteId,
-            },
-          },
-          update: {
-            scoreDernierAdmis: row.scoreDernierAdmis,
-          },
-          create: {
-            annee: row.annee,
-            sectionId: sectionId,
-            specialiteId: specialiteId,
-            scoreDernierAdmis: row.scoreDernierAdmis,
-            // scoreMinimum, tauxAdmission left null
-          },
-        });
-
-        seenStatistics.add(dupKey);
-        stats.statistiqueAdmission.processed++;
-      } catch (error) {
-        console.error(
-          `  ❌ Failed for code ${row.codeOrientation}, section ${row.sectionBac}:`,
-          (error as any).message
-        );
-        stats.statistiqueAdmission.skipped++;
+  for (const row of dedupedScores) {
+    try {
+      if (!row.codeOrientation || !row.sectionBac) {
+        stats.statistiqueAdmission.unresolved++;
+        continue;
       }
+
+      const specialiteId = specialiteMap.get(row.codeOrientation);
+      if (!specialiteId) {
+        stats.statistiqueAdmission.unresolved++;
+        continue;
+      }
+
+      const sectionId = sectionMap.get(normalizeLabel(row.sectionBac));
+      if (!sectionId) {
+        stats.statistiqueAdmission.unresolved++;
+        continue;
+      }
+
+      const dupKey = `${row.annee}-${sectionId}-${specialiteId}`;
+      if (seenStatistics.has(dupKey)) {
+        stats.statistiqueAdmission.skipped++;
+        continue;
+      }
+
+      await prisma.statistiqueAdmission.upsert({
+        where: {
+          annee_sectionId_specialiteId: {
+            annee: row.annee,
+            sectionId,
+            specialiteId,
+          },
+        },
+        update: {
+          scoreDernierAdmis: row.scoreDernierAdmis,
+        },
+        create: {
+          annee: row.annee,
+          sectionId,
+          specialiteId,
+          scoreDernierAdmis: row.scoreDernierAdmis,
+        },
+      });
+
+      seenStatistics.add(dupKey);
+      stats.statistiqueAdmission.processed++;
+    } catch (error) {
+      console.error(
+        `  ❌ Failed for code ${row.codeOrientation}, section ${row.sectionBac}:`,
+        (error as any).message
+      );
+      stats.statistiqueAdmission.skipped++;
     }
   }
-  console.log(`  ✓ Processed StatistiqueAdmission records\n`);
+  console.timeEnd("scores");
+  console.log(`Scores done: ${dedupedScores.length}\n`);
 
   // ========================================
-  // 7. SEED CAPACITE ADMISSION
+  // 6. SEED CAPACITE ADMISSION
   // ========================================
+  console.time("capacities");
   console.log("📈 Seeding CapaciteAdmission...");
   const dedupedCapacities = deduplicateBy(
-    capacityDataAll,
+    capacities,
     (c) => `${c.annee}-${c.tour}-${c.codeOrientation}-${c.sectionBac}`
   );
   const seenCapacities = new Set<string>();
@@ -507,21 +338,18 @@ async function main() {
         continue;
       }
 
-      // Resolve specialite by codeOrientation
       const specialiteId = specialiteMap.get(row.codeOrientation);
       if (!specialiteId) {
         stats.capaciteAdmission.unresolved++;
         continue;
       }
 
-      // Resolve section by normalized section name
       const sectionId = sectionMap.get(normalizeLabel(row.sectionBac));
       if (!sectionId) {
         stats.capaciteAdmission.unresolved++;
         continue;
       }
 
-      // Check for duplicate
       const dupKey = `${row.annee}-${row.tour}-${sectionId}-${specialiteId}`;
       if (seenCapacities.has(dupKey)) {
         stats.capaciteAdmission.skipped++;
@@ -533,8 +361,8 @@ async function main() {
           annee_tour_sectionId_specialiteId: {
             annee: row.annee,
             tour: row.tour,
-            sectionId: sectionId,
-            specialiteId: specialiteId,
+            sectionId,
+            specialiteId,
           },
         },
         update: {
@@ -543,8 +371,8 @@ async function main() {
         create: {
           annee: row.annee,
           tour: row.tour,
-          sectionId: sectionId,
-          specialiteId: specialiteId,
+          sectionId,
+          specialiteId,
           capacite: row.capacite,
         },
       });
@@ -559,7 +387,8 @@ async function main() {
       stats.capaciteAdmission.skipped++;
     }
   }
-  console.log(`  ✓ Processed ${dedupedCapacities.length} capacity records\n`);
+  console.timeEnd("capacities");
+  console.log(`Capacities done: ${dedupedCapacities.length}\n`);
 
   // ========================================
   // PRINT SUMMARY
@@ -574,7 +403,7 @@ async function main() {
     if (counts.skipped > 0) {
       console.log(`  Skipped:   ${counts.skipped.toString().padStart(5)}`);
     }
-    if ("unresolved" in counts && counts.unresolved > 0) {
+    if ("unresolved" in counts && counts.unresolved && counts.unresolved > 0) {
       console.log(`  Unresolved: ${counts.unresolved.toString().padStart(4)}`);
     }
     console.log();
@@ -583,6 +412,7 @@ async function main() {
   console.log("═══════════════════════════════════════════════════════════");
   console.log("✅ Seed completed successfully!");
   console.log("═══════════════════════════════════════════════════════════\n");
+  console.log("Seed finished.");
 }
 
 // ============================================================================

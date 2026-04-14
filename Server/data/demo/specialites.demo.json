@@ -1,0 +1,1464 @@
+﻿[
+    {
+        "codeOrientation":  "10201",
+        "nomSpecialite":  "Licence en Civilisation Islamique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur de la Civilisation Islamique de Tunis",
+        "universiteLabelRaw":  "Universite Ezzitouna",
+        "etablissementId":  "102",
+        "etablissementCode":  102,
+        "etablissementNomAr":  "المعهد العالي للحضارة الإسلامية",
+        "etablissementNomFr":  "Institut Supérieur de la Civilisation Islamique de Tunis",
+        "universiteId":  "1",
+        "specialisations":  [
+                                "Civilisation islamique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "10202",
+        "nomSpecialite":  "Licence en Pensee Islamique et Dialogue des Civilisations",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur de la Civilisation Islamique de Tunis",
+        "universiteLabelRaw":  "Universite Ezzitouna",
+        "etablissementId":  "102",
+        "etablissementCode":  102,
+        "etablissementNomAr":  "المعهد العالي للحضارة الإسلامية",
+        "etablissementNomFr":  "Institut Supérieur de la Civilisation Islamique de Tunis",
+        "universiteId":  "1",
+        "specialisations":  [
+                                "Pensee islamique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "21201",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Industriel",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale Supérieure d\u0027Ingénieurs de Tunis",
+        "universiteLabelRaw":  "Universite de Tunis",
+        "etablissementId":  "212",
+        "etablissementCode":  212,
+        "etablissementNomAr":  "المدرسة الوطنية العليا للمهندسين بتونس",
+        "etablissementNomFr":  "Ecole Nationale Supérieure d\u0027Ingénieurs de Tunis",
+        "universiteId":  "2",
+        "specialisations":  [
+                                "Genie industriel"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "21202",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Mecatronique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale Supérieure d\u0027Ingénieurs de Tunis",
+        "universiteLabelRaw":  "Universite de Tunis",
+        "etablissementId":  "212",
+        "etablissementCode":  212,
+        "etablissementNomAr":  "المدرسة الوطنية العليا للمهندسين بتونس",
+        "etablissementNomFr":  "Ecole Nationale Supérieure d\u0027Ingénieurs de Tunis",
+        "universiteId":  "2",
+        "specialisations":  [
+                                "Mecatronique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "21203",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Electrique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale Supérieure d\u0027Ingénieurs de Tunis",
+        "universiteLabelRaw":  "Universite de Tunis",
+        "etablissementId":  "212",
+        "etablissementCode":  212,
+        "etablissementNomAr":  "المدرسة الوطنية العليا للمهندسين بتونس",
+        "etablissementNomFr":  "Ecole Nationale Supérieure d\u0027Ingénieurs de Tunis",
+        "universiteId":  "2",
+        "specialisations":  [
+                                "Genie electrique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "20401",
+        "nomSpecialite":  "Licence en Arts Plastiques",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur des Beaux-Arts de Tunis",
+        "universiteLabelRaw":  "Universite de Tunis",
+        "etablissementId":  "204",
+        "etablissementCode":  204,
+        "etablissementNomAr":  "المعهد العالي للفنون الجميلة بتونس",
+        "etablissementNomFr":  "Institut Supérieur des Beaux-Arts de Tunis",
+        "universiteId":  "2",
+        "specialisations":  [
+                                "Arts plastiques"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "20402",
+        "nomSpecialite":  "Licence en Design Graphique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur des Beaux-Arts de Tunis",
+        "universiteLabelRaw":  "Universite de Tunis",
+        "etablissementId":  "204",
+        "etablissementCode":  204,
+        "etablissementNomAr":  "المعهد العالي للفنون الجميلة بتونس",
+        "etablissementNomFr":  "Institut Supérieur des Beaux-Arts de Tunis",
+        "universiteId":  "2",
+        "specialisations":  [
+                                "Design graphique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "20403",
+        "nomSpecialite":  "Licence en Communication Visuelle",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur des Beaux-Arts de Tunis",
+        "universiteLabelRaw":  "Universite de Tunis",
+        "etablissementId":  "204",
+        "etablissementCode":  204,
+        "etablissementNomAr":  "المعهد العالي للفنون الجميلة بتونس",
+        "etablissementNomFr":  "Institut Supérieur des Beaux-Arts de Tunis",
+        "universiteId":  "2",
+        "specialisations":  [
+                                "Communication visuelle"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "21501",
+        "nomSpecialite":  "Licence en Administration des Affaires",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Tunis Business School",
+        "universiteLabelRaw":  "Universite de Tunis",
+        "etablissementId":  "215",
+        "etablissementCode":  215,
+        "etablissementNomAr":  "المدرسة العليا للأعمال بتونس",
+        "etablissementNomFr":  "Tunis Business School",
+        "universiteId":  "2",
+        "specialisations":  [
+                                "Management"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "21502",
+        "nomSpecialite":  "Licence en Finance",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Tunis Business School",
+        "universiteLabelRaw":  "Universite de Tunis",
+        "etablissementId":  "215",
+        "etablissementCode":  215,
+        "etablissementNomAr":  "المدرسة العليا للأعمال بتونس",
+        "etablissementNomFr":  "Tunis Business School",
+        "universiteId":  "2",
+        "specialisations":  [
+                                "Finance"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "21503",
+        "nomSpecialite":  "Licence en Marketing",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Tunis Business School",
+        "universiteLabelRaw":  "Universite de Tunis",
+        "etablissementId":  "215",
+        "etablissementCode":  215,
+        "etablissementNomAr":  "المدرسة العليا للأعمال بتونس",
+        "etablissementNomFr":  "Tunis Business School",
+        "universiteId":  "2",
+        "specialisations":  [
+                                "Marketing"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "30401",
+        "nomSpecialite":  "Doctorat en Medecine",
+        "typeSpecialite":  "Doctorat",
+        "etablissementLabelRaw":  "Faculté de Médecine de Tunis",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "304",
+        "etablissementCode":  304,
+        "etablissementNomAr":  "كلية الطب بتونس",
+        "etablissementNomFr":  "Faculté de Médecine de Tunis",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Medecine"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "30402",
+        "nomSpecialite":  "Licence en Sante Publique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté de Médecine de Tunis",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "304",
+        "etablissementCode":  304,
+        "etablissementNomAr":  "كلية الطب بتونس",
+        "etablissementNomFr":  "Faculté de Médecine de Tunis",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Sante publique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "31101",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Civil",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Tunis",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "311",
+        "etablissementCode":  311,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بتونس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Tunis",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Genie civil"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "31102",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Electrique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Tunis",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "311",
+        "etablissementCode":  311,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بتونس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Tunis",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Genie electrique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "31103",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Informatique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Tunis",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "311",
+        "etablissementCode":  311,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بتونس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Tunis",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Genie informatique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "30801",
+        "nomSpecialite":  "Licence en Sciences de l\u0027Informatique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur d\u0027Informatique",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "308",
+        "etablissementCode":  308,
+        "etablissementNomAr":  "المعهد العالي للإعلامية بالمنار",
+        "etablissementNomFr":  "Institut Supérieur d\u0027Informatique",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Informatique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "30802",
+        "nomSpecialite":  "Licence en Data Science",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur d\u0027Informatique",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "308",
+        "etablissementCode":  308,
+        "etablissementNomAr":  "المعهد العالي للإعلامية بالمنار",
+        "etablissementNomFr":  "Institut Supérieur d\u0027Informatique",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Data science"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "30803",
+        "nomSpecialite":  "Licence en Intelligence Artificielle",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur d\u0027Informatique",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "308",
+        "etablissementCode":  308,
+        "etablissementNomAr":  "المعهد العالي للإعلامية بالمنار",
+        "etablissementNomFr":  "Institut Supérieur d\u0027Informatique",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Intelligence artificielle"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "30101",
+        "nomSpecialite":  "Licence en Mathematiques",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "301",
+        "etablissementCode":  301,
+        "etablissementNomAr":  "كلية العلوم للرياضيات والفيزياء والطبيعيات بتونس",
+        "etablissementNomFr":  "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Mathematiques"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "30102",
+        "nomSpecialite":  "Licence en Physique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "301",
+        "etablissementCode":  301,
+        "etablissementNomAr":  "كلية العلوم للرياضيات والفيزياء والطبيعيات بتونس",
+        "etablissementNomFr":  "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Physique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "30103",
+        "nomSpecialite":  "Licence en Sciences de la Vie",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+        "universiteLabelRaw":  "Universite Tunis El Manar",
+        "etablissementId":  "301",
+        "etablissementCode":  301,
+        "etablissementNomAr":  "كلية العلوم للرياضيات والفيزياء والطبيعيات بتونس",
+        "etablissementNomFr":  "Faculté des Sciences Mathématiques, Physiques et Naturelles de Tunis",
+        "universiteId":  "3",
+        "specialisations":  [
+                                "Sciences de la vie"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "40701",
+        "nomSpecialite":  "Licence en Reseaux Informatiques et Telecommunications",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut National des Sciences Appliquées et de Technologie de Tunis",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "407",
+        "etablissementCode":  407,
+        "etablissementNomAr":  "المعهد الوطني للعلوم التطبيقية والتكنولوجيا",
+        "etablissementNomFr":  "Institut National des Sciences Appliquées et de Technologie de Tunis",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Reseaux et telecommunications"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "40702",
+        "nomSpecialite":  "Licence en Informatique Industrielle et Automatique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut National des Sciences Appliquées et de Technologie de Tunis",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "407",
+        "etablissementCode":  407,
+        "etablissementNomAr":  "المعهد الوطني للعلوم التطبيقية والتكنولوجيا",
+        "etablissementNomFr":  "Institut National des Sciences Appliquées et de Technologie de Tunis",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Automatique industrielle"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "40703",
+        "nomSpecialite":  "Licence en Instrumentation et Maintenance Biomedicale",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut National des Sciences Appliquées et de Technologie de Tunis",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "407",
+        "etablissementCode":  407,
+        "etablissementNomAr":  "المعهد الوطني للعلوم التطبيقية والتكنولوجيا",
+        "etablissementNomFr":  "Institut National des Sciences Appliquées et de Technologie de Tunis",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Technologies biomedicales"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "40704",
+        "nomSpecialite":  "Licence en Genie Biologique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut National des Sciences Appliquées et de Technologie de Tunis",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "407",
+        "etablissementCode":  407,
+        "etablissementNomAr":  "المعهد الوطني للعلوم التطبيقية والتكنولوجيا",
+        "etablissementNomFr":  "Institut National des Sciences Appliquées et de Technologie de Tunis",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Genie biologique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "42301",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Telecommunications",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Supérieure des Communications de Tunis",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "423",
+        "etablissementCode":  423,
+        "etablissementNomAr":  "المدرسة العليا للمواصلات بتونس",
+        "etablissementNomFr":  "Ecole Supérieure des Communications de Tunis",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Telecommunications"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "42302",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Reseaux",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Supérieure des Communications de Tunis",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "423",
+        "etablissementCode":  423,
+        "etablissementNomAr":  "المدرسة العليا للمواصلات بتونس",
+        "etablissementNomFr":  "Ecole Supérieure des Communications de Tunis",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Reseaux"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "42303",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Systemes de Communication",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Supérieure des Communications de Tunis",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "423",
+        "etablissementCode":  423,
+        "etablissementNomAr":  "المدرسة العليا للمواصلات بتونس",
+        "etablissementNomFr":  "Ecole Supérieure des Communications de Tunis",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Systemes de communication"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "43001",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Informatique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Polytechnique de Tunisie",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "430",
+        "etablissementCode":  430,
+        "etablissementNomAr":  "المدرسة التونسية للتقنيات",
+        "etablissementNomFr":  "Ecole Polytechnique de Tunisie",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Informatique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "43002",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Mathematiques Appliquees et Modelisation",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Polytechnique de Tunisie",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "430",
+        "etablissementCode":  430,
+        "etablissementNomAr":  "المدرسة التونسية للتقنيات",
+        "etablissementNomFr":  "Ecole Polytechnique de Tunisie",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Mathematiques appliquees"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "43003",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Telecommunications",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Polytechnique de Tunisie",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "430",
+        "etablissementCode":  430,
+        "etablissementNomAr":  "المدرسة التونسية للتقنيات",
+        "etablissementNomFr":  "Ecole Polytechnique de Tunisie",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Telecommunications"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "42701",
+        "nomSpecialite":  "Licence en Audiovisuel",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Ecole Supérieure de l\u0027Audiovisuel et du Cinéma de Gammarth",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "427",
+        "etablissementCode":  427,
+        "etablissementNomAr":  "المدرسة العليا للسمعي البصري والسينما بقمرت",
+        "etablissementNomFr":  "Ecole Supérieure de l\u0027Audiovisuel et du Cinéma de Gammarth",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Audiovisuel"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "42702",
+        "nomSpecialite":  "Licence en Realisation Cinematographique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Ecole Supérieure de l\u0027Audiovisuel et du Cinéma de Gammarth",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "427",
+        "etablissementCode":  427,
+        "etablissementNomAr":  "المدرسة العليا للسمعي البصري والسينما بقمرت",
+        "etablissementNomFr":  "Ecole Supérieure de l\u0027Audiovisuel et du Cinéma de Gammarth",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Cinema"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "42703",
+        "nomSpecialite":  "Licence en Montage et Postproduction",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Ecole Supérieure de l\u0027Audiovisuel et du Cinéma de Gammarth",
+        "universiteLabelRaw":  "Universite de Carthage",
+        "etablissementId":  "427",
+        "etablissementCode":  427,
+        "etablissementNomAr":  "المدرسة العليا للسمعي البصري والسينما بقمرت",
+        "etablissementNomFr":  "Ecole Supérieure de l\u0027Audiovisuel et du Cinéma de Gammarth",
+        "universiteId":  "4",
+        "specialisations":  [
+                                "Postproduction"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "51001",
+        "nomSpecialite":  "Licence en Sciences de l\u0027Informatique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Ecole Nationale des Sciences de l\u0027Informatique",
+        "universiteLabelRaw":  "Universite de la Manouba",
+        "etablissementId":  "510",
+        "etablissementCode":  510,
+        "etablissementNomAr":  "المدرسة الوطنية لعلوم الإعلامية",
+        "etablissementNomFr":  "Ecole Nationale des Sciences de l\u0027Informatique",
+        "universiteId":  "5",
+        "specialisations":  [
+                                "Informatique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "51002",
+        "nomSpecialite":  "Licence en Securite des Systemes d\u0027Information",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Ecole Nationale des Sciences de l\u0027Informatique",
+        "universiteLabelRaw":  "Universite de la Manouba",
+        "etablissementId":  "510",
+        "etablissementCode":  510,
+        "etablissementNomAr":  "المدرسة الوطنية لعلوم الإعلامية",
+        "etablissementNomFr":  "Ecole Nationale des Sciences de l\u0027Informatique",
+        "universiteId":  "5",
+        "specialisations":  [
+                                "Cybersecurite"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "51003",
+        "nomSpecialite":  "Licence en Ingenierie des Donnees",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Ecole Nationale des Sciences de l\u0027Informatique",
+        "universiteLabelRaw":  "Universite de la Manouba",
+        "etablissementId":  "510",
+        "etablissementCode":  510,
+        "etablissementNomAr":  "المدرسة الوطنية لعلوم الإعلامية",
+        "etablissementNomFr":  "Ecole Nationale des Sciences de l\u0027Informatique",
+        "universiteId":  "5",
+        "specialisations":  [
+                                "Ingenierie des donnees"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "50201",
+        "nomSpecialite":  "Licence en Journalisme",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut de Presse et des Sciences de l\u0027Information",
+        "universiteLabelRaw":  "Universite de la Manouba",
+        "etablissementId":  "502",
+        "etablissementCode":  502,
+        "etablissementNomAr":  "معهد الصحافة وعلوم الأخبار",
+        "etablissementNomFr":  "Institut de Presse et des Sciences de l\u0027Information",
+        "universiteId":  "5",
+        "specialisations":  [
+                                "Journalisme"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "50202",
+        "nomSpecialite":  "Licence en Communication des Medias",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut de Presse et des Sciences de l\u0027Information",
+        "universiteLabelRaw":  "Universite de la Manouba",
+        "etablissementId":  "502",
+        "etablissementCode":  502,
+        "etablissementNomAr":  "معهد الصحافة وعلوم الأخبار",
+        "etablissementNomFr":  "Institut de Presse et des Sciences de l\u0027Information",
+        "universiteId":  "5",
+        "specialisations":  [
+                                "Communication medias"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "50203",
+        "nomSpecialite":  "Licence en Presse Numerique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut de Presse et des Sciences de l\u0027Information",
+        "universiteLabelRaw":  "Universite de la Manouba",
+        "etablissementId":  "502",
+        "etablissementCode":  502,
+        "etablissementNomAr":  "معهد الصحافة وعلوم الأخبار",
+        "etablissementNomFr":  "Institut de Presse et des Sciences de l\u0027Information",
+        "universiteId":  "5",
+        "specialisations":  [
+                                "Presse numerique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "60101",
+        "nomSpecialite":  "Licence en Droit",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+        "universiteLabelRaw":  "Universite de Jendouba",
+        "etablissementId":  "601",
+        "etablissementCode":  601,
+        "etablissementNomAr":  "كلية العلوم القانونية والاقتصادية والتصرف بجندوبة",
+        "etablissementNomFr":  "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+        "universiteId":  "6",
+        "specialisations":  [
+                                "Droit"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "60102",
+        "nomSpecialite":  "Licence en Sciences Economiques",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+        "universiteLabelRaw":  "Universite de Jendouba",
+        "etablissementId":  "601",
+        "etablissementCode":  601,
+        "etablissementNomAr":  "كلية العلوم القانونية والاقتصادية والتصرف بجندوبة",
+        "etablissementNomFr":  "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+        "universiteId":  "6",
+        "specialisations":  [
+                                "Economie"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "60103",
+        "nomSpecialite":  "Licence en Sciences de Gestion",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+        "universiteLabelRaw":  "Universite de Jendouba",
+        "etablissementId":  "601",
+        "etablissementCode":  601,
+        "etablissementNomAr":  "كلية العلوم القانونية والاقتصادية والتصرف بجندوبة",
+        "etablissementNomFr":  "Faculté des Sciences Juridiques, Economiques et de Gestion de Jendouba",
+        "universiteId":  "6",
+        "specialisations":  [
+                                "Gestion"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "70301",
+        "nomSpecialite":  "Doctorat en Medecine",
+        "typeSpecialite":  "Doctorat",
+        "etablissementLabelRaw":  "Faculté de Médecine de Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "703",
+        "etablissementCode":  703,
+        "etablissementNomAr":  "كلية الطب بسوسة",
+        "etablissementNomFr":  "Faculté de Médecine de Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Medecine"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "70302",
+        "nomSpecialite":  "Licence en Sciences Biomedicales",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté de Médecine de Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "703",
+        "etablissementCode":  703,
+        "etablissementNomAr":  "كلية الطب بسوسة",
+        "etablissementNomFr":  "Faculté de Médecine de Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Sciences biomedicales"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "71101",
+        "nomSpecialite":  "Licence en Sciences de l\u0027Informatique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur d\u0027Informatique et des Technologies de Communication de Hammam Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "711",
+        "etablissementCode":  711,
+        "etablissementNomAr":  "المعهد العالي للإعلامية وتكنولوجيات الاتصال بحمام سوسة",
+        "etablissementNomFr":  "Institut Supérieur d\u0027Informatique et des Technologies de Communication de Hammam Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Informatique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "71102",
+        "nomSpecialite":  "Licence en Genie des Systemes Informatiques",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur d\u0027Informatique et des Technologies de Communication de Hammam Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "711",
+        "etablissementCode":  711,
+        "etablissementNomAr":  "المعهد العالي للإعلامية وتكنولوجيات الاتصال بحمام سوسة",
+        "etablissementNomFr":  "Institut Supérieur d\u0027Informatique et des Technologies de Communication de Hammam Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Systemes informatiques"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "71103",
+        "nomSpecialite":  "Licence en Telecommunications",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur d\u0027Informatique et des Technologies de Communication de Hammam Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "711",
+        "etablissementCode":  711,
+        "etablissementNomAr":  "المعهد العالي للإعلامية وتكنولوجيات الاتصال بحمام سوسة",
+        "etablissementNomFr":  "Institut Supérieur d\u0027Informatique et des Technologies de Communication de Hammam Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Telecommunications"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "71501",
+        "nomSpecialite":  "Licence en Internet des Objets",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "715",
+        "etablissementCode":  715,
+        "etablissementNomAr":  "المدرسة العليا للعلوم والتكنولوجيا بحمام سوسة",
+        "etablissementNomFr":  "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Internet des objets"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "71502",
+        "nomSpecialite":  "Licence en Systemes Embarques",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "715",
+        "etablissementCode":  715,
+        "etablissementNomAr":  "المدرسة العليا للعلوم والتكنولوجيا بحمام سوسة",
+        "etablissementNomFr":  "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Systemes embarques"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "71503",
+        "nomSpecialite":  "Licence en Telecommunications",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "715",
+        "etablissementCode":  715,
+        "etablissementNomAr":  "المدرسة العليا للعلوم والتكنولوجيا بحمام سوسة",
+        "etablissementNomFr":  "Ecole Supérieure des Sciences et des Technologies de Hammam Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Telecommunications"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "71401",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Mecatronique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "714",
+        "etablissementCode":  714,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بسوسة",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Mecatronique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "71402",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Energetique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "714",
+        "etablissementCode":  714,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بسوسة",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Energetique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "71403",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Industriel",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Sousse",
+        "universiteLabelRaw":  "Universite de Sousse",
+        "etablissementId":  "714",
+        "etablissementCode":  714,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بسوسة",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Sousse",
+        "universiteId":  "7",
+        "specialisations":  [
+                                "Genie industriel"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "80301",
+        "nomSpecialite":  "Doctorat en Medecine",
+        "typeSpecialite":  "Doctorat",
+        "etablissementLabelRaw":  "Faculté de Médecine de Monastir",
+        "universiteLabelRaw":  "Universite de Monastir",
+        "etablissementId":  "803",
+        "etablissementCode":  803,
+        "etablissementNomAr":  "كلية الطب بالمنستير",
+        "etablissementNomFr":  "Faculté de Médecine de Monastir",
+        "universiteId":  "8",
+        "specialisations":  [
+                                "Medecine"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "80302",
+        "nomSpecialite":  "Licence en Technologies de la Sante",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté de Médecine de Monastir",
+        "universiteLabelRaw":  "Universite de Monastir",
+        "etablissementId":  "803",
+        "etablissementCode":  803,
+        "etablissementNomAr":  "كلية الطب بالمنستير",
+        "etablissementNomFr":  "Faculté de Médecine de Monastir",
+        "universiteId":  "8",
+        "specialisations":  [
+                                "Technologies de la sante"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "81501",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Mecanique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Monastir",
+        "universiteLabelRaw":  "Universite de Monastir",
+        "etablissementId":  "815",
+        "etablissementCode":  815,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بالمنستير",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Monastir",
+        "universiteId":  "8",
+        "specialisations":  [
+                                "Genie mecanique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "81502",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Electromecanique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Monastir",
+        "universiteLabelRaw":  "Universite de Monastir",
+        "etablissementId":  "815",
+        "etablissementCode":  815,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بالمنستير",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Monastir",
+        "universiteId":  "8",
+        "specialisations":  [
+                                "Electromecanique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "81503",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Textile",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Monastir",
+        "universiteLabelRaw":  "Universite de Monastir",
+        "etablissementId":  "815",
+        "etablissementCode":  815,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بالمنستير",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Monastir",
+        "universiteId":  "8",
+        "specialisations":  [
+                                "Genie textile"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "90501",
+        "nomSpecialite":  "Licence en Mathematiques Appliquees",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur des Mathématiques Appliquées et de l\u0027Informatique de Kairouan",
+        "universiteLabelRaw":  "Universite de Kairouan",
+        "etablissementId":  "905",
+        "etablissementCode":  905,
+        "etablissementNomAr":  "المعهد العالي للرياضيات التطبيقية والإعلامية بالقيروان",
+        "etablissementNomFr":  "Institut Supérieur des Mathématiques Appliquées et de l\u0027Informatique de Kairouan",
+        "universiteId":  "9",
+        "specialisations":  [
+                                "Mathematiques appliquees"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "90502",
+        "nomSpecialite":  "Licence en Sciences de l\u0027Informatique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur des Mathématiques Appliquées et de l\u0027Informatique de Kairouan",
+        "universiteLabelRaw":  "Universite de Kairouan",
+        "etablissementId":  "905",
+        "etablissementCode":  905,
+        "etablissementNomAr":  "المعهد العالي للرياضيات التطبيقية والإعلامية بالقيروان",
+        "etablissementNomFr":  "Institut Supérieur des Mathématiques Appliquées et de l\u0027Informatique de Kairouan",
+        "universiteId":  "9",
+        "specialisations":  [
+                                "Informatique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "90503",
+        "nomSpecialite":  "Licence en Genie des Systemes d\u0027Information",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur des Mathématiques Appliquées et de l\u0027Informatique de Kairouan",
+        "universiteLabelRaw":  "Universite de Kairouan",
+        "etablissementId":  "905",
+        "etablissementCode":  905,
+        "etablissementNomAr":  "المعهد العالي للرياضيات التطبيقية والإعلامية بالقيروان",
+        "etablissementNomFr":  "Institut Supérieur des Mathématiques Appliquées et de l\u0027Informatique de Kairouan",
+        "universiteId":  "9",
+        "specialisations":  [
+                                "Systemes d\u0027information"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "100501",
+        "nomSpecialite":  "Doctorat en Medecine",
+        "typeSpecialite":  "Doctorat",
+        "etablissementLabelRaw":  "Faculté de Médecine de Sfax",
+        "universiteLabelRaw":  "Universite de Sfax",
+        "etablissementId":  "1005",
+        "etablissementCode":  1005,
+        "etablissementNomAr":  "كلية الطب بصفاقس",
+        "etablissementNomFr":  "Faculté de Médecine de Sfax",
+        "universiteId":  "10",
+        "specialisations":  [
+                                "Medecine"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "100502",
+        "nomSpecialite":  "Licence en Biotechnologie Medicale",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Faculté de Médecine de Sfax",
+        "universiteLabelRaw":  "Universite de Sfax",
+        "etablissementId":  "1005",
+        "etablissementCode":  1005,
+        "etablissementNomAr":  "كلية الطب بصفاقس",
+        "etablissementNomFr":  "Faculté de Médecine de Sfax",
+        "universiteId":  "10",
+        "specialisations":  [
+                                "Biotechnologie medicale"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "101101",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Electronique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Electronique et des Télécommunications de Sfax",
+        "universiteLabelRaw":  "Universite de Sfax",
+        "etablissementId":  "1011",
+        "etablissementCode":  1011,
+        "etablissementNomAr":  "المدرسة الوطنية للإلكترونيك والاتصالات بصفاقس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Electronique et des Télécommunications de Sfax",
+        "universiteId":  "10",
+        "specialisations":  [
+                                "Electronique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "101102",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Telecommunications",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Electronique et des Télécommunications de Sfax",
+        "universiteLabelRaw":  "Universite de Sfax",
+        "etablissementId":  "1011",
+        "etablissementCode":  1011,
+        "etablissementNomAr":  "المدرسة الوطنية للإلكترونيك والاتصالات بصفاقس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Electronique et des Télécommunications de Sfax",
+        "universiteId":  "10",
+        "specialisations":  [
+                                "Telecommunications"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "101103",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Reseaux et Systemes",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Electronique et des Télécommunications de Sfax",
+        "universiteLabelRaw":  "Universite de Sfax",
+        "etablissementId":  "1011",
+        "etablissementCode":  1011,
+        "etablissementNomAr":  "المدرسة الوطنية للإلكترونيك والاتصالات بصفاقس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Electronique et des Télécommunications de Sfax",
+        "universiteId":  "10",
+        "specialisations":  [
+                                "Reseaux et systemes"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "101701",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Mecanique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Sfax",
+        "universiteLabelRaw":  "Universite de Sfax",
+        "etablissementId":  "1017",
+        "etablissementCode":  1017,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بصفاقس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Sfax",
+        "universiteId":  "10",
+        "specialisations":  [
+                                "Genie mecanique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "101702",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Civil",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Sfax",
+        "universiteLabelRaw":  "Universite de Sfax",
+        "etablissementId":  "1017",
+        "etablissementCode":  1017,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بصفاقس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Sfax",
+        "universiteId":  "10",
+        "specialisations":  [
+                                "Genie civil"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "101703",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Informatique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Sfax",
+        "universiteLabelRaw":  "Universite de Sfax",
+        "etablissementId":  "1017",
+        "etablissementCode":  1017,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بصفاقس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Sfax",
+        "universiteId":  "10",
+        "specialisations":  [
+                                "Genie informatique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "111501",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Chimique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Gabès",
+        "universiteLabelRaw":  "Universite de Gabes",
+        "etablissementId":  "1115",
+        "etablissementCode":  1115,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بقابس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Gabès",
+        "universiteId":  "11",
+        "specialisations":  [
+                                "Genie chimique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "111502",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Electrique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Gabès",
+        "universiteLabelRaw":  "Universite de Gabes",
+        "etablissementId":  "1115",
+        "etablissementCode":  1115,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بقابس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Gabès",
+        "universiteId":  "11",
+        "specialisations":  [
+                                "Genie electrique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "111503",
+        "nomSpecialite":  "Diplome National d\u0027Ingenieur en Genie Mecanique",
+        "typeSpecialite":  "Diplome National d\u0027Ingenieur",
+        "etablissementLabelRaw":  "Ecole Nationale d\u0027Ingénieurs de Gabès",
+        "universiteLabelRaw":  "Universite de Gabes",
+        "etablissementId":  "1115",
+        "etablissementCode":  1115,
+        "etablissementNomAr":  "المدرسة الوطنية للمهندسين بقابس",
+        "etablissementNomFr":  "Ecole Nationale d\u0027Ingénieurs de Gabès",
+        "universiteId":  "11",
+        "specialisations":  [
+                                "Genie mecanique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "111001",
+        "nomSpecialite":  "Licence en Technologies de l\u0027Information et de la Communication",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur d\u0027Informatique et de Multimédia de Gabès",
+        "universiteLabelRaw":  "Universite de Gabes",
+        "etablissementId":  "1110",
+        "etablissementCode":  1110,
+        "etablissementNomAr":  "المعهد العالي للإعلامية والملتيميديا بقابس",
+        "etablissementNomFr":  "Institut Supérieur d\u0027Informatique et de Multimédia de Gabès",
+        "universiteId":  "11",
+        "specialisations":  [
+                                "TIC"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "111002",
+        "nomSpecialite":  "Licence en Multimedia",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur d\u0027Informatique et de Multimédia de Gabès",
+        "universiteLabelRaw":  "Universite de Gabes",
+        "etablissementId":  "1110",
+        "etablissementCode":  1110,
+        "etablissementNomAr":  "المعهد العالي للإعلامية والملتيميديا بقابس",
+        "etablissementNomFr":  "Institut Supérieur d\u0027Informatique et de Multimédia de Gabès",
+        "universiteId":  "11",
+        "specialisations":  [
+                                "Multimedia"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "111003",
+        "nomSpecialite":  "Licence en Genie des Systemes d\u0027Information",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur d\u0027Informatique et de Multimédia de Gabès",
+        "universiteLabelRaw":  "Universite de Gabes",
+        "etablissementId":  "1110",
+        "etablissementCode":  1110,
+        "etablissementNomAr":  "المعهد العالي للإعلامية والملتيميديا بقابس",
+        "etablissementNomFr":  "Institut Supérieur d\u0027Informatique et de Multimédia de Gabès",
+        "universiteId":  "11",
+        "specialisations":  [
+                                "Systemes d\u0027information"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "120401",
+        "nomSpecialite":  "Licence en Education Physique",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur du Sport et de l\u0027Education Physique de Gafsa",
+        "universiteLabelRaw":  "Universite de Gafsa",
+        "etablissementId":  "1204",
+        "etablissementCode":  1204,
+        "etablissementNomAr":  "المعهد العالي للرياضة والتربية البدنية بقفصة",
+        "etablissementNomFr":  "Institut Supérieur du Sport et de l\u0027Education Physique de Gafsa",
+        "universiteId":  "12",
+        "specialisations":  [
+                                "Education physique"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "120402",
+        "nomSpecialite":  "Licence en Entrainement Sportif",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur du Sport et de l\u0027Education Physique de Gafsa",
+        "universiteLabelRaw":  "Universite de Gafsa",
+        "etablissementId":  "1204",
+        "etablissementCode":  1204,
+        "etablissementNomAr":  "المعهد العالي للرياضة والتربية البدنية بقفصة",
+        "etablissementNomFr":  "Institut Supérieur du Sport et de l\u0027Education Physique de Gafsa",
+        "universiteId":  "12",
+        "specialisations":  [
+                                "Entrainement sportif"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "120403",
+        "nomSpecialite":  "Licence en Management du Sport",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur du Sport et de l\u0027Education Physique de Gafsa",
+        "universiteLabelRaw":  "Universite de Gafsa",
+        "etablissementId":  "1204",
+        "etablissementCode":  1204,
+        "etablissementNomAr":  "المعهد العالي للرياضة والتربية البدنية بقفصة",
+        "etablissementNomFr":  "Institut Supérieur du Sport et de l\u0027Education Physique de Gafsa",
+        "universiteId":  "12",
+        "specialisations":  [
+                                "Management du sport"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "132401",
+        "nomSpecialite":  "Licence en Reseaux et Telecommunications",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+        "universiteLabelRaw":  "Direction Generale des Etudes Technologiques",
+        "etablissementId":  "1324",
+        "etablissementCode":  1324,
+        "etablissementNomAr":  "المعهد العالي للدراسات التكنولوجية في المواصلات بتونس",
+        "etablissementNomFr":  "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+        "universiteId":  "13",
+        "specialisations":  [
+                                "Reseaux et telecommunications"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "132402",
+        "nomSpecialite":  "Licence en Services et Applications Web",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+        "universiteLabelRaw":  "Direction Generale des Etudes Technologiques",
+        "etablissementId":  "1324",
+        "etablissementCode":  1324,
+        "etablissementNomAr":  "المعهد العالي للدراسات التكنولوجية في المواصلات بتونس",
+        "etablissementNomFr":  "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+        "universiteId":  "13",
+        "specialisations":  [
+                                "Applications web"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "132403",
+        "nomSpecialite":  "Licence en Systemes Embarques",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+        "universiteLabelRaw":  "Direction Generale des Etudes Technologiques",
+        "etablissementId":  "1324",
+        "etablissementCode":  1324,
+        "etablissementNomAr":  "المعهد العالي للدراسات التكنولوجية في المواصلات بتونس",
+        "etablissementNomFr":  "Institut Supérieur des Etudes Technologiques en Communications de Tunis",
+        "universiteId":  "13",
+        "specialisations":  [
+                                "Systemes embarques"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "150101",
+        "nomSpecialite":  "Licence en Informatique de Gestion a Distance",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Université Virtuelle de Tunis",
+        "universiteLabelRaw":  "Universite Virtuelle de Tunis",
+        "etablissementId":  "1501",
+        "etablissementCode":  1501,
+        "etablissementNomAr":  "الجامعة الافتراضية بتونس",
+        "etablissementNomFr":  "Université Virtuelle de Tunis",
+        "universiteId":  "15",
+        "specialisations":  [
+                                "Informatique de gestion"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "150102",
+        "nomSpecialite":  "Licence en Reseaux et Services Numeriques a Distance",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Université Virtuelle de Tunis",
+        "universiteLabelRaw":  "Universite Virtuelle de Tunis",
+        "etablissementId":  "1501",
+        "etablissementCode":  1501,
+        "etablissementNomAr":  "الجامعة الافتراضية بتونس",
+        "etablissementNomFr":  "Université Virtuelle de Tunis",
+        "universiteId":  "15",
+        "specialisations":  [
+                                "Reseaux numeriques"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    },
+    {
+        "codeOrientation":  "150103",
+        "nomSpecialite":  "Licence en Multimedia Educatif a Distance",
+        "typeSpecialite":  "Licence",
+        "etablissementLabelRaw":  "Université Virtuelle de Tunis",
+        "universiteLabelRaw":  "Universite Virtuelle de Tunis",
+        "etablissementId":  "1501",
+        "etablissementCode":  1501,
+        "etablissementNomAr":  "الجامعة الافتراضية بتونس",
+        "etablissementNomFr":  "Université Virtuelle de Tunis",
+        "universiteId":  "15",
+        "specialisations":  [
+                                "Multimedia educatif"
+                            ],
+        "needsReview":  false,
+        "matchConfidence":  "high"
+    }
+]

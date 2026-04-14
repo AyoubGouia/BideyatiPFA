@@ -6,10 +6,10 @@ export interface Faculty {
   sub: string
   cat: string   // used for filter matching
   icon: FacultyIcon
-  description: string
+  description?: string
   programs: string[]
-  admission: string
-  duration: string
+  admission?: string
+  duration?: string
   location: string
   region: string
   specialities: string[]

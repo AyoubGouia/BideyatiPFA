@@ -1,0 +1,3368 @@
+[
+  {
+    "codeOrientation": "10164",
+    "etablissementId": "208",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للتنشيط الشبابي والثقافي ببئر الباي",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "10201",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهدالعالي للفن  المسرحي بتونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11318",
+    "etablissementId": "202",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالى لمهن التراث بتونس",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "24477",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للهندسة الرقمية بتونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10612",
+    "etablissementId": "508",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للتوثيق بتونس",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "12318",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي لفنون الملتميديا بمنوبة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10546",
+    "etablissementId": "507",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للرياضة و التربية البدنية بقصر السعيد",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10504",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية العلوم بتونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10700",
+    "etablissementId": "304",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية الطب بتونس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "10301",
+    "etablissementId": "303",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية الحقوق والعلوم السياسية  بتونس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "11106",
+    "etablissementId": "306",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية  بتونس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "11832",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للاعلامية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11797",
+    "etablissementId": "309",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم التمريض بتونس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "10840",
+    "etablissementId": "402",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية العلوم القانونية والسياسية والإجتماعية  بتونس",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "16318",
+    "etablissementId": "408",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد الوطني للشغل والدراسات الإجتماعية  بتونس",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "22207",
+    "etablissementId": "409",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون الجميلة بنابل",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "21629",
+    "etablissementId": "417",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي  لتكنولوجيات البيئة والعمران والبنيان",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "10603",
+    "etablissementId": "416",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم و تكنولوجيات البيئة ببرج السدرية",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "12832",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي لتكنولوجيا المعلومات والإتصال  ببرج السدرية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10138",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإسلامية   بالقيروان",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30118",
+    "etablissementId": "702",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية  بسوسة",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "30246",
+    "etablissementId": "708",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون الجميلة بسوسة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "30573",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للنقل واللوجستية بسوسة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "31524",
+    "etablissementId": "709",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بسوسة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "30504",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للمالية و الجباية بسوسة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40311",
+    "etablissementId": "1002",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية العلوم الإقتصادية  والتصرف بصفاقس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "40123",
+    "etablissementId": "1003",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية  بصفاقس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "40832",
+    "etablissementId": "1004",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية الحقوق بصفاقس",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "40743",
+    "etablissementId": "1015",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد التحضيري للدراسات الهندسية بصفاقس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "42312",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي لادارة  الاعمال  بصفاقس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "43318",
+    "etablissementId": "1009",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للتصرف الصناعي بصفاقس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "40622",
+    "etablissementId": "1008",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون و الحرف بصفاقس",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "84506",
+    "etablissementId": "601",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية العلوم القانونية والإقتصادية  والتصرف بجندوبة",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "80123",
+    "etablissementId": "606",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية  بجندوبة",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "86209",
+    "etablissementId": "604",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بسليانة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "50546",
+    "etablissementId": "1101",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية العلوم بقابس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "50106",
+    "etablissementId": "1105",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بقابس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "51524",
+    "etablissementId": "1106",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقابس",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "54106",
+    "etablissementId": "1108",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية  بمدنين",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "54573",
+    "etablissementId": "1113",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم التمريض بقابس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "10394",
+    "etablissementId": "1310",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية برادس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "22566",
+    "etablissementId": "1320",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بنابل",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "40391",
+    "etablissementId": "1315",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بصفاقس",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "53570",
+    "etablissementId": "1319",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بقفصة",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "11391",
+    "etablissementId": "1301",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بالشرقية",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "54396",
+    "etablissementId": "1308",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بجربة",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "36571",
+    "etablissementId": "1309",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية بجندوبة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "82391",
+    "etablissementId": "1304",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية بالكاف",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "86571",
+    "etablissementId": "1312",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية بسليانة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "74570",
+    "etablissementId": "1306",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بباجة",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "55391",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بمدنين",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "21570",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية ببنزرت",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34523",
+    "etablissementId": "801",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية العلوم بالمنستير",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "34740",
+    "etablissementId": "814",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد التحضيري للدراسات الهندسية بالمنستير",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "34102",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بالمكنين",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "35573",
+    "etablissementId": "812",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية   و الرياضيات بالمنستير",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "36524",
+    "etablissementId": "813",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية   بالمهدية",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "70101",
+    "etablissementId": "901",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية  بالقيروان",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "70208",
+    "etablissementId": "902",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون والحرف بالقيروان",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "72524",
+    "etablissementId": "907",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الانسانيات  بسبيطلة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "73629",
+    "etablissementId": "910",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بالقصرين",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "63477",
+    "etablissementId": null,
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الاجتماعية  والتربية بقفصة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60760",
+    "etablissementId": "1209",
+    "sourceYear": 2025,
+    "sourceFile": "data/normalized/2025/scores_2025.by_section.json",
+    "sourceLabel": "المعهد التحضيري للدراسات الهندسية بقفصة",
+    "matchType": "exact_nomAr",
+    "reviewStatus": "auto"
+  },
+  {
+    "codeOrientation": "10101",
+    "etablissementId": "201",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإنسانية  والإجتماعية بتونس)جامعة تونس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "11101",
+    "etablissementId": "501",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والفنون والإنسانيات بمنوبة)جامعة منوبة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "12101",
+    "etablissementId": "306",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "30101",
+    "etablissementId": "702",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بسوسة)جامعة سوسة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "40101",
+    "etablissementId": "1003",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10102",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإنسانية  والإجتماعية بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11102",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والفنون والإنسانيات بمنوبة)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "12102",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "13102",
+    "etablissementId": "410",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بتونس)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "22102",
+    "etablissementId": "411",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بنابل)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "30102",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40102",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50102",
+    "etablissementId": "1105",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بقابس)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "54102",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بمدنين)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70102",
+    "etablissementId": "901",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بالقيروان)جامعة القيروان(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "73102",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الانسانيات  بسبيطلة)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "80102",
+    "etablissementId": "606",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بجندوبة)جامعة جندوبة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "84102",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات التطبيقية و الاعلامية   بباجة)جامعة جندوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإنسانية  والإجتماعية بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والفنون والإنسانيات بمنوبة)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "13103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بتونس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "22103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بنابل)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بالمكنين)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الانسانيات  بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "63103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الإنسانيات  بتوزر)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "82103",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الإنسانيات  بالكاف)جامعة جندوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10104",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والفنون والإنسانيات بمنوبة)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11104",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34104",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بالمكنين)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40104",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11105",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "12105",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بتونس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "22105",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بنابل)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40105",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50105",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بقابس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "12106",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بتونس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34106",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بالمكنين)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10107",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بتونس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10108",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بتونس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34147",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بالمكنين)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40147",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70147",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بالقيروان)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10118",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "56118",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بتطاوين)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10120",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإنسانية  والإجتماعية بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11120",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40120",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60120",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الانسانيات  بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11121",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10122",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإنسانية  والإجتماعية بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11122",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70122",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بالقيروان)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10123",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإنسانية  والإجتماعية بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30124",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40124",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10139",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لأصول  الدين بتونس) جامعة الزيتونة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10158",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والفنون والإنسانيات بمنوبة)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "80159",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بجندوبة)جامعة جندوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40161",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الآداب  والعلوم الإنسانية بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10162",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى لمهن التراث بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10260",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لأصول  الدين بتونس) جامعة الزيتونة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10355",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد الوطني للشغل والدراسات الإجتماعية  بتونس)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10362",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتوثيق بتونس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10473",
+    "etablissementId": "503",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتربية المختصة)جامعة منوبة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "36477",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الانسانيات  بالمهدية)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50477",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للغات بقابس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "54477",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بمدنين)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "56477",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بتطاوين)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60477",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الاجتماعية والتربية بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "73477",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الانسانيات  بسبيطلة)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "80477",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الإنسانية بجندوبة)جامعة جندوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "82477",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الإنسانيات  بالكاف)جامعة جندوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10548",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد الوطني للشغل والدراسات الإجتماعية  بتونس)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "73440",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التطبيقية في الانسانيات  بسبيطلة)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10443",
+    "etablissementId": "208",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتنشيط الشبابي والثقافي ببئر الباي)جامعة تونس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10450",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للرياضة و التربية البدنية بقصر السعيد)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40450",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للرياضة و التربية البدنية بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60450",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للرياضة و التربية البدنية بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "82450",
+    "etablissementId": "611",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد  العالي للرياضة والتربية البدنية بالكاف)جامعة جندوبة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10452",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات السياحية والفندقية بسيدي الظريف)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10453",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات السياحية والفندقية بسيدي الظريف)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30162",
+    "etablissementId": "708",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون الجميلة بسوسة)جامعة سوسة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "50162",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10200",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهدالعالي للفن  المسرحي بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "82200",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للموسيقى و المسرح بالكاف)جامعة جندوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30201",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للموسيقى بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50201",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60201",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "22202",
+    "etablissementId": "409",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون الجميلة بنابل)جامعة  قرطاج(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "30202",
+    "etablissementId": "708",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون الجميلة بسوسة)جامعة سوسة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "40202",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون و الحرف بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "56202",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بتطاوين)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70202",
+    "etablissementId": "902",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون والحرف بالقيروان)جامعة القيروان(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "86202",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بسليانة)جامعة جندوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10207",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون الجميلة بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11207",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "التصميم)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30207",
+    "etablissementId": "708",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون الجميلة بسوسة)جامعة سوسة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "36207",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بالمهدية)جامعة المنستير(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40207",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون و الحرف بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50207",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "56207",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بتطاوين)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60207",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70207",
+    "etablissementId": "902",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون والحرف بالقيروان)جامعة القيروان(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "73207",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بالقصرين)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "75207",
+    "etablissementId": "909",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون والحرف بسيدي بوزيد)جامعة القيروان(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "86207",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون و الحرف بسليانة)جامعة جندوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10208",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون الجميلة بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70209",
+    "etablissementId": "902",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون والحرف بالقيروان)جامعة القيروان(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "75209",
+    "etablissementId": "909",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للفنون والحرف بسيدي بوزيد)جامعة القيروان(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10265",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لفنون الملتميديا بمنوبة)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40265",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للفنون و الحرف بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10622",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لفنون الملتميديا بمنوبة)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11301",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم القانونية والسياسية والإجتماعية  بتونس)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30301",
+    "etablissementId": "717",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الحقوق والعلوم السياسية بسوسة)جامعة سوسة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "40301",
+    "etablissementId": "1004",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الحقوق بصفاقس)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "50301",
+    "etablissementId": "1107",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات القانونية بقابس)جامعة قابس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "70301",
+    "etablissementId": "906",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات القانونية والسياسية  بالقيروان)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "70312",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية   و التصرف بالقيروان)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "80312",
+    "etablissementId": "601",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم القانونية والإقتصادية والتصرف بجندوبة)جامعة جندوبة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10318",
+    "etablissementId": "211",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتصرف بتونس)جامعة تونس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "14318",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "معهد الدراسات التجارية العليا )جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "15318",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد  العالي للمحاسبة و إدارة المؤسـسات بمنوبة)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20318",
+    "etablissementId": "415",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتصرف ببنزرت)جامعة  قرطاج(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "30318",
+    "etablissementId": "710",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للتصرف بسوسة)جامعة سوسة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "31318",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "معهد الدراسات التجارية العليا بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "32318",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للمالية و الجباية بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "33318",
+    "etablissementId": "718",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإقتصادية   والتصرف بسوسة)جامعة سوسة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "40318",
+    "etablissementId": "1002",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإقتصادية  والتصرف بصفاقس)جامعة صفاقس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "41318",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "42318",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لادارة  الاعمال بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60318",
+    "etablissementId": "1208",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لإدارة  المؤسسات بقفصة)جامعة قفصة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "70318",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية   و التصرف بالقيروان)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "80318",
+    "etablissementId": "601",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم القانونية والإقتصادية والتصرف بجندوبة)جامعة جندوبة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10347",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد الوطني للشغل والدراسات الإجتماعية  بتونس)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10391",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "21391",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "22391",
+    "etablissementId": "1320",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بنابل)الإدارة  العامة للدراسات",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "36391",
+    "etablissementId": "1305",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بالمهدية)الإدارة  العامة للدراسات",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "54391",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60391",
+    "etablissementId": "1319",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بقفصة)الإدارة  العامة للدراسات",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "70391",
+    "etablissementId": "1303",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بالقيروان)الإدارة  العامة للدراسات",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "73391",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10168",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بتونس)جامعة تونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60168",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10311",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتصرف بتونس)جامعة تونس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11311",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "والتجارية بتونس)جامعة تونس( بمنوبة)جامعة منوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "13311",
+    "etablissementId": "302",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإقتصادية  والتصرف بتونس)جامعة تونس المنار(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "14311",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "معهد الدراسات التجارية العليا )جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20311",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتصرف ببنزرت)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "22311",
+    "etablissementId": "403",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم الإقتصادية  والتصرف بنابل)جامعة  قرطاج(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "37311",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية بالمهدية)جامعة المنستير(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "41311",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "42311",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لادارة  الاعمال بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50311",
+    "etablissementId": "1114",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتصرف بقابس)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "60311",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لإدارة  المؤسسات بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70311",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية   و التصرف بالقيروان)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "80311",
+    "etablissementId": "601",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم القانونية والإقتصادية والتصرف بجندوبة)جامعة جندوبة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "20501",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج( بحمام سوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30501",
+    "etablissementId": "801",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بالمنستير)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "34501",
+    "etablissementId": "1001",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بصفاقس)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "40501",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34502",
+    "etablissementId": "801",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بالمنستير)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "40502",
+    "etablissementId": "1001",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بصفاقس)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "75502",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم و التقنيات بسيدي بوزيد)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10503",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بتونس)جامعة تونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60503",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20504",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج( بحمام سوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11505",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم و تكنولوجيات البيئة ببرج السدرية)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34505",
+    "etablissementId": "801",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بالمنستير)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "35505",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية   و الرياضيات بالمنستير)جامعة المنستير(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10507",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بتونس)جامعة تونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20507",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج( بحمام سوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30507",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بالمنستير)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34507",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بصفاقس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11509",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بتونس)جامعة تونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20509",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34509",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للبيوتكنولوجيا بالمنستير)جامعة المنستير(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50510",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "51510",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم و تقنيات المياه بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60510",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20513",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40513",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بصفاقس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50513",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "21523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بماطر)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للاعلامية   و تكنولوجيات الاتصال  بسوسة)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "31523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "36523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية بالمهدية)جامعة المنستير(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بصفاقس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "41523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للاعلامية   و الملتميديا بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية   و التصرف بالقيروان)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "71523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للرياضيات التطبيقية والإعلامية   بالقيروان)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "73523",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بالقصرين)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10524",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بتونس)جامعة تونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11524",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للاعلامية)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "12524",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لتكنولوجيا المعلومات والإتصال  ببرج السدرية)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20524",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40524",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بصفاقس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50524",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "73524",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بالقصرين)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "82524",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية بالكاف)جامعة جندوبة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34550",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بالمنستير)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "21566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بسوسة)الإدارة  العامة للدراسات",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "36566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بالمهدية)الإدارة  العامة للدراسات",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بصفاقس)الإدارة  العامة للدراسات",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "54566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "56566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "57566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بقفصة)الإدارة  العامة للدراسات",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "63566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "73566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "75566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "80566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "82566",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10568",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي  لتكنولوجيات البيئة والعمران والبنيان)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11568",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "22568",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بنابل)الإدارة  العامة للدراسات",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30568",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "55568",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60568",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بقفصة)الإدارة  العامة للدراسات",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "63568",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "23570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "31570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بسوسة)الإدارة  العامة للدراسات",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "51570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم و تقنيات المياه بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "52570",
+    "etablissementId": "1102",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للمنظومات الصناعية بقابس)جامعة قابس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "56570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "57570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "72570",
+    "etablissementId": "1303",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بالقيروان)الإدارة  العامة للدراسات",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "73570",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بالقصرين)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "86570",
+    "etablissementId": "1312",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية بسليانة)الإدارة  العامة للدراسات",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "21571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "22571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بنابل)الإدارة  العامة للدراسات",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بقابس)الإدارة  العامة للدراسات",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "54571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "56571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "75571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "80571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "82571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "84571",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10573",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بتونس)جامعة تونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11573",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لتكنولوجيا المعلومات والإتصال  ببرج السدرية)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20573",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "21573",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بماطر)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "36573",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بالمهدية)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40573",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "والإتصالات   بصفاقس)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50573",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للإعلامية   و الملتيميديا بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34574",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "35574",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للموضة بالمنستير)جامعة المنستير(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40576",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للبيوتكنولوجيا بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50576",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "23597",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "24597",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالى للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34597",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40597",
+    "etablissementId": "1315",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية بصفاقس)الإدارة  العامة للدراسات",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "50603",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60603",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70603",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بالقيروان)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "57604",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للدراسات التكنولوجية",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20629",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30629",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "31629",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بحمام سوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40629",
+    "etablissementId": "1001",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بصفاقس)جامعة",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "41629",
+    "etablissementId": "1009",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتصرف الصناعي بصفاقس)جامعة صفاقس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "50629",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "51629",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بقابس)جامعة قابس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "70629",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بالقيروان)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30671",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30672",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للنقل واللوجستية بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10203",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "و التعمير بتونس)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10244",
+    "etablissementId": "417",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي  لتكنولوجيات البيئة والعمران والبنيان)جامعة  قرطاج(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "36322",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم التطبيقية و التكنولوجيا بالمهدية)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11422",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم بتونس)جامعة تونس",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10545",
+    "etablissementId": "307",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتكنولوجيات الطبية بتونس)جامعة تونس المنار(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10547",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد الوطني للشغل والدراسات الإجتماعية  بتونس)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30700",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية الطب بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34702",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية طب الأسنان  بالمنستير)جامعة الصحة بسوسة)جامعة سوسة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30739",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بتونس)جامعة تونس المنار( بالمنستير)جامعة المنستير(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10740",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بصفاقس)جامعة صفاقس( الصحة بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34743",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بالمنستير)جامعة المنستير( بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "60743",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بصفاقس)جامعة صفاقس( بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34744",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بتونس)جامعة تونس المنار( بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40749",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بصفاقس)جامعة صفاقس( بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "10750",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "الصحة بسوسة)جامعة سوسة( بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30750",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بالمنستير)جامعة المنستير(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40750",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للتكنولوجيات الطبية بتونس)جامعة تونس المنار(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40759",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للبيوتكنولوجيا بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "30760",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "الصحة بسوسة)جامعة سوسة( الصحة بقفصة)جامعة قفصة(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "40797",
+    "etablissementId": "1013",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم التمريض بصفاقس)جامعة صفاقس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "41797",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم التمريض بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "50797",
+    "etablissementId": "1113",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم التمريض بقابس)جامعة قابس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "51797",
+    "etablissementId": "1113",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي لعلوم التمريض بقابس)جامعة قابس(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "10799",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بتونس)جامعة تونس المنار( بالمنستير)جامعة المنستير(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "34799",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "بصفاقس)جامعة صفاقس(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "11546",
+    "etablissementId": "305",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم البيولوجية التطبيقية بتونس)جامعة تونس",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "20546",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم ببنزرت)جامعة  قرطاج(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "84841",
+    "etablissementId": "608",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للبيوتكنولوجيا بباجة)جامعة جندوبة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  },
+  {
+    "codeOrientation": "75842",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "كلية العلوم و التقنيات بسيدي بوزيد)جامعة القيروان(",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "20844",
+    "etablissementId": null,
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المدرسة العليا للفلاحة  بمقرن)جامعة المدرسة العليا للفلاحة  بماطر)جامعة",
+    "matchType": "none",
+    "reviewStatus": "unresolved"
+  },
+  {
+    "codeOrientation": "21844",
+    "etablissementId": "713",
+    "sourceYear": 2023,
+    "sourceFile": "data/normalized/2023/scores_2023_reference.by_section.json",
+    "sourceLabel": "المعهد العالي للعلوم الفلاحية  بشط مريم)جامعة سوسة(",
+    "matchType": "reviewed_manual",
+    "reviewStatus": "reviewed_manual"
+  }
+]

@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import type { Page } from '../App'
 import s from './VisitorPage.module.css'
 import BideyetiLogo from '../components/BideyetiLogo'
-import { FILTER_TABS, type Faculty } from '../data/faculties'
+import type { Faculty } from '../data/faculties'
 import { ETABLISSEMENT_DOMAIN_CONFIG } from '../data/etablissementDomains'
 import { etablissementApi } from '../api/etablissementApi'
 import { specialiteApi } from '../api/specialiteApi'
 import { mergeEtablissementsWithSpecialites } from '../utils/etablissementList'
 import DomainEtablissementSection from '../components/DomainEtablissementSection'
+import FacultyCard from '../components/FacultyCard'
 
 interface DomainSectionState {
   label: string
@@ -24,8 +25,11 @@ interface Props {
 
 export default function VisitorPage({ nav, openDomainExplore }: Props) {
   const [search, setSearch] = useState('')
+  const [allSpecialites, setAllSpecialites] = useState<
+    Awaited<ReturnType<typeof specialiteApi.getAll>>
+  >([])
   const [domainSections, setDomainSections] = useState<DomainSectionState[]>(() =>
-    ETABLISSEMENT_DOMAIN_CONFIG.map(cfg => ({
+    ETABLISSEMENT_DOMAIN_CONFIG.map((cfg) => ({
       label: cfg.label,
       queries: cfg.searchQueries,
       faculties: [],
@@ -33,6 +37,9 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
       error: false,
     }))
   )
+  const [searchResults, setSearchResults] = useState<Faculty[]>([])
+  const [searchLoading, setSearchLoading] = useState(false)
+  const [searchError, setSearchError] = useState(false)
 
   useEffect(() => {
     let cancelled = false
@@ -44,13 +51,12 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
         specs = []
       }
       if (cancelled) return
+      setAllSpecialites(specs)
 
       const loaded = await Promise.all(
-        ETABLISSEMENT_DOMAIN_CONFIG.map(async cfg => {
+        ETABLISSEMENT_DOMAIN_CONFIG.map(async (cfg) => {
           try {
-            const etabs = await etablissementApi.searchByQueriesMerged(
-              cfg.searchQueries
-            )
+            const etabs = await etablissementApi.searchByQueriesMerged(cfg.searchQueries)
             const faculties = mergeEtablissementsWithSpecialites(etabs, specs)
             return {
               label: cfg.label,
@@ -70,12 +76,50 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
           }
         })
       )
+
       if (!cancelled) setDomainSections(loaded)
     })()
+
     return () => {
       cancelled = true
     }
   }, [])
+
+  useEffect(() => {
+    const query = search.trim()
+    if (!query) {
+      setSearchResults([])
+      setSearchLoading(false)
+      setSearchError(false)
+      return
+    }
+
+    let cancelled = false
+    const timer = window.setTimeout(async () => {
+      setSearchLoading(true)
+      setSearchError(false)
+      try {
+        const etabs = await etablissementApi.search({ q: query })
+        if (!cancelled) {
+          setSearchResults(mergeEtablissementsWithSpecialites(etabs, allSpecialites))
+        }
+      } catch {
+        if (!cancelled) {
+          setSearchResults([])
+          setSearchError(true)
+        }
+      } finally {
+        if (!cancelled) setSearchLoading(false)
+      }
+    }, 250)
+
+    return () => {
+      cancelled = true
+      window.clearTimeout(timer)
+    }
+  }, [search, allSpecialites])
+
+  const isSearching = search.trim() !== ''
 
   return (
     <div className={s.page}>
@@ -85,8 +129,8 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
           onClick={() => nav('home')}
           role="button"
           tabIndex={0}
-          onKeyDown={e => e.key === 'Enter' && nav('home')}
-          aria-label="Retour à l'accueil"
+          onKeyDown={(e) => e.key === 'Enter' && nav('home')}
+          aria-label="Retour a l'accueil"
         >
           <BideyetiLogo />
         </div>
@@ -106,7 +150,7 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
       </header>
 
       <main className={s.main}>
-        <h1 className={s.title}>Explorer nos Facultés</h1>
+        <h1 className={s.title}>Explorer nos etablissements</h1>
 
         <div className={s.navigationOptions}>
           <button type="button" className={s.regionBtn} onClick={() => nav('region')}>
@@ -123,7 +167,7 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
               <circle cx="12" cy="10" r="3" />
             </svg>
-            Explorer par région
+            Explorer par region
           </button>
           <div className={s.divider}>ou</div>
           <button
@@ -145,7 +189,7 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
               <path d="M2 17l10 5 10-5" />
               <path d="M2 12l10 5 10-5" />
             </svg>
-            Explorer par spécialité
+            Explorer par specialite
           </button>
         </div>
 
@@ -166,47 +210,59 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
             </svg>
             <input
               type="text"
-              placeholder="Rechercher une faculté..."
+              placeholder="Rechercher un etablissement, une specialite, une universite ou une region..."
               value={search}
-              onChange={e => setSearch(e.target.value)}
-              aria-label="Rechercher une faculté"
+              onChange={(e) => setSearch(e.target.value)}
+              aria-label="Rechercher"
             />
-          </div>
-
-          <div className={s.filterRow}>
-            {FILTER_TABS.map(tab => (
-              <div key={tab} className={s.soonContainer}>
-                <span className={s.soonBadge}>Bientôt</span>
-                <button
-                  type="button"
-                  className={s.fBtn}
-                  disabled
-                  style={{ opacity: 0.7, cursor: 'not-allowed' }}
-                >
-                  {tab}
-                </button>
-              </div>
-            ))}
           </div>
         </div>
 
-        <p className={s.domainIntro}>
-          Parcourir par domaine — chaque bloc correspond à une recherche par mots-clés sur le
-          nom de l&apos;établissement.
-        </p>
+        {isSearching ? (
+          <>
+            <p className={s.domainIntro}>
+              Resultats de recherche bases sur les donnees reelles du backend.
+            </p>
+            {searchLoading && <p className={s.empty}>Chargement...</p>}
+            {searchError && !searchLoading && (
+              <p className={s.empty}>Impossible de lancer la recherche.</p>
+            )}
+            {!searchLoading && !searchError && searchResults.length === 0 && (
+              <p className={s.empty}>Aucun etablissement ne correspond a votre recherche.</p>
+            )}
+            {!searchLoading && !searchError && searchResults.length > 0 && (
+              <div className={s.grid}>
+                {searchResults.map((faculty) => (
+                  <FacultyCard
+                    key={faculty.id}
+                    faculty={faculty}
+                    onDetails={() => nav('faculty-detail', undefined, faculty.id)}
+                  />
+                ))}
+              </div>
+            )}
+          </>
+        ) : (
+          <>
+            <p className={s.domainIntro}>
+              Parcourir par domaine : chaque bloc montre des etablissements reels
+              trouves a partir de mots-cles et des donnees backend.
+            </p>
 
-        {domainSections.map(sec => (
-          <DomainEtablissementSection
-            key={sec.label}
-            title={sec.label}
-            faculties={sec.faculties}
-            loading={sec.loading}
-            error={sec.error}
-            globalSearch={search}
-            onVoirPlus={() => openDomainExplore(sec.label, sec.queries)}
-            onFacultyDetails={id => nav('faculty-detail', undefined, id)}
-          />
-        ))}
+            {domainSections.map((sec) => (
+              <DomainEtablissementSection
+                key={sec.label}
+                title={sec.label}
+                faculties={sec.faculties}
+                loading={sec.loading}
+                error={sec.error}
+                globalSearch=""
+                onVoirPlus={() => openDomainExplore(sec.label, sec.queries)}
+                onFacultyDetails={(id) => nav('faculty-detail', undefined, id)}
+              />
+            ))}
+          </>
+        )}
 
         <div className={s.backRow}>
           <button type="button" className={s.btnBack} onClick={() => nav('home')}>
@@ -222,11 +278,11 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
             >
               <polyline points="15 18 9 12 15 6" />
             </svg>
-            Retour à l'accueil
+            Retour a l'accueil
           </button>
         </div>
 
-        <footer className={s.footer}>© 2026 Bideyety | Tous droits réservés.</footer>
+        <footer className={s.footer}>(c) 2026 Bideyety | Tous droits reserves.</footer>
       </main>
     </div>
   )

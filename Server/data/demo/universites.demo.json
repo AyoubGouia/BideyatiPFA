@@ -1,0 +1,156 @@
+[
+  {
+    "id": "1",
+    "code": 1,
+    "nom": "UNIVERSITE EZZITOUNA",
+    "nomAr": "جامعة الزيتونة",
+    "siteweb": "www.uz.rnu.tn",
+    "adresse": "21, rue Sidi Abou El Kacem Jelizi - Place Maakel Ezzaim Tunis - 1008",
+    "ville": "Tunis",
+    "region": "Grand Tunis",
+    "description": null
+  },
+  {
+    "id": "2",
+    "code": 2,
+    "nom": "UNIVERSITE DE TUNIS",
+    "nomAr": "جامعة تونس",
+    "siteweb": "www.utunis.rnu.tn",
+    "adresse": "92, Avenue 9 avril 1938, Tunis - 1007",
+    "ville": "Tunis",
+    "region": "Grand Tunis",
+    "description": null
+  },
+  {
+    "id": "3",
+    "code": 3,
+    "nom": "UNIVERSITE TUNIS EL MANAR",
+    "nomAr": "جامعة تونس المنار",
+    "siteweb": "www.utm.rnu.tn",
+    "adresse": "Campus Universitaire El Manar II - B.P. 94 Poste Romena - 1068 Tunis",
+    "ville": "Tunis",
+    "region": "Grand Tunis",
+    "description": null
+  },
+  {
+    "id": "4",
+    "code": 4,
+    "nom": "UNIVERSITE DE CARTHAGE",
+    "nomAr": "جامعة قرطاج",
+    "siteweb": "www.ucar.rnu.tn",
+    "adresse": "Avenue de la Republique - B.P 77 - 1054 Amilcar",
+    "ville": "Tunis",
+    "region": "Grand Tunis",
+    "description": null
+  },
+  {
+    "id": "5",
+    "code": 5,
+    "nom": "UNIVERSITE DE LA MANOUBA",
+    "nomAr": "جامعة منوبة",
+    "siteweb": "www.uma.rnu.tn",
+    "adresse": "Campus Universitaire de la Manouba - 2010 Manouba",
+    "ville": "La Manouba",
+    "region": "Grand Tunis",
+    "description": null
+  },
+  {
+    "id": "6",
+    "code": 6,
+    "nom": "UNIVERSITE DE JENDOUBA",
+    "nomAr": "جامعة جندوبة",
+    "siteweb": "www.uj.rnu.tn",
+    "adresse": "Avenue de l'environnement - 8100 Jendouba",
+    "ville": "Jendouba",
+    "region": "Nord",
+    "description": null
+  },
+  {
+    "id": "7",
+    "code": 7,
+    "nom": "UNIVERSITE DE SOUSSE",
+    "nomAr": "جامعة سوسة",
+    "siteweb": "www.uc.rnu.tn",
+    "adresse": "Rue Khalifa El Karoui Sahloul - BP 526 - 4002 Sousse",
+    "ville": "Sousse",
+    "region": "Centre",
+    "description": null
+  },
+  {
+    "id": "8",
+    "code": 8,
+    "nom": "UNIVERSITE DE MONASTIR",
+    "nomAr": "جامعة المنستير",
+    "siteweb": "www.um.rnu.tn",
+    "adresse": "Rue Taher Hadded - B.P. 56 - Monastir",
+    "ville": "Monastir",
+    "region": "Centre",
+    "description": null
+  },
+  {
+    "id": "9",
+    "code": 9,
+    "nom": "UNIVERSITE DE KAIROUAN",
+    "nomAr": "جامعة القيروان",
+    "siteweb": "www.univ-k.rnu.tn",
+    "adresse": "Avenue Baiet El Hekma - El Mansoura - 3131 Kairouan",
+    "ville": "Kairouan",
+    "region": "Centre",
+    "description": null
+  },
+  {
+    "id": "10",
+    "code": 10,
+    "nom": "UNIVERSITE DE SFAX",
+    "nomAr": "جامعة صفاقس",
+    "siteweb": "www.uss.rnu.tn",
+    "adresse": "Route de l'aeroport km 0.5 - 3029 Sfax",
+    "ville": "Sfax",
+    "region": "Sud",
+    "description": null
+  },
+  {
+    "id": "11",
+    "code": 11,
+    "nom": "UNIVERSITE DE GABES",
+    "nomAr": "جامعة قابس",
+    "siteweb": "www.univgb.rnu.tn",
+    "adresse": "Cite Riadh, Zerig 6072 Gabes",
+    "ville": "Gabes",
+    "region": "Sud",
+    "description": null
+  },
+  {
+    "id": "12",
+    "code": 12,
+    "nom": "UNIVERSITE DE GAFSA",
+    "nomAr": "جامعة قفصة",
+    "siteweb": "www.ugaf.rnu.tn",
+    "adresse": "km 04 Route Tozeur Gafsa 2100",
+    "ville": "Gafsa",
+    "region": "Sud",
+    "description": null
+  },
+  {
+    "id": "13",
+    "code": 13,
+    "nom": "DIRECTION GENERALE DES ETUDES TECHNOLOGIQUES",
+    "nomAr": "المعاهد العليا للدراسات التكنولوجية",
+    "siteweb": null,
+    "adresse": "Rue El Kods - Rades - 2098 Tunis",
+    "ville": "Ariana",
+    "region": "Grand Tunis",
+    "description": null
+  },
+  {
+    "id": "15",
+    "code": 15,
+    "nom": "Universite Virtuelle de Tunis",
+    "nomAr": "الجامعة الافتراضية",
+    "siteweb": "www.uvt.rnu.tn",
+    "adresse": "13 Rue Ibn Nadim, 1073 Montplaisir, Tunis",
+    "ville": "Tunis",
+    "region": "Grand Tunis",
+    "description": null
+  }
+]

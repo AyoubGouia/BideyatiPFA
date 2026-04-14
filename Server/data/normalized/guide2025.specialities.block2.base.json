@@ -1,0 +1,470 @@
+[
+  {
+    "codeOrientation": "10118",
+    "nomSpecialite": "Anthropologie",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 60
+  },
+  {
+    "codeOrientation": "10120",
+    "nomSpecialite": "Licence en Sociologie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Sciences Humaines et Sociales de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 60
+  },
+  {
+    "codeOrientation": "30118",
+    "nomSpecialite": "Anthropologie",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sousse",
+    "universiteLabel": "Université de Sousse",
+    "specialisations": [],
+    "sourcePage": 60
+  },
+  {
+    "codeOrientation": "56118",
+    "nomSpecialite": "Anthropologie",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Arts et Métiers de Tataouine",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 60
+  },
+  {
+    "codeOrientation": "10121",
+    "nomSpecialite": "Licence en Psychologie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Sciences Humaines et Sociales de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 61
+  },
+  {
+    "codeOrientation": "11120",
+    "nomSpecialite": "Licence en Sociologie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 61
+  },
+  {
+    "codeOrientation": "11121",
+    "nomSpecialite": "Licence en Psychologie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 61
+  },
+  {
+    "codeOrientation": "40120",
+    "nomSpecialite": "Licence en Sociologie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 61
+  },
+  {
+    "codeOrientation": "60120",
+    "nomSpecialite": "Licence en Sociologie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Gafsa",
+    "universiteLabel": "Université de Gafsa",
+    "specialisations": [],
+    "sourcePage": 61
+  },
+  {
+    "codeOrientation": "10122",
+    "nomSpecialite": "Licence en Philosophie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Sciences Humaines et Sociales de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 62
+  },
+  {
+    "codeOrientation": "11122",
+    "nomSpecialite": "Licence en Philosophie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 62
+  },
+  {
+    "codeOrientation": "40122",
+    "nomSpecialite": "Licence en Philosophie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 62
+  },
+  {
+    "codeOrientation": "70122",
+    "nomSpecialite": "Licence en Philosophie (Lettres)",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Kairouan",
+    "universiteLabel": "Université de Kairouan",
+    "specialisations": [],
+    "sourcePage": 62
+  },
+  {
+    "codeOrientation": "10123",
+    "nomSpecialite": "Licence en Histoire",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Sciences Humaines et Sociales de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 63
+  },
+  {
+    "codeOrientation": "11123",
+    "nomSpecialite": "Licence en Histoire",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 63
+  },
+  {
+    "codeOrientation": "30123",
+    "nomSpecialite": "Licence en Histoire",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sousse",
+    "universiteLabel": "Université de Sousse",
+    "specialisations": [],
+    "sourcePage": 63
+  },
+  {
+    "codeOrientation": "40123",
+    "nomSpecialite": "Licence en Histoire",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 63
+  },
+  {
+    "codeOrientation": "10124",
+    "nomSpecialite": "Licence en Géographie",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Sciences Humaines et Sociales de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 64
+  },
+  {
+    "codeOrientation": "11124",
+    "nomSpecialite": "Licence en Géographie",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 64
+  },
+  {
+    "codeOrientation": "30124",
+    "nomSpecialite": "Licence en Géographie",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sousse",
+    "universiteLabel": "Université de Sousse",
+    "specialisations": [],
+    "sourcePage": 64
+  },
+  {
+    "codeOrientation": "40124",
+    "nomSpecialite": "Licence en Géographie",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 64
+  },
+  {
+    "codeOrientation": "80123",
+    "nomSpecialite": "Licence en Histoire",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Jendouba",
+    "universiteLabel": "Université de Jendouba",
+    "specialisations": [],
+    "sourcePage": 64
+  },
+  {
+    "codeOrientation": "10138",
+    "nomSpecialite": "Sciences Islamiques",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur de Civilisation Islamique de Tunis",
+    "universiteLabel": "Université Ezzitouna",
+    "specialisations": [],
+    "sourcePage": 65
+  },
+  {
+    "codeOrientation": "10139",
+    "nomSpecialite": "Licence en Sciences Islamiques",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur de Théologie de Tunis",
+    "universiteLabel": "Université Ezzitouna",
+    "specialisations": [],
+    "sourcePage": 65
+  },
+  {
+    "codeOrientation": "10158",
+    "nomSpecialite": "Géomatique et Environnement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 65
+  },
+  {
+    "codeOrientation": "70138",
+    "nomSpecialite": "Sciences Islamiques",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Islamiques de Kairouan",
+    "universiteLabel": "Université Ezzitouna",
+    "specialisations": [],
+    "sourcePage": 65
+  },
+  {
+    "codeOrientation": "80159",
+    "nomSpecialite": "Géographie de l'Environnement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Jendouba",
+    "universiteLabel": "Université de Jendouba",
+    "specialisations": [],
+    "sourcePage": 65
+  },
+  {
+    "codeOrientation": "10160",
+    "nomSpecialite": "Géopolitique et Relations Internationales",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 66
+  },
+  {
+    "codeOrientation": "10162",
+    "nomSpecialite": "Conservation du Patrimoine Culturel",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Métiers du Patrimoine de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 66
+  },
+  {
+    "codeOrientation": "10164",
+    "nomSpecialite": "Licence en Géomatique et Aménagement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Sciences Humaines et Sociales de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 66
+  },
+  {
+    "codeOrientation": "10167",
+    "nomSpecialite": "Archéologie",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 66
+  },
+  {
+    "codeOrientation": "40161",
+    "nomSpecialite": "Conservation du Patrimoine Culturel",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 66
+  },
+  {
+    "codeOrientation": "10260",
+    "nomSpecialite": "Arts du Patrimoine Islamique",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur de Théologie de Tunis",
+    "universiteLabel": "Université Ezzitouna",
+    "specialisations": [],
+    "sourcePage": 67
+  },
+  {
+    "codeOrientation": "10355",
+    "nomSpecialite": "Service Social",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut National du Travail et des Études Sociales de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 67
+  },
+  {
+    "codeOrientation": "10362",
+    "nomSpecialite": "Licence en Gestion Electronique de Documents",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur de Documentation de Tunis",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 67
+  },
+  {
+    "codeOrientation": "10363",
+    "nomSpecialite": "Licence en Documentation, Bibliothèques et Archives",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur de Documentation de Tunis",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 67
+  },
+  {
+    "codeOrientation": "70167",
+    "nomSpecialite": "Archéologie",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Kairouan",
+    "universiteLabel": "Université de Kairouan",
+    "specialisations": [],
+    "sourcePage": 67
+  },
+  {
+    "codeOrientation": "10470",
+    "nomSpecialite": "Sciences de l'Education",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Cadres de l'Enfance de Dermech Carthage",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 68
+  },
+  {
+    "codeOrientation": "10473",
+    "nomSpecialite": "Education Spécialisée",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur de l'Education Spécialisée",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 68
+  },
+  {
+    "codeOrientation": "24477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Zaghouan",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 68
+  },
+  {
+    "codeOrientation": "36477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Mahdia",
+    "universiteLabel": "Université de Monastir",
+    "specialisations": [],
+    "sourcePage": 68
+  },
+  {
+    "codeOrientation": "50477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Gabès",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 69
+  },
+  {
+    "codeOrientation": "54477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Médenine",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 69
+  },
+  {
+    "codeOrientation": "56477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Arts et Métiers de Tataouine",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 69
+  },
+  {
+    "codeOrientation": "60477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Sociales et de l'Education de Gafsa",
+    "universiteLabel": "Université de Gafsa",
+    "specialisations": [],
+    "sourcePage": 69
+  },
+  {
+    "codeOrientation": "63477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Tozeur",
+    "universiteLabel": "Université de Gafsa",
+    "specialisations": [],
+    "sourcePage": 69
+  },
+  {
+    "codeOrientation": "10548",
+    "nomSpecialite": "Intervention Sociale",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut National du Travail et des Études Sociales de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 70
+  },
+  {
+    "codeOrientation": "10611",
+    "nomSpecialite": "Journalisme",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 70
+  },
+  {
+    "codeOrientation": "73477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Sbeitla",
+    "universiteLabel": "Université de Kairouan",
+    "specialisations": [],
+    "sourcePage": 70
+  },
+  {
+    "codeOrientation": "80477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Jendouba",
+    "universiteLabel": "Université de Jendouba",
+    "specialisations": [],
+    "sourcePage": 70
+  },
+  {
+    "codeOrientation": "82477",
+    "nomSpecialite": "Sciences de l'Education et Enseignement",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Le Kef",
+    "universiteLabel": "Université de Jendouba",
+    "specialisations": [],
+    "sourcePage": 70
+  },
+  {
+    "codeOrientation": "10612",
+    "nomSpecialite": "Communication",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 71
+  }
+]

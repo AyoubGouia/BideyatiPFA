@@ -1,0 +1,686 @@
+[
+  {
+    "codeOrientation": "10101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Sciences Humaines et Sociales de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 40
+  },
+  {
+    "codeOrientation": "10102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Sciences Humaines et Sociales de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 41
+  },
+  {
+    "codeOrientation": "10103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Sciences Humaines et Sociales de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 45
+  },
+  {
+    "codeOrientation": "10104",
+    "nomSpecialite": "Licence en Espagnol",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 49
+  },
+  {
+    "codeOrientation": "10105",
+    "nomSpecialite": "Licence en Italien",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 50
+  },
+  {
+    "codeOrientation": "10106",
+    "nomSpecialite": "Licence en Allemand",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 52
+  },
+  {
+    "codeOrientation": "10107",
+    "nomSpecialite": "Russe",
+    "typeSpecialite": null,
+    "etablissementLabel": "Institut Supérieur des Langues de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 53
+  },
+  {
+    "codeOrientation": "10108",
+    "nomSpecialite": "Chinois",
+    "typeSpecialite": null,
+    "etablissementLabel": "Institut Supérieur des Langues de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 53
+  },
+  {
+    "codeOrientation": "10119",
+    "nomSpecialite": "Langue des Signes",
+    "typeSpecialite": null,
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 53
+  },
+  {
+    "codeOrientation": "10190",
+    "nomSpecialite": "Classe Préparatoire Lettres Arabes",
+    "typeSpecialite": "Classe préparatoire",
+    "etablissementLabel": "Institut Préparatoire aux Études Littéraires et Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 54
+  },
+  {
+    "codeOrientation": "10191",
+    "nomSpecialite": "Classe Préparatoire Lettres Françaises",
+    "typeSpecialite": "Classe préparatoire",
+    "etablissementLabel": "Institut Préparatoire aux Études Littéraires et Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 55
+  },
+  {
+    "codeOrientation": "10192",
+    "nomSpecialite": "Classe Préparatoire Lettres Anglaises",
+    "typeSpecialite": "Classe préparatoire",
+    "etablissementLabel": "Institut Préparatoire aux Études Littéraires et Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 56
+  },
+  {
+    "codeOrientation": "10193",
+    "nomSpecialite": "Classe Préparatoire Histoire",
+    "typeSpecialite": "Classe préparatoire",
+    "etablissementLabel": "Institut Préparatoire aux Études Littéraires et Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 57
+  },
+  {
+    "codeOrientation": "10194",
+    "nomSpecialite": "Classe Préparatoire Géographie",
+    "typeSpecialite": "Classe préparatoire",
+    "etablissementLabel": "Institut Préparatoire aux Études Littéraires et Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 57
+  },
+  {
+    "codeOrientation": "10195",
+    "nomSpecialite": "Classe Préparatoire Philosophie",
+    "typeSpecialite": "Classe préparatoire",
+    "etablissementLabel": "Institut Préparatoire aux Études Littéraires et Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 57
+  },
+  {
+    "codeOrientation": "11101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 40
+  },
+  {
+    "codeOrientation": "11102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 42
+  },
+  {
+    "codeOrientation": "11103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 45
+  },
+  {
+    "codeOrientation": "11104",
+    "nomSpecialite": "Licence en Espagnol",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 49
+  },
+  {
+    "codeOrientation": "11105",
+    "nomSpecialite": "Licence en Italien",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 50
+  },
+  {
+    "codeOrientation": "11106",
+    "nomSpecialite": "Licence en Allemand",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 52
+  },
+  {
+    "codeOrientation": "11190",
+    "nomSpecialite": "Classe Préparatoire Lettres Arabes",
+    "typeSpecialite": "Classe préparatoire",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 55
+  },
+  {
+    "codeOrientation": "11191",
+    "nomSpecialite": "Classe Préparatoire Lettres Françaises",
+    "typeSpecialite": "Classe préparatoire",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 55
+  },
+  {
+    "codeOrientation": "11192",
+    "nomSpecialite": "Classe Préparatoire Lettres Anglaises",
+    "typeSpecialite": "Classe préparatoire",
+    "etablissementLabel": "Faculté des Lettres, Arts et Humanités de Manouba",
+    "universiteLabel": "Université de Manouba",
+    "specialisations": [],
+    "sourcePage": 56
+  },
+  {
+    "codeOrientation": "12101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 40
+  },
+  {
+    "codeOrientation": "12102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 42
+  },
+  {
+    "codeOrientation": "12103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Tunis",
+    "universiteLabel": "Université de Tunis",
+    "specialisations": [],
+    "sourcePage": 46
+  },
+  {
+    "codeOrientation": "12104",
+    "nomSpecialite": "Licence en Espagnol",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 49
+  },
+  {
+    "codeOrientation": "12105",
+    "nomSpecialite": "Licence en Italien",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 51
+  },
+  {
+    "codeOrientation": "12106",
+    "nomSpecialite": "Licence en Allemand",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 52
+  },
+  {
+    "codeOrientation": "13101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 40
+  },
+  {
+    "codeOrientation": "13102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 42
+  },
+  {
+    "codeOrientation": "13103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Tunis",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 46
+  },
+  {
+    "codeOrientation": "22101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Nabeul",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 40
+  },
+  {
+    "codeOrientation": "22102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Nabeul",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 42
+  },
+  {
+    "codeOrientation": "22103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Nabeul",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 46
+  },
+  {
+    "codeOrientation": "22105",
+    "nomSpecialite": "Licence en Italien",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Nabeul",
+    "universiteLabel": "Université de Carthage",
+    "specialisations": [],
+    "sourcePage": 51
+  },
+  {
+    "codeOrientation": "30101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sousse",
+    "universiteLabel": "Université de Sousse",
+    "specialisations": [],
+    "sourcePage": 40
+  },
+  {
+    "codeOrientation": "30102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sousse",
+    "universiteLabel": "Université de Sousse",
+    "specialisations": [],
+    "sourcePage": 43
+  },
+  {
+    "codeOrientation": "30103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sousse",
+    "universiteLabel": "Université de Sousse",
+    "specialisations": [],
+    "sourcePage": 46
+  },
+  {
+    "codeOrientation": "34102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Meknassy",
+    "universiteLabel": "Université de Monastir",
+    "specialisations": [],
+    "sourcePage": 43
+  },
+  {
+    "codeOrientation": "34103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Meknassy",
+    "universiteLabel": "Université de Monastir",
+    "specialisations": [],
+    "sourcePage": 47
+  },
+  {
+    "codeOrientation": "34104",
+    "nomSpecialite": "Licence en Espagnol",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Meknassy",
+    "universiteLabel": "Université de Monastir",
+    "specialisations": [],
+    "sourcePage": 49
+  },
+  {
+    "codeOrientation": "34105",
+    "nomSpecialite": "Licence en Italien",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Meknassy",
+    "universiteLabel": "Université de Monastir",
+    "specialisations": [],
+    "sourcePage": 51
+  },
+  {
+    "codeOrientation": "34106",
+    "nomSpecialite": "Licence en Allemand",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Meknassy",
+    "universiteLabel": "Université de Monastir",
+    "specialisations": [],
+    "sourcePage": 52
+  },
+  {
+    "codeOrientation": "34147",
+    "nomSpecialite": "Traduction",
+    "typeSpecialite": null,
+    "etablissementLabel": "Institut Supérieur des Langues de Meknassy",
+    "universiteLabel": "Université de Monastir",
+    "specialisations": [],
+    "sourcePage": 54
+  },
+  {
+    "codeOrientation": "40101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 41
+  },
+  {
+    "codeOrientation": "40102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 43
+  },
+  {
+    "codeOrientation": "40103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 47
+  },
+  {
+    "codeOrientation": "40104",
+    "nomSpecialite": "Licence en Espagnol",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 50
+  },
+  {
+    "codeOrientation": "40105",
+    "nomSpecialite": "Licence en Italien",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 51
+  },
+  {
+    "codeOrientation": "40147",
+    "nomSpecialite": "Traduction",
+    "typeSpecialite": null,
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Sfax",
+    "universiteLabel": "Université de Sfax",
+    "specialisations": [],
+    "sourcePage": 54
+  },
+  {
+    "codeOrientation": "50101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Gabès",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 41
+  },
+  {
+    "codeOrientation": "50102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Gabès",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 43
+  },
+  {
+    "codeOrientation": "50103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Gabès",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 47
+  },
+  {
+    "codeOrientation": "50104",
+    "nomSpecialite": "Licence en Espagnol",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Gabès",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 50
+  },
+  {
+    "codeOrientation": "50105",
+    "nomSpecialite": "Licence en Italien",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Gabès",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 51
+  },
+  {
+    "codeOrientation": "50106",
+    "nomSpecialite": "Licence en Allemand",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues de Gabès",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 53
+  },
+  {
+    "codeOrientation": "54101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Médenine",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 41
+  },
+  {
+    "codeOrientation": "54102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Médenine",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 43
+  },
+  {
+    "codeOrientation": "54103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Médenine",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 47
+  },
+  {
+    "codeOrientation": "54106",
+    "nomSpecialite": "Licence en Allemand",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Médenine",
+    "universiteLabel": "Université de Gabès",
+    "specialisations": [],
+    "sourcePage": 53
+  },
+  {
+    "codeOrientation": "60101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Gafsa",
+    "universiteLabel": "Université de Gafsa",
+    "specialisations": [],
+    "sourcePage": 41
+  },
+  {
+    "codeOrientation": "60102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Gafsa",
+    "universiteLabel": "Université de Gafsa",
+    "specialisations": [],
+    "sourcePage": 44
+  },
+  {
+    "codeOrientation": "60103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Gafsa",
+    "universiteLabel": "Université de Gafsa",
+    "specialisations": [],
+    "sourcePage": 48
+  },
+  {
+    "codeOrientation": "63103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Tozeur",
+    "universiteLabel": "Université de Gafsa",
+    "specialisations": [],
+    "sourcePage": 48
+  },
+  {
+    "codeOrientation": "70101",
+    "nomSpecialite": "Licence en Arabe",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Kairouan",
+    "universiteLabel": "Université de Kairouan",
+    "specialisations": [],
+    "sourcePage": 41
+  },
+  {
+    "codeOrientation": "70102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Kairouan",
+    "universiteLabel": "Université de Kairouan",
+    "specialisations": [],
+    "sourcePage": 44
+  },
+  {
+    "codeOrientation": "70103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Kairouan",
+    "universiteLabel": "Université de Kairouan",
+    "specialisations": [],
+    "sourcePage": 48
+  },
+  {
+    "codeOrientation": "70147",
+    "nomSpecialite": "Traduction",
+    "typeSpecialite": null,
+    "etablissementLabel": "Faculté des Lettres et Sciences Humaines de Kairouan",
+    "universiteLabel": "Université de Kairouan",
+    "specialisations": [],
+    "sourcePage": 54
+  },
+  {
+    "codeOrientation": "73102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Sbeitla",
+    "universiteLabel": "Université de Kairouan",
+    "specialisations": [],
+    "sourcePage": 44
+  },
+  {
+    "codeOrientation": "80102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Jendouba",
+    "universiteLabel": "Université de Jendouba",
+    "specialisations": [],
+    "sourcePage": 44
+  },
+  {
+    "codeOrientation": "80103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Sciences Humaines de Jendouba",
+    "universiteLabel": "Université de Jendouba",
+    "specialisations": [],
+    "sourcePage": 48
+  },
+  {
+    "codeOrientation": "82102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Le Kef",
+    "universiteLabel": "Université de Jendouba",
+    "specialisations": [],
+    "sourcePage": 45
+  },
+  {
+    "codeOrientation": "82103",
+    "nomSpecialite": "Licence en Français",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur d'Études Appliquées en Humanités de Le Kef",
+    "universiteLabel": "Université de Jendouba",
+    "specialisations": [],
+    "sourcePage": 48
+  },
+  {
+    "codeOrientation": "84102",
+    "nomSpecialite": "Licence en Anglais",
+    "typeSpecialite": "Licence",
+    "etablissementLabel": "Institut Supérieur des Langues Appliquées et Informatique de Beja",
+    "universiteLabel": "Université de Jendouba",
+    "specialisations": [],
+    "sourcePage": 45
+  }
+]
