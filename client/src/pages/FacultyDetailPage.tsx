@@ -5,6 +5,7 @@ import type { EtablissementDetail } from '../api/etablissementApi'
 import { etablissementApi } from '../api/etablissementApi'
 import FacultyIconSvg from '../components/FacultyIcon'
 import BideyetiLogo from '../components/BideyetiLogo'
+import EducationLoader from '../components/EducationLoader'
 import s from './FacultyDetailPage.module.css'
 
 interface Props {
@@ -66,8 +67,10 @@ export default function FacultyDetailPage({ nav, facultyId }: Props) {
     return (
       <div className={s.page}>
         <div className={s.loading}>
-          <div className={s.spinner} />
-          <p>Chargement des informations...</p>
+          <EducationLoader
+            label="Chargement de l'etablissement"
+            caption="Mise en place des informations, specialites et contacts."
+          />
         </div>
       </div>
     )

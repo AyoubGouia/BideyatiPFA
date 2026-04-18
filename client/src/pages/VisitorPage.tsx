@@ -9,6 +9,7 @@ import { specialiteApi } from '../api/specialiteApi'
 import { mergeEtablissementsWithSpecialites } from '../utils/etablissementList'
 import DomainEtablissementSection from '../components/DomainEtablissementSection'
 import FacultyCard from '../components/FacultyCard'
+import EducationLoader from '../components/EducationLoader'
 
 interface DomainSectionState {
   label: string
@@ -223,7 +224,13 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
             <p className={s.domainIntro}>
               Resultats de recherche bases sur les donnees reelles du backend.
             </p>
-            {searchLoading && <p className={s.empty}>Chargement...</p>}
+            {searchLoading && (
+              <EducationLoader
+                compact
+                label="Recherche des etablissements"
+                caption="Verification des correspondances en cours."
+              />
+            )}
             {searchError && !searchLoading && (
               <p className={s.empty}>Impossible de lancer la recherche.</p>
             )}

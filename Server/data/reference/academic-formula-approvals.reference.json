@@ -1,0 +1,13 @@
+{
+  "version": "2026-step2-draft",
+  "sourceFiles": [
+    "Server/data/normalized/2025/specialties_base.cleaned.sample.json",
+    "Server/data/extracted/2025/guide2025.grouped.sample.json"
+  ],
+  "validationStatus": "draft",
+  "approvedCodes": [],
+  "notes": [
+    "Populate approvedCodes only after manual academic validation of raw formuleBrute values.",
+    "The draft sample source remains non-operational until codes are explicitly approved."
+  ]
+}

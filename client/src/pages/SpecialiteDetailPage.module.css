@@ -117,6 +117,48 @@
   line-height: 1.45;
 }
 
+.controlHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.tabRow {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px;
+  border-radius: 999px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.tabButton {
+  min-width: 126px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.tabButton:hover {
+  color: #1e293b;
+}
+
+.tabButtonActive {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.16);
+}
+
 .yearRow {
   display: flex;
   flex-wrap: wrap;
@@ -184,6 +226,114 @@
   line-height: 1.5;
 }
 
+.aiLoadingCard,
+.aiMessageCard {
+  background: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.96);
+}
+
+.aiLoadingCard {
+  display: grid;
+  gap: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(244, 121, 32, 0.14), transparent 34%),
+    linear-gradient(160deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.aiLoadingVisual {
+  padding: 8px 0 4px;
+}
+
+.aiSkeletonGroup {
+  display: grid;
+  gap: 12px;
+}
+
+.aiSkeletonHero,
+.aiSkeletonLineLong,
+.aiSkeletonLineMedium,
+.aiSkeletonPill,
+.aiSkeletonPanel {
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(226, 232, 240, 0.6) 0%,
+    rgba(248, 250, 252, 0.96) 50%,
+    rgba(226, 232, 240, 0.6) 100%
+  );
+  background-size: 240% 100%;
+  animation: shimmer 1.25s linear infinite;
+}
+
+.aiSkeletonHero {
+  width: 42%;
+  height: 18px;
+}
+
+.aiSkeletonLineLong {
+  width: 100%;
+  height: 16px;
+}
+
+.aiSkeletonLineMedium {
+  width: 74%;
+  height: 16px;
+}
+
+.aiSkeletonGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.aiSkeletonPill {
+  width: 120px;
+  height: 44px;
+  border-radius: 18px;
+}
+
+.aiSkeletonPanel {
+  width: 100%;
+  height: 124px;
+  border-radius: 24px;
+}
+
+.aiMessageCard {
+  background:
+    radial-gradient(circle at top right, rgba(244, 121, 32, 0.12), transparent 28%),
+    #fff;
+}
+
+.aiMessageEyebrow {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(244, 121, 32, 0.1);
+  color: #c2410c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.aiMessageTitle {
+  margin: 0 0 10px;
+  font-size: 22px;
+  color: #1e293b;
+}
+
+.aiMessageBody {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #475569;
+}
+
 .loading,
 .error {
   flex: 1;
@@ -211,6 +361,15 @@
   }
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 .error h2 {
   margin: 0 0 8px;
   color: #1e293b;
@@ -226,4 +385,24 @@
   padding: 20px;
   font-size: 12px;
   color: #94a3b8;
+}
+
+@media (max-width: 720px) {
+  .controlHeader {
+    flex-direction: column;
+  }
+
+  .tabRow {
+    width: 100%;
+  }
+
+  .tabButton {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .aiLoadingCard,
+  .aiMessageCard {
+    padding: 18px;
+  }
 }

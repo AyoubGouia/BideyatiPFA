@@ -13,6 +13,8 @@
     "test:db:seed": "cross-env DOTENV_CONFIG_PATH=.env.test ts-node prisma/seed/seedTest.ts",
     "test:db:migrate:current": "cross-env DOTENV_CONFIG_PATH=.env npx prisma migrate deploy",
     "test:db:seed:current": "cross-env DOTENV_CONFIG_PATH=.env ts-node prisma/seed/seedTest.ts",
+    "seed:academic-reference": "cross-env DOTENV_CONFIG_PATH=.env ts-node prisma/seedAcademicReference.ts",
+    "seed:academic-reference:with-formulas": "cross-env DOTENV_CONFIG_PATH=.env ALLOW_SPECIALITE_FORMULA_WRITES=true ts-node prisma/seedAcademicReference.ts",
     "test:integration": "cross-env DOTENV_CONFIG_PATH=.env.test jest --config jest.config.ts --runInBand",
     "test:integration:current": "cross-env DOTENV_CONFIG_PATH=.env jest --config jest.config.ts --runInBand",
     "test:prepare": "npm run test:db:up && npm run test:db:migrate && npm run test:db:seed",
@@ -20,6 +22,7 @@
     "test:all": "npm run test:prepare && npm run test:integration"
   },
   "dependencies": {
+    "@google/genai": "^1.50.1",
     "@prisma/adapter-pg": "^7.5.0",
     "@prisma/client": "^7.5.0",
     "axios": "^1.14.0",

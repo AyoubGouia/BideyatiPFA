@@ -4,6 +4,15 @@ import { mapEtablissementToFaculty, type Faculty } from '../data/faculties'
 
 export const DOMAIN_AUTRES = 'Autres'
 
+export interface SpecialityBrowseEntry {
+  id: string
+  name: string
+  domaine?: string | null
+  faculties: Faculty[]
+  specialiteIds: string[]
+  codeOrientations: string[]
+}
+
 /** Primary domain = most frequent non-empty `domaine` on linked specialties; tie-break FR locale. */
 export function primaryDomainFromSpecialites(
   specs: Pick<SpecialiteListItem, 'domaine'>[],
@@ -69,6 +78,200 @@ export function mergeEtablissementsWithSpecialites(
     const cat = primaryDomainFromSpecialites(list, e.type)
     return { ...base, programs, cat }
   })
+}
+
+export function groupEtablissementsBySpecialiteDomain(
+  etabs: Etablissement[],
+  specs: SpecialiteListItem[]
+): Map<string, Faculty[]> {
+  const etabById = new Map(etabs.map((etab) => [etab.id, etab]))
+  const etabIdsByUniversite = new Map<string, string[]>()
+
+  for (const etab of etabs) {
+    if (!etabIdsByUniversite.has(etab.universiteId)) {
+      etabIdsByUniversite.set(etab.universiteId, [])
+    }
+    etabIdsByUniversite.get(etab.universiteId)!.push(etab.id)
+  }
+
+  const domainToSpecsByEtab = new Map<string, Map<string, SpecialiteListItem[]>>()
+
+  const addSpec = (domain: string, etabId: string, spec: SpecialiteListItem) => {
+    if (!domainToSpecsByEtab.has(domain)) {
+      domainToSpecsByEtab.set(domain, new Map<string, SpecialiteListItem[]>())
+    }
+    const etabsForDomain = domainToSpecsByEtab.get(domain)!
+    if (!etabsForDomain.has(etabId)) {
+      etabsForDomain.set(etabId, [])
+    }
+    const list = etabsForDomain.get(etabId)!
+    if (list.some((item) => item.id === spec.id)) return
+    list.push(spec)
+  }
+
+  for (const spec of specs) {
+    const domain = spec.domaine?.trim() || DOMAIN_AUTRES
+    if (spec.etablissement?.id) {
+      addSpec(domain, spec.etablissement.id, spec)
+      continue
+    }
+
+    const universiteId = spec.universite?.id
+    if (!universiteId) continue
+
+    const etabIds = etabIdsByUniversite.get(universiteId) || []
+    for (const etabId of etabIds) {
+      addSpec(domain, etabId, spec)
+    }
+  }
+
+  const out = new Map<string, Faculty[]>()
+
+  for (const [domain, specsByEtab] of domainToSpecsByEtab) {
+    const faculties: Faculty[] = []
+
+    for (const [etabId, domainSpecs] of specsByEtab) {
+      const etab = etabById.get(etabId)
+      if (!etab) continue
+
+      const base = mapEtablissementToFaculty(etab)
+      faculties.push({
+        ...base,
+        cat: domain,
+        programs: [...domainSpecs]
+          .sort((a, b) => a.nom.localeCompare(b.nom, 'fr'))
+          .map((item) => item.nom),
+      })
+    }
+
+    faculties.sort((a, b) => a.name.localeCompare(b.name, 'fr'))
+    out.set(domain, faculties)
+  }
+
+  return out
+}
+
+function normalizeSpecialityKey(value?: string | null): string {
+  return (value ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim()
+}
+
+function primaryDomainFromRows(rows: SpecialiteListItem[]): string | null {
+  const domains = rows
+    .map((row) => row.domaine?.trim())
+    .filter(Boolean) as string[]
+
+  if (domains.length === 0) return null
+
+  const counts = new Map<string, number>()
+  for (const domain of domains) {
+    counts.set(domain, (counts.get(domain) || 0) + 1)
+  }
+
+  let best = domains[0]
+  let bestCount = -1
+  for (const [domain, count] of counts) {
+    if (count > bestCount || (count === bestCount && domain.localeCompare(best, 'fr') < 0)) {
+      best = domain
+      bestCount = count
+    }
+  }
+
+  return best
+}
+
+export function groupEtablissementsBySpeciality(
+  etabs: Etablissement[],
+  specs: SpecialiteListItem[]
+): SpecialityBrowseEntry[] {
+  const etabById = new Map(etabs.map((etab) => [etab.id, etab]))
+  const etabIdsByUniversite = new Map<string, string[]>()
+
+  for (const etab of etabs) {
+    if (!etabIdsByUniversite.has(etab.universiteId)) {
+      etabIdsByUniversite.set(etab.universiteId, [])
+    }
+    etabIdsByUniversite.get(etab.universiteId)!.push(etab.id)
+  }
+
+  const rowsBySpeciality = new Map<string, SpecialiteListItem[]>()
+
+  for (const spec of specs) {
+    const fallbackName = spec.codeOrientation?.trim()
+    const name = spec.nom?.trim() || fallbackName
+    if (!name) continue
+
+    const key = normalizeSpecialityKey(name)
+    if (!rowsBySpeciality.has(key)) rowsBySpeciality.set(key, [])
+
+    const rows = rowsBySpeciality.get(key)!
+    if (rows.some((row) => row.id === spec.id)) continue
+    rows.push(spec)
+  }
+
+  const out: SpecialityBrowseEntry[] = []
+
+  for (const [key, rows] of rowsBySpeciality) {
+    const faculties: Faculty[] = []
+    const seenEtabIds = new Set<string>()
+
+    for (const row of rows) {
+      const targetIds = new Set<string>()
+
+      if (row.etablissement?.id) {
+        targetIds.add(row.etablissement.id)
+      } else if (row.universite?.id) {
+        for (const etabId of etabIdsByUniversite.get(row.universite.id) || []) {
+          targetIds.add(etabId)
+        }
+      }
+
+      for (const etabId of targetIds) {
+        if (seenEtabIds.has(etabId)) continue
+        const etab = etabById.get(etabId)
+        if (!etab) continue
+
+        seenEtabIds.add(etabId)
+        const relatedRows = rows.filter((candidate) => {
+          if (candidate.etablissement?.id) return candidate.etablissement.id === etabId
+          return candidate.universite?.id != null && candidate.universite.id === etab.universiteId
+        })
+
+        const base = mapEtablissementToFaculty(etab)
+        const programs = [...new Set(relatedRows.map((candidate) => candidate.nom.trim()).filter(Boolean))]
+
+        faculties.push({
+          ...base,
+          cat: primaryDomainFromRows(relatedRows) || base.cat,
+          programs,
+        })
+      }
+    }
+
+    faculties.sort((a, b) => a.name.localeCompare(b.name, 'fr'))
+
+    const displayName =
+      rows.find((row) => row.nom?.trim())?.nom.trim() ||
+      rows.find((row) => row.codeOrientation?.trim())?.codeOrientation.trim() ||
+      key
+
+    out.push({
+      id: key,
+      name: displayName,
+      domaine: primaryDomainFromRows(rows),
+      faculties,
+      specialiteIds: rows.map((row) => row.id),
+      codeOrientations: rows
+        .map((row) => row.codeOrientation?.trim())
+        .filter(Boolean) as string[],
+    })
+  }
+
+  out.sort((a, b) => a.name.localeCompare(b.name, 'fr'))
+  return out
 }
 
 export function facultyMatchesSearch(f: Faculty, q: string): boolean {

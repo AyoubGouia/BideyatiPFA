@@ -8,6 +8,7 @@ import { etablissementApi } from '../api/etablissementApi'
 import { specialiteApi } from '../api/specialiteApi'
 import { facultyMatchesSearch, mergeEtablissementsWithSpecialites } from '../utils/etablissementList'
 import FacultyCard from '../components/FacultyCard'
+import EducationLoader from '../components/EducationLoader'
 
 interface Props {
   nav: (p: Page, regionId?: string, facultyId?: string) => void
@@ -174,7 +175,13 @@ export default function DomainEtablissementsPage({
           </div>
         </div>
 
-        {isLoading && <p className={s.empty}>Chargement...</p>}
+        {isLoading && (
+          <EducationLoader
+            compact
+            label={`Chargement de ${domainLabel}`}
+            caption="Preparation de la liste complete des etablissements."
+          />
+        )}
         {loadError && !isLoading && (
           <p className={s.empty}>Impossible de charger les etablissements.</p>
         )}

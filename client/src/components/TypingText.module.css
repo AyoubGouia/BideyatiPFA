@@ -1,0 +1,40 @@
+.root {
+  display: grid;
+}
+
+.measure,
+.visible {
+  grid-area: 1 / 1;
+  white-space: pre-wrap;
+}
+
+.measure {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.visible {
+  min-width: 0;
+}
+
+.caret {
+  display: inline-block;
+  width: 0.72ch;
+  height: 1.05em;
+  margin-left: 0.08em;
+  vertical-align: -0.18em;
+  border-radius: 999px;
+  background: rgba(244, 121, 32, 0.95);
+  animation: blink 0.95s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0%,
+  48% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}

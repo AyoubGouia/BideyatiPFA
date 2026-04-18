@@ -1,0 +1,30 @@
+{
+  "version": "2026-step2-draft",
+  "sourceFiles": [
+    "Server/data/normalized/2025/specialties_base.cleaned.sample.json",
+    "Server/data/extracted/2025/guide2025.grouped.sample.json"
+  ],
+  "validationStatus": "draft",
+  "tokens": [
+    {
+      "token": "FG",
+      "status": "unvalidated",
+      "note": "Observed in normalized 2025 speciality samples. Meaning intentionally left unresolved."
+    },
+    {
+      "token": "A",
+      "status": "unvalidated",
+      "note": "Observed in normalized 2025 speciality samples. Meaning intentionally left unresolved."
+    },
+    {
+      "token": "Ang",
+      "status": "unvalidated",
+      "note": "Observed in normalized 2025 speciality samples. Meaning intentionally left unresolved."
+    },
+    {
+      "token": "F",
+      "status": "unvalidated",
+      "note": "Observed in normalized 2025 speciality samples. Meaning intentionally left unresolved."
+    }
+  ]
+}

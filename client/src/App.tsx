@@ -16,6 +16,7 @@ import SpecialiteDetailPage from './pages/SpecialiteDetailPage'
 import UniversityPage from './pages/UniversityPage'
 import DomainEtablissementsPage from './pages/DomainEtablissementsPage'
 import { useAuth } from './context/AuthContext'
+import EducationLoader from './components/EducationLoader'
 
 export type Page =
   | 'home'
@@ -108,7 +109,15 @@ export default function App() {
     window.scrollTo(0, 0)
   }
 
-  if (isLoadingAuth) return null
+  if (isLoadingAuth) {
+    return (
+      <EducationLoader
+        fullScreen
+        label="Preparation de votre espace"
+        caption="Organisation des etudes, etablissements et specialites."
+      />
+    )
+  }
 
   return (
     <>

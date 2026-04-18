@@ -1,0 +1,120 @@
+{
+  "version": "2026-step2-draft",
+  "source": "client/src/pages/register/BacFormPage.tsx",
+  "validationStatus": "draft",
+  "coefficientPolicy": "pending_manual_validation",
+  "sections": [
+    {
+      "frontendKey": "Math",
+      "dbName": "رياضيات",
+      "validationStatus": "draft",
+      "subjects": [
+        { "subjectId": "matiere-mathematiques", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-physique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-sciences", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-philosophie", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-francais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-anglais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-arabe", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-informatique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-option", "coefficient": null, "validationStatus": "pending_manual_validation" }
+      ]
+    },
+    {
+      "frontendKey": "Science",
+      "dbName": "علوم تجريبية",
+      "validationStatus": "draft",
+      "subjects": [
+        { "subjectId": "matiere-sciences", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-physique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-mathematiques", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-arabe", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-philosophie", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-francais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-anglais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-option", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-informatique", "coefficient": null, "validationStatus": "pending_manual_validation" }
+      ]
+    },
+    {
+      "frontendKey": "Info",
+      "dbName": "علوم الإعلامية",
+      "validationStatus": "draft",
+      "subjects": [
+        { "subjectId": "matiere-mathematiques", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-physique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-algo", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-sti", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-francais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-arabe", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-anglais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-option", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-philosophie", "coefficient": null, "validationStatus": "pending_manual_validation" }
+      ]
+    },
+    {
+      "frontendKey": "Technique",
+      "dbName": "العلوم التقنية",
+      "validationStatus": "draft",
+      "subjects": [
+        { "subjectId": "matiere-technique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-mathematiques", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-physique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-francais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-anglais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-arabe", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-option", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-informatique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-philosophie", "coefficient": null, "validationStatus": "pending_manual_validation" }
+      ]
+    },
+    {
+      "frontendKey": "Lettre",
+      "dbName": "آداب",
+      "validationStatus": "draft",
+      "subjects": [
+        { "subjectId": "matiere-francais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-anglais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-arabe", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-option", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-histoire", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-geographie", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-informatique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-islamique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-philosophie", "coefficient": null, "validationStatus": "pending_manual_validation" }
+      ]
+    },
+    {
+      "frontendKey": "Economie",
+      "dbName": "إقتصاد وتصرف",
+      "validationStatus": "draft",
+      "subjects": [
+        { "subjectId": "matiere-economie", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-gestion", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-mathematiques", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-histoire", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-geographie", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-francais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-anglais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-arabe", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-philosophie", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-option", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-informatique", "coefficient": null, "validationStatus": "pending_manual_validation" }
+      ]
+    },
+    {
+      "frontendKey": "Sport",
+      "dbName": "رياضة",
+      "validationStatus": "draft",
+      "subjects": [
+        { "subjectId": "matiere-mathematiques", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-physique", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-sciences", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-arabe", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-philosophie", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-francais", "coefficient": null, "validationStatus": "pending_manual_validation" },
+        { "subjectId": "matiere-anglais", "coefficient": null, "validationStatus": "pending_manual_validation" }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import type { Faculty } from '../data/faculties'
 import { facultyMatchesSearch } from '../utils/etablissementList'
 import FacultyCard from './FacultyCard'
 import DomainVoirPlusCard from './DomainVoirPlusCard'
+import EducationLoader from './EducationLoader'
 import s from './DomainEtablissementSection.module.css'
 
 const PREVIEW = 5
@@ -35,7 +36,13 @@ export default function DomainEtablissementSection({
           {title}
         </h2>
 
-        {loading && <p className={s.muted}>Chargement...</p>}
+        {loading && (
+          <EducationLoader
+            compact
+            label={`Chargement de ${title}`}
+            caption="Recuperation des etablissements reels du domaine."
+          />
+        )}
         {error && <p className={s.err}>Impossible de charger les etablissements pour ce domaine.</p>}
 
         {!loading && !error && faculties.length === 0 && (

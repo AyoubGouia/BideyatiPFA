@@ -1,0 +1,160 @@
+{
+  "version": "2026-step2-draft",
+  "source": "client/src/pages/register/BacFormPage.tsx",
+  "validationStatus": "draft",
+  "subjects": [
+    {
+      "id": "matiere-mathematiques",
+      "code": "MATH",
+      "nom": "Mathematiques",
+      "nomFr": "Mathematiques",
+      "nomAr": null,
+      "normalizedKey": "mathematiques",
+      "aliases": ["math", "maths"]
+    },
+    {
+      "id": "matiere-physique",
+      "code": "PHYS",
+      "nom": "Physique",
+      "nomFr": "Physique",
+      "nomAr": null,
+      "normalizedKey": "physique",
+      "aliases": []
+    },
+    {
+      "id": "matiere-sciences",
+      "code": "SCI",
+      "nom": "Sciences",
+      "nomFr": "Sciences",
+      "nomAr": null,
+      "normalizedKey": "sciences",
+      "aliases": ["science"]
+    },
+    {
+      "id": "matiere-philosophie",
+      "code": "PHILO",
+      "nom": "Philosophie",
+      "nomFr": "Philosophie",
+      "nomAr": null,
+      "normalizedKey": "philosophie",
+      "aliases": []
+    },
+    {
+      "id": "matiere-francais",
+      "code": "FR",
+      "nom": "Francais",
+      "nomFr": "Francais",
+      "nomAr": null,
+      "normalizedKey": "francais",
+      "aliases": []
+    },
+    {
+      "id": "matiere-anglais",
+      "code": "ANG",
+      "nom": "Anglais",
+      "nomFr": "Anglais",
+      "nomAr": null,
+      "normalizedKey": "anglais",
+      "aliases": ["english"]
+    },
+    {
+      "id": "matiere-arabe",
+      "code": "AR",
+      "nom": "Arabe",
+      "nomFr": "Arabe",
+      "nomAr": null,
+      "normalizedKey": "arabe",
+      "aliases": ["ar"]
+    },
+    {
+      "id": "matiere-informatique",
+      "code": "INFO",
+      "nom": "Informatique",
+      "nomFr": "Informatique",
+      "nomAr": null,
+      "normalizedKey": "informatique",
+      "aliases": ["info"]
+    },
+    {
+      "id": "matiere-option",
+      "code": "OPT",
+      "nom": "Option",
+      "nomFr": "Option",
+      "nomAr": null,
+      "normalizedKey": "option",
+      "aliases": ["matiere optionnelle"]
+    },
+    {
+      "id": "matiere-algo",
+      "code": "ALGO",
+      "nom": "Algo",
+      "nomFr": "Algo",
+      "nomAr": null,
+      "normalizedKey": "algo",
+      "aliases": ["algorithmique"]
+    },
+    {
+      "id": "matiere-sti",
+      "code": "STI",
+      "nom": "STI",
+      "nomFr": "STI",
+      "nomAr": null,
+      "normalizedKey": "sti",
+      "aliases": []
+    },
+    {
+      "id": "matiere-technique",
+      "code": "TECH",
+      "nom": "Technique",
+      "nomFr": "Technique",
+      "nomAr": null,
+      "normalizedKey": "technique",
+      "aliases": []
+    },
+    {
+      "id": "matiere-histoire",
+      "code": "HIST",
+      "nom": "Histoire",
+      "nomFr": "Histoire",
+      "nomAr": null,
+      "normalizedKey": "histoire",
+      "aliases": []
+    },
+    {
+      "id": "matiere-geographie",
+      "code": "GEO",
+      "nom": "Geographie",
+      "nomFr": "Geographie",
+      "nomAr": null,
+      "normalizedKey": "geographie",
+      "aliases": []
+    },
+    {
+      "id": "matiere-islamique",
+      "code": "ISL",
+      "nom": "Islamique",
+      "nomFr": "Islamique",
+      "nomAr": null,
+      "normalizedKey": "islamique",
+      "aliases": ["education islamique"]
+    },
+    {
+      "id": "matiere-economie",
+      "code": "ECO",
+      "nom": "Economie",
+      "nomFr": "Economie",
+      "nomAr": null,
+      "normalizedKey": "economie",
+      "aliases": []
+    },
+    {
+      "id": "matiere-gestion",
+      "code": "GEST",
+      "nom": "Gestion",
+      "nomFr": "Gestion",
+      "nomAr": null,
+      "normalizedKey": "gestion",
+      "aliases": []
+    }
+  ]
+}

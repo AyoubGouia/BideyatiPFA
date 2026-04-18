@@ -1,5 +1,6 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import type { Page } from '../App'
+import { aiApi, isAxiosApiError, type AiSpecialityOverviewResponse } from '../api/aiApi'
 import { useAuth } from '../context/AuthContext'
 import type { SpecialiteDetail } from '../api/specialiteApi'
 import { specialiteApi } from '../api/specialiteApi'
@@ -10,9 +11,22 @@ import {
   type CapaciteAdmissionRow,
 } from '../api/admissionApi'
 import BideyetiLogo from '../components/BideyetiLogo'
+import AiOverviewAnimatedContent from '../components/AiOverviewAnimatedContent'
+import EducationLoader from '../components/EducationLoader'
 import s from './SpecialiteDetailPage.module.css'
 
 const YEARS = [2023, 2024, 2025] as const
+const AI_MIN_LOADING_MS = 1400
+
+type DetailTab = 'admission' | 'ai'
+
+type AiPanelState =
+  | { status: 'idle' }
+  | { status: 'loading' }
+  | { status: 'success'; data: AiSpecialityOverviewResponse }
+  | { status: 'auth'; message: string }
+  | { status: 'incomplete'; message: string }
+  | { status: 'error'; message: string }
 
 interface Props {
   nav: (
@@ -32,11 +46,15 @@ export default function SpecialiteDetailPage({
 }: Props) {
   const { user } = useAuth()
   const [year, setYear] = useState<number>(2025)
+  const [activeTab, setActiveTab] = useState<DetailTab>('admission')
   const [specialite, setSpecialite] = useState<SpecialiteDetail | null>(null)
   const [stats, setStats] = useState<StatistiqueAdmissionRow[]>([])
   const [caps, setCaps] = useState<CapaciteAdmissionRow[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [aiPanelState, setAiPanelState] = useState<AiPanelState>({ status: 'idle' })
+  const [aiReplayKey, setAiReplayKey] = useState(0)
+  const aiOverviewCacheRef = useRef<Record<string, AiSpecialityOverviewResponse>>({})
 
   useEffect(() => {
     if (!specialiteId) {
@@ -62,7 +80,7 @@ export default function SpecialiteDetailPage({
       } catch {
         if (!cancelled) {
           setSpecialite(null)
-          setError('Impossible de charger cette spécialité.')
+          setError('Impossible de charger cette specialite.')
         }
       } finally {
         if (!cancelled) setLoading(false)
@@ -74,13 +92,100 @@ export default function SpecialiteDetailPage({
     }
   }, [specialiteId])
 
+  useEffect(() => {
+    if (!specialiteId || activeTab !== 'ai') {
+      return
+    }
+
+    const cacheKey = `${specialiteId}:${year}`
+    const cachedOverview = aiOverviewCacheRef.current[cacheKey]
+
+    let cancelled = false
+    const timers: number[] = []
+
+    const finishWithDelay = <T extends AiPanelState>(nextState: T) => {
+      const timer = window.setTimeout(() => {
+        if (cancelled) return
+        setAiPanelState(nextState)
+        if (nextState.status === 'success') {
+          setAiReplayKey((current) => current + 1)
+        }
+      }, AI_MIN_LOADING_MS)
+
+      timers.push(timer)
+    }
+
+    if (cachedOverview) {
+      setAiPanelState({ status: 'loading' })
+      finishWithDelay({ status: 'success', data: cachedOverview })
+      return () => {
+        cancelled = true
+        timers.forEach((timer) => window.clearTimeout(timer))
+      }
+    }
+
+    if (!user) {
+      setAiPanelState({
+        status: 'auth',
+        message: "Connectez-vous pour obtenir une lecture AI personnalisee de cette specialite.",
+      })
+      return
+    }
+
+    setAiPanelState({ status: 'loading' })
+
+    ;(async () => {
+      const startedAt = Date.now()
+
+      try {
+        const overview = await aiApi.getSpecialityOverview({
+          specialiteId,
+          year,
+        })
+
+        aiOverviewCacheRef.current[cacheKey] = overview
+
+        const remainingDelay = Math.max(
+          AI_MIN_LOADING_MS - (Date.now() - startedAt),
+          0
+        )
+
+        const timer = window.setTimeout(() => {
+          if (cancelled) return
+          setAiPanelState({ status: 'success', data: overview })
+          setAiReplayKey((current) => current + 1)
+        }, remainingDelay)
+
+        timers.push(timer)
+      } catch (requestError) {
+        const remainingDelay = Math.max(
+          AI_MIN_LOADING_MS - (Date.now() - startedAt),
+          0
+        )
+
+        const nextState = resolveAiErrorState(requestError)
+        const timer = window.setTimeout(() => {
+          if (cancelled) return
+          setAiPanelState(nextState)
+        }, remainingDelay)
+
+        timers.push(timer)
+      }
+    })()
+
+    return () => {
+      cancelled = true
+      timers.forEach((timer) => window.clearTimeout(timer))
+    }
+  }, [activeTab, specialiteId, user, year])
+
   const statsForYear = useMemo(
-    () => stats.filter(r => r.annee === year),
+    () => stats.filter((r) => r.annee === year),
     [stats, year]
   )
 
   const capsForYear = useMemo(
-    () => caps.filter(r => r.annee === year),
+    () => caps.filter((r) => r.annee === year),
     [caps, year]
   )
 
@@ -98,12 +203,65 @@ export default function SpecialiteDetailPage({
     else nav(user ? 'university' : 'visitor')
   }
 
+  const renderAiPanel = () => {
+    if (aiPanelState.status === 'idle' || aiPanelState.status === 'loading') {
+      return (
+        <section className={s.aiLoadingCard} aria-live="polite">
+          <div className={s.aiLoadingVisual}>
+            <EducationLoader
+              compact
+              label="L'assistant AI construit votre lecture"
+              caption="Analyse du profil, des admissions historiques et des signaux utiles."
+            />
+          </div>
+          <div className={s.aiSkeletonGroup} aria-hidden="true">
+            <div className={s.aiSkeletonHero} />
+            <div className={s.aiSkeletonLineLong} />
+            <div className={s.aiSkeletonLineMedium} />
+            <div className={s.aiSkeletonGrid}>
+              <span className={s.aiSkeletonPill} />
+              <span className={s.aiSkeletonPill} />
+              <span className={s.aiSkeletonPill} />
+            </div>
+            <div className={s.aiSkeletonPanel} />
+            <div className={s.aiSkeletonPanel} />
+          </div>
+        </section>
+      )
+    }
+
+    if (aiPanelState.status === 'success') {
+      return (
+        <AiOverviewAnimatedContent
+          overview={aiPanelState.data}
+          replayKey={aiReplayKey}
+        />
+      )
+    }
+
+    return (
+      <section className={s.aiMessageCard}>
+        <span className={s.aiMessageEyebrow}>AI Overview</span>
+        <h3 className={s.aiMessageTitle}>
+          {aiPanelState.status === 'auth'
+            ? 'Connexion requise'
+            : aiPanelState.status === 'incomplete'
+              ? 'Profil a completer'
+              : "Analyse indisponible pour l'instant"}
+        </h3>
+        <p className={s.aiMessageBody}>{aiPanelState.message}</p>
+      </section>
+    )
+  }
+
   if (loading) {
     return (
       <div className={s.page}>
         <div className={s.loading}>
-          <div className={s.spinner} />
-          <p>Chargement…</p>
+          <EducationLoader
+            label="Chargement de la specialite"
+            caption="Preparation des admissions, capacites et informations utiles."
+          />
         </div>
       </div>
     )
@@ -113,8 +271,8 @@ export default function SpecialiteDetailPage({
     return (
       <div className={s.page}>
         <div className={s.error}>
-          <h2>Spécialité non trouvée</h2>
-          <p>{error || 'Cette spécialité est introuvable.'}</p>
+          <h2>Specialite non trouvee</h2>
+          <p>{error || 'Cette specialite est introuvable.'}</p>
           <button type="button" className={s.backBtn} onClick={backToEtablissement}>
             Retour
           </button>
@@ -128,7 +286,7 @@ export default function SpecialiteDetailPage({
       <header className={s.header}>
         <div className={s.headerInner}>
           <button type="button" className={s.backBtn} onClick={backToEtablissement}>
-            ← Retour à l&apos;établissement
+            Retour a l'etablissement
           </button>
           <div className={s.logo}>
             <BideyetiLogo />
@@ -149,12 +307,39 @@ export default function SpecialiteDetailPage({
         </section>
 
         <section className={s.card}>
-          <h2 className={s.cardTitle}>Admission — année</h2>
-          <p className={s.cardHint}>
-            Sélectionnez une année pour voir le dernier admis et les capacités correspondantes.
-          </p>
-          <div className={s.yearRow} role="tablist" aria-label="Année">
-            {YEARS.map(y => (
+          <div className={s.controlHeader}>
+            <div>
+              <h2 className={s.cardTitle}>Explorer cette specialite</h2>
+              <p className={s.cardHint}>
+                Alternez entre les donnees d'admission et la lecture AI sans quitter la page.
+              </p>
+            </div>
+            <div className={s.tabRow} role="tablist" aria-label="Vue detaillee">
+              <button
+                type="button"
+                role="tab"
+                aria-selected={activeTab === 'admission'}
+                className={`${s.tabButton} ${
+                  activeTab === 'admission' ? s.tabButtonActive : ''
+                }`}
+                onClick={() => setActiveTab('admission')}
+              >
+                Admission
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={activeTab === 'ai'}
+                className={`${s.tabButton} ${activeTab === 'ai' ? s.tabButtonActive : ''}`}
+                onClick={() => setActiveTab('ai')}
+              >
+                AI Overview
+              </button>
+            </div>
+          </div>
+
+          <div className={s.yearRow} role="tablist" aria-label="Annee">
+            {YEARS.map((y) => (
               <button
                 key={y}
                 type="button"
@@ -169,70 +354,108 @@ export default function SpecialiteDetailPage({
           </div>
         </section>
 
-        <section className={s.card}>
-          <h2 className={s.cardTitle}>Dernier admis ({year})</h2>
-          {statsForYear.length === 0 ? (
-            <p className={s.empty}>Aucune statistique d&apos;admission pour cette année.</p>
-          ) : (
-            <div className={s.tableWrap}>
-              <table className={s.table}>
-                <thead>
-                  <tr>
-                    <th>Section Bac</th>
-                    <th>Dernier admis</th>
-                    <th>Taux</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {statsForYear.map(row => (
-                    <tr key={row.id}>
-                      <td>{row.section?.nom ?? '—'}</td>
-                      <td>{row.scoreDernierAdmis}</td>
-                      <td>
-                        {row.tauxAdmission != null
-                          ? `${row.tauxAdmission}`
-                          : '—'}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
-        </section>
+        {activeTab === 'admission' ? (
+          <>
+            <section className={s.card}>
+              <h2 className={s.cardTitle}>Dernier admis ({year})</h2>
+              {statsForYear.length === 0 ? (
+                <p className={s.empty}>Aucune statistique d'admission pour cette annee.</p>
+              ) : (
+                <div className={s.tableWrap}>
+                  <table className={s.table}>
+                    <thead>
+                      <tr>
+                        <th>Section Bac</th>
+                        <th>Dernier admis</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {statsForYear.map((row) => (
+                        <tr key={row.id}>
+                          <td>{row.section?.nom ?? '-'}</td>
+                          <td>{row.scoreDernierAdmis}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </section>
 
-        <section className={s.card}>
-          <h2 className={s.cardTitle}>Capacités par section Bac ({year})</h2>
-          {sortedCaps.length === 0 ? (
-            <p className={s.empty}>Aucune capacité enregistrée pour cette année.</p>
-          ) : (
-            <div className={s.tableWrap}>
-              <table className={s.table}>
-                <thead>
-                  <tr>
-                    <th>Section Bac</th>
-                    <th>Tour</th>
-                    <th>Capacité</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {sortedCaps.map(row => (
-                    <tr key={row.id}>
-                      <td>{row.section?.nom ?? '—'}</td>
-                      <td>{row.tour}</td>
-                      <td>{row.capacite}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
-        </section>
+            <section className={s.card}>
+              <h2 className={s.cardTitle}>Capacites par section Bac ({year})</h2>
+              {sortedCaps.length === 0 ? (
+                <p className={s.empty}>Aucune capacite enregistree pour cette annee.</p>
+              ) : (
+                <div className={s.tableWrap}>
+                  <table className={s.table}>
+                    <thead>
+                      <tr>
+                        <th>Section Bac</th>
+                        <th>Tour</th>
+                        <th>Capacite</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {sortedCaps.map((row) => (
+                        <tr key={row.id}>
+                          <td>{row.section?.nom ?? '-'}</td>
+                          <td>{row.tour}</td>
+                          <td>{row.capacite}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </section>
+          </>
+        ) : (
+          renderAiPanel()
+        )}
       </main>
 
       <footer className={s.footer}>
-        <p>© 2026 Bideyety | Tous droits réservés.</p>
+        <p>(c) 2026 Bideyety | Tous droits reserves.</p>
       </footer>
     </div>
   )
+}
+
+function resolveAiErrorState(error: unknown): AiPanelState {
+  if (isAxiosApiError(error)) {
+    const status = error.response?.status
+    const message = error.response?.data?.error
+
+    if (status === 401) {
+      return {
+        status: 'auth',
+        message:
+          message ||
+          "Connectez-vous pour obtenir une lecture AI personnalisee de cette specialite.",
+      }
+    }
+
+    if (status === 409) {
+      return {
+        status: 'incomplete',
+        message:
+          message ||
+          "Votre profil doit inclure votre section et votre moyenne pour lancer l'analyse AI.",
+      }
+    }
+
+    return {
+      status: 'error',
+      message:
+        message ||
+        "L'assistant AI n'a pas pu produire une analyse exploitable pour le moment.",
+    }
+  }
+
+  return {
+    status: 'error',
+    message:
+      "Une erreur inattendue a interrompu la lecture AI. Reessayez dans quelques instants.",
+  }
 }

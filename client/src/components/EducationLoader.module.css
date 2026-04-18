@@ -1,0 +1,245 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  color: #16314b;
+}
+
+.fullScreen {
+  min-height: 100vh;
+  padding: 32px 20px;
+  background:
+    radial-gradient(circle at top, rgba(244, 121, 32, 0.22), transparent 38%),
+    linear-gradient(160deg, #102033 0%, #1c3550 52%, #0f1a28 100%);
+  color: #e8eef7;
+}
+
+.compact {
+  gap: 10px;
+}
+
+.stage {
+  position: relative;
+  width: 168px;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glow {
+  position: absolute;
+  inset: 22px 26px 16px;
+  border-radius: 28px;
+  background: radial-gradient(circle, rgba(244, 121, 32, 0.18), rgba(244, 121, 32, 0));
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+.notebook {
+  position: relative;
+  width: 86px;
+  height: 106px;
+  border-radius: 16px 18px 16px 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(239, 245, 252, 0.93));
+  box-shadow:
+    0 18px 32px rgba(12, 24, 38, 0.34),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55);
+  transform-origin: center bottom;
+  animation: notebookFloat 2.8s ease-in-out infinite;
+}
+
+.notebook::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  width: 2px;
+  background: rgba(244, 121, 32, 0.18);
+}
+
+.ring,
+.line,
+.lineShort {
+  position: absolute;
+  left: 24px;
+  right: 14px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(31, 57, 86, 0.12);
+}
+
+.ring {
+  top: 16px;
+  left: 10px;
+  right: auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ffb787, #f47920);
+  box-shadow: 0 0 0 3px rgba(244, 121, 32, 0.12);
+}
+
+.line:nth-of-type(2) {
+  top: 34px;
+}
+
+.line:nth-of-type(3) {
+  top: 50px;
+}
+
+.lineShort {
+  top: 66px;
+  right: 28px;
+}
+
+.pen {
+  position: absolute;
+  width: 86px;
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 22%, #f47920 22%, #ff9c61 78%, #fff2e8 78%, #fff7f2 100%);
+  box-shadow: 0 12px 24px rgba(8, 15, 26, 0.28);
+  transform: rotate(-18deg) translate(42px, -8px);
+  animation: penDrift 2.8s ease-in-out infinite;
+}
+
+.penTip {
+  position: absolute;
+  right: -8px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #ffe0c8;
+}
+
+.dotOne,
+.dotTwo,
+.dotThree {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.82);
+  animation: bubble 1.9s ease-in-out infinite;
+}
+
+.dotOne {
+  top: 28px;
+  right: 22px;
+}
+
+.dotTwo {
+  top: 18px;
+  right: 42px;
+  width: 6px;
+  height: 6px;
+  animation-delay: 0.28s;
+}
+
+.dotThree {
+  top: 40px;
+  left: 28px;
+  width: 5px;
+  height: 5px;
+  animation-delay: 0.5s;
+}
+
+.label {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: inherit;
+}
+
+.caption {
+  margin: -6px 0 0;
+  max-width: 280px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(22, 49, 75, 0.72);
+}
+
+.compact .stage {
+  width: 138px;
+  height: 108px;
+}
+
+.compact .label {
+  font-size: 14px;
+}
+
+.compact .caption {
+  font-size: 11px;
+}
+
+@keyframes notebookFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+}
+
+@keyframes penDrift {
+  0%,
+  100% {
+    transform: rotate(-18deg) translate(42px, -8px);
+  }
+  50% {
+    transform: rotate(-14deg) translate(38px, -15px);
+  }
+}
+
+@keyframes bubble {
+  0%,
+  100% {
+    transform: translateY(0) scale(0.9);
+    opacity: 0.28;
+  }
+  55% {
+    transform: translateY(-9px) scale(1.08);
+    opacity: 0.95;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0.96);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .stage {
+    width: 144px;
+    height: 112px;
+  }
+
+  .notebook {
+    width: 78px;
+    height: 96px;
+  }
+
+  .pen {
+    width: 78px;
+    transform: rotate(-18deg) translate(34px, -6px);
+  }
+
+  .caption {
+    max-width: 240px;
+  }
+}
