@@ -127,7 +127,7 @@ export default function SpecialiteDetailPage({
     if (!user) {
       setAiPanelState({
         status: 'auth',
-        message: "Connectez-vous pour obtenir une lecture AI personnalisee de cette specialite.",
+        message: "Connectez-vous pour obtenir une lecture IA personnalisee de cette specialite.",
       })
       return
     }
@@ -210,8 +210,8 @@ export default function SpecialiteDetailPage({
           <div className={s.aiLoadingVisual}>
             <EducationLoader
               compact
-              label="L'assistant AI construit votre lecture"
-              caption="Analyse du profil, des admissions historiques et des signaux utiles."
+              label="L'assistant IA prepare votre lecture"
+              caption="Synthese du profil, du contexte de la specialite et des admissions utiles."
             />
           </div>
           <div className={s.aiSkeletonGroup} aria-hidden="true">
@@ -241,13 +241,13 @@ export default function SpecialiteDetailPage({
 
     return (
       <section className={s.aiMessageCard}>
-        <span className={s.aiMessageEyebrow}>AI Overview</span>
+        <span className={s.aiMessageEyebrow}>Analyse IA</span>
         <h3 className={s.aiMessageTitle}>
           {aiPanelState.status === 'auth'
             ? 'Connexion requise'
             : aiPanelState.status === 'incomplete'
               ? 'Profil a completer'
-              : "Analyse indisponible pour l'instant"}
+              : "Analyse temporairement indisponible"}
         </h3>
         <p className={s.aiMessageBody}>{aiPanelState.message}</p>
       </section>
@@ -311,7 +311,7 @@ export default function SpecialiteDetailPage({
             <div>
               <h2 className={s.cardTitle}>Explorer cette specialite</h2>
               <p className={s.cardHint}>
-                Alternez entre les donnees d'admission et la lecture AI sans quitter la page.
+                Alternez entre les donnees d'admission et la lecture IA sans quitter la page.
               </p>
             </div>
             <div className={s.tabRow} role="tablist" aria-label="Vue detaillee">
@@ -333,7 +333,7 @@ export default function SpecialiteDetailPage({
                 className={`${s.tabButton} ${activeTab === 'ai' ? s.tabButtonActive : ''}`}
                 onClick={() => setActiveTab('ai')}
               >
-                AI Overview
+                Analyse IA
               </button>
             </div>
           </div>
@@ -425,14 +425,19 @@ export default function SpecialiteDetailPage({
 function resolveAiErrorState(error: unknown): AiPanelState {
   if (isAxiosApiError(error)) {
     const status = error.response?.status
-    const message = error.response?.data?.error
+    const data = error.response?.data
+
+    if (import.meta.env.DEV) {
+      console.error('[AI Overview] request failed', {
+        status,
+        data,
+      })
+    }
 
     if (status === 401) {
       return {
         status: 'auth',
-        message:
-          message ||
-          "Connectez-vous pour obtenir une lecture AI personnalisee de cette specialite.",
+        message: "Connectez-vous pour obtenir une lecture IA personnalisee de cette specialite.",
       }
     }
 
@@ -440,22 +445,18 @@ function resolveAiErrorState(error: unknown): AiPanelState {
       return {
         status: 'incomplete',
         message:
-          message ||
-          "Votre profil doit inclure votre section et votre moyenne pour lancer l'analyse AI.",
+          "Ajoutez votre section du bac et votre moyenne pour recevoir un avis IA personnalise.",
       }
     }
 
     return {
       status: 'error',
-      message:
-        message ||
-        "L'assistant AI n'a pas pu produire une analyse exploitable pour le moment.",
+      message: "L'analyse IA est temporairement indisponible. Reessayez dans quelques instants.",
     }
   }
 
   return {
     status: 'error',
-    message:
-      "Une erreur inattendue a interrompu la lecture AI. Reessayez dans quelques instants.",
+    message: "Une erreur inattendue a interrompu l'analyse IA. Reessayez dans quelques instants.",
   }
 }

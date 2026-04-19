@@ -16,10 +16,17 @@ const estimateDuration = (text: string) => {
 }
 
 const labelMap: Record<AiSpecialityOverviewResponse['analysis']['label'], string> = {
-  safe: 'Safe',
-  balanced: 'Balanced',
-  ambitious: 'Ambitious',
-  risky: 'Risky',
+  safe: 'Accessible',
+  balanced: 'Equilibree',
+  ambitious: 'Ambitieuse',
+  risky: 'Selective',
+}
+
+const labelToneMap: Record<AiSpecialityOverviewResponse['analysis']['label'], string> = {
+  safe: s.labelSafe,
+  balanced: s.labelBalanced,
+  ambitious: s.labelAmbitious,
+  risky: s.labelRisky,
 }
 
 const confidenceMap: Record<
@@ -35,31 +42,19 @@ export default function AiOverviewAnimatedContent({
   overview,
   replayKey,
 }: Props) {
-  const { analysis, completeness, yearRequested, yearUsed } = overview
-  const strengths = withFallback(
-    analysis.strengths,
-    "Aucun point fort detaille n'a ete fourni par l'assistant."
-  )
-  const risks = withFallback(
-    analysis.risks,
-    "Aucun risque detaille n'a ete fourni par l'assistant."
-  )
-  const advice = withFallback(
-    analysis.advice,
-    "Aucun conseil supplementaire n'a ete fourni par l'assistant."
-  )
+  const { analysis, yearRequested, yearUsed } = overview
+  const yearLabel = yearUsed ?? yearRequested
+  const keyPoints = withFallback(analysis.keyPoints, ["Conseil synthetique indisponible."])
+  const advice = withFallback(analysis.advice, ["Conseil complementaire indisponible."])
   let currentDelay = 220
+
+  const headlineDelay = currentDelay
+  currentDelay += estimateDuration(analysis.headline)
 
   const summaryDelay = currentDelay
   currentDelay += estimateDuration(analysis.summary)
 
-  const strengthsDelays = strengths.map((item) => {
-    const delay = currentDelay
-    currentDelay += estimateDuration(item)
-    return delay
-  })
-
-  const risksDelays = risks.map((item) => {
+  const keyPointDelays = keyPoints.map((item) => {
     const delay = currentDelay
     currentDelay += estimateDuration(item)
     return delay
@@ -75,24 +70,35 @@ export default function AiOverviewAnimatedContent({
 
   return (
     <div className={s.shell}>
-      <div className={s.hero}>
+      <section className={s.hero}>
         <div className={s.heroTop}>
-          <div className={s.aiBadge}>AI Overview</div>
-          <div className={`${s.labelBadge} ${s[`label${labelMap[analysis.label]}`]}`}>
+          <div className={s.aiBadge}>Analyse IA</div>
+          <div className={`${s.labelBadge} ${labelToneMap[analysis.label]}`}>
             {labelMap[analysis.label]}
           </div>
         </div>
         <div className={s.heroMeta}>
           <div className={s.metaPill}>
-            <span className={s.metaLabel}>Confiance</span>
+            <span className={s.metaLabel}>Niveau de confiance</span>
             <strong>{confidenceMap[analysis.confidence]}</strong>
           </div>
-          <div className={s.metaPill}>
-            <span className={s.metaLabel}>Annee analysee</span>
-            <strong>{yearUsed ?? yearRequested ?? 'Non precisee'}</strong>
-          </div>
+          {yearLabel !== null && (
+            <div className={s.metaPill}>
+              <span className={s.metaLabel}>Annee analysee</span>
+              <strong>{yearLabel}</strong>
+            </div>
+          )}
         </div>
-
+        <div className={s.heroCopy}>
+          <span className={s.heroKicker}>Lecture orientative</span>
+          <TypingText
+            text={analysis.headline}
+            replayKey={replayKey}
+            startDelayMs={headlineDelay}
+            stepMs={WORD_STEP_MS}
+            className={s.headline}
+          />
+        </div>
         <TypingText
           text={analysis.summary}
           replayKey={replayKey}
@@ -100,46 +106,22 @@ export default function AiOverviewAnimatedContent({
           stepMs={WORD_STEP_MS}
           className={s.summary}
         />
-      </div>
-
-      <div className={s.completenessGrid}>
-        <div className={s.completenessItem}>
-          <span>Section bac</span>
-          <strong>{completeness.hasSection ? 'OK' : 'Manquante'}</strong>
-        </div>
-        <div className={s.completenessItem}>
-          <span>Moyenne</span>
-          <strong>{completeness.hasMoyenne ? 'OK' : 'Manquante'}</strong>
-        </div>
-        <div className={s.completenessItem}>
-          <span>Notes</span>
-          <strong>{completeness.hasNotes ? 'Disponibles' : 'Absentes'}</strong>
-        </div>
-        <div className={s.completenessItem}>
-          <span>Questionnaire</span>
-          <strong>{completeness.hasQuestionnaire ? 'Disponible' : 'Absent'}</strong>
-        </div>
-        <div className={s.completenessItem}>
-          <span>Dernier admis</span>
-          <strong>{completeness.hasHistoricalScore ? 'Disponible' : 'Absent'}</strong>
-        </div>
-        <div className={s.completenessItem}>
-          <span>Capacite</span>
-          <strong>{completeness.hasCapacity ? 'Disponible' : 'Absente'}</strong>
-        </div>
-      </div>
+      </section>
 
       <div className={s.sectionGrid}>
         <section className={s.sectionCard}>
-          <h3 className={s.sectionTitle}>Points forts</h3>
+          <div className={s.sectionHeader}>
+            <span className={s.sectionEyebrow}>Points cles</span>
+            <h3 className={s.sectionTitle}>Ce qu'il faut retenir</h3>
+          </div>
           <ul className={s.pointList}>
-            {strengths.map((item, index) => (
-              <li key={`strength-${index}`} className={s.pointItem}>
+            {keyPoints.map((item, index) => (
+              <li key={`point-${index}`} className={s.pointItem}>
                 <span className={s.pointDot} aria-hidden="true" />
                 <TypingText
                   text={item}
                   replayKey={replayKey}
-                  startDelayMs={strengthsDelays[index]}
+                  startDelayMs={keyPointDelays[index]}
                   stepMs={WORD_STEP_MS}
                   className={s.pointText}
                 />
@@ -148,18 +130,21 @@ export default function AiOverviewAnimatedContent({
           </ul>
         </section>
 
-        <section className={s.sectionCard}>
-          <h3 className={s.sectionTitle}>Points d'attention</h3>
-          <ul className={s.pointList}>
-            {risks.map((item, index) => (
-              <li key={`risk-${index}`} className={s.pointItem}>
-                <span className={`${s.pointDot} ${s.pointDotRisk}`} aria-hidden="true" />
+        <section className={`${s.sectionCard} ${s.adviceCard}`}>
+          <div className={s.sectionHeader}>
+            <span className={s.sectionEyebrow}>Conseils</span>
+            <h3 className={s.sectionTitle}>Pistes utiles pour avancer</h3>
+          </div>
+          <ul className={s.adviceList}>
+            {advice.map((item, index) => (
+              <li key={`advice-${index}`} className={s.adviceItem}>
+                <span className={s.adviceIndex}>{index + 1}</span>
                 <TypingText
                   text={item}
                   replayKey={replayKey}
-                  startDelayMs={risksDelays[index]}
+                  startDelayMs={adviceDelays[index]}
                   stepMs={WORD_STEP_MS}
-                  className={s.pointText}
+                  className={s.adviceText}
                 />
               </li>
             ))}
@@ -167,26 +152,8 @@ export default function AiOverviewAnimatedContent({
         </section>
       </div>
 
-      <section className={s.adviceCard}>
-        <h3 className={s.sectionTitle}>Conseils de l'assistant</h3>
-        <ul className={s.adviceList}>
-          {advice.map((item, index) => (
-            <li key={`advice-${index}`} className={s.adviceItem}>
-              <span className={s.adviceIndex}>{index + 1}</span>
-              <TypingText
-                text={item}
-                replayKey={replayKey}
-                startDelayMs={adviceDelays[index]}
-                stepMs={WORD_STEP_MS}
-                className={s.adviceText}
-              />
-            </li>
-          ))}
-        </ul>
-      </section>
-
       <section className={s.disclaimerCard}>
-        <span className={s.disclaimerLabel}>Note importante</span>
+        <span className={s.disclaimerLabel}>Repere</span>
         <TypingText
           text={analysis.disclaimer}
           replayKey={replayKey}
@@ -200,6 +167,6 @@ export default function AiOverviewAnimatedContent({
   )
 }
 
-function withFallback(items: string[], fallback: string) {
-  return items.length > 0 ? items : [fallback]
+function withFallback(items: string[], fallback: string[]) {
+  return items.length > 0 ? items : fallback
 }

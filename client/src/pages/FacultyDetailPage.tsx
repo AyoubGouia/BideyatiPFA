@@ -6,6 +6,7 @@ import { etablissementApi } from '../api/etablissementApi'
 import FacultyIconSvg from '../components/FacultyIcon'
 import BideyetiLogo from '../components/BideyetiLogo'
 import EducationLoader from '../components/EducationLoader'
+import { normalizeExternalUrl } from '../utils/externalUrl'
 import s from './FacultyDetailPage.module.css'
 
 interface Props {
@@ -97,6 +98,7 @@ export default function FacultyDetailPage({ nav, facultyId }: Props) {
     Boolean
   ) as string[]
   const lieuLine = lieuParts.length > 0 ? lieuParts.join(' - ') : null
+  const websiteHref = etab.website ? normalizeExternalUrl(etab.website) : ''
 
   return (
     <div className={s.page}>
@@ -163,7 +165,7 @@ export default function FacultyDetailPage({ nav, facultyId }: Props) {
             <section className={s.infoCard}>
               <h3>Site web</h3>
               <a
-                href={etab.website}
+                href={websiteHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={s.websiteLink}

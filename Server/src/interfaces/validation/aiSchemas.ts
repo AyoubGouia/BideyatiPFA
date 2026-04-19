@@ -14,30 +14,32 @@ export const specialityOverviewSchema = z.object({
 
 const nonEmptyStringSchema = z.string().trim().min(1);
 
-export const specialityOverviewAnalysisSchema = z.object({
-  label: z.enum(["safe", "balanced", "ambitious", "risky"]),
-  confidence: z.enum(["low", "medium", "high"]),
-  summary: nonEmptyStringSchema,
-  strengths: z.array(nonEmptyStringSchema),
-  risks: z.array(nonEmptyStringSchema),
-  advice: z.array(nonEmptyStringSchema),
-  disclaimer: nonEmptyStringSchema,
-});
+const headlineSchema = nonEmptyStringSchema.max(80);
+const summarySchema = nonEmptyStringSchema.max(320);
+const pointSchema = nonEmptyStringSchema.max(140);
+const adviceSchema = nonEmptyStringSchema.max(140);
+const disclaimerSchema = nonEmptyStringSchema.max(180);
 
-export const specialityOverviewResponseSchema = z.object({
-  specialiteId: z.string().trim().min(1),
-  yearRequested: z.number().int().min(1900).max(9999).nullable(),
-  yearUsed: z.number().int().min(1900).max(9999).nullable(),
-  completeness: z.object({
-    hasSection: z.boolean(),
-    hasMoyenne: z.boolean(),
-    hasNotes: z.boolean(),
-    hasQuestionnaire: z.boolean(),
-    hasHistoricalScore: z.boolean(),
-    hasCapacity: z.boolean(),
-  }),
-  analysis: specialityOverviewAnalysisSchema,
-});
+export const specialityOverviewAnalysisSchema = z
+  .object({
+    label: z.enum(["safe", "balanced", "ambitious", "risky"]),
+    confidence: z.enum(["low", "medium", "high"]),
+    headline: headlineSchema,
+    summary: summarySchema,
+    keyPoints: z.array(pointSchema).min(2).max(4),
+    advice: z.array(adviceSchema).min(1).max(3),
+    disclaimer: disclaimerSchema,
+  })
+  .strict();
+
+export const specialityOverviewResponseSchema = z
+  .object({
+    specialiteId: z.string().trim().min(1),
+    yearRequested: z.number().int().min(1900).max(9999).nullable(),
+    yearUsed: z.number().int().min(1900).max(9999).nullable(),
+    analysis: specialityOverviewAnalysisSchema,
+  })
+  .strict();
 
 export type SpecialityOverviewAnalysis = z.infer<
   typeof specialityOverviewAnalysisSchema

@@ -19,7 +19,7 @@ export class AiSpecialityOverviewController {
     try {
       const userId = req.auth?.userId;
       if (!userId) {
-        res.status(401).json({ error: "Unauthorized" });
+        res.status(401).json({ error: "Authentification requise" });
         return;
       }
 
@@ -38,16 +38,6 @@ export class AiSpecialityOverviewController {
         specialiteId: aggregatedContext.speciality.id,
         yearRequested: parsed.year ?? null,
         yearUsed: aggregatedContext.historicalData.yearUsed,
-        completeness: {
-          hasSection: Boolean(aggregatedContext.student.bacSection),
-          hasMoyenne: aggregatedContext.student.moyenneBac !== null,
-          hasNotes: aggregatedContext.student.notes.length > 0,
-          hasQuestionnaire:
-            aggregatedContext.student.questionnaire.answers.length > 0,
-          hasHistoricalScore:
-            aggregatedContext.historicalData.lastAdmittedScore !== null,
-          hasCapacity: aggregatedContext.historicalData.capacities.length > 0,
-        },
         analysis,
       });
 
@@ -74,7 +64,7 @@ export class AiSpecialityOverviewController {
         return;
       }
       console.error("[AiSpecialityOverviewController] Unexpected error:", error);
-      res.status(500).json({ error: "Failed to build AI speciality overview" });
+      res.status(500).json({ error: "Impossible de generer l'analyse IA" });
     }
   };
 

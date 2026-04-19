@@ -4,9 +4,9 @@ import apiClient from './client'
 export interface AiSpecialityOverviewAnalysis {
   label: 'safe' | 'balanced' | 'ambitious' | 'risky'
   confidence: 'low' | 'medium' | 'high'
+  headline: string
   summary: string
-  strengths: string[]
-  risks: string[]
+  keyPoints: string[]
   advice: string[]
   disclaimer: string
 }
@@ -15,14 +15,6 @@ export interface AiSpecialityOverviewResponse {
   specialiteId: string
   yearRequested: number | null
   yearUsed: number | null
-  completeness: {
-    hasSection: boolean
-    hasMoyenne: boolean
-    hasNotes: boolean
-    hasQuestionnaire: boolean
-    hasHistoricalScore: boolean
-    hasCapacity: boolean
-  }
   analysis: AiSpecialityOverviewAnalysis
 }
 

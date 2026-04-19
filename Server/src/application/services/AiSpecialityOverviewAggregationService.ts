@@ -136,11 +136,11 @@ export class AiSpecialityOverviewAggregationService {
     });
 
     if (!user) {
-      throw new HttpError(404, "User not found");
+      throw new HttpError(404, "Utilisateur introuvable");
     }
 
     if (!user.section) {
-      throw new HttpError(409, "Incomplete profile: bac section is required");
+      throw new HttpError(409, "Votre profil doit inclure votre section du bac.");
     }
     const userSection = user.section;
 
@@ -150,7 +150,7 @@ export class AiSpecialityOverviewAggregationService {
       null;
 
     if (moyenneBac === null) {
-      throw new HttpError(409, "Incomplete profile: moyenneBac is required");
+      throw new HttpError(409, "Votre profil doit inclure votre moyenne au bac.");
     }
 
     const specialite = await prisma.specialite.findUnique({
@@ -189,7 +189,7 @@ export class AiSpecialityOverviewAggregationService {
     });
 
     if (!specialite) {
-      throw new HttpError(404, "Specialite not found");
+      throw new HttpError(404, "Specialite introuvable");
     }
 
     const missingData = new Set<MissingDataKey>();
