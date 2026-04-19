@@ -60,6 +60,26 @@
   font-weight: 600;
 }
 
+.btnFav {
+  background: #fff;
+  color: #F47920;
+  border: 1.5px solid #F47920;
+  border-radius: var(--r-pill);
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all .18s;
+  cursor: pointer;
+}
+
+.btnFav:hover {
+  background: rgba(244, 121, 32, 0.05);
+  box-shadow: 0 2px 12px rgba(244, 121, 32, 0.15);
+}
+
 /* ── Main area ── */
 .main {
   flex: 1;

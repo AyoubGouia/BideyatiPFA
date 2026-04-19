@@ -39,6 +39,8 @@ model StudentProfile {
   id         String @id @default(uuid())
   numeroBac  String @unique
   moyenneBac Float?
+  score      Float?
+  region     String?
   userId     String @unique
   user       User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
@@ -122,6 +124,7 @@ model Etablissement {
   universiteId String
   universite   Universite   @relation(fields: [universiteId], references: [id], onDelete: Cascade)
   specialites  Specialite[]
+  favoris      Favori[]
 }
 
 model Specialite {
@@ -186,14 +189,19 @@ model MetierSpecialite {
 }
 
 model Favori {
-  id           String     @id @default(uuid())
-  dateAjout    DateTime   @default(now())
-  userId       String
-  specialiteId String
-  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
-  specialite   Specialite @relation(fields: [specialiteId], references: [id], onDelete: Cascade)
+  id              String         @id @default(uuid())
+  dateAjout       DateTime       @default(now())
+  userId          String
+  user            User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  specialiteId    String?
+  specialite      Specialite?    @relation(fields: [specialiteId], references: [id], onDelete: Cascade)
+
+  etablissementId String?
+  etablissement   Etablissement? @relation(fields: [etablissementId], references: [id], onDelete: Cascade)
 
   @@unique([userId, specialiteId])
+  @@unique([userId, etablissementId])
 }
 
 model Questionnaire {

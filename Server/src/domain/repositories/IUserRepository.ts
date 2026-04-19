@@ -8,6 +8,8 @@ export interface CreateStudentParams {
   motDePasseHash: string;
   numeroBac: string;
   moyenneBac: number;
+  score?: number | null;
+  region?: string | null;
   section: string;
 }
 

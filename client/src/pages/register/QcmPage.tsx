@@ -62,7 +62,7 @@ export default function QcmPage({ nav }: Props) {
 
   const validate = (): boolean => {
     const empty = new Set<string>()
-    QUESTIONS.forEach(q => { if (answers[q.id].size === 0) empty.add(q.id) })
+    QUESTIONS.forEach(q => { if (!answers[q.id] || answers[q.id].size === 0) empty.add(q.id) })
     setUnanswered(empty)
     if (empty.size > 0) {
       setGlobalError(`Veuillez répondre à toutes les questions (${empty.size} réponse${empty.size > 1 ? 's' : ''} manquante${empty.size > 1 ? 's' : ''}).`)
@@ -87,6 +87,8 @@ export default function QcmPage({ nav }: Props) {
         motDePasse: data.pwd,
         numeroBAC: data.numeroBAC,
         moyenneBac: parseFloat(data.moyenneBac || '0'),
+        score: data.score ? parseFloat(data.score.toString()) : undefined,
+        region: data.region,
         section: data.section || 'Math'
       };
       
@@ -100,13 +102,22 @@ export default function QcmPage({ nav }: Props) {
         return reps.map(r => ({ question: q.sub, reponse: r }));
       }).flat();
 
-      // 3. Format Notes
-      const notesObj = data.notes || {};
-      const formattedNotes = Object.entries(notesObj).map(([matiereNom, valeur]) => ({
-        valeur: parseFloat(valeur),
-        annee: new Date().getFullYear(),
-        matiereNom
-      }));
+      // 3. Format Notes (Best of both sessions if Controle)
+      const notesP = data.notesPrincipale || {};
+      const notesC = data.notesControle || {};
+      const allSubjects = Array.from(new Set([...Object.keys(notesP), ...Object.keys(notesC)]));
+
+      const formattedNotes = allSubjects.map(sub => {
+        const valP = parseFloat(notesP[sub] || '0');
+        const valC = parseFloat(notesC[sub] || '0');
+        const effectiveVal = data.session === 'Contrôle' ? Math.max(valP, valC) : valP;
+        
+        return {
+          valeur: effectiveVal,
+          annee: new Date().getFullYear(),
+          matiereNom: sub
+        };
+      });
 
       // 4. Submit Questionnaire & Notes
       console.log('[QcmPage] Step 4: Submitting questionnaire...', { reponses: formattedReponses.length, notes: formattedNotes.length });

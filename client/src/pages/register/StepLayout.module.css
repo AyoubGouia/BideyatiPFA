@@ -394,3 +394,67 @@
   transition: background 0.15s;
 }
 .eyeBtn:hover { background: rgba(0,0,0,0.05); }
+
+/* ─── Dashboard ────────────────────────────────────────────── */
+
+.dashboard {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.dashboardTitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #a0aec0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 8px;
+}
+
+.statGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.statBox {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: #718096;
+}
+
+.statValue {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.statValueOrange {
+  color: #F47920;
+}
+
+.statValueGreen {
+  color: #48bb78;
+}
+
+.dashboardFooter {
+  font-size: 10px;
+  color: #718096;
+  font-style: italic;
+  line-height: 1.4;
+}

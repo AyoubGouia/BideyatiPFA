@@ -15,6 +15,7 @@ import FacultyDetailPage from './pages/FacultyDetailPage'
 import SpecialiteDetailPage from './pages/SpecialiteDetailPage'
 import UniversityPage from './pages/UniversityPage'
 import DomainEtablissementsPage from './pages/DomainEtablissementsPage'
+import FavorisPage from './pages/FavorisPage'
 import { useAuth } from './context/AuthContext'
 import EducationLoader from './components/EducationLoader'
 
@@ -35,6 +36,7 @@ export type Page =
   | 'legal'
   | 'faculty-detail'
   | 'specialite-detail'
+  | 'favoris'
 
 export type NavigationProps = {
   nav: (
@@ -155,6 +157,7 @@ export default function App() {
           facultyId={facultyId}
         />
       )}
+      {page === 'favoris' && <FavorisPage nav={nav} />}
     </>
   )
 }

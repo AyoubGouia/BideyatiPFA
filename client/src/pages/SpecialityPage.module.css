@@ -55,6 +55,49 @@
   align-items: center;
 }
 
+.headerBtns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btnFav {
+  background: #fff;
+  color: #F47920;
+  border: 1.5px solid #F47920;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all .18s;
+  cursor: pointer;
+}
+
+.btnFav:hover {
+  background: rgba(244, 121, 32, 0.05);
+  box-shadow: 0 2px 12px rgba(244, 121, 32, 0.15);
+}
+
+.btnHdr {
+  background: transparent;
+  border: 1.5px solid #c8d4dc;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .18s;
+}
+
+.btnHdr:hover {
+  border-color: #F47920;
+  color: #F47920;
+}
+
 /* ── Main Content ── */
 .main {
   flex: 1;
@@ -137,10 +180,13 @@
   background: white;
   border-radius: 20px;
   padding: 24px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   border: 1px solid #f1f5f9;
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .specialityCard:hover {
   transform: translateY(-4px);
@@ -150,9 +196,10 @@
 
 .specialityHeader {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .specialityIcon {
@@ -172,43 +219,38 @@
 }
 
 .specialityName {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   color: #1e293b;
-  margin: 0 0 4px 0;
+  margin: 0;
   line-height: 1.3;
+  letter-spacing: -0.01em;
 }
 
 .specialityCategory {
-  display: inline-block;
+  display: inline-flex;
   background: #f1f5f9;
   color: #475569;
-  padding: 4px 8px;
+  padding: 3px 10px;
   border-radius: 6px;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
+  margin-top: 4px;
 }
 
-.facultyCount {
-  background: #F47920;
-  color: white;
-  padding: 4px 12px;
-  border-radius: 50px;
-  font-size: 12px;
-  font-weight: 600;
-  flex-shrink: 0;
-}
 
 .specialityDescription {
   color: #64748b;
   font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  letter-spacing: 0.01em;
 }
 
 .specialityFooter {
   display: flex;
   justify-content: flex-end;
+  margin-top: auto;
 }
 
 .exploreBtn {
@@ -328,11 +370,14 @@
 .facultyCard {
   background: white;
   border-radius: 16px;
-  padding: 20px;
+  padding: 24px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid #f1f5f9;
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .facultyCard:hover {
   transform: translateY(-2px);
@@ -364,11 +409,12 @@
 }
 
 .facultyName {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   color: #1e293b;
-  margin-bottom: 4px;
-  line-height: 1.3;
+  margin-bottom: 6px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
 }
 
 .facultySub {
@@ -461,12 +507,13 @@
   background: #f8fafc;
   color: #8b5cf6;
   border: 1px solid #8b5cf6;
-  border-radius: 8px;
-  padding: 10px;
-  font-size: 13px;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
+  margin-top: auto;
 }
 .viewDetailsBtn:hover {
   background: #8b5cf6;

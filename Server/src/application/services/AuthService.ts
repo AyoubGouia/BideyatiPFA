@@ -18,6 +18,8 @@ export class AuthService {
     motDePasse: string;
     numeroBAC: string;
     moyenneBac: number;
+    score?: number;
+    region?: string;
     section: string;
   }): Promise<{ token: string }> {
     const existingEmail = await this.userRepository.findByEmail(input.email);
@@ -40,6 +42,8 @@ export class AuthService {
       motDePasseHash,
       numeroBac: input.numeroBAC,
       moyenneBac: input.moyenneBac,
+      score: input.score,
+      region: input.region,
       section: input.section,
     });
 

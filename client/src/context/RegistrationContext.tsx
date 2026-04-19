@@ -10,9 +10,13 @@ export interface RegistrationData {
   confirm?: string;
 
   section?: string;
-  session?: string;
+  session?: 'Principale' | 'Contrôle';
   moyenneBac?: string;
-  notes?: Record<string, string>;
+  score?: number;
+  region?: string;
+  notesPrincipale?: Record<string, string>;
+  notesControle?: Record<string, string>;
+  selectedRattrapage?: string; // For Info: 'STI' | 'Physique', etc.
 
   answers?: Record<string, Set<string>>;
 }
@@ -29,7 +33,8 @@ export const RegistrationProvider: React.FC<{children: React.ReactNode}> = ({ ch
   const [data, setData] = useState<RegistrationData>({
     section: 'Math', // Default to a valid section
     session: 'Principale',
-    notes: {},
+    notesPrincipale: {},
+    notesControle: {},
     answers: {},
   });
 

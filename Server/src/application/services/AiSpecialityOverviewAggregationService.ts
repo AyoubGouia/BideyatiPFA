@@ -22,6 +22,8 @@ export type AiSpecialityOverviewPayload = {
       id: string;
       nom: string;
     };
+    region: string | null;
+    score: number | null;
     moyenneBac: number;
     notes: Array<{
       matiereId: string;
@@ -105,6 +107,8 @@ export class AiSpecialityOverviewAggregationService {
         studentProfile: {
           select: {
             moyenneBac: true,
+            score: true,
+            region: true,
           },
         },
         notes: {
@@ -278,6 +282,8 @@ export class AiSpecialityOverviewAggregationService {
           id: userSection.id,
           nom: userSection.nom,
         },
+        region: user.studentProfile?.region ?? null,
+        score: user.studentProfile?.score ?? null,
         moyenneBac,
         notes,
         questionnaire: {

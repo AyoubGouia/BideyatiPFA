@@ -96,6 +96,14 @@ export default function DomainEtablissementsPage({
               <span>{user.prenom || 'Etudiant'}</span>
             </div>
           )}
+          {user && (
+            <button type="button" className={s.btnFav} onClick={() => nav('favoris')}>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="#F47920" stroke="#F47920">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+              </svg>
+              Favoris
+            </button>
+          )}
           <button type="button" className={s.btnHdr} onClick={handleLogout}>
             Se deconnecter
           </button>
@@ -130,7 +138,7 @@ export default function DomainEtablissementsPage({
           <button
             type="button"
             className={s.specialityBtn}
-            onClick={() => nav('speciality')}
+            onClick={() => nav(user ? 'speciality' : 'register')}
           >
             <svg
               viewBox="0 0 24 24"

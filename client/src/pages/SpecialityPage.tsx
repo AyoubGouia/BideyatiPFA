@@ -8,6 +8,7 @@ import {
   groupEtablissementsBySpeciality,
   type SpecialityBrowseEntry,
 } from '../utils/etablissementList'
+import { useAuth } from '../context/AuthContext'
 import EducationLoader from '../components/EducationLoader'
 import s from './SpecialityPage.module.css'
 
@@ -41,6 +42,7 @@ function buildDescription(entry: SpecialityBrowseEntry) {
 }
 
 export default function SpecialityPage({ nav }: Props) {
+  const { user, logout } = useAuth()
   const [selectedSpeciality, setSelectedSpeciality] = useState<SpecialityBrowseEntry | null>(null)
   const [search, setSearch] = useState('')
   const [specialities, setSpecialities] = useState<SpecialityBrowseEntry[]>([])
@@ -119,6 +121,30 @@ export default function SpecialityPage({ nav }: Props) {
           <div className={s.logo}>
             <BideyetiLogo />
           </div>
+
+          <div className={s.headerBtns}>
+            {user && (
+              <button 
+                type="button" 
+                className={s.btnFav} 
+                onClick={() => nav('favoris')}
+              >
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="#F47920" stroke="#F47920">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                Favoris
+              </button>
+            )}
+            {user && (
+               <button 
+                type="button" 
+                className={s.btnHdr} 
+                onClick={async () => { await logout(); nav('home'); }}
+              >
+                Se deconnecter
+              </button>
+            )}
+          </div>
         </div>
       </header>
 
@@ -191,9 +217,6 @@ export default function SpecialityPage({ nav }: Props) {
                           <span className={s.specialityCategory}>{speciality.domaine}</span>
                         )}
                       </div>
-                      <span className={s.facultyCount}>
-                        {speciality.faculties.length} etablissement{speciality.faculties.length > 1 ? 's' : ''}
-                      </span>
                     </div>
                     <p className={s.specialityDescription}>{buildDescription(speciality)}</p>
                     <div className={s.specialityFooter}>

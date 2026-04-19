@@ -10,6 +10,8 @@ import statistiqueAdmissionRoutes from "./statistiqueAdmissionRoutes";
 import capaciteAdmissionRoutes from "./capaciteAdmissionRoutes";
 import sectionRoutes from "./sectionRoutes";
 import aiRoutes from "./aiRoutes";
+import favoriRoutes from "./favoriRoutes";
+
 
 const router = Router();
 
@@ -28,5 +30,7 @@ router.use(statistiqueAdmissionRoutes);
 router.use(capaciteAdmissionRoutes);
 router.use(sectionRoutes);
 router.use(aiRoutes);
+router.use(favoriRoutes);
+
 
 export default router;

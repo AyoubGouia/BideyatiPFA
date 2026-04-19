@@ -7,6 +7,7 @@ export class ProfileService {
       where: { id: userId },
       include: {
         studentProfile: true,
+        section: true,
         questionnaire: {
           include: {
             reponses: true,
@@ -32,6 +33,13 @@ export class ProfileService {
         ? {
             numeroBac: user.studentProfile.numeroBac,
             moyenneBac: user.studentProfile.moyenneBac,
+            score: user.studentProfile.score,
+            region: user.studentProfile.region,
+          }
+        : null,
+      section: user.section
+        ? {
+            nom: user.section.nom,
           }
         : null,
       questionnaire: user.questionnaire

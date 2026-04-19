@@ -47,6 +47,8 @@ export class UserRepository implements IUserRepository {
           create: {
             numeroBac: data.numeroBac,
             moyenneBac: data.moyenneBac,
+            score: data.score,
+            region: data.region,
           },
         },
       },

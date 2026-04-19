@@ -13,6 +13,7 @@ import {
 import BideyetiLogo from '../components/BideyetiLogo'
 import AiOverviewAnimatedContent from '../components/AiOverviewAnimatedContent'
 import EducationLoader from '../components/EducationLoader'
+import AdmissionRatePage from '../components/AdmissionRatePage'
 import s from './SpecialiteDetailPage.module.css'
 
 const YEARS = [2023, 2024, 2025] as const
@@ -197,6 +198,27 @@ export default function SpecialiteDetailPage({
       return a.tour.localeCompare(b.tour, 'fr')
     })
   }, [capsForYear])
+
+  const facultyHistoryForUser = useMemo(() => {
+    if (!specialite || !stats.length) return null;
+    const sectionNom = user?.section?.nom || "Indéfini";
+    
+    // Get stats specifically for the user's section (or fallback to all if they don't have one? No, filter by section)
+    const userSectionStats = stats.filter(st => st.section?.nom === sectionNom);
+    if (!userSectionStats.length) return null;
+
+    return {
+      facultyId: specialite.etablissement?.id ?? "",
+      facultyName: specialite.etablissement?.nom ?? specialite.universite?.nom ?? "Établissement",
+      years: userSectionStats.map(s => ({
+        year: s.annee,
+        minScore: s.scoreDernierAdmis,
+        admissionRate: s.tauxAdmission ?? 85, // Fallback if no admission rate is in DB
+        totalApplicants: 0,
+        admitted: 0,
+      }))
+    };
+  }, [specialite, stats, user]);
 
   const backToEtablissement = () => {
     if (facultyId) nav('faculty-detail', undefined, facultyId)
@@ -409,6 +431,34 @@ export default function SpecialiteDetailPage({
                 </div>
               )}
             </section>
+
+            {user?.studentProfile?.score && user?.section?.nom && facultyHistoryForUser && (() => {
+              const normalize = (val: string | null | undefined) => 
+                val ? val.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase() : '';
+              
+              const uReg = normalize(user.studentProfile.region);
+              const fReg = normalize(specialite.etablissement?.gouvernorat ?? specialite.universite?.region);
+              
+              const hasBonus = Boolean(uReg && fReg && uReg === fReg);
+              const baseScore = user.studentProfile.score;
+              const boostedScore = hasBonus ? +(baseScore * 1.07).toFixed(3) : baseScore;
+
+              return (
+                <section className={s.card} style={{ marginTop: 24 }}>
+                  <AdmissionRatePage
+                    studentScore={{
+                      studentId: user.id || "0",
+                      baseScore: baseScore,
+                      totalScore: boostedScore,
+                      subject: user.section.nom,
+                      hasRegionBonus: hasBonus
+                    }}
+                    facultyHistory={facultyHistoryForUser}
+                    currentYear={year}
+                  />
+                </section>
+              )
+            })()}
           </>
         ) : (
           renderAiPanel()

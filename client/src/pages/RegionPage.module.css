@@ -55,6 +55,49 @@
   align-items: center;
 }
 
+.headerBtns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.btnFav {
+  background: #fff;
+  color: #F47920;
+  border: 1.5px solid #F47920;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all .18s;
+  cursor: pointer;
+}
+
+.btnFav:hover {
+  background: rgba(244, 121, 32, 0.05);
+  box-shadow: 0 2px 12px rgba(244, 121, 32, 0.15);
+}
+
+.btnHdr {
+  background: transparent;
+  border: 1.5px solid #c8d4dc;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .18s;
+}
+
+.btnHdr:hover {
+  border-color: #F47920;
+  color: #F47920;
+}
+
 /* ── Main Content ── */
 .main {
   flex: 1;

@@ -174,7 +174,7 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
           <button
             type="button"
             className={s.specialityBtn}
-            onClick={() => nav('speciality')}
+            onClick={() => nav('register')}
           >
             <svg
               viewBox="0 0 24 24"
