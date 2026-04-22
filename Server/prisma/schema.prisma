@@ -18,6 +18,7 @@ model User {
   prenom         String
   email          String   @unique
   telephone      String?
+  dateNaissance  DateTime?
   motDePasseHash String
   actif          Boolean  @default(true)
   dateCreation   DateTime @default(now())

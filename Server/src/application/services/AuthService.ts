@@ -15,6 +15,7 @@ export class AuthService {
     prenom: string;
     email: string;
     telephone?: string | null;
+    dateNaissance?: string | null;
     motDePasse: string;
     numeroBAC: string;
     moyenneBac: number;
@@ -39,6 +40,7 @@ export class AuthService {
       prenom: input.prenom,
       email: input.email,
       telephone: input.telephone ?? null,
+      dateNaissance: input.dateNaissance ? new Date(input.dateNaissance) : null,
       motDePasseHash,
       numeroBac: input.numeroBAC,
       moyenneBac: input.moyenneBac,

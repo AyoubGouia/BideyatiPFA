@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Page } from "../App";
 import { useAuth } from "../context/AuthContext";
-import s from "./UniversityPage.module.css";
 import BideyetiLogo from "../components/BideyetiLogo";
 import type { Faculty } from "../data/faculties";
 import { etablissementApi } from "../api/etablissementApi";
@@ -12,6 +11,8 @@ import {
 } from "../utils/etablissementList";
 import FacultyCard from "../components/FacultyCard";
 import EducationLoader from "../components/EducationLoader";
+import UserMenu from "../components/UserMenu";
+import s from "./UniversityPage.module.css";
 
 interface Props {
   nav: (p: Page, regionId?: string, facultyId?: string) => void;
@@ -83,27 +84,7 @@ export default function DomainEtablissementsPage({
         </div>
 
         <div className={s.headerBtns}>
-          {user && (
-            <div className={s.userBadge}>
-              <svg
-                viewBox="0 0 24 24"
-                width="16"
-                height="16"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-              <span>{user.prenom || "Etudiant"}</span>
-            </div>
-          )}
-          <button type="button" className={s.btnHdr} onClick={handleLogout}>
-            Se deconnecter
-          </button>
+          <UserMenu user={user} onLogout={handleLogout} />
         </div>
       </header>
 

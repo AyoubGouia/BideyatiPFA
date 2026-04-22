@@ -11,6 +11,7 @@ import { mergeEtablissementsWithSpecialites } from '../utils/etablissementList'
 import DomainEtablissementSection from '../components/DomainEtablissementSection'
 import FacultyCard from '../components/FacultyCard'
 import EducationLoader from '../components/EducationLoader'
+import UserMenu from '../components/UserMenu'
 
 interface DomainSectionState {
   label: string
@@ -145,24 +146,6 @@ export default function UniversityPage({ nav, openDomainExplore }: Props) {
 
         <div className={s.headerBtns}>
           {user && (
-            <div className={s.userBadge}>
-              <svg
-                viewBox="0 0 24 24"
-                width="16"
-                height="16"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-              <span>{user.prenom || 'Etudiant'}</span>
-            </div>
-          )}
-          {user && (
             <button type="button" className={s.btnFav} onClick={() => nav('favoris')}>
               <svg viewBox="0 0 24 24" width="16" height="16" fill="#F47920" stroke="#F47920">
                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
@@ -170,9 +153,7 @@ export default function UniversityPage({ nav, openDomainExplore }: Props) {
               Favoris
             </button>
           )}
-          <button type="button" className={s.btnHdr} onClick={handleLogout}>
-            Se deconnecter
-          </button>
+          <UserMenu user={user} onLogout={handleLogout} />
         </div>
       </header>
 

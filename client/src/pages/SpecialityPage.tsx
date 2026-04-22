@@ -4,6 +4,7 @@ import BideyetiLogo from '../components/BideyetiLogo'
 import FacultyIconSvg from '../components/FacultyIcon'
 import { etablissementApi } from '../api/etablissementApi'
 import { specialiteApi } from '../api/specialiteApi'
+import UserMenu from '../components/UserMenu'
 import {
   groupEtablissementsBySpeciality,
   type SpecialityBrowseEntry,
@@ -135,15 +136,7 @@ export default function SpecialityPage({ nav }: Props) {
                 Favoris
               </button>
             )}
-            {user && (
-               <button 
-                type="button" 
-                className={s.btnHdr} 
-                onClick={async () => { await logout(); nav('home'); }}
-              >
-                Se deconnecter
-              </button>
-            )}
+            <UserMenu user={user} onLogout={async () => { await logout(); nav('home'); }} />
           </div>
         </div>
       </header>

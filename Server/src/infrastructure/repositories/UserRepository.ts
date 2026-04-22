@@ -34,6 +34,7 @@ export class UserRepository implements IUserRepository {
         prenom: data.prenom,
         email: data.email,
         telephone: data.telephone,
+        dateNaissance: data.dateNaissance,
         motDePasseHash: data.motDePasseHash,
         actif: true,
         role: Role.STUDENT,

@@ -1,4 +1,5 @@
 import { prisma } from "../../infrastructure/config/prisma";
+import bcrypt from "bcrypt";
 import { HttpError } from "../utils/httpError";
 
 export class ProfileService {
@@ -107,6 +108,35 @@ export class ProfileService {
       where: { userId },
       data: { moyenneBac: newMoyenneBac, score: newScore },
     });
+  }
+
+  async updateSettings(userId: string, data: any) {
+    const userUpdate: any = {};
+    const profileUpdate: any = {};
+
+    if (data.nom) userUpdate.nom = data.nom;
+    if (data.prenom) userUpdate.prenom = data.prenom;
+    if (data.email) userUpdate.email = data.email;
+    if (data.dateNaissance) userUpdate.dateNaissance = new Date(data.dateNaissance);
+    if (data.motDePasse) {
+      userUpdate.motDePasseHash = await bcrypt.hash(data.motDePasse, 10);
+    }
+
+    if (data.numeroBAC) profileUpdate.numeroBac = data.numeroBAC;
+
+    if (Object.keys(userUpdate).length > 0) {
+      await prisma.user.update({
+        where: { id: userId },
+        data: userUpdate,
+      });
+    }
+
+    if (Object.keys(profileUpdate).length > 0) {
+      await prisma.studentProfile.update({
+        where: { userId },
+        data: profileUpdate,
+      });
+    }
   }
 }
 

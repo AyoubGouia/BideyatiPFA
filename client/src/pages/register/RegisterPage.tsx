@@ -66,8 +66,23 @@ export default function RegisterPage({ nav }: Props) {
     const e: Record<string, string> = {}
     if (!form.nom.trim())    e.nom    = 'Le nom est obligatoire.'
     if (!form.prenom.trim()) e.prenom = 'Le prénom est obligatoire.'
-    if (!form.dob)           e.dob    = 'La date de naissance est obligatoire.'
-    if (!form.numeroBAC.trim()) e.numeroBAC = 'Le numéro du Bac est obligatoire.'
+    if (!form.dob) {
+      e.dob = 'La date de naissance est obligatoire.';
+    } else {
+      const dob = new Date(form.dob);
+      const ageDiffMs = Date.now() - dob.getTime();
+      const ageDate = new Date(ageDiffMs);
+      const age = Math.abs(ageDate.getUTCFullYear() - 1970);
+      if (age < 17 || age > 90) {
+        e.dob = 'Vous devez avoir entre 17 et 90 ans.';
+      }
+    }
+    
+    if (!form.numeroBAC.trim()) {
+      e.numeroBAC = 'Le numéro du Bac est obligatoire.';
+    } else if (!/^\d{6}$/.test(form.numeroBAC.trim())) {
+      e.numeroBAC = 'Le numéro de Bac doit être composé de 6 chiffres exactement.';
+    }
     if (!form.email.trim())  e.email  = 'L\'email est obligatoire.'
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = 'L\'email n\'est pas valide.'
     if (!form.pwd)           e.pwd    = 'Le mot de passe est obligatoire.'

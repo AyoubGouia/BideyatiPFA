@@ -9,6 +9,7 @@ import { universiteApi } from '../api/universiteApi'
 import { mergeEtablissementsWithSpecialites } from '../utils/etablissementList'
 import EducationLoader from '../components/EducationLoader'
 import { useAuth } from '../context/AuthContext'
+import UserMenu from '../components/UserMenu'
 import s from './RegionPage.module.css'
 
 interface Props {
@@ -180,15 +181,7 @@ export default function RegionPage({ nav }: Props) {
                 Favoris
               </button>
             )}
-            {user && (
-               <button 
-                type="button" 
-                className={s.btnHdr} 
-                onClick={async () => { await logout(); nav('home'); }}
-              >
-                Se deconnecter
-              </button>
-            )}
+            <UserMenu user={user} onLogout={async () => { await logout(); nav('home'); }} />
           </div>
         </div>
       </header>

@@ -5,6 +5,7 @@ import { favorisApi, FavoriItem } from '../api/favorisApi'
 import FacultyCard from '../components/FacultyCard'
 import EducationLoader from '../components/EducationLoader'
 import BideyetiLogo from '../components/BideyetiLogo'
+import UserMenu from '../components/UserMenu'
 import type { Faculty } from '../data/faculties'
 import s from './FavorisPage.module.css'
 
@@ -56,14 +57,7 @@ export default function FavorisPage({ nav }: Props) {
         </div>
 
         <div className={s.headerBtns}>
-          {user && (
-            <div className={s.userBadge}>
-              <span>{user.prenom || 'Etudiant'}</span>
-            </div>
-          )}
-          <button type="button" className={s.btnHdr} onClick={handleLogout}>
-            Se deconnecter
-          </button>
+          <UserMenu user={user} onLogout={handleLogout} />
         </div>
       </header>
 

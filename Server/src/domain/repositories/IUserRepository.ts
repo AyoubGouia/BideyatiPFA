@@ -5,6 +5,7 @@ export interface CreateStudentParams {
   prenom: string;
   email: string;
   telephone: string | null;
+  dateNaissance: Date | null;
   motDePasseHash: string;
   numeroBac: string;
   moyenneBac: number;

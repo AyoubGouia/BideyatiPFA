@@ -48,4 +48,9 @@ export const authApi = {
     const response = await apiClient.put("/profile/notes", data);
     return response.data;
   },
+
+  updateSettings: async (data: any): Promise<{ message: string }> => {
+    const response = await apiClient.put("/profile/settings", data);
+    return response.data;
+  },
 };
