@@ -67,17 +67,24 @@ export function calcAdmissionRate(
   minScore: number,
   admissionRate: number
 ): number {
-  let rate: number;
-  if (score < minScore) {
-    // Pénalité quadratique : plus le score est loin du seuil, plus la pénalité est forte
-    const ratio = score / minScore;
-    rate = admissionRate * ratio * ratio;
-  } else {
-    // Bonus de 5 % par point supplémentaire au-dessus du seuil
-    const bonus = 0.05 * (score - minScore);
-    rate = admissionRate * (1 + bonus);
-  }
-  return Math.min(100, Math.round(rate));
+  /**
+   * Sigmoid (logistic) model:
+   *   P(score) = admissionRate / (1 + e^(-k * (score - minScore)))
+   *
+   * - At score == minScore  → rate ≈ admissionRate / 2  (50% of historical rate)
+   * - 10 pts above minScore → rate ≈ admissionRate * 0.88  (strong chance)
+   * - 10 pts below minScore → rate ≈ admissionRate * 0.12  (limited but non-zero)
+   * - 20+ pts above         → rate approaches admissionRate (capped at 100)
+   * - 20+ pts below         → rate approaches 0 gracefully
+   *
+   * k controls the steepness of the transition around the cutoff.
+   * A value of 0.25 works well for score ranges in [50, 250].
+   */
+  const k = 0.25;
+  const delta = score - minScore;
+  const sigmoid = 1 / (1 + Math.exp(-k * delta));
+  const rate = admissionRate * sigmoid * 2; // ×2 so that at threshold, rate ≈ admissionRate
+  return Math.min(100, Math.max(0, Math.round(rate)));
 }
 
 // ─── Status helpers ───────────────────────────────────────────────────────────

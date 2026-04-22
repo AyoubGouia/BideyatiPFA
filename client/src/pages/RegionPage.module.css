@@ -184,6 +184,9 @@
   border: 1px solid #f1f5f9;
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .regionCard:hover {
   transform: translateY(-4px);
@@ -251,6 +254,7 @@
 .regionFooter {
   display: flex;
   justify-content: flex-end;
+  margin-top: auto;
 }
 
 .exploreBtn {
@@ -359,6 +363,9 @@
   border: 1px solid #f1f5f9;
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .facultyCard:hover {
   transform: translateY(-2px);
@@ -479,6 +486,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
+  margin-top: auto;
 }
 .viewDetailsBtn:hover {
   background: #F47920;

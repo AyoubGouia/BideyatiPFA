@@ -69,7 +69,7 @@ export default function FormPage({ nav }: Props) {
 
           {error && <div style={{ color: '#d96a10', marginBottom: '1rem', fontSize: '0.9rem', textAlign: 'center', backgroundColor: '#fef1e8', padding: '0.5rem', borderRadius: '4px' }}>{error}</div>}
 
-          <form onSubmit={handleLogin}>
+          <form onSubmit={handleLogin} className={s.loginForm}>
             <div className={s.field}>
             <input
               className={`${s.input} ${email ? s.inputFilled : ''}`}

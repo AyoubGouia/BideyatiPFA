@@ -1,6 +1,16 @@
 import { Request, Response } from "express";
+import { z } from "zod";
 import { ProfileService } from "../../application/services/ProfileService";
 import { HttpError } from "../../application/utils/httpError";
+
+const updateNotesSchema = z.object({
+  notes: z.array(z.object({
+    matiereNom: z.string().min(1),
+    valeur: z.number().min(0).max(20),
+  })),
+  newMoyenneBac: z.number().min(0).max(20),
+  newScore: z.number().min(0),
+});
 
 export class ProfileController {
   private profileService = new ProfileService();
@@ -23,6 +33,35 @@ export class ProfileController {
         return;
       }
       res.status(500).json({ error: "Failed to get profile" });
+    }
+  };
+
+  updateNotes = async (req: Request, res: Response) => {
+    try {
+      const userId = req.auth?.userId;
+      if (!userId) {
+        res.status(401).json({ error: "Unauthorized" });
+        return;
+      }
+      const parsed = updateNotesSchema.parse(req.body);
+      await this.profileService.updateNotes(
+        userId,
+        parsed.notes,
+        parsed.newMoyenneBac,
+        parsed.newScore,
+      );
+      res.status(200).json({ message: "Notes updated successfully" });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        res.status(400).json({ error: "Validation error", details: error.issues });
+        return;
+      }
+      if (error instanceof HttpError) {
+        res.status(error.statusCode).json({ error: error.message, details: error.details });
+        return;
+      }
+      console.error('[ProfileController] Failed to update notes:', error);
+      res.status(500).json({ error: "Failed to update notes" });
     }
   };
 }

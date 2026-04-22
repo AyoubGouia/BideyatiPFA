@@ -7,7 +7,7 @@ export interface LoginPayload {
 
 export interface AuthResponse {
   token: string;
-  user?: any; // Depending on backend response
+  user?: any;
 }
 
 export const authApi = {
@@ -37,6 +37,15 @@ export const authApi = {
     notes: any[];
   }): Promise<{ message: string }> => {
     const response = await apiClient.post("questionnaire", data);
+    return response.data;
+  },
+
+  updateNotes: async (data: {
+    notes: { matiereNom: string; valeur: number }[];
+    newMoyenneBac: number;
+    newScore: number;
+  }): Promise<{ message: string }> => {
+    const response = await apiClient.put("/profile/notes", data);
     return response.data;
   },
 };

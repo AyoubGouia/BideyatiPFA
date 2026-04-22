@@ -18,6 +18,7 @@ import DomainEtablissementsPage from './pages/DomainEtablissementsPage'
 import FavorisPage from './pages/FavorisPage'
 import { useAuth } from './context/AuthContext'
 import EducationLoader from './components/EducationLoader'
+import FloatingProfileWidget from './components/FloatingProfileWidget'
 
 export type Page =
   | 'home'
@@ -50,7 +51,7 @@ export type NavigationProps = {
 }
 
 export default function App() {
-  const { user, isLoadingAuth } = useAuth()
+  const { user, isLoadingAuth, refreshUser } = useAuth()
   const [page, setPage] = useState<Page>('home')
   const [regionId, setRegionId] = useState<string>()
   const [facultyId, setFacultyId] = useState<string>()
@@ -73,8 +74,16 @@ export default function App() {
         setPage('university')
       }
     } else {
-      if (page === 'university') {
-        setPage('visitor')
+      const restrictedPages: Page[] = [
+        'university',
+        'domain-etabs',
+        'speciality',
+        'faculty-detail',
+        'specialite-detail',
+        'favoris'
+      ]
+      if (restrictedPages.includes(page)) {
+        setPage('register')
       }
     }
   }, [user, page, isLoadingAuth])
@@ -94,7 +103,27 @@ export default function App() {
   }, [page, domainExplore])
 
   const nav = (p: Page, rId?: string, fId?: string, specId?: string) => {
-    const targetPage = user && p === 'home' ? 'visitor' : p
+    const publicPages: Page[] = [
+      'home',
+      'visitor',
+      'region',
+      'about',
+      'contact',
+      'faq',
+      'legal',
+      'form',
+      'register',
+      'bac',
+      'qcm'
+    ]
+
+    let targetPage: Page = p
+    if (!user && !publicPages.includes(p)) {
+      targetPage = 'register'
+    } else if (user && p === 'home') {
+      targetPage = 'university'
+    }
+
     setPage(targetPage)
     if (rId) {
       setRegionId(rId)
@@ -158,6 +187,7 @@ export default function App() {
         />
       )}
       {page === 'favoris' && <FavorisPage nav={nav} />}
+      <FloatingProfileWidget user={user} page={page} onProfileUpdate={refreshUser} />
     </>
   )
 }

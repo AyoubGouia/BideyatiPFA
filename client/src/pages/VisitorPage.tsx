@@ -1,71 +1,74 @@
-import { useEffect, useState } from 'react'
-import type { Page } from '../App'
-import s from './VisitorPage.module.css'
-import BideyetiLogo from '../components/BideyetiLogo'
-import type { Faculty } from '../data/faculties'
-import { ETABLISSEMENT_DOMAIN_CONFIG } from '../data/etablissementDomains'
-import { etablissementApi } from '../api/etablissementApi'
-import { specialiteApi } from '../api/specialiteApi'
-import { mergeEtablissementsWithSpecialites } from '../utils/etablissementList'
-import DomainEtablissementSection from '../components/DomainEtablissementSection'
-import FacultyCard from '../components/FacultyCard'
-import EducationLoader from '../components/EducationLoader'
+import { useEffect, useState } from "react";
+import type { Page } from "../App";
+import s from "./VisitorPage.module.css";
+import BideyetiLogo from "../components/BideyetiLogo";
+import type { Faculty } from "../data/faculties";
+import { ETABLISSEMENT_DOMAIN_CONFIG } from "../data/etablissementDomains";
+import { etablissementApi } from "../api/etablissementApi";
+import { specialiteApi } from "../api/specialiteApi";
+import { mergeEtablissementsWithSpecialites } from "../utils/etablissementList";
+import DomainEtablissementSection from "../components/DomainEtablissementSection";
+import FacultyCard from "../components/FacultyCard";
+import EducationLoader from "../components/EducationLoader";
 
 interface DomainSectionState {
-  label: string
-  queries: string[]
-  faculties: Faculty[]
-  loading: boolean
-  error: boolean
+  label: string;
+  queries: string[];
+  faculties: Faculty[];
+  loading: boolean;
+  error: boolean;
 }
 
 interface Props {
-  nav: (p: Page, regionId?: string, facultyId?: string) => void
-  openDomainExplore: (label: string, queries: string[]) => void
+  nav: (p: Page, regionId?: string, facultyId?: string) => void;
+  openDomainExplore: (label: string, queries: string[]) => void;
 }
 
 export default function VisitorPage({ nav, openDomainExplore }: Props) {
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState("");
   const [allSpecialites, setAllSpecialites] = useState<
     Awaited<ReturnType<typeof specialiteApi.getAll>>
-  >([])
-  const [domainSections, setDomainSections] = useState<DomainSectionState[]>(() =>
-    ETABLISSEMENT_DOMAIN_CONFIG.map((cfg) => ({
-      label: cfg.label,
-      queries: cfg.searchQueries,
-      faculties: [],
-      loading: true,
-      error: false,
-    }))
-  )
-  const [searchResults, setSearchResults] = useState<Faculty[]>([])
-  const [searchLoading, setSearchLoading] = useState(false)
-  const [searchError, setSearchError] = useState(false)
+  >([]);
+  const [domainSections, setDomainSections] = useState<DomainSectionState[]>(
+    () =>
+      ETABLISSEMENT_DOMAIN_CONFIG.map((cfg) => ({
+        label: cfg.label,
+        queries: cfg.searchQueries,
+        faculties: [],
+        loading: true,
+        error: false,
+      })),
+  );
+  const [searchResults, setSearchResults] = useState<Faculty[]>([]);
+  const [searchLoading, setSearchLoading] = useState(false);
+  const [searchError, setSearchError] = useState(false);
 
   useEffect(() => {
-    let cancelled = false
-    ;(async () => {
-      let specs: Awaited<ReturnType<typeof specialiteApi.getAll>> = []
+    let cancelled = false;
+    (async () => {
+      let specs: Awaited<ReturnType<typeof specialiteApi.getAll>> = [];
       try {
-        specs = await specialiteApi.getAll()
+        specs = await specialiteApi.getAll();
       } catch {
-        specs = []
+        specs = [];
       }
-      if (cancelled) return
-      setAllSpecialites(specs)
+      if (cancelled) return;
+      setAllSpecialites(specs);
 
       const loaded = await Promise.all(
         ETABLISSEMENT_DOMAIN_CONFIG.map(async (cfg) => {
           try {
-            const etabs = await etablissementApi.searchByQueriesMerged(cfg.searchQueries)
-            const faculties = mergeEtablissementsWithSpecialites(etabs, specs)
+            const etabs = await etablissementApi.searchByQueriesMerged(
+              cfg.searchQueries,
+            );
+            const faculties = mergeEtablissementsWithSpecialites(etabs, specs);
             return {
               label: cfg.label,
               queries: cfg.searchQueries,
               faculties,
               loading: false,
               error: false,
-            }
+            };
           } catch {
             return {
               label: cfg.label,
@@ -73,77 +76,83 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
               faculties: [],
               loading: false,
               error: true,
-            }
+            };
           }
-        })
-      )
+        }),
+      );
 
-      if (!cancelled) setDomainSections(loaded)
-    })()
+      if (!cancelled) setDomainSections(loaded);
+    })();
 
     return () => {
-      cancelled = true
-    }
-  }, [])
+      cancelled = true;
+    };
+  }, []);
 
   useEffect(() => {
-    const query = search.trim()
+    const query = search.trim();
     if (!query) {
-      setSearchResults([])
-      setSearchLoading(false)
-      setSearchError(false)
-      return
+      setSearchResults([]);
+      setSearchLoading(false);
+      setSearchError(false);
+      return;
     }
 
-    let cancelled = false
+    let cancelled = false;
     const timer = window.setTimeout(async () => {
-      setSearchLoading(true)
-      setSearchError(false)
+      setSearchLoading(true);
+      setSearchError(false);
       try {
-        const etabs = await etablissementApi.search({ q: query })
+        const etabs = await etablissementApi.search({ q: query });
         if (!cancelled) {
-          setSearchResults(mergeEtablissementsWithSpecialites(etabs, allSpecialites))
+          setSearchResults(
+            mergeEtablissementsWithSpecialites(etabs, allSpecialites),
+          );
         }
       } catch {
         if (!cancelled) {
-          setSearchResults([])
-          setSearchError(true)
+          setSearchResults([]);
+          setSearchError(true);
         }
       } finally {
-        if (!cancelled) setSearchLoading(false)
+        if (!cancelled) setSearchLoading(false);
       }
-    }, 250)
+    }, 250);
 
     return () => {
-      cancelled = true
-      window.clearTimeout(timer)
-    }
-  }, [search, allSpecialites])
+      cancelled = true;
+      window.clearTimeout(timer);
+    };
+  }, [search, allSpecialites]);
 
-  const isSearching = search.trim() !== ''
+  const isSearching = search.trim() !== "";
 
   return (
     <div className={s.page}>
       <header className={s.header}>
         <div
           className={s.logoWrap}
-          onClick={() => nav('home')}
+          onClick={() => nav("home")}
           role="button"
           tabIndex={0}
-          onKeyDown={(e) => e.key === 'Enter' && nav('home')}
+          onKeyDown={(e) => e.key === "Enter" && nav("home")}
           aria-label="Retour a l'accueil"
         >
           <BideyetiLogo />
         </div>
 
         <div className={s.headerBtns}>
-          <button type="button" className={s.btnHdr} onClick={() => nav('form')}>
+          <button
+            type="button"
+            className={s.btnHdr}
+            onClick={() => nav("form")}
+          >
             Se connecter
           </button>
           <button
             type="button"
             className={s.btnHdrOrange}
-            onClick={() => nav('register')}
+            onClick={() => nav("register")}
           >
             S'inscrire
           </button>
@@ -154,7 +163,11 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
         <h1 className={s.title}>Explorer nos etablissements</h1>
 
         <div className={s.navigationOptions}>
-          <button type="button" className={s.regionBtn} onClick={() => nav('region')}>
+          <button
+            type="button"
+            className={s.regionBtn}
+            onClick={() => nav("region")}
+          >
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -174,7 +187,7 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
           <button
             type="button"
             className={s.specialityBtn}
-            onClick={() => nav('register')}
+            onClick={() => nav("register")}
           >
             <svg
               viewBox="0 0 24 24"
@@ -235,7 +248,9 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
               <p className={s.empty}>Impossible de lancer la recherche.</p>
             )}
             {!searchLoading && !searchError && searchResults.length === 0 && (
-              <p className={s.empty}>Aucun etablissement ne correspond a votre recherche.</p>
+              <p className={s.empty}>
+                Aucun etablissement ne correspond a votre recherche.
+              </p>
             )}
             {!searchLoading && !searchError && searchResults.length > 0 && (
               <div className={s.grid}>
@@ -243,7 +258,9 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
                   <FacultyCard
                     key={faculty.id}
                     faculty={faculty}
-                    onDetails={() => nav('faculty-detail', undefined, faculty.id)}
+                    onDetails={() =>
+                      nav("faculty-detail", undefined, faculty.id)
+                    }
                   />
                 ))}
               </div>
@@ -252,8 +269,8 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
         ) : (
           <>
             <p className={s.domainIntro}>
-              Parcourir par domaine : chaque bloc montre des etablissements reels
-              trouves a partir de mots-cles et des donnees backend.
+              Parcourir par domaine : chaque bloc montre des etablissements
+              reels trouves a partir de mots-cles et des donnees backend.
             </p>
 
             {domainSections.map((sec) => (
@@ -265,14 +282,18 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
                 error={sec.error}
                 globalSearch=""
                 onVoirPlus={() => openDomainExplore(sec.label, sec.queries)}
-                onFacultyDetails={(id) => nav('faculty-detail', undefined, id)}
+                onFacultyDetails={(id) => nav("faculty-detail", undefined, id)}
               />
             ))}
           </>
         )}
 
         <div className={s.backRow}>
-          <button type="button" className={s.btnBack} onClick={() => nav('home')}>
+          <button
+            type="button"
+            className={s.btnBack}
+            onClick={() => nav("home")}
+          >
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -289,8 +310,10 @@ export default function VisitorPage({ nav, openDomainExplore }: Props) {
           </button>
         </div>
 
-        <footer className={s.footer}>(c) 2026 Bideyety | Tous droits reserves.</footer>
+        <footer className={s.footer}>
+          (c) 2026 Bideyety | Tous droits reserves.
+        </footer>
       </main>
     </div>
-  )
+  );
 }

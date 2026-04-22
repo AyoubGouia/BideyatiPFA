@@ -7,6 +7,7 @@ interface AuthContextType {
   login: (data: any) => Promise<void>;
   registerFlow: (data: any) => Promise<void>;
   logout: () => Promise<void>;
+  refreshUser: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -50,8 +51,18 @@ export const AuthProvider: React.FC<{children: React.ReactNode}> = ({ children }
     localStorage.removeItem('bide_user');
   };
 
+  const refreshUser = async () => {
+    try {
+      const profile = await authApi.getProfile();
+      setUser(profile);
+      localStorage.setItem('bide_user', JSON.stringify(profile));
+    } catch {
+      // silently ignore, user stays as-is
+    }
+  };
+
   return (
-    <AuthContext.Provider value={{ user, isLoadingAuth, login, registerFlow, logout }}>
+    <AuthContext.Provider value={{ user, isLoadingAuth, login, registerFlow, logout, refreshUser }}>
       {children}
     </AuthContext.Provider>
   );

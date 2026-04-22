@@ -166,6 +166,10 @@ export default function RegisterPage({ nav }: Props) {
           </div>
         </div>
 
+        <div className={s.loginLink}>
+          Déjà un compte ? <button type="button" onClick={() => nav('form')}>Se connecter</button>
+        </div>
+
         <div className={s.navRow}>
           <button className={s.btnPrev} onClick={() => nav('home')}>Retour</button>
           <button className={s.btnNext} onClick={() => { 

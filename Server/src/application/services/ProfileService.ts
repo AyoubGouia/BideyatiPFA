@@ -14,6 +14,12 @@ export class ProfileService {
             profilAcademique: true,
           },
         },
+        notes: {
+          include: {
+            matiere: true,
+          },
+          orderBy: { annee: 'desc' },
+        },
       },
     });
 
@@ -60,7 +66,47 @@ export class ProfileService {
               : null,
           }
         : null,
+      notes: user.notes.map((n: { id: string; valeur: number; annee: number; matiere: { nom: string } }) => ({
+        id: n.id,
+        valeur: n.valeur,
+        annee: n.annee,
+        matiereNom: n.matiere.nom,
+      })),
     };
+  }
+
+  async updateNotes(
+    userId: string,
+    notes: { matiereNom: string; valeur: number }[],
+    newMoyenneBac: number,
+    newScore: number,
+  ) {
+    // Upsert each note: find matiere by name, then update-or-create the NoteEtudiant
+    const year = new Date().getFullYear();
+    for (const note of notes) {
+      let matiere = await prisma.matiere.findFirst({ where: { nom: note.matiereNom } });
+      if (!matiere) {
+        matiere = await prisma.matiere.create({ data: { nom: note.matiereNom } });
+      }
+      const existing = await prisma.noteEtudiant.findFirst({
+        where: { userId, matiereId: matiere.id },
+      });
+      if (existing) {
+        await prisma.noteEtudiant.update({
+          where: { id: existing.id },
+          data: { valeur: note.valeur, annee: year },
+        });
+      } else {
+        await prisma.noteEtudiant.create({
+          data: { userId, matiereId: matiere.id, valeur: note.valeur, annee: year },
+        });
+      }
+    }
+    // Recalculate and persist the new moyenneBac and score in studentProfile
+    await prisma.studentProfile.update({
+      where: { userId },
+      data: { moyenneBac: newMoyenneBac, score: newScore },
+    });
   }
 }
 

@@ -37,7 +37,7 @@ const SECTION_ORDER = ["Centres d'intérêt",'Matières préférées','Compéten
 
 export default function QcmPage({ nav }: Props) {
   const { data, clearData } = useRegistration();
-  const { registerFlow } = useAuth();
+  const { refreshUser } = useAuth();
 
   const [answers, setAnswers] = useState<Record<string, Set<string>>>(
     () => {
@@ -77,13 +77,13 @@ export default function QcmPage({ nav }: Props) {
     setGlobalError('');
 
     try {
-      // 1. Submit Registration
+      // Step 1: Register user (sets httpOnly cookie, does NOT update React state yet)
       console.log('[QcmPage] Step 1: Registering user...');
       const registrationPayload = {
         nom: data.nom,
         prenom: data.prenom,
         email: data.email,
-        telephone: '00000000', // Default phone for sprint 1
+        telephone: '00000000',
         motDePasse: data.pwd,
         numeroBAC: data.numeroBAC,
         moyenneBac: parseFloat(data.moyenneBac || '0'),
@@ -91,43 +91,37 @@ export default function QcmPage({ nav }: Props) {
         region: data.region,
         section: data.section || 'Math'
       };
-      
-      console.log('[QcmPage] Step 1: Registering user with payload:', registrationPayload);
-      await registerFlow(registrationPayload);
-      console.log('[QcmPage] Step 1: Registration successful');
+      await authApi.register(registrationPayload);
+      console.log('[QcmPage] Step 1: Registration successful (cookie set, state not yet updated)');
 
-      // 2. Format Questionnaire Responses
+      // Step 2: Format questionnaire answers
       const formattedReponses = QUESTIONS.map(q => {
         const reps = Array.from(answers[q.id] || new Set());
         return reps.map(r => ({ question: q.sub, reponse: r }));
       }).flat();
 
-      // 3. Format Notes (Best of both sessions if Controle)
+      // Step 3: Format notes — pick the best grade per subject between sessions
       const notesP = data.notesPrincipale || {};
       const notesC = data.notesControle || {};
       const allSubjects = Array.from(new Set([...Object.keys(notesP), ...Object.keys(notesC)]));
+      const formattedNotes = allSubjects
+        .map(sub => {
+          const valP = parseFloat(notesP[sub] || '0');
+          const valC = parseFloat(notesC[sub] || '0');
+          const effectiveVal = data.session === 'Contrôle' ? Math.max(valP, valC) : valP;
+          return { valeur: effectiveVal, annee: new Date().getFullYear(), matiereNom: sub };
+        })
+        .filter(n => !isNaN(n.valeur)); // skip any malformed entries
 
-      const formattedNotes = allSubjects.map(sub => {
-        const valP = parseFloat(notesP[sub] || '0');
-        const valC = parseFloat(notesC[sub] || '0');
-        const effectiveVal = data.session === 'Contrôle' ? Math.max(valP, valC) : valP;
-        
-        return {
-          valeur: effectiveVal,
-          annee: new Date().getFullYear(),
-          matiereNom: sub
-        };
-      });
+      console.log('[QcmPage] Step 2: Submitting questionnaire + notes...', { reponses: formattedReponses.length, notes: formattedNotes.length });
 
-      // 4. Submit Questionnaire & Notes
-      console.log('[QcmPage] Step 4: Submitting questionnaire...', { reponses: formattedReponses.length, notes: formattedNotes.length });
-      await authApi.submitQuestionnaire({
-        reponses: formattedReponses,
-        notes: formattedNotes
-      });
-      console.log('[QcmPage] Step 4: Questionnaire submitted');
+      // Step 4: Submit questionnaire & notes while still on QCM page
+      await authApi.submitQuestionnaire({ reponses: formattedReponses, notes: formattedNotes });
+      console.log('[QcmPage] Step 4: Questionnaire + notes saved successfully');
 
+      // Step 5: NOW update React state — this triggers the redirect to 'university'
       clearData();
+      await refreshUser();
       nav('university');
     } catch (err: any) {
       console.error('[QcmPage] Error during registration flow:', err);

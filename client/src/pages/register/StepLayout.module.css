@@ -458,3 +458,27 @@
   font-style: italic;
   line-height: 1.4;
 }
+
+.loginLink {
+  margin: 8px 0;
+  font-size: 13.5px;
+  color: #4a5568;
+  text-align: center;
+}
+
+.loginLink button {
+  background: none;
+  border: none;
+  color: #F47920;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 4px;
+  font-family: var(--font);
+  transition: color 0.2s;
+}
+
+.loginLink button:hover {
+  color: #d96a10;
+  text-decoration: underline;
+}

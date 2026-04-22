@@ -6,6 +6,7 @@ const router = Router();
 const controller = new ProfileController();
 
 router.get("/", requireAuth, controller.getProfile);
+router.put("/notes", requireAuth, controller.updateNotes);
 
 export default router;
 
