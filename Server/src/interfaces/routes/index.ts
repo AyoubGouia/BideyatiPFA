@@ -11,6 +11,7 @@ import capaciteAdmissionRoutes from "./capaciteAdmissionRoutes";
 import sectionRoutes from "./sectionRoutes";
 import aiRoutes from "./aiRoutes";
 import favoriRoutes from "./favoriRoutes";
+import recommandationRoutes from "./recommandationRoutes";
 
 
 const router = Router();
@@ -31,6 +32,7 @@ router.use(capaciteAdmissionRoutes);
 router.use(sectionRoutes);
 router.use(aiRoutes);
 router.use(favoriRoutes);
+router.use("/recommandations", recommandationRoutes);
 
 
 export default router;

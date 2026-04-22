@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import type { Page } from '../App';
 import { authApi } from '../api/authApi';
-import { SUBJECT_COEFFICIENTS, calculateMG, calculateFG } from '../utils/ScoreUtils';
+import { SUBJECT_COEFFICIENTS, calculateMG, calculateFG, SECTION_MAP } from '../utils/ScoreUtils';
 import type { Section } from '../utils/ScoreUtils';
 import s from './FloatingProfileWidget.module.css';
 
@@ -16,6 +16,7 @@ interface Props {
   user: any;
   page: Page;
   onProfileUpdate: () => void;
+  onNav?: (p: Page) => void;
 }
 
 function gradeClass(v: number) {
@@ -24,25 +25,7 @@ function gradeClass(v: number) {
   return '';
 }
 
-// Detect the section key from the Arabic/French stored name
-const SECTION_MAP: Record<string, Section> = {
-  'رياضيات':           'Math',
-  'علوم تجريبية':      'Science',
-  'علوم الإعلامية':    'Info',
-  'العلوم التقنية':    'Technique',
-  'آداب':              'Lettre',
-  'إقتصاد وتصرف':     'Économie',
-  'رياضة':             'Sport',
-  Math:      'Math',
-  Science:   'Science',
-  Info:      'Info',
-  Technique: 'Technique',
-  Lettre:    'Lettre',
-  Économie:  'Économie',
-  Sport:     'Sport',
-};
-
-export default function FloatingProfileWidget({ user, page, onProfileUpdate }: Props) {
+export default function FloatingProfileWidget({ user, page, onProfileUpdate, onNav }: Props) {
   const [expanded,  setExpanded]  = useState(false);
   const [editMode,  setEditMode]  = useState(false);
   const [draftNotes, setDraftNotes] = useState<Record<string, string>>({});
@@ -141,9 +124,9 @@ export default function FloatingProfileWidget({ user, page, onProfileUpdate }: P
 
   /* ─── Expanded panel ──────────────────────────── */
   const coeffs = SUBJECT_COEFFICIENTS[sectionKey] ?? {};
-  // Show subjects that exist either in the user's notes or in the section's coefficient table
+  // Show all subjects — union of DB notes and section's known subjects
   const subjectSet = new Set([...Object.keys(coeffs), ...notes.map(n => n.matiereNom)]);
-  const subjects = [...subjectSet].filter(s => s !== 'Option');
+  const subjects = [...subjectSet]; // Option stays in the list
 
   return (
     <div className={s.widgetContainer}>
@@ -213,25 +196,38 @@ export default function FloatingProfileWidget({ user, page, onProfileUpdate }: P
               <div className={s.gradeList}>
                 {subjects.map(sub => {
                   const coeff = coeffs[sub] ?? 1;
+                  const isOption = sub === 'Option';
+
                   if (!editMode) {
                     const val = noteMap[sub];
+                    const bonus = isOption && val != null && val > 10 ? val - 10 : null;
                     return (
                       <div key={sub} className={s.gradeRow}>
                         <span className={s.gradeName}>
                           {sub}
-                          <span style={{ color: '#94a3b8', fontSize: 11, marginLeft: 4 }}>×{coeff}</span>
+                          {isOption
+                            ? <span style={{ color: '#F47920', fontSize: 10, marginLeft: 4, fontWeight: 600 }}>bonus {'>'} 10</span>
+                            : <span style={{ color: '#94a3b8', fontSize: 11, marginLeft: 4 }}>×{coeff}</span>
+                          }
                         </span>
                         <span className={`${s.gradeVal} ${val != null ? gradeClass(val) : ''}`}>
                           {val != null ? val.toFixed(2) : '—'}
+                          {bonus != null && (
+                            <span style={{ fontSize: 10, color: '#16a34a', marginLeft: 4 }}>(+{bonus.toFixed(2)})</span>
+                          )}
                         </span>
                       </div>
                     );
                   }
+
                   return (
                     <div key={sub} className={s.gradeEditRow}>
                       <span className={s.gradeName}>
                         {sub}
-                        <span style={{ color: '#94a3b8', fontSize: 11, marginLeft: 4 }}>×{coeff}</span>
+                        {isOption
+                          ? <span style={{ color: '#F47920', fontSize: 10, marginLeft: 4, fontWeight: 600 }}>bonus {'>'} 10</span>
+                          : <span style={{ color: '#94a3b8', fontSize: 11, marginLeft: 4 }}>×{coeff}</span>
+                        }
                       </span>
                       <input
                         className={s.gradeInput}
@@ -255,15 +251,28 @@ export default function FloatingProfileWidget({ user, page, onProfileUpdate }: P
           )}
         </div>
 
-        {/* Footer: only in edit mode */}
-        {editMode && (
-          <div className={s.footer}>
-            <button className={s.cancelBtn} onClick={handleCancel} disabled={saving}>Annuler</button>
-            <button className={s.saveBtn} onClick={handleSave} disabled={saving}>
-              {saving ? 'Sauvegarde…' : 'Enregistrer les notes'}
+        {/* Footer: always visible, edit actions + recommendations CTA */}
+        <div className={s.footer} style={{ flexDirection: 'column', gap: 8 }}>
+          {/* Recommendations teaser */}
+          {!editMode && user?.questionnaire && onNav && (
+            <button
+              className={s.saveBtn}
+              onClick={() => { setExpanded(false); onNav('recommandations'); }}
+              style={{ background: 'linear-gradient(135deg, #7c3aed, #4f46e5)', width: '100%' }}
+            >
+              ✨ Voir mes métiers recommandés
             </button>
-          </div>
-        )}
+          )}
+          {/* Save / Cancel — only in edit mode */}
+          {editMode && (
+            <div style={{ display: 'flex', gap: 8, width: '100%' }}>
+              <button className={s.cancelBtn} onClick={handleCancel} disabled={saving}>Annuler</button>
+              <button className={s.saveBtn} onClick={handleSave} disabled={saving}>
+                {saving ? 'Sauvegarde…' : 'Enregistrer les notes'}
+              </button>
+            </div>
+          )}
+        </div>
 
       </div>
     </div>

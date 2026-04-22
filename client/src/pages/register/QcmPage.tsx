@@ -108,7 +108,13 @@ export default function QcmPage({ nav }: Props) {
         .map(sub => {
           const valP = parseFloat(notesP[sub] || '0');
           const valC = parseFloat(notesC[sub] || '0');
-          const effectiveVal = data.session === 'Contrôle' ? Math.max(valP, valC) : valP;
+          // Official Contrôle formula: (2 × Main + Retake) / 3
+          // Non-rattrapable subjects (Option, Éducation Physique) keep the main session grade
+          const isNonRattrapable = sub === 'Option' || sub === 'Éducation Physique';
+          const effectiveVal =
+            data.session === 'Contrôle' && notesC[sub] && !isNonRattrapable
+              ? (2 * valP + valC) / 3
+              : valP;
           return { valeur: effectiveVal, annee: new Date().getFullYear(), matiereNom: sub };
         })
         .filter(n => !isNaN(n.valeur)); // skip any malformed entries

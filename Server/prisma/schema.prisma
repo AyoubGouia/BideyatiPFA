@@ -173,9 +173,10 @@ model CapaciteAdmission {
 }
 
 model Metier {
-  id          String             @id @default(uuid())
+  id          String             @id
   titre       String
   secteur     String
+  tags        String[]
   specialites MetierSpecialite[]
 }
 

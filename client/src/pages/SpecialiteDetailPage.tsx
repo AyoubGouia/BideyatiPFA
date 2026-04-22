@@ -14,6 +14,7 @@ import BideyetiLogo from '../components/BideyetiLogo'
 import AiOverviewAnimatedContent from '../components/AiOverviewAnimatedContent'
 import EducationLoader from '../components/EducationLoader'
 import AdmissionRatePage from '../components/AdmissionRatePage'
+import { calculateT, SECTION_MAP } from '../utils/ScoreUtils'
 import s from './SpecialiteDetailPage.module.css'
 
 const YEARS = [2023, 2024, 2025] as const
@@ -436,11 +437,21 @@ export default function SpecialiteDetailPage({
               const normalize = (val: string | null | undefined) => 
                 val ? val.normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim().toLowerCase() : '';
               
-              const uReg = normalize(user.studentProfile.region);
-              const fReg = normalize(specialite.etablissement?.gouvernorat ?? specialite.universite?.region);
+              const uReg = normalize((user.studentProfile as any).region);
+              const fReg = normalize(specialite.etablissement?.gouvernorat ?? (specialite.universite as any)?.region);
               
               const hasBonus = Boolean(uReg && fReg && uReg === fReg);
-              const baseScore = user.studentProfile.score;
+              
+              const sectionRaw = user.section.nom;
+              const sectionKey = SECTION_MAP[sectionRaw] ?? 'Math';
+              
+              const noteMap: Record<string, string> = {};
+              if (user.notes) {
+                user.notes.forEach((n: any) => { noteMap[n.matiereNom] = String(n.valeur); });
+              }
+
+              // Use calculateT instead of the base FG score for university-specific scores
+              const baseScore = calculateT(user.studentProfile.score, specialite.nom, sectionKey, noteMap);
               const boostedScore = hasBonus ? +(baseScore * 1.07).toFixed(3) : baseScore;
 
               return (

@@ -80,18 +80,22 @@ async function main() {
   const scoresPath = path.join(DATA_DIR, "scores.demo.json");
   const capacitiesPath = path.join(DATA_DIR, "capacites.demo.json");
 
+  const metierPath = path.join(DATA_DIR, "metiers.demo.json");
+
   const universities = readJsonFile<any>(universitiesPath);
   const etablissements = readJsonFile<any>(etablissementsPath);
   const specialites = readJsonFile<any>(specialitesPath);
   const scores = readJsonFile<any>(scoresPath);
   const capacities = readJsonFile<any>(capacitiesPath);
+  const metiersData = readJsonFile<any>(metierPath);
 
   console.log("Using demo files only:");
   console.log(`  ${universitiesPath}`);
   console.log(`  ${etablissementsPath}`);
   console.log(`  ${specialitesPath}`);
   console.log(`  ${scoresPath}`);
-  console.log(`  ${capacitiesPath}\n`);
+  console.log(`  ${capacitiesPath}`);
+  console.log(`  ${metierPath}\n`);
 
   // ========================================
   // 1. SEED UNIVERSITE
@@ -389,6 +393,60 @@ async function main() {
   }
   console.timeEnd("capacities");
   console.log(`Capacities done: ${dedupedCapacities.length}\n`);
+
+  // ========================================
+  // 7. SEED METIER + MetierSpecialite
+  // ========================================
+  console.time("metiers");
+  console.log("💼 Seeding Metier + MetierSpecialite...");
+
+  // Build a normalised name → id map for all specialites (for fuzzy linking)
+  const allSpecialitesForMetier = await prisma.specialite.findMany({
+    select: { id: true, nom: true },
+  });
+  const normaliseSpec = (s: string) =>
+    s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+  const specialiteNameMap = new Map<string, string>(); // normalised keyword → id
+  for (const sp of allSpecialitesForMetier) {
+    specialiteNameMap.set(normaliseSpec(sp.nom), sp.id);
+  }
+
+  let metierProcessed = 0;
+  let metierSkipped   = 0;
+  let linkProcessed   = 0;
+
+  for (const m of metiersData) {
+    try {
+      const metier = await prisma.metier.upsert({
+        where:  { id: m.id },
+        update: { titre: m.titre, secteur: m.secteur, tags: m.tags ?? [] },
+        create: { id: m.id, titre: m.titre, secteur: m.secteur, tags: m.tags ?? [] },
+      });
+      metierProcessed++;
+
+      // Link to matching specialites by fuzzy keyword match
+      for (const keyword of (m.specialisations ?? [])) {
+        const normKw = normaliseSpec(keyword);
+        for (const [normNom, specId] of specialiteNameMap.entries()) {
+          if (normNom.includes(normKw) || normKw.includes(normNom)) {
+            try {
+              await prisma.metierSpecialite.upsert({
+                where:  { metierId_specialiteId: { metierId: metier.id, specialiteId: specId } },
+                update: {},
+                create: { metierId: metier.id, specialiteId: specId },
+              });
+              linkProcessed++;
+            } catch { /* skip duplicate */ }
+          }
+        }
+      }
+    } catch (error) {
+      console.error(`  ❌ Failed for metier ${m.id}:`, (error as any).message);
+      metierSkipped++;
+    }
+  }
+  console.timeEnd("metiers");
+  console.log(`Metiers done: ${metierProcessed} métiers, ${linkProcessed} specialty links, ${metierSkipped} skipped\n`);
 
   // ========================================
   // PRINT SUMMARY

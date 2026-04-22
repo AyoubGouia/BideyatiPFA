@@ -40,7 +40,10 @@ export default function FavorisPage({ nav }: Props) {
       name: etab.nom,
       sub: etab.universite?.nom || 'Université',
       location: etab.gouvernorat || 'Tunisie',
-      icon: 'star', // Placeholder since icon is removed in UI
+      cat: 'Public', // Default placeholder
+      region: etab.gouvernorat || 'Tunisie',
+      specialities: etab.specialites?.map((s: any) => s.nom) || [],
+      icon: undefined as any, // Placeholder since icon is removed in UI
       programs: etab.specialites?.map((s: any) => s.nom) || []
     }
   }

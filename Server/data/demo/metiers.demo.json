@@ -1,0 +1,282 @@
+[
+  {
+    "id": "m01",
+    "titre": "Développeur / Ingénieur logiciel",
+    "secteur": "Informatique",
+    "tags": ["La technologie", "Mathématiques", "Logique", "Innover et tester", "À distance", "Passion", "Jouer / expérimenter", "Calme et concentré", "Le stratège"],
+    "specialisations": ["Informatique", "Data science", "Intelligence artificielle", "Genie informatique", "Ingenierie des donnees"]
+  },
+  {
+    "id": "m02",
+    "titre": "Data Scientist / Analyste de données",
+    "secteur": "Informatique",
+    "tags": ["La technologie", "Mathématiques", "Sciences (physique, SVT…)", "Logique", "Dans un bureau", "Argent", "Lire / apprendre", "Calme et concentré", "Le stratège"],
+    "specialisations": ["Informatique", "Data science", "Intelligence artificielle", "Mathematiques appliquees", "Ingenierie des donnees"]
+  },
+  {
+    "id": "m03",
+    "titre": "Ingénieur en réseaux et télécommunications",
+    "secteur": "Informatique",
+    "tags": ["La technologie", "Mathématiques", "Logique", "Organisé(e)", "Sur le terrain", "Argent", "Jouer / expérimenter", "Animé et dynamique", "L'exécutant"],
+    "specialisations": ["Reseaux et telecommunications", "Reseaux", "Telecommunications", "Systemes de communication"]
+  },
+  {
+    "id": "m04",
+    "titre": "Expert en cybersécurité",
+    "secteur": "Informatique",
+    "tags": ["La technologie", "Mathématiques", "Logique", "Suivre des règles", "Dans un bureau", "Sécurité", "Lire / apprendre", "Calme et concentré", "Le stratège"],
+    "specialisations": ["Cybersecurite", "Informatique", "Reseaux", "Reseaux et telecommunications"]
+  },
+  {
+    "id": "m05",
+    "titre": "Ingénieur en intelligence artificielle",
+    "secteur": "Informatique",
+    "tags": ["La technologie", "Mathématiques", "Sciences (physique, SVT…)", "Logique", "Innover et tester", "Argent", "Lire / apprendre", "Calme et concentré", "Le stratège"],
+    "specialisations": ["Intelligence artificielle", "Data science", "Informatique", "Mathematiques appliquees"]
+  },
+  {
+    "id": "m06",
+    "titre": "Développeur mobile / Applications",
+    "secteur": "Informatique",
+    "tags": ["La technologie", "Logique", "Créatif(ve)", "Innover et tester", "À distance", "Passion", "Jouer / expérimenter", "Calme et concentré", "Le créatif"],
+    "specialisations": ["Informatique", "Intelligence artificielle", "Genie informatique"]
+  },
+  {
+    "id": "m07",
+    "titre": "Médecin",
+    "secteur": "Santé",
+    "tags": ["Les sciences", "Sciences (physique, SVT…)", "Logique", "Aider les autres", "Sur le terrain", "Sécurité", "Lire / apprendre", "Animé et dynamique", "Le communicant"],
+    "specialisations": ["Medecine", "Sante publique"]
+  },
+  {
+    "id": "m08",
+    "titre": "Pharmacien",
+    "secteur": "Santé",
+    "tags": ["Les sciences", "Sciences (physique, SVT…)", "Logique", "Organisé(e)", "Dans un bureau", "Sécurité", "Lire / apprendre", "Calme et concentré", "L'exécutant"],
+    "specialisations": ["Sante publique", "Medecine", "Sciences biomedicales"]
+  },
+  {
+    "id": "m09",
+    "titre": "Biologiste / Chercheur en sciences de la vie",
+    "secteur": "Sciences",
+    "tags": ["Les sciences", "Sciences (physique, SVT…)", "Logique", "Passion", "Sur le terrain", "Lire / apprendre", "Nature et extérieur", "Le stratège"],
+    "specialisations": ["Sciences de la vie", "Sciences biomedicales", "Genie biologique", "Technologies biomedicales"]
+  },
+  {
+    "id": "m10",
+    "titre": "Physicien / Chercheur en physique",
+    "secteur": "Sciences",
+    "tags": ["Les sciences", "Mathématiques", "Sciences (physique, SVT…)", "Logique", "Innover et tester", "Passion", "Lire / apprendre", "Calme et concentré", "Le stratège"],
+    "specialisations": ["Physique", "Mathematiques", "Mathematiques appliquees"]
+  },
+  {
+    "id": "m11",
+    "titre": "Ingénieur en génie civil",
+    "secteur": "Génie civil",
+    "tags": ["La technologie", "Les sciences", "Mathématiques", "Logique", "Organisé(e)", "Sur le terrain", "Argent", "Nature et extérieur", "L'exécutant"],
+    "specialisations": ["Genie civil", "Genie industriel"]
+  },
+  {
+    "id": "m12",
+    "titre": "Ingénieur électrique / Électronicien",
+    "secteur": "Génie",
+    "tags": ["La technologie", "Mathématiques", "Sciences (physique, SVT…)", "Logique", "Innover et tester", "Sur le terrain", "Argent", "Jouer / expérimenter", "L'exécutant"],
+    "specialisations": ["Genie electrique", "Genie industriel", "Mecatronique"]
+  },
+  {
+    "id": "m13",
+    "titre": "Ingénieur mécanique / Mécatronique",
+    "secteur": "Génie",
+    "tags": ["La technologie", "Mathématiques", "Sciences (physique, SVT…)", "Logique", "Organisé(e)", "Sur le terrain", "Argent", "L'exécutant"],
+    "specialisations": ["Mecatronique", "Genie industriel", "Genie electrique", "Automatique industrielle"]
+  },
+  {
+    "id": "m14",
+    "titre": "Ingénieur en énergies renouvelables",
+    "secteur": "Génie",
+    "tags": ["Les sciences", "La technologie", "Mathématiques", "Innover et tester", "Sur le terrain", "Passion", "Nature et extérieur", "Le stratège"],
+    "specialisations": ["Genie electrique", "Genie industriel", "Genie civil"]
+  },
+  {
+    "id": "m15",
+    "titre": "Ingénieur en biotechnologie",
+    "secteur": "Sciences",
+    "tags": ["Les sciences", "Sciences (physique, SVT…)", "Logique", "Innover et tester", "Dans un bureau", "Passion", "Lire / apprendre", "Calme et concentré", "Le stratège"],
+    "specialisations": ["Genie biologique", "Technologies biomedicales", "Sciences biomedicales", "Sciences de la vie"]
+  },
+  {
+    "id": "m16",
+    "titre": "Économiste",
+    "secteur": "Économie",
+    "tags": ["Les relations humaines", "Économie / gestion", "Logique", "Organisé(e)", "Dans un bureau", "Argent", "Lire / apprendre", "Ville et modernité", "Le stratège"],
+    "specialisations": ["Economie", "Gestion"]
+  },
+  {
+    "id": "m17",
+    "titre": "Manager / Responsable d'équipe",
+    "secteur": "Gestion",
+    "tags": ["Les relations humaines", "Économie / gestion", "Sociable", "Organisé(e)", "Diriger une équipe", "Dans un bureau", "Reconnaissance", "Animé et dynamique", "Le stratège"],
+    "specialisations": ["Management", "Gestion", "Administration des affaires"]
+  },
+  {
+    "id": "m18",
+    "titre": "Entrepreneur / Chef d'entreprise",
+    "secteur": "Business",
+    "tags": ["Les relations humaines", "La technologie", "Économie / gestion", "Diriger une équipe", "Innover et tester", "En déplacement", "Argent", "Reconnaissance", "Animé et dynamique", "Le stratège"],
+    "specialisations": ["Management", "Administration des affaires", "Finance", "Marketing"]
+  },
+  {
+    "id": "m19",
+    "titre": "Comptable / Auditeur",
+    "secteur": "Finance",
+    "tags": ["Économie / gestion", "Mathématiques", "Logique", "Organisé(e)", "Suivre des règles", "Dans un bureau", "Sécurité", "Calme et concentré", "L'exécutant"],
+    "specialisations": ["Finance", "Gestion", "Economie"]
+  },
+  {
+    "id": "m20",
+    "titre": "Analyste financier / Conseiller en investissement",
+    "secteur": "Finance",
+    "tags": ["Économie / gestion", "Mathématiques", "Logique", "Organisé(e)", "Dans un bureau", "Argent", "Lire / apprendre", "Ville et modernité", "Le stratège"],
+    "specialisations": ["Finance", "Economie", "Gestion"]
+  },
+  {
+    "id": "m21",
+    "titre": "Actuaire",
+    "secteur": "Finance",
+    "tags": ["Mathématiques", "Économie / gestion", "Logique", "Organisé(e)", "Suivre des règles", "Dans un bureau", "Argent", "Calme et concentré", "L'exécutant"],
+    "specialisations": ["Finance", "Mathematiques", "Economie"]
+  },
+  {
+    "id": "m22",
+    "titre": "Spécialiste en marketing / Communication",
+    "secteur": "Business",
+    "tags": ["Les relations humaines", "L'art et la créativité", "Économie / gestion", "Sociable", "Créatif(ve)", "Dans un bureau", "Reconnaissance", "Animé et dynamique", "Le communicant"],
+    "specialisations": ["Marketing", "Communication medias", "Management", "Administration des affaires"]
+  },
+  {
+    "id": "m23",
+    "titre": "Responsable ressources humaines (RH)",
+    "secteur": "Gestion",
+    "tags": ["Les relations humaines", "Économie / gestion", "Sociable", "Organisé(e)", "Aider les autres", "Dans un bureau", "Sécurité", "Animé et dynamique", "Le communicant"],
+    "specialisations": ["Management", "Gestion", "Administration des affaires"]
+  },
+  {
+    "id": "m24",
+    "titre": "Juriste / Avocat",
+    "secteur": "Droit",
+    "tags": ["Les relations humaines", "Langues", "Logique", "Sociable", "Suivre des règles", "Aider les autres", "Dans un bureau", "Sécurité", "Lire / apprendre", "Le communicant"],
+    "specialisations": ["Droit"]
+  },
+  {
+    "id": "m25",
+    "titre": "Magistrat / Juge",
+    "secteur": "Droit",
+    "tags": ["Logique", "Suivre des règles", "Dans un bureau", "Sécurité", "Lire / apprendre", "Calme et concentré", "Le stratège"],
+    "specialisations": ["Droit"]
+  },
+  {
+    "id": "m26",
+    "titre": "Journaliste / Rédacteur",
+    "secteur": "Médias",
+    "tags": ["Les relations humaines", "L'art et la créativité", "Langues", "Créatif(ve)", "Sociable", "En déplacement", "Passion", "Animé et dynamique", "Le communicant"],
+    "specialisations": ["Journalisme", "Communication medias", "Presse numerique", "Audiovisuel"]
+  },
+  {
+    "id": "m27",
+    "titre": "Cinéaste / Réalisateur",
+    "secteur": "Arts",
+    "tags": ["L'art et la créativité", "Créatif(ve)", "En déplacement", "Passion", "Créer", "Animé et dynamique", "Ville et modernité", "Le créatif"],
+    "specialisations": ["Cinema", "Audiovisuel", "Postproduction", "Communication visuelle"]
+  },
+  {
+    "id": "m28",
+    "titre": "Designer graphique / Directeur artistique",
+    "secteur": "Arts",
+    "tags": ["L'art et la créativité", "Créatif(ve)", "À distance", "Passion", "Créer", "Calme et concentré", "Ville et modernité", "Le créatif"],
+    "specialisations": ["Design graphique", "Arts plastiques", "Communication visuelle"]
+  },
+  {
+    "id": "m29",
+    "titre": "Architecte",
+    "secteur": "Architecture",
+    "tags": ["L'art et la créativité", "La technologie", "Mathématiques", "Créatif(ve)", "Sur le terrain", "Passion", "Créer", "Ville et modernité", "Le créatif"],
+    "specialisations": ["Genie civil", "Arts plastiques"]
+  },
+  {
+    "id": "m30",
+    "titre": "Enseignant / Professeur",
+    "secteur": "Éducation",
+    "tags": ["Les relations humaines", "Aider les autres", "Sociable", "Dans un bureau", "Sécurité", "Passion", "Animé et dynamique", "Le communicant"],
+    "specialisations": ["Mathematiques", "Physique", "Sciences de la vie", "Langues", "Economie"]
+  },
+  {
+    "id": "m31",
+    "titre": "Traducteur / Interprète",
+    "secteur": "Langues",
+    "tags": ["L'art et la créativité", "Langues", "Sociable", "Dans un bureau", "Passion", "Lire / apprendre", "Calme et concentré", "L'exécutant"],
+    "specialisations": ["Langues", "Journalisme"]
+  },
+  {
+    "id": "m32",
+    "titre": "Chercheur académicien",
+    "secteur": "Recherche",
+    "tags": ["Les sciences", "Mathématiques", "Logique", "Passion", "Dans un bureau", "Lire / apprendre", "Calme et concentré", "Le stratège"],
+    "specialisations": ["Mathematiques", "Physique", "Sciences de la vie", "Informatique", "Chimie"]
+  },
+  {
+    "id": "m33",
+    "titre": "Psychologue / Conseiller en orientation",
+    "secteur": "Sciences humaines",
+    "tags": ["Les relations humaines", "Sociable", "Aider les autres", "Dans un bureau", "Passion", "Lire / apprendre", "Calme et concentré", "Le communicant"],
+    "specialisations": ["Sciences de la vie", "Sante publique"]
+  },
+  {
+    "id": "m34",
+    "titre": "Urbaniste / Planificateur territorial",
+    "secteur": "Urbanisme",
+    "tags": ["Les sciences", "Mathématiques", "Logique", "Organisé(e)", "Sur le terrain", "Passion", "Nature et extérieur", "Le stratège"],
+    "specialisations": ["Genie civil", "Urbanisme"]
+  },
+  {
+    "id": "m35",
+    "titre": "Médecin vétérinaire",
+    "secteur": "Santé animale",
+    "tags": ["Les sciences", "Sciences (physique, SVT…)", "Aider les autres", "Sur le terrain", "Passion", "Nature et extérieur", "Le communicant"],
+    "specialisations": ["Sciences de la vie", "Genie biologique", "Sante publique"]
+  },
+  {
+    "id": "m36",
+    "titre": "Coach sportif / Préparateur physique",
+    "secteur": "Sport",
+    "tags": ["Les relations humaines", "Sociable", "Aider les autres", "Sur le terrain", "Passion", "Nature et extérieur", "Animé et dynamique", "Le communicant"],
+    "specialisations": ["Sport", "Sante publique"]
+  },
+  {
+    "id": "m37",
+    "titre": "Diplomate / Chargé de relations internationales",
+    "secteur": "Relations internationales",
+    "tags": ["Les relations humaines", "Langues", "Sociable", "Diriger une équipe", "En déplacement", "Reconnaissance", "Animé et dynamique", "Ville et modernité", "Le communicant"],
+    "specialisations": ["Droit", "Langues"]
+  },
+  {
+    "id": "m38",
+    "titre": "Administrateur de bases de données / Architecte cloud",
+    "secteur": "Informatique",
+    "tags": ["La technologie", "Mathématiques", "Logique", "Organisé(e)", "Suivre des règles", "Dans un bureau", "Argent", "Calme et concentré", "L'exécutant"],
+    "specialisations": ["Informatique", "Ingenierie des donnees", "Reseaux et telecommunications"]
+  },
+  {
+    "id": "m39",
+    "titre": "Photographe / Vidéaste",
+    "secteur": "Arts",
+    "tags": ["L'art et la créativité", "Créatif(ve)", "En déplacement", "Passion", "Créer", "Animé et dynamique", "Ville et modernité", "Le créatif"],
+    "specialisations": ["Audiovisuel", "Cinema", "Postproduction"]
+  },
+  {
+    "id": "m40",
+    "titre": "Ingénieur en automatique / Robotique",
+    "secteur": "Génie",
+    "tags": ["La technologie", "Mathématiques", "Sciences (physique, SVT…)", "Logique", "Innover et tester", "Sur le terrain", "Passion", "Jouer / expérimenter", "Le stratège"],
+    "specialisations": ["Automatique industrielle", "Mecatronique", "Genie electrique", "Genie informatique"]
+  }
+]

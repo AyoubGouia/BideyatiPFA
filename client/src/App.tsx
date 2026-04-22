@@ -16,6 +16,7 @@ import SpecialiteDetailPage from './pages/SpecialiteDetailPage'
 import UniversityPage from './pages/UniversityPage'
 import DomainEtablissementsPage from './pages/DomainEtablissementsPage'
 import FavorisPage from './pages/FavorisPage'
+import RecommendationsPage from './pages/RecommendationsPage'
 import { useAuth } from './context/AuthContext'
 import EducationLoader from './components/EducationLoader'
 import FloatingProfileWidget from './components/FloatingProfileWidget'
@@ -38,6 +39,7 @@ export type Page =
   | 'faculty-detail'
   | 'specialite-detail'
   | 'favoris'
+  | 'recommandations'
 
 export type NavigationProps = {
   nav: (
@@ -80,7 +82,8 @@ export default function App() {
         'speciality',
         'faculty-detail',
         'specialite-detail',
-        'favoris'
+        'favoris',
+        'recommandations'
       ]
       if (restrictedPages.includes(page)) {
         setPage('register')
@@ -187,7 +190,8 @@ export default function App() {
         />
       )}
       {page === 'favoris' && <FavorisPage nav={nav} />}
-      <FloatingProfileWidget user={user} page={page} onProfileUpdate={refreshUser} />
+      {page === 'recommandations' && <RecommendationsPage nav={nav} />}
+      <FloatingProfileWidget user={user} page={page} onProfileUpdate={refreshUser} onNav={nav} />
     </>
   )
 }

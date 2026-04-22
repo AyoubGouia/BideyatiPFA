@@ -1,5 +1,22 @@
 export type Section = 'Math' | 'Science' | 'Info' | 'Technique' | 'Lettre' | 'Économie' | 'Sport'
 
+export const SECTION_MAP: Record<string, Section> = {
+  'رياضيات':           'Math',
+  'علوم تجريبية':      'Science',
+  'علوم الإعلامية':    'Info',
+  'العلوم التقنية':    'Technique',
+  'آداب':              'Lettre',
+  'إقتصاد وتصرف':     'Économie',
+  'رياضة':             'Sport',
+  Math:      'Math',
+  Science:   'Science',
+  Info:      'Info',
+  Technique: 'Technique',
+  Lettre:    'Lettre',
+  Économie:  'Économie',
+  Sport:     'Sport',
+}
+
 /**
  * MG (Bac average) coefficients used for display and calculation.
  * These are the official exam coefficients per section.
@@ -95,7 +112,7 @@ export const SUBJECT_COEFFICIENTS: Record<Section, Record<string, number>> = {
  * Official formula: (2 × Main + Retake) / 3
  * Non-rattrapable subjects (Option, Éducation Physique) keep the main session grade.
  */
-function effectiveNote(
+export function effectiveNote(
   sub: string,
   notesP: Record<string, string>,
   notesC: Record<string, string> | undefined,
@@ -247,4 +264,107 @@ export function calculateFG(
     default:
       return 0
   }
+}
+
+/**
+ * Maps a specialty name to its official licence field for T score calculation.
+ */
+export function getLicenceField(specialiteNom: string): string | null {
+  const nom = specialiteNom.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+  
+  if (nom.includes("informatique") || nom.includes("intelligence artificielle") || nom.includes("donnees") || nom.includes("reseaux") || nom.includes("telecommunication")) return "computer_science"
+  if (nom.includes("mathematiques") || nom.includes("math")) return "mathematics"
+  if (nom.includes("physique")) return "physics"
+  if (nom.includes("chimie")) return "chemistry"
+  if (nom.includes("biologie") || nom.includes("sciences de la vie") || nom.includes("biomedical")) return "biology"
+  if (nom.includes("genie") || nom.includes("ingenierie") || nom.includes("technologie") || nom.includes("mecanique") || nom.includes("electrique") || nom.includes("mecatronique") || nom.includes("automatique")) return "engineering_sciences"
+  if (nom.includes("economie")) return "economics"
+  if (nom.includes("gestion") || nom.includes("management") || nom.includes("administration") || nom.includes("affaires")) return "management"
+  if (nom.includes("finance") || nom.includes("comptabilite") || nom.includes("marketing")) return "finance_accounting"
+  if (nom.includes("droit") || nom.includes("juridique") || nom.includes("sciences politiques")) return "law"
+  if (nom.includes("lettres") || nom.includes("civilisation") || nom.includes("litterature") || nom.includes("arabe")) return "literature"
+  if (nom.includes("anglais")) return "english"
+  if (nom.includes("francais")) return "french"
+  if (nom.includes("histoire") || nom.includes("geographie")) return "history_geography"
+  if (nom.includes("philosophie") || nom.includes("pensee")) return "philosophy"
+  if (nom.includes("sport") || nom.includes("education physique")) return "sports_science"
+  
+  return null
+}
+
+/**
+ * Calculates the Orientation Score (T) for a specific university specialty.
+ * T = FG + (subject1 + subject2)
+ */
+export function calculateT(
+  fg: number,
+  specialiteNom: string,
+  section: Section,
+  notesP: Record<string, string>,
+  notesC?: Record<string, string>,
+  session?: 'Principale' | 'Contrôle'
+): number {
+  const n = (sub: string) => effectiveNote(sub, notesP, notesC, session)
+  const field = getLicenceField(specialiteNom)
+
+  if (!field) return fg // Default to FG if we can't map it
+
+  let t = fg
+
+  switch (field) {
+    case 'computer_science':
+      if (section === 'Info') {
+        t += (n('Mathématiques') + n('Algorithmique & Programmation')) / 2
+      } else {
+        t += (n('Mathématiques') + n('Informatique')) / 2
+      }
+      break
+    case 'mathematics':
+      t += (n('Mathématiques') + n('Sciences Physiques')) / 2
+      break
+    case 'physics':
+      t += (n('Sciences Physiques') + n('Mathématiques')) / 2
+      break
+    case 'chemistry':
+      t += (n('Sciences Physiques') + n('SVT')) / 2
+      break
+    case 'biology':
+      t += (n('SVT') + n('Sciences Physiques')) / 2
+      break
+    case 'engineering_sciences':
+      t += (n('Mathématiques') + n('Sciences Physiques')) / 2
+      break
+    case 'economics':
+      t += (n('Économie') + n('Mathématiques')) / 2
+      break
+    case 'management':
+      t += (n('Gestion') + n('Économie')) / 2
+      break
+    case 'finance_accounting':
+      t += (n('Gestion') + n('Mathématiques')) / 2
+      break
+    case 'law':
+      t += (n('Histoire-Géo') + n('Philosophie')) / 2
+      break
+    case 'literature':
+      t += (n('Arabe') + n('Français')) / 2
+      break
+    case 'english':
+      t += (n('Anglais') + n('Français')) / 2
+      break
+    case 'french':
+      t += (n('Français') + n('Philosophie')) / 2
+      break
+    case 'history_geography':
+      t += (n('Histoire-Géo') + n('Philosophie')) / 2
+      break
+    case 'philosophy':
+      t += (n('Philosophie') + n('Arabe')) / 2
+      break
+    case 'sports_science':
+      t += (n('Discipline Sportive') + n('SVT')) / 2
+      break
+  }
+
+  return +(t.toFixed(3))
 }
