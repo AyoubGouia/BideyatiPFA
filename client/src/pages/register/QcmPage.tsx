@@ -89,7 +89,8 @@ export default function QcmPage({ nav }: Props) {
         moyenneBac: parseFloat(data.moyenneBac || '0'),
         score: data.score ? parseFloat(data.score.toString()) : undefined,
         region: data.region,
-        section: data.section || 'Math'
+        section: data.section || 'Math',
+        dateNaissance: data.dob
       };
       await authApi.register(registrationPayload);
       console.log('[QcmPage] Step 1: Registration successful (cookie set, state not yet updated)');
