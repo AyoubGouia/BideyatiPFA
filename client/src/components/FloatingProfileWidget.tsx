@@ -256,9 +256,8 @@ export default function FloatingProfileWidget({ user, page, onProfileUpdate, onN
           {/* Recommendations teaser */}
           {!editMode && user?.questionnaire && onNav && (
             <button
-              className={s.saveBtn}
+              className={s.recommendationsBtn}
               onClick={() => { setExpanded(false); onNav('recommandations'); }}
-              style={{ background: 'linear-gradient(135deg, #7c3aed, #4f46e5)', width: '100%' }}
             >
               ✨ Voir mes métiers recommandés
             </button>

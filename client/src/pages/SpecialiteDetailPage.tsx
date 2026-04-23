@@ -204,9 +204,22 @@ export default function SpecialiteDetailPage({
     if (!specialite || !stats.length) return null;
     const sectionNom = user?.section?.nom || "Indéfini";
     
-    // Get stats specifically for the user's section (or fallback to all if they don't have one? No, filter by section)
-    const userSectionStats = stats.filter(st => st.section?.nom === sectionNom);
-    if (!userSectionStats.length) return null;
+    // Try to match the section name from the stats. 
+    // We normalize both to avoid issues with Arabic script variations or English/Arabic mismatches.
+    const userSectionKey = SECTION_MAP[sectionNom] || sectionNom;
+
+    const userSectionStats = stats.filter(st => {
+      const statSectionNom = st.section?.nom || "";
+      const statSectionKey = SECTION_MAP[statSectionNom] || statSectionNom;
+      return statSectionKey === userSectionKey;
+    });
+
+    if (!userSectionStats.length) {
+      if (user) {
+        console.warn(`[AdmissionHistory] No stats found for section: ${sectionNom} (${userSectionKey})`);
+      }
+      return null;
+    }
 
     return {
       facultyId: specialite.etablissement?.id ?? "",

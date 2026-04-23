@@ -1,15 +1,15 @@
 .page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f0f1a 0%, #1a1030 50%, #0a1628 100%);
+  background: linear-gradient(160deg, #ddeef8 0%, #c4d9ea 42%, #b5cfe3 100%);
   font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-  color: #e2e8f0;
+  color: #334155;
   padding: 0 0 80px;
 }
 
 /* ── Header ── */
 .header {
-  background: rgba(255,255,255,0.03);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.7);
+  border-bottom: 1px solid rgba(169, 199, 219, 0.3);
   backdrop-filter: blur(12px);
   padding: 16px 32px;
   display: flex;
@@ -21,18 +21,19 @@
 }
 
 .backBtn {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.15);
-  color: #94a3b8;
+  background: white;
+  border: 1px solid #A9C7DB;
+  color: #1a4a75;
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 13px;
+  font-weight: 600;
   transition: all 0.2s;
 }
 .backBtn:hover {
-  background: rgba(255,255,255,0.08);
-  color: #e2e8f0;
+  background: #f0f7ff;
+  transform: translateX(-2px);
 }
 
 /* ── Hero ── */
@@ -47,22 +48,23 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(139,92,246,0.15);
-  border: 1px solid rgba(139,92,246,0.3);
-  color: #c084fc;
+  background: white;
+  border: 1px solid #A9C7DB;
+  color: #1a4a75;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 6px 14px;
   border-radius: 100px;
   margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(169, 199, 219, 0.2);
 }
 
 .heroTitle {
   font-size: clamp(28px, 5vw, 44px);
   font-weight: 800;
-  background: linear-gradient(135deg, #ffffff 0%, #c084fc 60%, #818cf8 100%);
+  background: linear-gradient(135deg, #1a4a75 0%, #A9C7DB 60%, #6FBF4A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -71,7 +73,7 @@
 }
 
 .heroSub {
-  color: #94a3b8;
+  color: #475569;
   font-size: 16px;
   line-height: 1.6;
   max-width: 560px;
@@ -86,15 +88,15 @@
   justify-content: center;
   min-height: 50vh;
   gap: 16px;
-  color: #94a3b8;
+  color: #64748b;
   font-size: 15px;
 }
 
 .spinner {
   width: 40px;
   height: 40px;
-  border: 3px solid rgba(139,92,246,0.2);
-  border-top-color: #8b5cf6;
+  border: 3px solid rgba(111, 191, 74, 0.2);
+  border-top-color: #6FBF4A;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -112,18 +114,18 @@
 
 /* ── Card ── */
 .card {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: white;
+  border: 1px solid rgba(169, 199, 219, 0.3);
   border-radius: 16px;
   padding: 24px;
   transition: all 0.25s;
   cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 .card:hover {
-  background: rgba(255,255,255,0.07);
-  border-color: rgba(139,92,246,0.35);
-  transform: translateY(-1px);
-  box-shadow: 0 8px 32px rgba(139,92,246,0.12);
+  border-color: #6FBF4A;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(169, 199, 219, 0.2);
 }
 
 .cardTop {
@@ -153,17 +155,17 @@
   font-size: 13px;
   font-weight: 700;
 }
-.rankGold   { background: rgba(234,179,8,0.18);   color: #fbbf24; border: 1px solid rgba(234,179,8,0.3); }
-.rankSilver { background: rgba(148,163,184,0.12); color: #94a3b8; border: 1px solid rgba(148,163,184,0.25); }
-.rankBronze { background: rgba(180,120,60,0.15);  color: #d97706; border: 1px solid rgba(180,120,60,0.3); }
-.rankDefault{ background: rgba(255,255,255,0.05); color: #64748b; border: 1px solid rgba(255,255,255,0.1); }
+.rankGold   { background: #fef3c7; color: #b45309; border: 1px solid #fcd34d; }
+.rankSilver { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; }
+.rankBronze { background: #ffedd5; color: #9a3412; border: 1px solid #fed7aa; }
+.rankDefault{ background: #f8fafc; color: #64748b; border: 1px solid #f1f5f9; }
 
 .cardInfo { flex: 1; min-width: 0; }
 
 .cardTitle {
   font-size: 17px;
   font-weight: 700;
-  color: #f1f5f9;
+  color: #1e293b;
   margin: 0 0 4px;
   white-space: nowrap;
   overflow: hidden;
@@ -172,13 +174,13 @@
 
 .secteurBadge {
   display: inline-block;
-  background: rgba(139,92,246,0.15);
-  color: #a78bfa;
+  background: rgba(169, 199, 219, 0.15);
+  color: #1a4a75;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 3px 9px;
   border-radius: 6px;
-  border: 1px solid rgba(139,92,246,0.25);
+  border: 1px solid rgba(169, 199, 219, 0.3);
   letter-spacing: 0.02em;
 }
 
@@ -202,7 +204,7 @@
   justify-content: center;
   font-size: 13px;
   font-weight: 800;
-  color: #c084fc;
+  color: #A9C7DB;
 }
 
 /* ── Progress bar ── */
@@ -217,8 +219,8 @@
   margin-bottom: 6px;
 }
 .scoreBarTrack {
-  height: 5px;
-  background: rgba(255,255,255,0.07);
+  height: 6px;
+  background: #f1f5f9;
   border-radius: 99px;
   overflow: hidden;
 }
@@ -235,7 +237,7 @@
 .tagsSectionLabel {
   font-size: 11px;
   color: #64748b;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 8px;
@@ -246,11 +248,11 @@
   gap: 6px;
 }
 .tag {
-  background: rgba(34,197,94,0.1);
-  border: 1px solid rgba(34,197,94,0.2);
-  color: #4ade80;
+  background: rgba(111, 191, 74, 0.1);
+  border: 1px solid rgba(111, 191, 74, 0.2);
+  color: #166534;
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 3px 10px;
   border-radius: 6px;
 }
@@ -260,7 +262,7 @@
 .specsSectionLabel {
   font-size: 11px;
   color: #64748b;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin-bottom: 8px;
@@ -271,10 +273,11 @@
   gap: 6px;
 }
 .specChip {
-  background: rgba(56,189,248,0.08);
-  border: 1px solid rgba(56,189,248,0.18);
-  color: #7dd3fc;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  color: #0369a1;
   font-size: 11px;
+  font-weight: 500;
   padding: 3px 10px;
   border-radius: 6px;
   white-space: nowrap;

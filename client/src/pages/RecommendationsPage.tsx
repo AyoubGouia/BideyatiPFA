@@ -8,9 +8,9 @@ interface Props {
 }
 
 function getScoreColor(score: number): string {
-  if (score >= 70) return '#4ade80'
-  if (score >= 45) return '#f59e0b'
-  return '#8b5cf6'
+  if (score >= 70) return '#6FBF4A' // Leaf green
+  if (score >= 45) return '#A9C7DB' // Sky bleu
+  return '#A9C7DB'
 }
 
 function getRankClass(rank: number, styles: typeof s): string {

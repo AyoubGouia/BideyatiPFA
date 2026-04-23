@@ -10,6 +10,13 @@ const apiClient = axios.create({
   },
 });
 
-console.log('API Client:', apiClient);
+// Add interceptor to automatically attach the token to headers
+apiClient.interceptors.request.use((config) => {
+  const token = localStorage.getItem('bide_token');
+  if (token && config.headers) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+  return config;
+});
 
 export default apiClient;

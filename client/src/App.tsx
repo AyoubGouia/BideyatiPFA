@@ -93,7 +93,7 @@ export default function App() {
         'recommandations'
       ]
       if (restrictedPages.includes(page)) {
-        setPage('register')
+        setPage('visitor')
       }
     }
   }, [user, page, isLoadingAuth])

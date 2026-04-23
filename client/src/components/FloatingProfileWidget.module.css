@@ -8,7 +8,7 @@
 
 /* ── Collapsed pill ─────────────────────────── */
 .collapsedBtn {
-  background: linear-gradient(135deg, #102e4a 0%, #1a4a75 100%);
+  background: linear-gradient(135deg, #1a4a75 0%, #2b6cb0 100%);
   color: white;
   border: none;
   border-radius: 50px;
@@ -17,17 +17,17 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(16, 46, 74, 0.35);
+  box-shadow: 0 4px 16px rgba(26, 74, 117, 0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   font-size: 14px;
   font-weight: 600;
 }
 .collapsedBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(16, 46, 74, 0.45);
+  box-shadow: 0 8px 20px rgba(26, 74, 117, 0.45);
 }
 .collapsedScore {
-  background: #F47920;
+  background: #6FBF4A;
   border-radius: 50px;
   padding: 2px 10px;
   font-size: 13px;
@@ -56,7 +56,7 @@
 
 /* ── Header ─────────────────────────────────── */
 .header {
-  background: linear-gradient(135deg, #102e4a 0%, #1a4a75 100%);
+  background: linear-gradient(135deg, #1a4a75 0%, #2b6cb0 100%);
   color: white;
   padding: 16px 20px;
   display: flex;
@@ -116,8 +116,8 @@
   color: #64748b;
   font-weight: 600;
 }
-.statValue { font-size: 17px; font-weight: 700; color: #102e4a; }
-.statValue.highlight { color: #F47920; }
+.statValue { font-size: 17px; font-weight: 700; color: #1a4a75; }
+.statValue.highlight { color: #6FBF4A; }
 
 /* ── Tags row ───────────────────────────────── */
 .tags { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -134,7 +134,7 @@
 .sectionTitle {
   font-size: 13px;
   font-weight: 700;
-  color: #102e4a;
+  color: #1a4a75;
   margin: 0 0 8px 0;
   display: flex;
   align-items: center;
@@ -151,8 +151,8 @@
   cursor: pointer;
   transition: all 0.15s;
 }
-.editToggleBtn:hover { border-color: #F47920; color: #F47920; }
-.editToggleBtn.active { background: #F47920; border-color: #F47920; color: white; }
+.editToggleBtn:hover { border-color: #6FBF4A; color: #6FBF4A; }
+.editToggleBtn.active { background: #6FBF4A; border-color: #6FBF4A; color: white; }
 
 /* ── Grade list (view mode) ─────────────────── */
 .gradeList { display: flex; flex-direction: column; gap: 6px; }
@@ -198,12 +198,12 @@
   border-radius: 6px;
   font-size: 13px;
   font-weight: 600;
-  color: #102e4a;
+  color: #1a4a75;
   text-align: center;
   background: white;
   transition: border-color 0.15s;
 }
-.gradeInput:focus { outline: none; border-color: #F47920; }
+.gradeInput:focus { outline: none; border-color: #6FBF4A; }
 
 /* ── Footer buttons ─────────────────────────── */
 .footer {
@@ -228,7 +228,7 @@
 .cancelBtn:hover { background: #e2e8f0; }
 .saveBtn {
   flex: 2;
-  background: linear-gradient(135deg, #F47920 0%, #e06710 100%);
+  background: linear-gradient(135deg, #1a4a75 0%, #2b6cb0 100%);
   color: white;
   border: none;
   padding: 9px;
@@ -241,5 +241,24 @@
 .saveBtn:disabled { opacity: 0.6; cursor: not-allowed; }
 .saveBtn:not(:disabled):hover { opacity: 0.9; }
 
+.recommendationsBtn {
+  background: linear-gradient(135deg, #6FBF4A 0%, #5aa83a 100%);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(111, 191, 74, 0.25);
+}
+.recommendationsBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(111, 191, 74, 0.35);
+}
+
 .errorMsg { font-size: 12px; color: #dc2626; text-align: center; }
 .successMsg { font-size: 12px; color: #16a34a; text-align: center; }
+

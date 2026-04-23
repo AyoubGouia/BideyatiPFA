@@ -5,10 +5,12 @@ import { HttpError } from "../utils/httpError";
 import { TokenPayload } from "../../domain/entities/Auth";
 import { UserRepository } from "../../infrastructure/repositories/UserRepository";
 import { SessionRepository } from "../../infrastructure/repositories/SessionRepository";
+import { ProfileService } from "./ProfileService";
 
 export class AuthService {
   private userRepository = new UserRepository();
   private sessionRepository = new SessionRepository();
+  private profileService = new ProfileService();
 
   async register(input: {
     nom: string;
@@ -89,6 +91,8 @@ export class AuthService {
     await this.sessionRepository.invalidateAllUserSessions(user.id);
     const session = await this.sessionRepository.createSession(user.id, token, expiresAt);
 
+    const fullUser = await this.profileService.getProfile(user.id);
+
     return {
       token,
       session: {
@@ -96,13 +100,7 @@ export class AuthService {
         token: session.token,
         dateExpiration: session.dateExpiration,
       },
-      user: {
-        id: user.id,
-        email: user.email,
-        nom: user.nom,
-        prenom: user.prenom,
-        role: user.role,
-      },
+      user: fullUser,
     };
   }
 

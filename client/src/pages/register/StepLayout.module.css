@@ -398,13 +398,13 @@
 /* ─── Dashboard ────────────────────────────────────────────── */
 
 .dashboard {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(135deg, #A9C7DB 0%, #98b9cf 100%);
   border-radius: 20px;
   padding: 20px;
   width: 100%;
   max-width: 400px;
-  color: white;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  color: #1a202c;
+  box-shadow: 0 8px 25px rgba(169, 199, 219, 0.4);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -413,11 +413,11 @@
 
 .dashboardTitle {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #a0aec0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #2c5282;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
   padding-bottom: 8px;
 }
 
@@ -435,8 +435,8 @@
 
 .statLabel {
   font-size: 11px;
-  font-weight: 600;
-  color: #718096;
+  font-weight: 700;
+  color: #4a5568;
 }
 
 .statValue {
@@ -445,16 +445,16 @@
 }
 
 .statValueOrange {
-  color: #F47920;
+  color: #e65100;
 }
 
 .statValueGreen {
-  color: #48bb78;
+  color: #6FBF4A; /* Leaf green */
 }
 
 .dashboardFooter {
-  font-size: 10px;
-  color: #718096;
+  font-size: 10.5px;
+  color: #4a5568;
   font-style: italic;
   line-height: 1.4;
 }

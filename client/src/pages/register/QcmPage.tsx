@@ -92,8 +92,11 @@ export default function QcmPage({ nav }: Props) {
         section: data.section || 'Math',
         dateNaissance: data.dob
       };
-      await authApi.register(registrationPayload);
-      console.log('[QcmPage] Step 1: Registration successful (cookie set, state not yet updated)');
+      const res = await authApi.register(registrationPayload);
+      if (res.token) {
+        localStorage.setItem('bide_token', res.token);
+      }
+      console.log('[QcmPage] Step 1: Registration successful (token saved, state not yet updated)');
 
       // Step 2: Format questionnaire answers
       const formattedReponses = QUESTIONS.map(q => {
