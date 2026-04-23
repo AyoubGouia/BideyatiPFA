@@ -9,7 +9,10 @@ app.use(morgan("dev")); // <-- Request logging package
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: (origin, callback) => {
+      // Allow all origins for dev across LAN
+      callback(null, true);
+    },
     credentials: true,
   }),
 );
