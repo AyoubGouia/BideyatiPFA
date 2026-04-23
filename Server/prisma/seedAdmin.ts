@@ -17,15 +17,30 @@ async function main() {
     throw new Error('ADMIN_EMAIL and ADMIN_PASSWORD must be set in .env')
   }
 
-  const existing = await prisma.user.findUnique({ where: { email } })
+  const existing = await prisma.user.findUnique({
+    where: { email },
+    include: { adminProfile: true },
+  })
 
   if (existing) {
-    // If already exists, ensure the role is ADMIN
+    // Ensure role is ADMIN
     await prisma.user.update({
       where: { email },
       data: { role: 'ADMIN' },
     })
-    console.log(`✅ Admin user already exists. Role confirmed as ADMIN: ${email}`)
+
+    // Ensure AdminProfile exists
+    if (!existing.adminProfile) {
+      await prisma.adminProfile.create({
+        data: {
+          userId: existing.id,
+          niveauAcces: 1,
+        },
+      })
+      console.log(`✅ AdminProfile created for existing user: ${email}`)
+    } else {
+      console.log(`✅ Admin user and AdminProfile already exist: ${email}`)
+    }
   } else {
     const motDePasseHash = await bcrypt.hash(password, 10)
     await prisma.user.create({
@@ -35,9 +50,14 @@ async function main() {
         email,
         motDePasseHash,
         role: 'ADMIN',
+        adminProfile: {
+          create: {
+            niveauAcces: 1,
+          },
+        },
       },
     })
-    console.log(`✅ Admin user created successfully: ${email}`)
+    console.log(`✅ Admin user + AdminProfile created successfully: ${email}`)
   }
 }
 
