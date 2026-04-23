@@ -17,6 +17,7 @@ import UniversityPage from './pages/UniversityPage'
 import DomainEtablissementsPage from './pages/DomainEtablissementsPage'
 import FavorisPage from './pages/FavorisPage'
 import RecommendationsPage from './pages/RecommendationsPage'
+import AdminPage from './pages/AdminPage'
 import { useAuth } from './context/AuthContext'
 import EducationLoader from './components/EducationLoader'
 import FloatingProfileWidget from './components/FloatingProfileWidget'
@@ -40,6 +41,7 @@ export type Page =
   | 'specialite-detail'
   | 'favoris'
   | 'recommandations'
+  | 'admin'
 
 export type NavigationProps = {
   nav: (
@@ -72,6 +74,11 @@ export default function App() {
     if (isLoadingAuth) return
 
     if (user) {
+      // Admin users go directly to the admin panel
+      if (user.role === 'ADMIN') {
+        if (page !== 'admin') setPage('admin')
+        return
+      }
       if (page === 'visitor' || page === 'form' || page === 'register') {
         setPage('university')
       }
@@ -191,7 +198,8 @@ export default function App() {
       )}
       {page === 'favoris' && <FavorisPage nav={nav} />}
       {page === 'recommandations' && <RecommendationsPage nav={nav} />}
-      <FloatingProfileWidget user={user} page={page} onProfileUpdate={refreshUser} onNav={nav} />
+      {page === 'admin' && <AdminPage nav={nav} />}
+      {user?.role !== 'ADMIN' && <FloatingProfileWidget user={user} page={page} onProfileUpdate={refreshUser} onNav={nav} />}
     </>
   )
 }

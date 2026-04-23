@@ -34,6 +34,8 @@ export class ProfileService {
       prenom: user.prenom,
       email: user.email,
       telephone: user.telephone,
+      role: user.role,
+      dateNaissance: user.dateNaissance,
       actif: user.actif,
       dateCreation: user.dateCreation,
       studentProfile: user.studentProfile
