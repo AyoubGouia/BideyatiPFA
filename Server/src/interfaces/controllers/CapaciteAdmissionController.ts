@@ -46,8 +46,8 @@ export class CapaciteAdmissionController {
       const { specialiteId } = req.params;
       const data = await this.service.getBySpecialite(specialiteId);
 
-      if (!data || data.length === 0) {
-        res.status(404).json({ message: "Aucune capacité trouvée pour cette spécialité" });
+      if (!data) {
+        res.status(200).json([]);
         return;
       }
 
@@ -69,8 +69,8 @@ export class CapaciteAdmissionController {
 
       const data = await this.service.getByYear(year);
 
-      if (!data || data.length === 0) {
-        res.status(404).json({ message: "Aucune capacité trouvée pour cette année" });
+      if (!data) {
+        res.status(200).json([]);
         return;
       }
 
@@ -93,8 +93,8 @@ export class CapaciteAdmissionController {
 
       const data = await this.service.getByYearAndSection(year, sectionId);
 
-      if (!data || data.length === 0) {
-        res.status(404).json({ message: "Aucune capacité trouvée pour cette année et section" });
+      if (!data) {
+        res.status(200).json([]);
         return;
       }
 

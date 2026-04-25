@@ -16,13 +16,13 @@ export class UserRepository implements IUserRepository {
   }
 
   private sectionMapping: Record<string, string> = {
-    Math: "رياضيات",
-    Science: "علوم تجريبية",
-    Info: "علوم الإعلامية",
-    Technique: "العلوم التقنية",
-    Lettre: "آداب",
-    "Économie": "إقتصاد وتصرف",
-    Sport: "رياضة",
+    Math: "Mathématiques",
+    Science: "Sciences Expérimentales",
+    Info: "Sciences Informatiques",
+    Technique: "Sciences Techniques",
+    Lettre: "Lettres",
+    "Économie": "Economie et Gestion",
+    Sport: "Sport",
   };
 
   async createStudent(data: CreateStudentParams): Promise<{ user: User; profile: StudentProfile }> {

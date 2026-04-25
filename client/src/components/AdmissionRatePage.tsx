@@ -67,24 +67,30 @@ export function calcAdmissionRate(
   minScore: number,
   admissionRate: number
 ): number {
-  /**
-   * Sigmoid (logistic) model:
-   *   P(score) = admissionRate / (1 + e^(-k * (score - minScore)))
-   *
-   * - At score == minScore  → rate ≈ admissionRate / 2  (50% of historical rate)
-   * - 10 pts above minScore → rate ≈ admissionRate * 0.88  (strong chance)
-   * - 10 pts below minScore → rate ≈ admissionRate * 0.12  (limited but non-zero)
-   * - 20+ pts above         → rate approaches admissionRate (capped at 100)
-   * - 20+ pts below         → rate approaches 0 gracefully
-   *
-   * k controls the steepness of the transition around the cutoff.
-   * A value of 0.25 works well for score ranges in [50, 250].
-   */
-  const k = 0.25;
   const delta = score - minScore;
-  const sigmoid = 1 / (1 + Math.exp(-k * delta));
-  const rate = admissionRate * sigmoid * 2; // ×2 so that at threshold, rate ≈ admissionRate
-  return Math.min(100, Math.max(0, Math.round(rate)));
+
+  let baseChance: number;
+
+  if (delta <= -20) {
+    baseChance = 1;
+  } else if (delta <= -10) {
+    // Linear interpolation between -20 (1%) and -10 (20%)
+    // (delta - (-20)) / (-10 - (-20)) = (delta + 20) / 10
+    baseChance = 1 + ((delta + 20) / 10) * (20 - 1);
+  } else if (delta <= 0) {
+    // Linear interpolation between -10 (20%) and 0 (50%)
+    baseChance = 20 + ((delta + 10) / 10) * (50 - 20);
+  } else if (delta <= 10) {
+    // Linear interpolation between 0 (50%) and 10 (95%)
+    baseChance = 50 + (delta / 10) * (95 - 50);
+  } else if (delta <= 20) {
+    // Linear interpolation between 10 (95%) and 20 (99%)
+    baseChance = 95 + ((delta - 10) / 10) * (99 - 95);
+  } else {
+    baseChance = 99;
+  }
+
+  return Math.min(100, Math.max(0, Math.round(baseChance)));
 }
 
 // ─── Status helpers ───────────────────────────────────────────────────────────

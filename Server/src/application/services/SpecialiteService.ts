@@ -135,6 +135,18 @@ export class SpecialiteService {
             siteweb: true,
           },
         },
+        metiers: {
+          select: {
+            metier: {
+              select: {
+                id: true,
+                titre: true,
+                secteur: true,
+                tags: true,
+              },
+            },
+          },
+        },
         statistiquesAdmissions: {
           select: {
             id: true,

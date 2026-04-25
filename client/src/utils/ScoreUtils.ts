@@ -8,13 +8,19 @@ export const SECTION_MAP: Record<string, Section> = {
   'آداب':              'Lettre',
   'إقتصاد وتصرف':     'Économie',
   'رياضة':             'Sport',
+  'Mathématiques':      'Math',
+  'Sciences Expérimentales': 'Science',
+  'Sciences Informatiques': 'Info',
+  'Sciences Techniques': 'Technique',
+  'Lettres':           'Lettre',
+  'Economie et Gestion': 'Économie',
+  'Sport':             'Sport',
   Math:      'Math',
   Science:   'Science',
   Info:      'Info',
   Technique: 'Technique',
   Lettre:    'Lettre',
   Économie:  'Économie',
-  Sport:     'Sport',
 }
 
 /**

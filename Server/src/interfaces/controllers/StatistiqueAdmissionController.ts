@@ -45,8 +45,8 @@ export class StatistiqueAdmissionController {
       const { specialiteId } = req.params;
       const data = await this.service.getBySpecialite(specialiteId);
 
-      if (!data || data.length === 0) {
-        res.status(404).json({ message: "Aucun score trouvé pour cette spécialité" });
+      if (!data) {
+        res.status(200).json([]);
         return;
       }
 
@@ -68,8 +68,8 @@ export class StatistiqueAdmissionController {
 
       const data = await this.service.getByYear(year);
 
-      if (!data || data.length === 0) {
-        res.status(404).json({ message: "Aucun score trouvé pour cette année" });
+      if (!data) {
+        res.status(200).json([]);
         return;
       }
 
@@ -92,8 +92,8 @@ export class StatistiqueAdmissionController {
 
       const data = await this.service.getByYearAndSection(year, sectionId);
 
-      if (!data || data.length === 0) {
-        res.status(404).json({ message: "Aucun score trouvé pour cette année et section" });
+      if (!data) {
+        res.status(200).json([]);
         return;
       }
 

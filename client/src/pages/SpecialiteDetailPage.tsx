@@ -15,6 +15,7 @@ import AiOverviewAnimatedContent from '../components/AiOverviewAnimatedContent'
 import EducationLoader from '../components/EducationLoader'
 import AdmissionRatePage from '../components/AdmissionRatePage'
 import { calculateT, SECTION_MAP } from '../utils/ScoreUtils'
+import { getFiliere } from '../data/filieres'
 import s from './SpecialiteDetailPage.module.css'
 
 const YEARS = [2023, 2024, 2025] as const
@@ -215,7 +216,7 @@ export default function SpecialiteDetailPage({
     });
 
     if (!userSectionStats.length) {
-      if (user) {
+      if (user && sectionNom !== "Indéfini") {
         console.warn(`[AdmissionHistory] No stats found for section: ${sectionNom} (${userSectionKey})`);
       }
       return null;
@@ -224,13 +225,20 @@ export default function SpecialiteDetailPage({
     return {
       facultyId: specialite.etablissement?.id ?? "",
       facultyName: specialite.etablissement?.nom ?? specialite.universite?.nom ?? "Établissement",
-      years: userSectionStats.map(s => ({
-        year: s.annee,
-        minScore: s.scoreDernierAdmis,
-        admissionRate: s.tauxAdmission ?? 85, // Fallback if no admission rate is in DB
-        totalApplicants: 0,
-        admitted: 0,
-      }))
+      years: userSectionStats.map(s => {
+        // If tauxAdmission is a decimal ratio (0-1), convert to percentage (0-100)
+        let rate = s.tauxAdmission ?? 85;
+        if (rate > 0 && rate <= 1) {
+          rate = rate * 100;
+        }
+        return {
+          year: s.annee,
+          minScore: s.scoreDernierAdmis,
+          admissionRate: rate,
+          totalApplicants: 0,
+          admitted: 0,
+        };
+      })
     };
   }, [specialite, stats, user]);
 
@@ -238,6 +246,61 @@ export default function SpecialiteDetailPage({
     if (facultyId) nav('faculty-detail', undefined, facultyId)
     else nav(user ? 'university' : 'visitor')
   }
+
+  const filiereData = useMemo(() => {
+    // 1. Start with static enrichment data if available
+    const base = getFiliere(specialite?.codeOrientation, specialite?.nom);
+    
+    if (!specialite) return base;
+
+    // 2. Prepare merged result
+    const merged = {
+      code: specialite.codeOrientation,
+      filiere: specialite.nom,
+      domaine: base?.domaine || { id: 'GEN', nom: specialite.domaine || 'Général' },
+      diplome: base?.diplome || { nom: specialite.nom, niveau: 'LMD', type: 'Licence' },
+      tags: base?.tags || [],
+      metiers: [...(base?.metiers || [])],
+      competences: [...(base?.competences || [])],
+      taux_admission: base?.taux_admission || '',
+    };
+
+    // 3. Add DB Metiers if they aren't already there
+    if (specialite.metiers && specialite.metiers.length > 0) {
+      specialite.metiers.forEach(m => {
+        const metier = m.metier;
+        const exists = merged.metiers.some(em => em.nom.toLowerCase() === metier.titre.toLowerCase());
+        if (!exists) {
+          merged.metiers.push({
+            nom: metier.titre,
+            salaire_moyen: 'Selon secteur',
+            competences: metier.tags || []
+          });
+          // Merge unique skills
+          metier.tags.forEach(t => {
+            if (!merged.competences.includes(t)) merged.competences.push(t);
+          });
+        }
+      });
+    }
+
+    // 4. Derive taux_admission from DB if missing
+    if (!merged.taux_admission && specialite.statistiquesAdmissions && specialite.statistiquesAdmissions.length > 0) {
+      // Find latest valid tauxAdmission
+      const latestWithTaux = specialite.statistiquesAdmissions.find(s => s.tauxAdmission !== null && s.tauxAdmission !== undefined);
+      if (latestWithTaux && latestWithTaux.tauxAdmission !== null) {
+        let t = latestWithTaux.tauxAdmission;
+        if (t > 0 && t <= 1) t *= 100; // handle ratio
+        
+        if (t < 20) merged.taux_admission = `Très sélectif (${Math.round(t)}%)`;
+        else if (t < 40) merged.taux_admission = `Sélectif (${Math.round(t)}%)`;
+        else if (t < 70) merged.taux_admission = `Moyen (${Math.round(t)}%)`;
+        else merged.taux_admission = `Accessible (${Math.round(t)}%)`;
+      }
+    }
+
+    return merged;
+  }, [specialite]);
 
   const renderAiPanel = () => {
     if (aiPanelState.status === 'idle' || aiPanelState.status === 'loading') {
@@ -341,6 +404,50 @@ export default function SpecialiteDetailPage({
             <p className={s.desc}>{specialite.formuleBrute}</p>
           )}
         </section>
+
+        {filiereData && filiereData.metiers.length > 0 && (
+          <section className={s.jobsSection}>
+            <div className={s.jobsHeader}>
+              <h2 className={s.jobsSectionTitle}>
+                <span className={s.jobsIcon}>💼</span>
+                Métiers &amp; Débouchés
+              </h2>
+              <span
+                className={s.tauxBadge}
+                data-level={resolveTauxLevel(filiereData.taux_admission)}
+              >
+                🎯 {filiereData.taux_admission}
+              </span>
+            </div>
+
+            <div className={s.jobsGrid}>
+              {filiereData.metiers.map((metier) => (
+                <div key={metier.nom} className={s.jobCard}>
+                  <div className={s.jobCardTop}>
+                    <span className={s.jobTitle}>{metier.nom}</span>
+                    <span className={s.salaryPill}>{metier.salaire_moyen}</span>
+                  </div>
+                  <div className={s.jobSkills}>
+                    {metier.competences.map((c) => (
+                      <span key={c} className={s.skillChip}>{c}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {filiereData.competences.length > 0 && (
+              <div className={s.competencesSection}>
+                <p className={s.competencesLabel}>Compétences clés</p>
+                <div className={s.competencesList}>
+                  {filiereData.competences.map((c) => (
+                    <span key={c} className={s.competenceChip}>{c}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
 
         <section className={s.card}>
           <div className={s.controlHeader}>
@@ -533,4 +640,12 @@ function resolveAiErrorState(error: unknown): AiPanelState {
     status: 'error',
     message: "Une erreur inattendue a interrompu l'analyse IA. Reessayez dans quelques instants.",
   }
+}
+
+function resolveTauxLevel(taux: string): 'very-selective' | 'selective' | 'medium' | 'open' {
+  const t = taux.toLowerCase()
+  if (t.includes('très sélectif') || t.includes('10-20') || t.includes('15%')) return 'very-selective'
+  if (t.includes('sélectif') || t.includes('20-40') || t.includes('30%')) return 'selective'
+  if (t.includes('moyen') || t.includes('40-60') || t.includes('50%')) return 'medium'
+  return 'open'
 }

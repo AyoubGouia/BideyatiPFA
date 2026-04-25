@@ -33,7 +33,22 @@ export interface SpecialiteDetail {
   codeOrientation: string
   formuleBrute?: string | null
   domaine?: string | null
-  scoreMinimum?: number | null
+  metiers?: {
+    metier: {
+      id: string
+      titre: string
+      secteur: string
+      tags: string[]
+    }
+  }[]
+  statistiquesAdmissions?: {
+    id: string
+    annee: number
+    scoreDernierAdmis: number
+    scoreMinimum?: number | null
+    tauxAdmission?: number | null
+    section: { id: string; nom: string } | null
+  }[]
   etablissement?: SpecialiteListItem['etablissement']
   universite?: SpecialiteListItem['universite']
 }

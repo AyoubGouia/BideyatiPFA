@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const f = require\\('./data/demo/etablissements.demo.json'\\); console.log\\('Count:', f.length\\); console.log\\('Sample:', JSON.stringify\\(f[0], null, 2\\)\\)\")",
+      "Bash(node -e ' *)",
+      "PowerShell(Get-WmiObject *)",
+      "PowerShell(Get-CimInstance *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Razills\\\\Documents\\\\Bideyati\\\\BideyatiPFA\\\\Server\\\\dist\" -Recurse -File | ForEach-Object { $_.FullName })"
+    ]
+  }
+}

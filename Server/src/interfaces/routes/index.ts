@@ -12,6 +12,7 @@ import sectionRoutes from "./sectionRoutes";
 import aiRoutes from "./aiRoutes";
 import favoriRoutes from "./favoriRoutes";
 import recommandationRoutes from "./recommandationRoutes";
+import adminRoutes from "./adminRoutes";
 
 
 const router = Router();
@@ -33,6 +34,7 @@ router.use(sectionRoutes);
 router.use(aiRoutes);
 router.use(favoriRoutes);
 router.use("/recommandations", recommandationRoutes);
+router.use("/admin", adminRoutes);
 
 
 export default router;
