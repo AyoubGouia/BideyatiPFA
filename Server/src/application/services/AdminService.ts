@@ -1,3 +1,4 @@
+import { randomUUID } from "crypto";
 import { prisma } from "../../infrastructure/config/prisma";
 import { HttpError } from "../utils/httpError";
 
@@ -86,6 +87,36 @@ export class AdminService {
     if (!user) throw new HttpError(404, "Utilisateur introuvable");
 
     await prisma.user.delete({ where: { id: targetUserId } });
+  }
+
+  async createUniversity(data: {
+    nom: string;
+    ville: string;
+    region: string;
+    description?: string;
+    siteweb?: string;
+    adresse?: string;
+    nomAr?: string;
+  }) {
+    const university = await prisma.universite.create({
+      data: {
+        id: randomUUID(),
+        nom: data.nom,
+        ville: data.ville,
+        region: data.region,
+        description: data.description ?? null,
+        siteweb: data.siteweb ?? null,
+        adresse: data.adresse ?? null,
+        nomAr: data.nomAr ?? null,
+      },
+    });
+    return university;
+  }
+
+  async deleteUniversity(id: string) {
+    const university = await prisma.universite.findUnique({ where: { id } });
+    if (!university) throw new HttpError(404, "Université introuvable");
+    await prisma.universite.delete({ where: { id } });
   }
 
   async exportData() {

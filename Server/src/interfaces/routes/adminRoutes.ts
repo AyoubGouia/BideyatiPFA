@@ -19,5 +19,7 @@ router.get("/users", requireAuth, requireAdmin, controller.getUsers);
 router.put("/users/:id/toggle", requireAuth, requireAdmin, controller.toggleUserActive);
 router.delete("/users/:id", requireAuth, requireAdmin, controller.deleteUser);
 router.get("/export", requireAuth, requireAdmin, controller.exportData);
+router.post("/universities", requireAuth, requireAdmin, controller.createUniversity);
+router.delete("/universities/:id", requireAuth, requireAdmin, controller.deleteUniversity);
 
 export default router;

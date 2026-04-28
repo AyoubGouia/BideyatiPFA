@@ -29,6 +29,25 @@ export interface UsersResponse {
   totalPages: number;
 }
 
+export interface AdminUniversity {
+  id: string;
+  nom: string;
+  ville: string;
+  region: string;
+  description?: string | null;
+  siteweb?: string | null;
+  adresse?: string | null;
+  nomAr?: string | null;
+}
+
+export interface CreateUniversityData {
+  nom: string;
+  ville: string;
+  region: string;
+  description?: string;
+  siteweb?: string;
+}
+
 export const adminApi = {
   getStats: async (): Promise<AdminStats> => {
     const res = await apiClient.get("/admin/stats");
@@ -54,5 +73,14 @@ export const adminApi = {
   exportBackup: async (): Promise<Blob> => {
     const res = await apiClient.get("/admin/export", { responseType: "blob" });
     return res.data;
+  },
+
+  createUniversity: async (data: CreateUniversityData): Promise<AdminUniversity> => {
+    const res = await apiClient.post("/admin/universities", data);
+    return res.data;
+  },
+
+  deleteUniversity: async (id: string): Promise<void> => {
+    await apiClient.delete(`/admin/universities/${id}`);
   },
 };

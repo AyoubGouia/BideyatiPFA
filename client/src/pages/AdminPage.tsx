@@ -1,21 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import type { Page } from '../App'
 import { useAuth } from '../context/AuthContext'
-import { adminApi, type AdminStats, type AdminUser } from '../api/adminApi'
+import { adminApi, type AdminStats, type AdminUser, type AdminUniversity } from '../api/adminApi'
 import apiClient from '../api/client'
 import s from './AdminPage.module.css'
 
 interface Props {
   nav: (p: Page) => void
-}
-
-interface Universite {
-  id: string
-  nom: string
-  ville: string
-  region: string
-  description: string | null
-  specialites?: { nom: string }[]
 }
 
 interface BackupRecord {
@@ -59,9 +50,14 @@ export default function AdminPage({ nav }: Props) {
   const [deletingId, setDeletingId] = useState<string | null>(null)
 
   // ── Universities ───────────────────────────────────────────
-  const [universities, setUniversities] = useState<Universite[]>([])
+  const [universities, setUniversities] = useState<AdminUniversity[]>([])
   const [univSearch, setUnivSearch] = useState('')
   const [univLoading, setUnivLoading] = useState(false)
+  const [deletingUnivId, setDeletingUnivId] = useState<string | null>(null)
+  const [showAddModal, setShowAddModal] = useState(false)
+  const [addForm, setAddForm] = useState({ nom: '', ville: '', region: '', description: '', siteweb: '' })
+  const [addLoading, setAddLoading] = useState(false)
+  const [addError, setAddError] = useState<string | null>(null)
 
   // ── Backup ─────────────────────────────────────────────────
   const [backupLoading, setBackupLoading] = useState(false)
@@ -176,9 +172,48 @@ export default function AdminPage({ nav }: Props) {
     saveBackupHistory(updated)
   }
 
+  const handleAddUniversity = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!addForm.nom.trim() || !addForm.ville.trim() || !addForm.region.trim()) {
+      setAddError('Nom, ville et région sont requis.')
+      return
+    }
+    setAddLoading(true)
+    setAddError(null)
+    try {
+      const created = await adminApi.createUniversity({
+        nom: addForm.nom.trim(),
+        ville: addForm.ville.trim(),
+        region: addForm.region.trim(),
+        description: addForm.description.trim() || undefined,
+        siteweb: addForm.siteweb.trim() || undefined,
+      })
+      setUniversities(prev => [created, ...prev])
+      setShowAddModal(false)
+      setAddForm({ nom: '', ville: '', region: '', description: '', siteweb: '' })
+    } catch {
+      setAddError("Échec de la création de l'université.")
+    } finally {
+      setAddLoading(false)
+    }
+  }
+
+  const handleDeleteUniversity = async (univId: string) => {
+    if (!confirm('Supprimer définitivement cette université ? Ses établissements seront aussi supprimés.')) return
+    setDeletingUnivId(univId)
+    try {
+      await adminApi.deleteUniversity(univId)
+      setUniversities(prev => prev.filter(u => u.id !== univId))
+    } catch {
+      alert('Échec de la suppression.')
+    } finally {
+      setDeletingUnivId(null)
+    }
+  }
+
   const filteredUniversities = universities.filter(u =>
     u.nom.toLowerCase().includes(univSearch.toLowerCase()) ||
-    u.ville.toLowerCase().includes(univSearch.toLowerCase())
+    (u.ville ?? '').toLowerCase().includes(univSearch.toLowerCase())
   )
 
   const adminInitial = (user?.prenom?.[0] ?? 'A').toUpperCase()
@@ -478,6 +513,10 @@ export default function AdminPage({ nav }: Props) {
                     {univLoading ? 'Chargement...' : `${filteredUniversities.length} université${filteredUniversities.length !== 1 ? 's' : ''}`}
                   </p>
                 </div>
+                <button className={s.btnPrimary} onClick={() => { setAddError(null); setShowAddModal(true) }} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" /></svg>
+                  Ajouter une université
+                </button>
               </div>
 
               <div className={s.tableCard} style={{ marginBottom: '20px' }}>
@@ -505,7 +544,15 @@ export default function AdminPage({ nav }: Props) {
                           <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5S19.832 5.477 21 6.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
                         </div>
                         <div className={s.univActions}>
-                          {/* Edit/delete reserved for future implementation */}
+                          <button
+                            className={s.actionBtn}
+                            title="Supprimer"
+                            disabled={deletingUnivId === u.id}
+                            onClick={() => handleDeleteUniversity(u.id)}
+                            style={{ color: '#ef4444' }}
+                          >
+                            {deletingUnivId === u.id ? '…' : <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>}
+                          </button>
                         </div>
                       </div>
                       <h3 className={s.univName}>{u.nom}</h3>
@@ -527,6 +574,40 @@ export default function AdminPage({ nav }: Props) {
                   {filteredUniversities.length === 0 && (
                     <p style={{ color: '#8a96a2', gridColumn: '1/-1', textAlign: 'center', padding: '40px' }}>Aucune université trouvée.</p>
                   )}
+                </div>
+              )}
+
+              {/* Add University Modal */}
+              {showAddModal && (
+                <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.45)', zIndex: 200, display: 'flex', alignItems: 'center', justifyContent: 'center' }} onClick={() => setShowAddModal(false)}>
+                  <div style={{ background: '#fff', borderRadius: '16px', padding: '32px', width: '480px', maxWidth: '95vw', boxShadow: '0 8px 32px rgba(0,0,0,0.15)' }} onClick={e => e.stopPropagation()}>
+                    <h2 style={{ fontSize: '20px', fontWeight: 700, color: '#12122a', margin: '0 0 24px' }}>Ajouter une université</h2>
+                    <form onSubmit={handleAddUniversity} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                      {addError && <p style={{ color: '#ef4444', fontSize: '13px', margin: 0 }}>{addError}</p>}
+                      {[
+                        { field: 'nom', label: 'Nom *', placeholder: 'ex: Université d\'Alger 1' },
+                        { field: 'ville', label: 'Ville *', placeholder: 'ex: Alger' },
+                        { field: 'region', label: 'Région *', placeholder: 'ex: Centre' },
+                        { field: 'description', label: 'Description', placeholder: 'Description optionnelle' },
+                        { field: 'siteweb', label: 'Site web', placeholder: 'ex: https://univ-alger.dz' },
+                      ].map(({ field, label, placeholder }) => (
+                        <div key={field}>
+                          <label style={{ fontSize: '13px', fontWeight: 600, color: '#12122a', display: 'block', marginBottom: '6px' }}>{label}</label>
+                          <input
+                            type="text"
+                            placeholder={placeholder}
+                            value={addForm[field as keyof typeof addForm]}
+                            onChange={e => setAddForm(prev => ({ ...prev, [field]: e.target.value }))}
+                            style={{ width: '100%', border: '1px solid #e2e8f0', borderRadius: '8px', padding: '9px 12px', fontSize: '14px', outline: 'none', fontFamily: 'Poppins, sans-serif', boxSizing: 'border-box' }}
+                          />
+                        </div>
+                      ))}
+                      <div style={{ display: 'flex', gap: '12px', marginTop: '8px' }}>
+                        <button type="button" onClick={() => setShowAddModal(false)} style={{ flex: 1, padding: '10px', border: '1px solid #e2e8f0', borderRadius: '8px', background: '#f8fafc', cursor: 'pointer', fontSize: '14px', fontWeight: 600, fontFamily: 'Poppins, sans-serif' }}>Annuler</button>
+                        <button type="submit" disabled={addLoading} className={s.btnPrimary} style={{ flex: 1 }}>{addLoading ? 'Création…' : 'Créer'}</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               )}
             </div>

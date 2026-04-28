@@ -52,6 +52,40 @@ export class AdminController {
     }
   };
 
+  createUniversity = async (req: Request, res: Response) => {
+    try {
+      const { nom, ville, region, description, siteweb, adresse, nomAr } = req.body;
+      if (!nom?.trim() || !ville?.trim() || !region?.trim()) {
+        res.status(400).json({ error: "Nom, ville et région sont requis" });
+        return;
+      }
+      const university = await this.adminService.createUniversity({ nom: nom.trim(), ville: ville.trim(), region: region.trim(), description, siteweb, adresse, nomAr });
+      res.status(201).json(university);
+    } catch (error) {
+      if (error instanceof HttpError) {
+        res.status(error.statusCode).json({ error: error.message });
+        return;
+      }
+      console.error("[AdminController] createUniversity error:", error);
+      res.status(500).json({ error: "Failed to create university" });
+    }
+  };
+
+  deleteUniversity = async (req: Request, res: Response) => {
+    try {
+      const { id } = req.params;
+      await this.adminService.deleteUniversity(id);
+      res.status(200).json({ message: "Université supprimée" });
+    } catch (error) {
+      if (error instanceof HttpError) {
+        res.status(error.statusCode).json({ error: error.message });
+        return;
+      }
+      console.error("[AdminController] deleteUniversity error:", error);
+      res.status(500).json({ error: "Failed to delete university" });
+    }
+  };
+
   exportData = async (req: Request, res: Response) => {
     try {
       const data = await this.adminService.exportData();
