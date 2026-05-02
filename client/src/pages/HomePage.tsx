@@ -1,7 +1,7 @@
 import type { Page } from '../App'
 import { useAuth } from '../context/AuthContext'
 import s      from './HomePage.module.css'
-import bgHome from '../assets/Design sans titre (1).png'
+import bgHome from '../assets/bideyeti1.webp'
 
 interface Props { nav: (p: Page) => void }
 
