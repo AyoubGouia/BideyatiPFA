@@ -19,7 +19,14 @@
     "test:integration:current": "cross-env DOTENV_CONFIG_PATH=.env jest --config jest.config.ts --runInBand",
     "test:prepare": "npm run test:db:up && npm run test:db:migrate && npm run test:db:seed",
     "test:prepare:current": "npm run test:db:migrate:current && npm run test:db:seed:current",
-    "test:all": "npm run test:prepare && npm run test:integration"
+    "test:all": "npm run test:prepare && npm run test:integration",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop bideyati-server",
+    "pm2:restart": "pm2 restart bideyati-server",
+    "pm2:delete": "pm2 delete bideyati-server",
+    "pm2:logs": "pm2 logs bideyati-server",
+    "pm2:monit": "pm2 monit",
+    "prod": "npm run build && npm run pm2:start"
   },
   "dependencies": {
     "@google/genai": "^1.50.1",
@@ -48,6 +55,7 @@
     "cross-env": "^10.1.0",
     "jest": "^30.3.0",
     "nodemon": "^3.1.2",
+    "pm2": "^7.0.1",
     "prisma": "^7.5.0",
     "supertest": "^7.2.2",
     "ts-jest": "^29.4.6",
