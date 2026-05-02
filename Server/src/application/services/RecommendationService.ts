@@ -14,6 +14,54 @@ const QUESTION_WEIGHTS: Record<string, number> = {
   "Ton rôle idéal dans un groupe :":       1, // q9 - group role
 };
 
+const ANSWER_TO_TAGS: Record<string, string[]> = {
+  // Q1
+  "La technologie": ["tech", "informatique", "ingénierie", "logiciel", "programmation", "ia", "réseaux", "systèmes"],
+  "Les sciences": ["sciences", "recherche", "santé", "biologie", "chimie", "médecine", "laboratoire"],
+  "Les relations humaines": ["communication", "management", "enseignement", "éducation", "conseil", "soins", "thérapie"],
+  "L'art et la créativité": ["arts", "design", "créativité", "conception", "médias"],
+  // Q2
+  "Mathématiques": ["statistiques", "données", "finance", "ingénierie", "économie", "analyse"],
+  "Sciences (physique, SVT…)": ["sciences", "biologie", "chimie", "environnement", "santé", "médecine"],
+  "Langues": ["langues", "traduction", "rédaction", "communication", "presse"],
+  "Économie / gestion": ["économie", "gestion", "management", "finance", "comptabilité", "entreprise", "audit"],
+  // Q3
+  "Logique": ["analyse", "stratégie", "tech", "sciences", "programmation", "données"],
+  "Créatif(ve)": ["créativité", "conception", "arts", "design", "médias"],
+  "Sociable": ["communication", "management", "enseignement", "leadership", "soins"],
+  "Organisé(e)": ["administration", "gestion", "organisation", "planification", "comptabilité", "audit"],
+  // Q4
+  "Suivre des règles": ["droit", "administration", "sécurité", "justice", "tribunal"],
+  "Innover et tester": ["recherche", "conception", "tech", "ingénierie", "ia"],
+  "Aider les autres": ["santé", "soins", "éducation", "enseignement", "thérapie", "rééducation", "médecine"],
+  "Diriger une équipe": ["management", "leadership", "stratégie", "entreprise"],
+  // Q5
+  "Dans un bureau": ["administration", "gestion", "finance", "logiciel", "données"],
+  "Sur le terrain": ["environnement", "agriculture", "rural", "architecture", "urbanisme", "industrie"],
+  "À distance": ["tech", "programmation", "logiciel", "rédaction", "traduction"],
+  "En déplacement": ["communication", "conseil", "audit", "presse"],
+  // Q6
+  "Argent": ["finance", "économie", "entreprise", "management", "industrie"],
+  "Passion": ["arts", "créativité", "recherche", "sport", "design"],
+  "Sécurité": ["administration", "enseignement", "santé", "justice", "concours"],
+  "Reconnaissance": ["leadership", "stratégie", "médias", "plaidoirie", "médecine", "spécialisation"],
+  // Q7
+  "Regarder des vidéos / séries": ["médias", "arts", "communication"],
+  "Lire / apprendre": ["recherche", "enseignement", "académique", "rédaction", "langues"],
+  "Créer": ["créativité", "design", "conception", "arts"],
+  "Jouer / expérimenter": ["tech", "logiciel", "programmation", "laboratoire", "manipulation"],
+  // Q8
+  "Calme et concentré": ["recherche", "analyse", "statistiques", "laboratoire", "traduction"],
+  "Animé et dynamique": ["management", "communication", "médias", "clinique", "hôpital"],
+  "Nature et extérieur": ["environnement", "agriculture", "agronomie", "rural", "sport"],
+  "Ville et modernité": ["urbanisme", "architecture", "tech", "entreprise", "industrie"],
+  // Q9
+  "Le stratège": ["stratégie", "management", "conseil", "leadership"],
+  "L'exécutant": ["technique", "administration", "organisation", "manipulation"],
+  "Le communicant": ["communication", "relations", "langues", "pédagogie", "presse"],
+  "Le créatif": ["créativité", "design", "arts", "innovation", "conception"]
+};
+
 export interface MetierRecommandation {
   id: string;
   titre: string;
@@ -39,8 +87,17 @@ export class RecommendationService {
     const userTagWeights = new Map<string, number>();
     for (const rep of questionnaire.reponses) {
       const weight = QUESTION_WEIGHTS[rep.question] ?? 1;
-      const current = userTagWeights.get(rep.reponse) ?? 0;
-      userTagWeights.set(rep.reponse, current + weight);
+      
+      // Keep the literal answer as a tag just in case
+      const currentLiteral = userTagWeights.get(rep.reponse) ?? 0;
+      userTagWeights.set(rep.reponse, currentLiteral + weight);
+
+      // Add mapped tags
+      const mappedTags = ANSWER_TO_TAGS[rep.reponse] || [];
+      for (const t of mappedTags) {
+        const currentMapped = userTagWeights.get(t) ?? 0;
+        userTagWeights.set(t, currentMapped + weight);
+      }
     }
 
     // 3. Fetch all métiers with their linked specialites
