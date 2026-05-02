@@ -1,68 +1,70 @@
-import { useEffect, useState } from 'react'
-import type { Page } from '../App'
-import { useAuth } from '../context/AuthContext'
-import type { EtablissementDetail } from '../api/etablissementApi'
-import { etablissementApi } from '../api/etablissementApi'
-import FacultyIconSvg from '../components/FacultyIcon'
-import BideyetiLogo from '../components/BideyetiLogo'
-import EducationLoader from '../components/EducationLoader'
-import { normalizeExternalUrl } from '../utils/externalUrl'
-import s from './FacultyDetailPage.module.css'
+import { useEffect, useState } from "react";
+import type { Page } from "../App";
+import { useAuth } from "../context/AuthContext";
+import type { EtablissementDetail } from "../api/etablissementApi";
+import { etablissementApi } from "../api/etablissementApi";
+import FacultyIconSvg from "../components/FacultyIcon";
+import BideyetiLogo from "../components/BideyetiLogo";
+import EducationLoader from "../components/EducationLoader";
+import { normalizeExternalUrl } from "../utils/externalUrl";
+import s from "./FacultyDetailPage.module.css";
 
 interface Props {
   nav: (
     p: Page,
     regionId?: string,
     facultyId?: string,
-    specialiteId?: string
-  ) => void
-  facultyId?: string
+    specialiteId?: string,
+  ) => void;
+  facultyId?: string;
 }
 
-function iconForType(type?: string | null): 'chip' | 'caduceus' | 'book' | 'gear' {
-  const t = type?.toLowerCase() ?? ''
-  if (t.includes('ingenieur') || t.includes('technologie')) return 'chip'
-  if (t.includes('medecine')) return 'caduceus'
-  if (t.includes('commerce')) return 'book'
-  return 'gear'
+function iconForType(
+  type?: string | null,
+): "chip" | "caduceus" | "book" | "gear" {
+  const t = type?.toLowerCase() ?? "";
+  if (t.includes("ingenieur") || t.includes("technologie")) return "chip";
+  if (t.includes("medecine")) return "caduceus";
+  if (t.includes("commerce")) return "book";
+  return "gear";
 }
 
 export default function FacultyDetailPage({ nav, facultyId }: Props) {
-  const { user } = useAuth()
-  const [etab, setEtab] = useState<EtablissementDetail | null>(null)
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+  const { user } = useAuth();
+  const [etab, setEtab] = useState<EtablissementDetail | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  const backToList = () => nav(user ? 'university' : 'visitor')
+  const backToList = () => nav(user ? "university" : "visitor");
 
   useEffect(() => {
     if (!facultyId) {
-      setLoading(false)
-      setEtab(null)
-      return
+      setLoading(false);
+      setEtab(null);
+      return;
     }
 
-    let cancelled = false
-    ;(async () => {
-      setLoading(true)
-      setError(null)
+    let cancelled = false;
+    (async () => {
+      setLoading(true);
+      setError(null);
       try {
-        const detail = await etablissementApi.getById(facultyId)
-        if (!cancelled) setEtab(detail)
+        const detail = await etablissementApi.getById(facultyId);
+        if (!cancelled) setEtab(detail);
       } catch {
         if (!cancelled) {
-          setEtab(null)
-          setError('Impossible de charger cet etablissement.')
+          setEtab(null);
+          setError("Impossible de charger cet etablissement.");
         }
       } finally {
-        if (!cancelled) setLoading(false)
+        if (!cancelled) setLoading(false);
       }
-    })()
+    })();
 
     return () => {
-      cancelled = true
-    }
-  }, [facultyId])
+      cancelled = true;
+    };
+  }, [facultyId]);
 
   if (loading) {
     return (
@@ -74,7 +76,7 @@ export default function FacultyDetailPage({ nav, facultyId }: Props) {
           />
         </div>
       </div>
-    )
+    );
   }
 
   if (!facultyId || error || !etab) {
@@ -82,23 +84,28 @@ export default function FacultyDetailPage({ nav, facultyId }: Props) {
       <div className={s.page}>
         <div className={s.error}>
           <h2>Etablissement non trouve</h2>
-          <p>{error || "Cet etablissement n'existe pas ou n'est plus disponible."}</p>
+          <p>
+            {error ||
+              "Cet etablissement n'existe pas ou n'est plus disponible."}
+          </p>
           <button type="button" className={s.backBtn} onClick={backToList}>
             Retour a la liste
           </button>
         </div>
       </div>
-    )
+    );
   }
 
   const specialites = [...(etab.specialites ?? [])].sort((a, b) =>
-    a.nom.localeCompare(b.nom, 'fr')
-  )
-  const lieuParts = [etab.gouvernorat, etab.universite?.ville, etab.universite?.region].filter(
-    Boolean
-  ) as string[]
-  const lieuLine = lieuParts.length > 0 ? lieuParts.join(' - ') : null
-  const websiteHref = etab.website ? normalizeExternalUrl(etab.website) : ''
+    a.nom.localeCompare(b.nom, "fr"),
+  );
+  const lieuParts = [
+    etab.gouvernorat,
+    etab.universite?.ville,
+    etab.universite?.region,
+  ].filter(Boolean) as string[];
+  const lieuLine = lieuParts.length > 0 ? lieuParts.join(" - ") : null;
+  const websiteHref = etab.website ? normalizeExternalUrl(etab.website) : "";
 
   return (
     <div className={s.page}>
@@ -147,7 +154,7 @@ export default function FacultyDetailPage({ nav, facultyId }: Props) {
             <section className={s.infoCard}>
               <h3>Localisation</h3>
               <p>{lieuLine}</p>
-              {typeof etab.lat === 'number' && typeof etab.lon === 'number' && (
+              {typeof etab.lat === "number" && typeof etab.lon === "number" && (
                 <p className={s.coords}>
                   Coordonnees : {etab.lat.toFixed(4)}, {etab.lon.toFixed(4)}
                 </p>
@@ -190,11 +197,13 @@ export default function FacultyDetailPage({ nav, facultyId }: Props) {
                   type="button"
                   className={s.specialiteBtn}
                   onClick={() =>
-                    nav('specialite-detail', undefined, facultyId, sp.id)
+                    nav("specialite-detail", undefined, facultyId, sp.id)
                   }
                 >
                   <span className={s.specialiteNom}>{sp.nom}</span>
-                  {sp.domaine && <span className={s.specialiteMeta}>{sp.domaine}</span>}
+                  {sp.domaine && (
+                    <span className={s.specialiteMeta}>{sp.domaine}</span>
+                  )}
                   <span className={s.specialiteCode}>{sp.codeOrientation}</span>
                 </button>
               ))}
@@ -210,8 +219,8 @@ export default function FacultyDetailPage({ nav, facultyId }: Props) {
       </main>
 
       <footer className={s.footer}>
-        <p>(c) 2026 Bideyety | Tous droits reserves.</p>
+        <p>(c) 2026 bideyeti | Tous droits reserves.</p>
       </footer>
     </div>
-  )
+  );
 }

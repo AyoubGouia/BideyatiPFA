@@ -1,122 +1,143 @@
-import { useEffect, useMemo, useState } from 'react'
-import type { Page } from '../App'
-import BideyetiLogo from '../components/BideyetiLogo'
-import FacultyIconSvg from '../components/FacultyIcon'
-import { etablissementApi } from '../api/etablissementApi'
-import { specialiteApi } from '../api/specialiteApi'
-import UserMenu from '../components/UserMenu'
+import { useEffect, useMemo, useState } from "react";
+import type { Page } from "../App";
+import BideyetiLogo from "../components/BideyetiLogo";
+import FacultyIconSvg from "../components/FacultyIcon";
+import { etablissementApi } from "../api/etablissementApi";
+import { specialiteApi } from "../api/specialiteApi";
+import UserMenu from "../components/UserMenu";
 import {
   groupEtablissementsBySpeciality,
   type SpecialityBrowseEntry,
-} from '../utils/etablissementList'
-import { useAuth } from '../context/AuthContext'
-import EducationLoader from '../components/EducationLoader'
-import s from './SpecialityPage.module.css'
+} from "../utils/etablissementList";
+import { useAuth } from "../context/AuthContext";
+import EducationLoader from "../components/EducationLoader";
+import s from "./SpecialityPage.module.css";
 
 interface Props {
-  nav: (p: Page, regionId?: string, facultyId?: string) => void
+  nav: (p: Page, regionId?: string, facultyId?: string) => void;
 }
 
 function normalizeKey(value: string): string {
   return value
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
-    .trim()
+    .trim();
 }
 
 function getSpecialityIcon(label: string) {
-  const c = normalizeKey(label)
-  if (c.includes('genie') || c.includes('technologie') || c.includes('informatique')) return 'gear'
-  if (c.includes('sante') || c.includes('medecine')) return 'caduceus'
-  if (c.includes('commerce') || c.includes('gestion') || c.includes('economie')) return 'book'
-  if (c.includes('science')) return 'chart'
-  if (c.includes('art') || c.includes('design')) return 'palette'
-  return 'chip'
+  const c = normalizeKey(label);
+  if (
+    c.includes("genie") ||
+    c.includes("technologie") ||
+    c.includes("informatique")
+  )
+    return "gear";
+  if (c.includes("sante") || c.includes("medecine")) return "caduceus";
+  if (c.includes("commerce") || c.includes("gestion") || c.includes("economie"))
+    return "book";
+  if (c.includes("science")) return "chart";
+  if (c.includes("art") || c.includes("design")) return "palette";
+  return "chip";
 }
 
 function buildDescription(entry: SpecialityBrowseEntry) {
-  const etablissements = entry.faculties.length
-  const codes = entry.codeOrientations.length
-  const domainHint = entry.domaine ? ` dans ${entry.domaine}` : ''
-  return `${etablissements} etablissement${etablissements > 1 ? 's' : ''} reel${etablissements > 1 ? 's' : ''} trouve${etablissements > 1 ? 's' : ''}${domainHint}, ${codes} code${codes > 1 ? 's' : ''} orientation associe${codes > 1 ? 's' : ''}.`
+  const etablissements = entry.faculties.length;
+  const codes = entry.codeOrientations.length;
+  const domainHint = entry.domaine ? ` dans ${entry.domaine}` : "";
+  return `${etablissements} etablissement${etablissements > 1 ? "s" : ""} reel${etablissements > 1 ? "s" : ""} trouve${etablissements > 1 ? "s" : ""}${domainHint}, ${codes} code${codes > 1 ? "s" : ""} orientation associe${codes > 1 ? "s" : ""}.`;
 }
 
 export default function SpecialityPage({ nav }: Props) {
-  const { user, logout } = useAuth()
-  const [selectedSpeciality, setSelectedSpeciality] = useState<SpecialityBrowseEntry | null>(null)
-  const [search, setSearch] = useState('')
-  const [specialities, setSpecialities] = useState<SpecialityBrowseEntry[]>([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(false)
+  const { user, logout } = useAuth();
+  const [selectedSpeciality, setSelectedSpeciality] =
+    useState<SpecialityBrowseEntry | null>(null);
+  const [search, setSearch] = useState("");
+  const [specialities, setSpecialities] = useState<SpecialityBrowseEntry[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
-    let cancelled = false
+    let cancelled = false;
 
-    ;(async () => {
-      setLoading(true)
-      setError(false)
+    (async () => {
+      setLoading(true);
+      setError(false);
 
       try {
         const [etabs, specs] = await Promise.all([
           etablissementApi.getAll(),
           specialiteApi.getAll(),
-        ])
+        ]);
 
-        if (cancelled) return
-        setSpecialities(groupEtablissementsBySpeciality(etabs, specs))
+        if (cancelled) return;
+        setSpecialities(groupEtablissementsBySpeciality(etabs, specs));
       } catch {
         if (!cancelled) {
-          setSpecialities([])
-          setError(true)
+          setSpecialities([]);
+          setError(true);
         }
       } finally {
-        if (!cancelled) setLoading(false)
+        if (!cancelled) setLoading(false);
       }
-    })()
+    })();
 
     return () => {
-      cancelled = true
-    }
-  }, [])
+      cancelled = true;
+    };
+  }, []);
 
   const filteredSpecialities = useMemo(() => {
-    const query = search.trim().toLowerCase()
-    if (!query) return specialities
+    const query = search.trim().toLowerCase();
+    if (!query) return specialities;
 
-    return specialities.filter((speciality) =>
-      speciality.name.toLowerCase().includes(query) ||
-      (speciality.domaine?.toLowerCase().includes(query) ?? false) ||
-      buildDescription(speciality).toLowerCase().includes(query) ||
-      speciality.faculties.some(
-        (faculty) =>
-          faculty.name.toLowerCase().includes(query) ||
-          faculty.programs.some((program) => program.toLowerCase().includes(query))
-      )
-    )
-  }, [search, specialities])
+    return specialities.filter(
+      (speciality) =>
+        speciality.name.toLowerCase().includes(query) ||
+        (speciality.domaine?.toLowerCase().includes(query) ?? false) ||
+        buildDescription(speciality).toLowerCase().includes(query) ||
+        speciality.faculties.some(
+          (faculty) =>
+            faculty.name.toLowerCase().includes(query) ||
+            faculty.programs.some((program) =>
+              program.toLowerCase().includes(query),
+            ),
+        ),
+    );
+  }, [search, specialities]);
 
   const handleBack = () => {
     if (selectedSpeciality) {
-      setSelectedSpeciality(null)
+      setSelectedSpeciality(null);
     } else {
-      nav('visitor')
+      nav("visitor");
     }
-  }
+  };
 
   const handleFacultyClick = (facultyId: string) => {
-    nav('faculty-detail', undefined, facultyId)
-  }
+    nav("faculty-detail", undefined, facultyId);
+  };
 
   return (
     <div className={s.page}>
       <header className={s.header}>
         <div className={s.headerContent}>
           <button className={s.backBtn} onClick={handleBack}>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              width="20"
+              height="20"
+            >
               <polyline points="15 18 9 12 15 6" />
             </svg>
-            {selectedSpeciality ? 'Retour aux specialites' : 'Retour aux facultes'}
+            {selectedSpeciality
+              ? "Retour aux specialites"
+              : "Retour aux facultes"}
           </button>
 
           <div className={s.logo}>
@@ -125,18 +146,30 @@ export default function SpecialityPage({ nav }: Props) {
 
           <div className={s.headerBtns}>
             {user && (
-              <button 
-                type="button" 
-                className={s.btnFav} 
-                onClick={() => nav('favoris')}
+              <button
+                type="button"
+                className={s.btnFav}
+                onClick={() => nav("favoris")}
               >
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="#F47920" stroke="#F47920">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="16"
+                  height="16"
+                  fill="#F47920"
+                  stroke="#F47920"
+                >
                   <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                 </svg>
                 Favoris
               </button>
             )}
-            <UserMenu user={user} onLogout={async () => { await logout(); nav('home'); }} />
+            <UserMenu
+              user={user}
+              onLogout={async () => {
+                await logout();
+                nav("home");
+              }}
+            />
           </div>
         </div>
       </header>
@@ -146,7 +179,10 @@ export default function SpecialityPage({ nav }: Props) {
           <>
             <section className={s.hero}>
               <h1 className={s.title}>Explorer par specialite</h1>
-              <p className={s.subtitle}>Decouvrez les vraies specialites et tous les etablissements qui les proposent</p>
+              <p className={s.subtitle}>
+                Decouvrez les vraies specialites et tous les etablissements qui
+                les proposent
+              </p>
             </section>
 
             <section className={s.searchSection}>
@@ -190,7 +226,9 @@ export default function SpecialityPage({ nav }: Props) {
             ) : filteredSpecialities.length === 0 ? (
               <div className={s.noFaculties}>
                 <h3>Aucune specialite trouvee</h3>
-                <p>Aucune specialite backend ne correspond a votre recherche.</p>
+                <p>
+                  Aucune specialite backend ne correspond a votre recherche.
+                </p>
               </div>
             ) : (
               <section className={s.specialitiesGrid}>
@@ -202,20 +240,37 @@ export default function SpecialityPage({ nav }: Props) {
                   >
                     <div className={s.specialityHeader}>
                       <div className={s.specialityIcon}>
-                        <FacultyIconSvg icon={getSpecialityIcon(speciality.domaine || speciality.name)} />
+                        <FacultyIconSvg
+                          icon={getSpecialityIcon(
+                            speciality.domaine || speciality.name,
+                          )}
+                        />
                       </div>
                       <div className={s.specialityInfo}>
                         <h3 className={s.specialityName}>{speciality.name}</h3>
                         {speciality.domaine && (
-                          <span className={s.specialityCategory}>{speciality.domaine}</span>
+                          <span className={s.specialityCategory}>
+                            {speciality.domaine}
+                          </span>
                         )}
                       </div>
                     </div>
-                    <p className={s.specialityDescription}>{buildDescription(speciality)}</p>
+                    <p className={s.specialityDescription}>
+                      {buildDescription(speciality)}
+                    </p>
                     <div className={s.specialityFooter}>
                       <button className={s.exploreBtn}>
                         Explorer cette specialite
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          width="16"
+                          height="16"
+                        >
                           <polyline points="9 18 15 12 9 6" />
                         </svg>
                       </button>
@@ -230,17 +285,27 @@ export default function SpecialityPage({ nav }: Props) {
             <section className={s.specialityHero}>
               <div className={s.specialityInfo}>
                 <div className={s.specialityIconLarge}>
-                  <FacultyIconSvg icon={getSpecialityIcon(selectedSpeciality.domaine || selectedSpeciality.name)} />
+                  <FacultyIconSvg
+                    icon={getSpecialityIcon(
+                      selectedSpeciality.domaine || selectedSpeciality.name,
+                    )}
+                  />
                 </div>
                 <h1 className={s.specialityTitle}>{selectedSpeciality.name}</h1>
-                <p className={s.specialitySubtitle}>{buildDescription(selectedSpeciality)}</p>
+                <p className={s.specialitySubtitle}>
+                  {buildDescription(selectedSpeciality)}
+                </p>
                 <div className={s.specialityStats}>
                   <div className={s.stat}>
-                    <span className={s.statNumber}>{selectedSpeciality.faculties.length}</span>
+                    <span className={s.statNumber}>
+                      {selectedSpeciality.faculties.length}
+                    </span>
                     <span className={s.statLabel}>Etablissements</span>
                   </div>
                   <div className={s.stat}>
-                    <span className={s.statNumber}>{selectedSpeciality.codeOrientations.length}</span>
+                    <span className={s.statNumber}>
+                      {selectedSpeciality.codeOrientations.length}
+                    </span>
                     <span className={s.statLabel}>Codes</span>
                   </div>
                 </div>
@@ -248,12 +313,18 @@ export default function SpecialityPage({ nav }: Props) {
             </section>
 
             <section className={s.facultiesSection}>
-              <h2 className={s.sectionTitle}>Etablissements proposant cette specialite</h2>
+              <h2 className={s.sectionTitle}>
+                Etablissements proposant cette specialite
+              </h2>
 
               {selectedSpeciality.faculties.length > 0 ? (
                 <div className={s.facultiesGrid}>
                   {selectedSpeciality.faculties.map((faculty) => (
-                    <div key={faculty.id} className={s.facultyCard} onClick={() => handleFacultyClick(faculty.id)}>
+                    <div
+                      key={faculty.id}
+                      className={s.facultyCard}
+                      onClick={() => handleFacultyClick(faculty.id)}
+                    >
                       <div className={s.facultyHeader}>
                         <div className={s.facultyIcon}>
                           <FacultyIconSvg icon={faculty.icon} />
@@ -262,24 +333,44 @@ export default function SpecialityPage({ nav }: Props) {
                           <h3 className={s.facultyName}>{faculty.name}</h3>
                           <p className={s.facultySub}>{faculty.sub}</p>
                           <div className={s.facultyMeta}>
-                            <span className={s.facultyRegion}>{faculty.region}</span>
-                            <span className={s.facultyCategory}>{faculty.cat}</span>
+                            <span className={s.facultyRegion}>
+                              {faculty.region}
+                            </span>
+                            <span className={s.facultyCategory}>
+                              {faculty.cat}
+                            </span>
                           </div>
                         </div>
                       </div>
 
                       <div className={s.facultySpecialities}>
-                        <span className={s.specialitiesLabel}>Specialite retenue:</span>
+                        <span className={s.specialitiesLabel}>
+                          Specialite retenue:
+                        </span>
                         <div className={s.specialitiesList}>
                           {faculty.programs.map((program, index) => (
-                            <span key={`${program}-${index}`} className={s.specialityTag}>{program}</span>
+                            <span
+                              key={`${program}-${index}`}
+                              className={s.specialityTag}
+                            >
+                              {program}
+                            </span>
                           ))}
                         </div>
                       </div>
 
                       <div className={s.facultyDetails}>
                         <div className={s.detail}>
-                          <svg viewBox="0 0 24 24" fill="none" stroke="#64748b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#64748b"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            width="16"
+                            height="16"
+                          >
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                             <circle cx="12" cy="10" r="3" />
                           </svg>
@@ -289,7 +380,16 @@ export default function SpecialityPage({ nav }: Props) {
 
                       <button className={s.viewDetailsBtn}>
                         Voir les details
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          width="16"
+                          height="16"
+                        >
                           <polyline points="9 18 15 12 9 6" />
                         </svg>
                       </button>
@@ -298,13 +398,25 @@ export default function SpecialityPage({ nav }: Props) {
                 </div>
               ) : (
                 <div className={s.noFaculties}>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="#94a3b8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="48" height="48">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#94a3b8"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    width="48"
+                    height="48"
+                  >
                     <path d="M12 2L2 7l10 5 10-5-10-5z" />
                     <path d="M2 17l10 5 10-5" />
                     <path d="M2 12l10 5 10-5" />
                   </svg>
                   <h3>Aucun etablissement disponible</h3>
-                  <p>Cette specialite n'est reliee a aucun etablissement exploitable pour le moment.</p>
+                  <p>
+                    Cette specialite n'est reliee a aucun etablissement
+                    exploitable pour le moment.
+                  </p>
                 </div>
               )}
             </section>
@@ -313,8 +425,8 @@ export default function SpecialityPage({ nav }: Props) {
       </main>
 
       <footer className={s.footer}>
-        <p>(c) 2026 Bideyety | Tous droits reserves.</p>
+        <p>(c) 2026 bideyeti | Tous droits reserves.</p>
       </footer>
     </div>
-  )
+  );
 }

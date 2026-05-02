@@ -199,7 +199,7 @@ export default function DomainEtablissementsPage({
         )}
 
         <footer className={s.footer}>
-          (c) 2026 Bideyety | Tous droits reserves.
+          (c) 2026 bideyeti | Tous droits reserves.
         </footer>
       </main>
     </div>

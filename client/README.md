@@ -1,4 +1,4 @@
-# Bideyety – Full Project (Homepage + Visitor Page)
+# bideyeti – Full Project (Homepage + Visitor Page)
 
 React 18 + TypeScript + Vite + CSS Modules.
 
@@ -7,7 +7,7 @@ React 18 + TypeScript + Vite + CSS Modules.
 ## Folder structure
 
 ```
-bideyety/
+bideyeti/
 ├── index.html
 ├── package.json
 ├── vite.config.ts
@@ -21,7 +21,7 @@ bideyety/
     │
     ├── assets/
     │   ├── bg-home.png               ← Homepage full-screen background
-    │   └── logo.png                  ← Bideyety logo (visitor page header)
+    │   └── logo.png                  ← bideyeti logo (visitor page header)
     │
     ├── data/
     │   └── faculties.ts              ← 9 faculties + filter tabs data
@@ -63,20 +63,24 @@ Implemented in `App.tsx` via `useState<'home' | 'visitor'>`:
 
 ```tsx
 // App.tsx
-const [page, setPage] = useState<Page>('home')
-const nav = (p: Page) => { setPage(p); window.scrollTo(0, 0) }
+const [page, setPage] = useState<Page>("home");
+const nav = (p: Page) => {
+  setPage(p);
+  window.scrollTo(0, 0);
+};
 
 return (
   <>
-    {page === 'home'    && <HomePage    nav={nav} />}
-    {page === 'visitor' && <VisitorPage nav={nav} />}
+    {page === "home" && <HomePage nav={nav} />}
+    {page === "visitor" && <VisitorPage nav={nav} />}
   </>
-)
+);
 ```
 
 The button in `HomePage.tsx`:
+
 ```tsx
-<button className={s.cta} onClick={() => nav('visitor')}>
+<button className={s.cta} onClick={() => nav("visitor")}>
   Commencer en tant que visiteur
 </button>
 ```
@@ -85,12 +89,12 @@ The button in `HomePage.tsx`:
 
 ## Components
 
-| Component | Description |
-|---|---|
-| `HomePage` | Full-screen bg image, top-right pills, tagline + CTA |
-| `VisitorPage` | Sticky header, search, filter tabs, 3-col card grid |
+| Component     | Description                                             |
+| ------------- | ------------------------------------------------------- |
+| `HomePage`    | Full-screen bg image, top-right pills, tagline + CTA    |
+| `VisitorPage` | Sticky header, search, filter tabs, 3-col card grid     |
 | `FacultyCard` | White card with name, subtitle, SVG icon, orange button |
-| `FacultyIcon` | 9 hand-crafted SVG icons matching the design exactly |
+| `FacultyIcon` | 9 hand-crafted SVG icons matching the design exactly    |
 
 ---
 
@@ -100,8 +104,12 @@ All faculty data lives in `src/data/faculties.ts` — easy to extend:
 
 ```ts
 export const FACULTIES: Faculty[] = [
-  { name: 'Faculté de Génie Électrique', sub: 'Ingénierie & Technologie',
-    cat: 'Génie', icon: 'chip' },
+  {
+    name: "Faculté de Génie Électrique",
+    sub: "Ingénierie & Technologie",
+    cat: "Génie",
+    icon: "chip",
+  },
   // … 8 more
-]
+];
 ```

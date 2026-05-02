@@ -671,7 +671,7 @@ export default function SpecialiteDetailPage({
       </main>
 
       <footer className={s.footer}>
-        <p>(c) 2026 Bideyety | Tous droits reserves.</p>
+        <p>(c) 2026 bideyeti | Tous droits reserves.</p>
       </footer>
     </div>
   );
